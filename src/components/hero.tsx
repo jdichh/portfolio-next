@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <section>
+    <section id="home" className="scroll-mt-[100rem]">
       <div className="flex justify-end items-end flex-col">
         <motion.div
           className="text-right"

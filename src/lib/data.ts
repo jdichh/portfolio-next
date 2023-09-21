@@ -11,11 +11,12 @@ import quoteGen from "../../public/project/quote.png"
 import traderView from "../../public/project/traderview.png"
 import weatherApp from "../../public/project/weather.png"
 import chatbot from "../../public/project/chatbot.png"
+import htmlImg from "../../public/tools/html.png"
 
 export const links = [
   {
-    name: "About",
-    hash: "#about",
+    name: "Home",
+    hash: "#home",
   },
   {
     name: "Tools",
@@ -27,10 +28,11 @@ export const links = [
   },
 ] as const;
 
-export const tools = [
+export const mainTools = [
   {
     id: 1,
     name: "HTML",
+    imageUrl: htmlImg
   },
   {
     id: 2,

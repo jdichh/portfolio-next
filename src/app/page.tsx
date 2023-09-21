@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Tools from "@/components/tools";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Tools />
       <Projects />
+      <Footer />
     </main>
   )
 }

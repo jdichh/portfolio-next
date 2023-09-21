@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
-import { tools, codingTools, testingTools, designTools } from "@/lib/data";
+import { mainTools, codingTools, testingTools, designTools } from "@/lib/data";
 
 export default function Tools() {
   return (
@@ -14,12 +14,9 @@ export default function Tools() {
     >
       <SectionHeading>Main Tools</SectionHeading>
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
-        {tools.map((tool) => (
-          <li
-            key={tool.id}
-            className="flex text-[#E9E9E9] text-center"
-          >
-            {tool.name}
+        {mainTools.map((mainTool) => (
+          <li key={mainTool.id} className="flex text-[#E9E9E9] text-center">
+            {mainTool.name}
           </li>
         ))}
       </div>
@@ -27,10 +24,7 @@ export default function Tools() {
       <SectionHeading>Coding Tools</SectionHeading>
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
         {codingTools.map((codingTool) => (
-          <li
-            key={codingTool.id}
-            className="flex text-[#E9E9E9] text-center"
-          >
+          <li key={codingTool.id} className="flex text-[#E9E9E9] text-center">
             {codingTool.name}
           </li>
         ))}
@@ -39,10 +33,7 @@ export default function Tools() {
       <SectionHeading>Testing Tools</SectionHeading>
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
         {testingTools.map((testingTool) => (
-          <li
-            key={testingTool.id}
-            className="flex text-[#E9E9E9] text-center"
-          >
+          <li key={testingTool.id} className="flex text-[#E9E9E9] text-center">
             {testingTool.name}
           </li>
         ))}
@@ -51,15 +42,11 @@ export default function Tools() {
       <SectionHeading>Design Tools</SectionHeading>
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
         {designTools.map((designTool) => (
-          <li
-            key={designTool.id}
-            className="flex text-[#E9E9E9] text-center"
-          >
+          <li key={designTool.id} className="flex text-[#E9E9E9] text-center">
             {designTool.name}
           </li>
         ))}
       </div>
-
     </motion.section>
   );
 }
