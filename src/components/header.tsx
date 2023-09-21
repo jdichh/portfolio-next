@@ -13,8 +13,8 @@ export default function Header() {
         initial={{ y: -50, opacity: 0, x: "-50%" }}
         animate={{ y: 0, opacity: 1, x: "-50%" }}
       />
-      <nav className="fixed left-1/2 -translate-x-1/2 top-0 ">
-        <ul className="flex w-[22rem] gap-6 lg:gap-12">
+      <nav className="fixed left-1/2 -translate-x-1/2 top-0">
+        <ul className="flex w-[22rem] justify-center gap-6 lg:gap-12">
             {links.map(link => (
                 <motion.li key={link.hash} className="flex text-[#E9E9E9]"  
                 initial={{ y: -50, opacity: 0 }}

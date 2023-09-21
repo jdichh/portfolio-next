@@ -7,7 +7,7 @@ import SectionHeading from "./section-heading";
 export default function About() {
   return (
     <motion.section
-      className="w-11/12 xl:w-5/12 leading-8 xl:text-center"
+      className="w-11/12 xl:w-5/12 leading-8 xl:text-center mb-24"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
