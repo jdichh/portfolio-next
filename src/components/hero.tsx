@@ -55,7 +55,7 @@ export default function Hero() {
             />
           </a>
           <a
-            href="https://drive.google.com/file/d/1xI6zzPzulVdK6j7MkZrNctBfWlnWAmwy/view?usp=drive_link"
+            href="/resume.pdf"
             target="_blank"
             className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
             aria-label="Button to my Resume document"

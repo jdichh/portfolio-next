@@ -1,3 +1,11 @@
+import galaxy from "../../public/project/galaxy.png"
+import vintora from "../../public/project/vintora.png"
+import showroom from "../../public/project/showroom.png"
+import synthwave from "../../public/project/synthwave.png"
+import asteroids from "../../public/project/asteroids.png"
+import passwordGen from "../../public/project/asteroids.png"
+import ssu from "../../public/project/ssu.png"
+
 export const links = [
   {
     name: "About",
@@ -143,94 +151,88 @@ export const designTools = [
 
 export const projects = [
   {
-    id: 1,
     name: "Galaxy Overview",
     description:
       "An overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
-    tools: ["React-Three-Fiber"]
+    tools: ["React-Three-Fiber"],
+    imageUrl: galaxy
   },
   {
-    id: 2,
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model for a product website.",
-    tools: ["Three.js, GSAP"]
+    tools: ["Three.js, GSAP"],
+    imageUrl: vintora
   },
   {
-    id: 3,
     name: "Car Showroom",
     description:
       "A virtual car showroom mainly inspired from the one in Gran Turismo Sport.",
-    tools: ["React-Three-Fiber, SCSS"]
+    tools: ["React-Three-Fiber, SCSS"],
+    imageUrl: showroom
   },
   {
-    id: 4,
     name: "Synthwave Scene",
     description:
       "A synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
-    tools: ["React.js, Three.js"]
+    tools: ["React.js, Three.js"],
+    imageUrl: synthwave
   },
   {
-    id: 5,
     name: "Asteroids Game",
     description:
       "The Asteroids game from Atari, but with my own modifications to it.",
-    tools: ["JavaScript"]
+    tools: ["JavaScript"],
+    imageUrl: asteroids
   },
   {
-    id: 7,
     name: "Random Password Generator Extension",
     description:
       "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
-    tools: ["JavaScript"]
+    tools: ["JavaScript"],
+    imageUrl: passwordGen
   },
   {
-    id: 8,
     name: "Security Unit Web Portal",
     description:
       "This was part of our capstone project which involved a mobile application, and this web application. It was made for the security personnel of Letran-Calamba, and the whole system serves as a patrol system for them. It was my first time using a JS framework, Vue.js, and it also gave me the chance to dive deeper into the world of JavaScript. ",
-    tools: ["Vue.js, Bootstrap, Firebase"]  
+    tools: ["Vue.js, Bootstrap, Firebase"],
+    imageUrl: ssu
   },
-];
+] as const;
 
 export const miniProjects = [
   {
-    id: 1,
     name: "To-do App with Pagination",
     description:
       "A to-do app with pagination that is built with the PERN stack. For practicing purposes.",
     tools: ["PostgreSQL, Express.js, React.js, Node.js, Tailwind CSS"] 
   },
   {
-    id: 2,
     name: "Tic-Tac-Toe",
     description:
       "A Tic-Tac-Toe game that I made to introduce myself to the world of Svelte.",
     tools: ["Svelte, SCSS"] 
   },
   {
-    id: 3,
     name: "Very Original Quote Generator",
     description:
       "A quote generator that I made to get back into the flow of learning React itself, after spending time (too much, perhaps) making projects with Three.js/React-Three-Fiber.",
     tools: ["React.js, SCSS"] 
   },
   {
-    id: 4,
     name: "Obligatory Weather App",
     description: "A weather app that uses the OpenWeatherMap API.",
     tools: ["React.js, Zustand, Axios"] 
   },
   {
-    id: 5,
     name: "All-Knowing Bot",
     description: "A chat website that uses LemurBot from Lemur Engine.",
     tools: ["JavaScript, SCSS"] 
   },
   {
-    id: 6,
     name: "TraderView",
     description: "A market tracker that uses the TradingView API.",
     tools: ["JavaScript, SCSS"] 
   },
-];
+] as const;

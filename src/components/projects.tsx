@@ -1,28 +1,44 @@
+"use client";
+
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { projects, miniProjects } from "@/lib/data";
+import Image from "next/image";
+
+type ProjectProps = (typeof projects)[number];
+
+function Project({ name, description, tools, imageUrl }: ProjectProps) {
+  return (
+    <section>
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <ul>
+        {tools.map((tool, index) => (
+          <li key={index}>{tool}</li>
+        ))}
+      </ul>
+      <Image src={imageUrl} alt={name} quality={95}/>
+    </section>
+  );
+
+}
 
 export default function Projects() {
   return (
-    <section>
+    <motion.section
+      className="w-11/12 xl:w-5/12 leading-8 mb-24"
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+    >
       <SectionHeading>Projects</SectionHeading>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
-        {projects.map((project) => (
-          <li key={project.id} className="flex text-[#E9E9E9] text-center">
-            {project.name}
-          </li>
+      <div>
+        {projects.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
         ))}
       </div>
-
-      <SectionHeading>Mini Projects</SectionHeading>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
-        {miniProjects.map((miniProject) => (
-          <li key={miniProject.id} className="flex text-[#E9E9E9] text-center">
-            {miniProject.name}
-          </li>
-        ))}
-      </div>
-    </section>
+    </motion.section>
   );
 }
