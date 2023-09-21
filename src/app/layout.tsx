@@ -1,9 +1,9 @@
 import Header from "@/components/header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk ({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jason Dichoso | Portfolio",
@@ -18,11 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#131217] text-[#E8E8E8] relative h-[5000px]`}
+        className={`${spaceGrotesk.className} bg-[#131217] text-[#E9E9E9] relative h-[5000px] max-w-[1920px] my-0 mx-auto pt-32 sm:pt-40`}
       >
         <Header />
         {children}
-        <h1>test</h1>
       </body>
     </html>
   );
