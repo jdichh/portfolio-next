@@ -8,7 +8,7 @@ import { tools, codingTools, testingTools, designTools } from "@/lib/data";
 export default function Tools() {
   return (
     <motion.section
-      className="px-6 xl:w-8/12 lg:w-1/2 mb-24"
+      className="px-6 lg:w-10/12 xl:w-8/12 mb-24"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >

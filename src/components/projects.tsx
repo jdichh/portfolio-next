@@ -63,7 +63,7 @@ function Project({
 export default function Projects() {
   return (
     <motion.section
-      className="px-6 xl:w-8/12 lg:w-1/2 lg:px-0 leading-8 mb-24"
+      className="px-6 lg:w-10/12 xl:w-8/12 lg:px-0 leading-8 mb-24"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
