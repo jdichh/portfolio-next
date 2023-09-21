@@ -32,66 +32,70 @@ export const tools = [
   },
   {
     id: 3,
-    name: "JavaScript",
-  },
-  {
-    id: 4,
-    name: "React.js",
-  },
-  {
-    id: 5,
-    name: "Three.js",
-  },
-  {
-    id: 6,
-    name: "React-Three-Fiber",
-  },
-  {
-    id: 7,
-    name: "Zustand",
-  },
-  {
-    id: 8,
     name: "SCSS",
   },
   {
+    id: 4,
+    name: "JavaScript",
+  },
+  {
+    id: 5,
+    name: "React.js",
+  },
+  {
+    id: 6,
+    name: "Next.js"
+  },
+  {
+    id: 7,
+    name: "Three.js",
+  },
+  {
+    id: 8,
+    name: "React-Three-Fiber",
+  },
+  {
     id: 9,
-    name: "Bootstrap",
+    name: "Zustand",
   },
   {
     id: 10,
-    name: "Bulma",
+    name: "Bootstrap",
   },
   {
     id: 11,
-    name: "Tailwind CSS",
+    name: "Bulma",
   },
   {
     id: 12,
-    name: "GSAP",
+    name: "Tailwind CSS",
   },
   {
     id: 13,
-    name: "Firebase",
+    name: "GSAP",
   },
   {
     id: 14,
-    name: "PostgreSQL",
+    name: "Firebase",
   },
   {
     id: 15,
-    name: "Express",
+    name: "PostgreSQL",
   },
   {
     id: 16,
-    name: "Axios",
+    name: "Express.js",
   },
   {
     id: 17,
-    name: "Node.js",
+    name: "Axios",
   },
   {
     id: 18,
+    name: "Node.js",
+  },
+  {
+    id: 19,
     name: "Insomnia",
   },
 ];

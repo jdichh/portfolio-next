@@ -17,7 +17,7 @@ function Project({
   githubLink,
 }: ProjectProps) {
   return (
-    <section className="group overflow-hidden bg-[#1F1E26] rounded-sm mb-3 relative hover:bg-[#262630] transition ease-in-out duration-150">
+    <section className="group overflow-hidden bg-[#1F1E26] rounded-sm mb-3 relative hover:bg-[#282833] transition ease-in-out duration-150">
       <div className="flex flex-col py-6 pb-7 px-4 sm:px-8 xl:max-w-[55%] xl:min-h-[20rem]">
         <h3 className="text-xl text-center sm:text-2xl sm:text-left text-[#6E99C4]">{name}</h3>
         <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center sm:justify-start">
@@ -54,7 +54,7 @@ function Project({
         src={imageUrl}
         alt={name}
         quality={95}
-        className="hidden xl:block absolute transition ease-in-out duration-150 rounded-sm top-6 md:-right-44 2xl:-right-12 w-[34rem] group-hover:scale-[1.03] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-1"
+        className="hidden xl:block absolute transition ease-in-out duration-150 rounded-sm top-6 md:-right-36 2xl:-right-20 w-[34rem] group-hover:scale-[1.03] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-1"
       />
     </section>
   );
