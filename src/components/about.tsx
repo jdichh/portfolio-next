@@ -1,76 +1,32 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
   return (
-    <section>
-      <div className="flex justify-end items-end flex-col">
-        <motion.div
-          className="text-right"
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-        >
-          <h1 className={`${inter.className} font-medium text-4xl text-[#6E99C4] sm:text-6xl`}>Jason Dichoso</h1>
-          <h2 className="text-md sm:text-lg">Frontend Web Developer</h2>
-        </motion.div>
-        <motion.div
-          className="flex gap-2 mt-2"
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-        >
-          <a
-            href="https://github.com/jdichh/"
-            target="_blank"
-            className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
-            aria-label="Button to my GitHub profile"
-          >
-            <Image
-              src="/github.svg"
-              alt="Button to my GitHub profile"
-              width="40"
-              height="40"
-              priority={true}
-              className="object-cover"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
-            target="_blank"
-            className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
-            aria-label="Button to my LinkedIn profile"
-          >
-            <Image
-              src="/linkedin.svg"
-              alt="Button to my LinkedIn profile"
-              width="40"
-              height="40"
-              priority={true}
-              className="object-cover"
-            />
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1xI6zzPzulVdK6j7MkZrNctBfWlnWAmwy/view?usp=drive_link"
-            target="_blank"
-            className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
-            aria-label="Button to my Resume document"
-          >
-            <Image
-              src="/resume.svg"
-              alt="Button to my Resume document"
-              width="40"
-              height="40"
-              priority={true}
-              className="object-cover"
-            />
-          </a>
-        </motion.div>
-      </div>
-    </section>
+    <motion.section
+      className="w-11/12 lg:w-6/12"
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+    >
+      <h3 className="text-md lg:text-lg text-center mb-3 mt-12 lg:mt-0">
+        About Me
+      </h3>
+      <p className="mb-3">
+        I am a fresh IT graduate of Colegio de San Juan de Letran-Calamba in the
+        Philippines, and my goal for now is to be a{" "}
+        <span className="text-[#6E99C4]">proficient front-end developer</span>.
+        And down the line, branch out more to{" "}
+        <span className="text-[#6E99C4]">back-end development</span> to be a
+        well-rounded,
+        <span className="text-[#6E99C4]"> full-stack developer</span>.
+      </p>
+      <p className="mb-3">
+        When I'm not creating projects, I enjoy running, playing my beloved
+        electric guitar, or just discover more web technologies and good
+        development practices to apply them to my future projects.
+      </p>
+    </motion.section>
   );
 }

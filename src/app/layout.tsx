@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} bg-[#131217] text-[#E9E9E9] relative h-[5000px] max-w-[1920px] my-0 mx-auto pt-32 sm:pt-40`}
+        className={`${spaceGrotesk.className} bg-[#131217] text-[#E9E9E9] relative h-[5000px] max-w-[1920px] my-0 mx-auto pt-32 lg:pt-40`}
       >
         <Header />
         {children}
