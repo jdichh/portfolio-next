@@ -3,7 +3,7 @@ import vintora from "../../public/project/vintora.png"
 import showroom from "../../public/project/showroom.png"
 import synthwave from "../../public/project/synthwave.png"
 import asteroids from "../../public/project/asteroids.png"
-import passwordGen from "../../public/project/asteroids.png"
+import passwordGen from "../../public/project/password.png"
 import ssu from "../../public/project/ssu.png"
 
 export const links = [
@@ -155,49 +155,63 @@ export const projects = [
     description:
       "An overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
     tools: ["React-Three-Fiber"],
-    imageUrl: galaxy
+    imageUrl: galaxy,
+    liveLink: ["https://jdgalaxy.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/galaxy-map"]
   },
   {
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model for a product website.",
     tools: ["Three.js", "GSAP"],
-    imageUrl: vintora
+    imageUrl: vintora,
+    liveLink: ["https://steampunkwatch.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/steampunk-watch"]
   },
   {
     name: "Virtual Car Showroom",
     description:
       "A virtual car showroom mainly inspired from the one in Gran Turismo Sport.",
     tools: ["React-Three-Fiber", "SCSS"],
-    imageUrl: showroom
+    imageUrl: showroom,
+    liveLink: ["https://gtshowroom.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/car-showroom-r3f/"]
   },
   {
     name: "Synthwave Scene",
     description:
       "A synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
     tools: ["React.js", "Three.js"],
-    imageUrl: synthwave
+    imageUrl: synthwave,
+    liveLink: ["https://jdsynthwave.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"]
   },
   {
     name: "Asteroids Game",
     description:
       "The Asteroids game from Atari, but with my own modifications to it.",
     tools: ["JavaScript"],
-    imageUrl: asteroids
+    imageUrl: asteroids,
+    liveLink: ["https://jdasteroids.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/asteroids"]
   },
   {
     name: "Random Password Generator Extension",
     description:
       "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
     tools: ["JavaScript"],
-    imageUrl: passwordGen
+    imageUrl: passwordGen,
+    liveLink: ["https://youtu.be/pq-EsJa1plw"],
+    githubLink: ["https://github.com/jdichh/password-generator"]
   },
   {
     name: "Security Unit Web Portal",
     description:
-      "This was part of our capstone project which involved a mobile application, and this web application. It was made for the security personnel of Letran-Calamba, and the whole system serves as a patrol system for them. It was my first time using a JS framework, Vue.js, and it also gave me the chance to dive deeper into the world of JavaScript. ",
+      "This was part of our capstone project which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at Letran-Calamba.",
     tools: ["Vue.js", "Bootstrap", "Firebase"],
-    imageUrl: ssu
+    imageUrl: ssu,
+    liveLink: ["https://ssuwebsystem.netlify.app"],
+    githubLink: ["https://github.com/jdichh/websystem_ssu2"]
   },
 ] as const;
 
