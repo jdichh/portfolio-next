@@ -161,21 +161,21 @@ export const projects = [
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model for a product website.",
-    tools: ["Three.js, GSAP"],
+    tools: ["Three.js", "GSAP"],
     imageUrl: vintora
   },
   {
-    name: "Car Showroom",
+    name: "Virtual Car Showroom",
     description:
       "A virtual car showroom mainly inspired from the one in Gran Turismo Sport.",
-    tools: ["React-Three-Fiber, SCSS"],
+    tools: ["React-Three-Fiber", "SCSS"],
     imageUrl: showroom
   },
   {
     name: "Synthwave Scene",
     description:
       "A synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
-    tools: ["React.js, Three.js"],
+    tools: ["React.js", "Three.js"],
     imageUrl: synthwave
   },
   {
@@ -196,7 +196,7 @@ export const projects = [
     name: "Security Unit Web Portal",
     description:
       "This was part of our capstone project which involved a mobile application, and this web application. It was made for the security personnel of Letran-Calamba, and the whole system serves as a patrol system for them. It was my first time using a JS framework, Vue.js, and it also gave me the chance to dive deeper into the world of JavaScript. ",
-    tools: ["Vue.js, Bootstrap, Firebase"],
+    tools: ["Vue.js", "Bootstrap", "Firebase"],
     imageUrl: ssu
   },
 ] as const;

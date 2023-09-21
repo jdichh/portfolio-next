@@ -10,15 +10,15 @@ type ProjectProps = (typeof projects)[number];
 
 function Project({ name, description, tools, imageUrl }: ProjectProps) {
   return (
-    <section>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <ul>
+    <section className="overflow-hidden bg-[#1F1E26] rounded-md p-4 mb-3">
+      <h3 className="text-2xl text-[#6E99C4]">{name}</h3>
+      <p className="opacity-80 leading-relaxed">{description}</p>
+      <ul className="flex flex-wrap my-3 gap-2">
         {tools.map((tool, index) => (
-          <li key={index}>{tool}</li>
+          <li key={index} className="bg-[#6E99C4] px-3 py-0 uppercase tracking-wider text-[#1F1E26] rounded-md">{tool}</li>
         ))}
       </ul>
-      <Image src={imageUrl} alt={name} quality={95}/>
+      <Image src={imageUrl} alt={name} quality={95} className="rounded-md"/>
     </section>
   );
 
