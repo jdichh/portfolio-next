@@ -5,7 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 
-const inter = Inter ({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
   return (
@@ -16,16 +16,19 @@ export default function About() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
         >
-          <h1 className={`${inter.className} font-medium text-4xl text-[#6E99C4] sm:text-5xl`}>Jason Dichoso</h1>
-          <h2 className="text-base">Aspiring Frontend Developer</h2>
+          <h1 className={`${inter.className} font-medium text-4xl text-[#6E99C4] sm:text-6xl`}>Jason Dichoso</h1>
+          <h2 className="text-md sm:text-lg">Frontend Web Developer</h2>
         </motion.div>
-        <div className="flex gap-2 mt-2">
-          <motion.a
+        <motion.div
+          className="flex gap-2 mt-2"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+        >
+          <a
             href="https://github.com/jdichh/"
             target="_blank"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
             className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
+            aria-label="Button to my GitHub profile"
           >
             <Image
               src="/github.svg"
@@ -35,13 +38,12 @@ export default function About() {
               priority={true}
               className="object-cover"
             />
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
             className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
+            aria-label="Button to my LinkedIn profile"
           >
             <Image
               src="/linkedin.svg"
@@ -51,13 +53,12 @@ export default function About() {
               priority={true}
               className="object-cover"
             />
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="https://drive.google.com/file/d/1xI6zzPzulVdK6j7MkZrNctBfWlnWAmwy/view?usp=drive_link"
             target="_blank"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
             className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
+            aria-label="Button to my Resume document"
           >
             <Image
               src="/resume.svg"
@@ -67,8 +68,8 @@ export default function About() {
               priority={true}
               className="object-cover"
             />
-          </motion.a>
-        </div>
+          </a>
+        </motion.div>
       </div>
     </section>
   );

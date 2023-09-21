@@ -14,12 +14,12 @@ export default function Header() {
         animate={{ y: 0, opacity: 1, x: "-50%" }}
       />
       <nav className="fixed left-1/2 -translate-x-1/2 top-0">
-        <ul className="flex w-[22rem] justify-center gap-6">
+        <ul className="flex w-[22rem] justify-center gap-6 sm:gap-12">
             {links.map(link => (
                 <motion.li key={link.hash} className="flex text-[#E9E9E9]"  
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}>
-                    <Link href={link.hash} className="p-3 transition duration-150 ease-in-out text-lg hover:text-[#6E99C4]">{link.name}</Link>
+                    <Link href={link.hash} className="transition duration-150 ease-in-out p-4 text-md sm:p-3 sm:text-lg hover:text-[#6E99C4]">{link.name}</Link>
                 </motion.li>
             ))}
         </ul>
