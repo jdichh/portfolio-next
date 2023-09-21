@@ -19,18 +19,19 @@ export default function About() {
           <h1 className={`${inter.className} font-medium text-4xl text-[#6E99C4] sm:text-5xl`}>Jason Dichoso</h1>
           <h2 className="text-base">Aspiring Frontend Developer</h2>
         </motion.div>
-        <div className="flex">
+        <div className="flex gap-2 mt-2">
           <motion.a
             href="https://github.com/jdichh/"
             target="_blank"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
+            className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
           >
             <Image
               src="/github.svg"
               alt="Button to my GitHub profile"
-              width="45"
-              height="45"
+              width="40"
+              height="40"
               priority={true}
               className="object-cover"
             />
@@ -40,12 +41,29 @@ export default function About() {
             target="_blank"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
+            className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
           >
             <Image
               src="/linkedin.svg"
               alt="Button to my LinkedIn profile"
-              width="45"
-              height="45"
+              width="40"
+              height="40"
+              priority={true}
+              className="object-cover"
+            />
+          </motion.a>
+          <motion.a
+            href="https://drive.google.com/file/d/1xI6zzPzulVdK6j7MkZrNctBfWlnWAmwy/view?usp=drive_link"
+            target="_blank"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
+          >
+            <Image
+              src="/resume.svg"
+              alt="Button to my Resume document"
+              width="40"
+              height="40"
               priority={true}
               className="object-cover"
             />
