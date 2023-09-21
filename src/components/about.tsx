@@ -7,7 +7,7 @@ import SectionHeading from "./section-heading";
 export default function About() {
   return (
     <motion.section
-      className="px-6 lg:w-10/12 xl:w-8/12 leading-8 md:text-center mb-24"
+      className="px-6 w-full lg:w-10/12 xl:w-9/12 leading-8 text-left mb-24"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
@@ -23,8 +23,8 @@ export default function About() {
       </p>
       <p className="mb-3">
         When I'm not creating projects, I enjoy running, playing my beloved
-        electric guitar, or just discover more web technologies and good
-        development practices to apply them to my future projects.
+        electric guitar, or just discovering more web technologies, as well as good
+        development practices, and apply them to my projects.
       </p>
     </motion.section>
   );

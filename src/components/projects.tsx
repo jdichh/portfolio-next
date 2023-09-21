@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
-import { projects, miniProjects } from "@/lib/data";
+import { projects } from "@/lib/data";
 import Image from "next/image";
 
 type ProjectProps = (typeof projects)[number];
@@ -18,7 +18,7 @@ function Project({
 }: ProjectProps) {
   return (
     <section className="group overflow-hidden bg-[#1F1E26] rounded-sm mb-3 relative hover:bg-[#282833] transition ease-in-out duration-150">
-      <div className="flex flex-col py-6 pb-7 px-4 sm:px-8 xl:max-w-[55%] xl:min-h-[20rem]">
+      <div className="flex flex-col py-6 pb-7 px-4 sm:px-8 md:max-w-[50%] xl:max-w-[55%] md:min-h-[18rem]">
         <h3 className="text-xl text-center sm:text-2xl sm:text-left text-[#6E99C4]">{name}</h3>
         <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center sm:justify-start">
           {tools.map((tool, index) => (
@@ -33,7 +33,7 @@ function Project({
         <p className="opacity-90 leading-relaxed">{description}</p>
         <ul className="flex flex-wrap gap-2 mt-8 justify-center sm:justify-start">
         <a
-            href={liveLink}
+            href={liveLink.toString()}
             target="_blank"
             aria-label="Live demo of the project."
             className="bg-[#6E99C4] hover:bg-[#E9E9E9] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
@@ -41,7 +41,7 @@ function Project({
             Demo
         </a>
         <a
-            href={githubLink}
+            href={githubLink.toString()}
             target="_blank"
             aria-label="GitHub repository of the project."
             className="bg-[#6E99C4] hover:bg-[#E9E9E9] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
@@ -54,7 +54,7 @@ function Project({
         src={imageUrl}
         alt={name}
         quality={95}
-        className="hidden xl:block absolute transition ease-in-out duration-150 rounded-sm top-6 md:-right-36 2xl:-right-20 w-[34rem] group-hover:scale-[1.03] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-1"
+        className="hidden md:block absolute transition ease-in-out duration-150 rounded-sm top-6 md:-right-44 2xl:-right-20 w-[34rem] group-hover:scale-[1.03] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-1"
       />
     </section>
   );
@@ -63,7 +63,7 @@ function Project({
 export default function Projects() {
   return (
     <motion.section
-      className="px-6 lg:w-10/12 xl:w-8/12 lg:px-0 leading-8 mb-24"
+      className="px-6 w-full lg:w-10/12 xl:w-9/12 leading-8 mb-24"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >

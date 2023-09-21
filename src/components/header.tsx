@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="z-[99] relative w-full">
       <motion.div
-        className="fixed left-1/2 border-b-2 border-[#6E99C4] bg-[#131217] bg-opacity-90 top-0 h-[3.8rem] w-full lg:w-10/12 xl:w-8/12"
+        className="fixed left-1/2 border-b-2 border-[#6E99C4] bg-[#131217] bg-opacity-95 top-0 h-[3.8rem] w-full lg:w-10/12 xl:max-w-[1395px]"
         initial={{ y: -50, opacity: 0, x: "-50%" }}
         animate={{ y: 0, opacity: 1, x: "-50%" }}
       />

@@ -5,6 +5,12 @@ import synthwave from "../../public/project/synthwave.png"
 import asteroids from "../../public/project/asteroids.png"
 import passwordGen from "../../public/project/password.png"
 import ssu from "../../public/project/ssu.png"
+import pern from "../../public/project/pern.png"
+import tictactoe from "../../public/project/tictactoe.png"
+import quoteGen from "../../public/project/quote.png"
+import traderView from "../../public/project/traderview.png"
+import weatherApp from "../../public/project/weather.png"
+import chatbot from "../../public/project/chatbot.png"
 
 export const links = [
   {
@@ -155,9 +161,36 @@ export const designTools = [
 
 export const projects = [
   {
+    name: "To-do App",
+    description:
+      "A to-do app with pagination.",
+    tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+    imageUrl: pern,
+    liveLink: ["https://youtu.be/kRmF8umtA5M"],
+    githubLink: ["https://github.com/jdichh/pern-practice"]
+  },
+  {
+    name: "Tic-Tac-Toe",
+    description:
+      "A Tic-Tac-Toe game that I made to introduce myself to the world of Svelte.",
+    tools: ["Svelte", "SCSS"],
+    imageUrl: tictactoe,
+    liveLink: ["https://tictacsvelte.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/tic-tac-toe-svelte"] 
+  },
+  {
+    name: "Quote Generator",
+    description:
+      "A quote generator that I made to get back into the flow of learning React after spending time away for 3D projects.",
+    tools: ["React.js", "SCSS"],
+    imageUrl: quoteGen,
+    liveLink: ["https://originalquotegenerator.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/quote-gen-react"]
+  },
+  {
     name: "Galaxy Overview",
     description:
-      "An overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
+      "A 3D overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
     tools: ["React-Three-Fiber"],
     imageUrl: galaxy,
     liveLink: ["https://jdgalaxy.netlify.app/"],
@@ -175,7 +208,7 @@ export const projects = [
   {
     name: "Virtual Car Showroom",
     description:
-      "A virtual car showroom mainly inspired from the one in Gran Turismo Sport.",
+      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport.",
     tools: ["React-Three-Fiber", "SCSS"],
     imageUrl: showroom,
     liveLink: ["https://gtshowroom.netlify.app/"],
@@ -184,11 +217,19 @@ export const projects = [
   {
     name: "Synthwave Scene",
     description:
-      "A synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
+      "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
     tools: ["React.js", "Three.js"],
     imageUrl: synthwave,
     liveLink: ["https://jdsynthwave.netlify.app/"],
     githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"]
+  },
+  {
+    name: "Obligatory Weather App",
+    description: "A weather app that uses the OpenWeatherMap API.",
+    tools: ["React.js", "Zustand", "Axios"],
+    imageUrl: weatherApp,
+    liveLink: ["https://obligatoryweatherapp.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/obligatory-weather-app-react"]
   },
   {
     name: "Asteroids Game",
@@ -209,6 +250,22 @@ export const projects = [
     githubLink: ["https://github.com/jdichh/password-generator"]
   },
   {
+    name: "All-Knowing Bot",
+    description: "A chat website that uses LemurBot from Lemur Engine.",
+    tools: ["JavaScript", "SCSS"],
+    imageUrl: chatbot,
+    liveLink: ["https://allknowingbot.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/all-knowing-bot"]
+  },
+  {
+    name: "TraderView",
+    description: "A market tracker that uses the TradingView API.",
+    tools: ["JavaScript", "SCSS"],
+    imageUrl: traderView,
+    liveLink: ["https://jdichhtradingview.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/tradingviewAPI-practice"]
+  },
+  {
     name: "Security Unit Web Portal",
     description:
       "This was part of our capstone project which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at Letran-Calamba.",
@@ -216,41 +273,5 @@ export const projects = [
     imageUrl: ssu,
     liveLink: ["https://ssuwebsystem.netlify.app"],
     githubLink: ["https://github.com/jdichh/websystem_ssu2"]
-  },
-] as const;
-
-export const miniProjects = [
-  {
-    name: "To-do App with Pagination",
-    description:
-      "A to-do app with pagination that is built with the PERN stack. For practicing purposes.",
-    tools: ["PostgreSQL, Express.js, React.js, Node.js, Tailwind CSS"] 
-  },
-  {
-    name: "Tic-Tac-Toe",
-    description:
-      "A Tic-Tac-Toe game that I made to introduce myself to the world of Svelte.",
-    tools: ["Svelte, SCSS"] 
-  },
-  {
-    name: "Very Original Quote Generator",
-    description:
-      "A quote generator that I made to get back into the flow of learning React itself, after spending time (too much, perhaps) making projects with Three.js/React-Three-Fiber.",
-    tools: ["React.js, SCSS"] 
-  },
-  {
-    name: "Obligatory Weather App",
-    description: "A weather app that uses the OpenWeatherMap API.",
-    tools: ["React.js, Zustand, Axios"] 
-  },
-  {
-    name: "All-Knowing Bot",
-    description: "A chat website that uses LemurBot from Lemur Engine.",
-    tools: ["JavaScript, SCSS"] 
-  },
-  {
-    name: "TraderView",
-    description: "A market tracker that uses the TradingView API.",
-    tools: ["JavaScript, SCSS"] 
   },
 ] as const;
