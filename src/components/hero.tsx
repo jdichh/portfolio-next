@@ -31,7 +31,7 @@ export default function Hero() {
             aria-label="Button to my GitHub profile"
           >
             <Image
-              src="/github.svg"
+              src="/hero-button-icons/github.svg"
               alt="Button to my GitHub profile"
               width="40"
               height="40"
@@ -46,7 +46,7 @@ export default function Hero() {
             aria-label="Button to my LinkedIn profile"
           >
             <Image
-              src="/linkedin.svg"
+              src="/hero-button-icons/linkedin.svg"
               alt="Button to my LinkedIn profile"
               width="40"
               height="40"
@@ -55,13 +55,13 @@ export default function Hero() {
             />
           </a>
           <a
-            href="/resume.pdf"
+            href="/documents/resume.pdf"
             target="_blank"
             className="transition duration-150 ease-in-out rounded-sm hover:bg-[#6E99C4]"
             aria-label="Button to my Resume document"
           >
             <Image
-              src="/resume.svg"
+              src="/hero-button-icons/resume.svg"
               alt="Button to my Resume document"
               width="40"
               height="40"
