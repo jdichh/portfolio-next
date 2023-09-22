@@ -33,8 +33,8 @@ export default function Project({
         opacity: opacity,
       }}
     >
-      <section className="group overflow-hidden bg-[#1D1C23]  rounded-sm relative hover:bg-[#23222B] transition ease-in-out duration-150">
-        <div className="flex flex-col py-6 pb-7 px-4 sm:px-8 md:max-w-[50%] xl:max-w-[55%] md:min-h-[18rem]">
+      <section className="group overflow-hidden bg-[#1D1C23] rounded-sm relative hover:bg-[#23222B] transition ease-in-out duration-150 outline outline-1 outline-[#6E99C4]">
+        <div className="flex flex-col py-6 pb-7 px-4 sm:px-8 md:max-w-[50%] xl:max-w-[55%] md:min-h-[16rem]">
           <h3 className="text-xl text-center sm:text-2xl sm:text-left text-[#6E99C4]">
             {name}
           </h3>
