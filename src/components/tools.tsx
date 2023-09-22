@@ -28,7 +28,7 @@ export default function Tools() {
           >
             <Image
               src={tool.imageUrl}
-              alt={tool.name}
+              alt={tool.alt}
               height={45}
               width={45}
               className="mb-2"
@@ -47,7 +47,7 @@ export default function Tools() {
           >
             <Image
               src={tool.imageUrl}
-              alt={tool.name}
+              alt={tool.alt}
               height={45}
               width={45}
               className="mb-2"
@@ -66,7 +66,7 @@ export default function Tools() {
           >
             <Image
               src={tool.imageUrl}
-              alt={tool.name}
+              alt={tool.alt}
               height={45}
               width={45}
               className="mb-2"
@@ -85,7 +85,7 @@ export default function Tools() {
           >
             <Image
               src={tool.imageUrl}
-              alt={tool.name}
+              alt={tool.alt}
               height={45}
               width={45}
               className="mb-2"

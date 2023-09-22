@@ -71,135 +71,166 @@ export const webTechTools = [
   {
     name: "HTML",
     imageUrl: htmlImg,
+    alt: "HTML5 logo"
   },
   {
     name: "CSS",
     imageUrl: cssImg,
+    alt: "CSS3 logo"
   },
   {
     name: "SCSS",
     imageUrl: scssImg,
+    alt: "SCSS logo"
   },
   {
     name: "JavaScript",
     imageUrl: jsImg,
+    alt: "JavaScript logo"
   },
   {
     name: "React.js",
     imageUrl: reactImg,
+    alt: "React.js logo"
   },
   {
     name: "Next.js",
     imageUrl: nextImg,
+    alt: "Next.js logo"
   },
   {
     name: "Three.js",
     imageUrl: threeImg,
+    alt: "Three.js logo"
   },
   {
     name: "React-Three-Fiber",
     imageUrl: r3fImg,
+    alt: "React-Three-Fiber logo"
   },
   {
     name: "Zustand",
     imageUrl: zustandImg,
+    alt: "Zustand logo, a React state management tool"
   },
   {
     name: "Bootstrap",
     imageUrl: bootstrapImg,
+    alt: "Bootstrap logo"
   },
   {
     name: "Bulma",
     imageUrl: bulmaImg,
+    alt: "Bulma logo"
   },
   {
     name: "Tailwind CSS",
     imageUrl: tailwindImg,
+    alt: "Tailwind css logo"
   },
   {
     name: "GSAP",
     imageUrl: gsapImg,
+    alt: "GSAP logo"
   },
   {
     name: "Framer Motion",
     imageUrl: framerMotionImg,
+    alt: "Framer motion logo"
   },
   {
     name: "Node.js",
-    imageUrl: nodeImg
+    imageUrl: nodeImg,
+    alt: "Node.js logo"
   },
   {
     name: "Firebase",
-    imageUrl: firebaseImg
+    imageUrl: firebaseImg,
+    alt: "Google firebase logo"
   },
   {
     name: "PostgreSQL",
-    imageUrl: postgresqlImg
+    imageUrl: postgresqlImg,
+    alt: "Postgre sql logo"
   },
   {
     name: "Express.js",
-    imageUrl: expressImg
+    imageUrl: expressImg,
+    alt: "Express.js logo"
   },
   {
     name: "Axios",
-    imageUrl: axiosImg
+    imageUrl: axiosImg,
+    alt: "Axios logo"
   },
   {
     name: "Insomnia",
-    imageUrl: insomniaImg
+    imageUrl: insomniaImg,
+    alt: "Insomnia logo"
   },
 ]
 
 export const codingTools = [
   {
     name: "VS Codium",
-    imageUrl: vsImg
+    imageUrl: vsImg,
+    alt: "Visual studio codium logo"
   },
   {
     name: "Prettier",
-    imageUrl: prettierImg
+    imageUrl: prettierImg,
+    alt: "Pretter logo"
   },
   {
     name: "Git",
-    imageUrl: gitImg
+    imageUrl: gitImg,
+    alt: "Git logo"
   },
   {
     name: "Vite",
-    imageUrl: viteImg
+    imageUrl: viteImg,
+    alt: "Vite logo"
   },
   {
     name: "NPM",
-    imageUrl: npmImg
+    imageUrl: npmImg,
+    alt: "NPM logo"
   },
   {
     name: "PNPM",
-    imageUrl: pnpmImg
+    imageUrl: pnpmImg,
+    alt: "PNPM logo"
   },
 ]
 
 export const testingTools = [
   {
     name: "W3 Validator",
-    imageUrl: w3Img
+    imageUrl: w3Img,
+    alt: "W3 validator logo"
   },
   {
     name: "Wave Tool",
-    imageUrl: waveToolImg
+    imageUrl: waveToolImg,
+    alt: "Wave tool logo"
   },
   {
     name: "Lighthouse",
-    imageUrl: lighthouseImg
+    imageUrl: lighthouseImg,
+    alt: "Lighthouse testing tool logo"
   },
 ]
 
 export const designTools = [
   {
     name: "Figma",
-    imageUrl: figmaImg
+    imageUrl: figmaImg,
+    alt: "Figma logo"
   },
   {
     name: "Paint.NET",
-    imageUrl: paintNetImg
+    imageUrl: paintNetImg,
+    alt: "Paint.NET logo"
   },
 ]
 

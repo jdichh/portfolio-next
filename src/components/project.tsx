@@ -33,12 +33,12 @@ export default function Project({
         opacity: opacity,
       }}
     >
-      <section className="group overflow-hidden bg-[#1F1E26] rounded-sm relative hover:bg-[#282833] transition ease-in-out duration-150">
+      <section className="group overflow-hidden bg-[#1D1C23]  rounded-sm relative hover:bg-[#23222B] transition ease-in-out duration-150">
         <div className="flex flex-col py-6 pb-7 px-4 sm:px-8 md:max-w-[50%] xl:max-w-[55%] md:min-h-[18rem]">
           <h3 className="text-xl text-center sm:text-2xl sm:text-left text-[#6E99C4]">
             {name}
           </h3>
-          <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center sm:justify-start">
+          <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center sm:justify-start font-bold">
             {tools.map((tool, index) => (
               <li
                 key={index}
@@ -49,7 +49,7 @@ export default function Project({
             ))}
           </ul>
           <p className="opacity-90 leading-relaxed">{description}</p>
-          <ul className="flex flex-wrap gap-2 mt-8 justify-center sm:justify-start">
+          <div className="flex flex-wrap gap-2 mt-8 justify-center sm:justify-start font-medium">
             <a
               href={githubLink.toString()}
               target="_blank"
@@ -66,7 +66,7 @@ export default function Project({
             >
               Demo
             </a>
-          </ul>
+          </div>
         </div>
         <Image
           src={imageUrl}
