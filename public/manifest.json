@@ -1,0 +1,14 @@
+{
+  "name": "Jason Dichoso | Portfolio",
+  "background_color": "#19181E",
+  "theme_color": "#6e99c4",
+  "display": "standalone",
+  "icons": [
+    {
+        "src": "./maskable_icon.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+    }
+  ]
+}
