@@ -255,7 +255,7 @@ export const projects = [
   {
     name: "Quote Generator",
     description:
-      "A quote generator that I made to get back into the flow of learning React after spending time away for 3D projects.",
+      "A quote generator that I made to get back into the flow of learning React after spending time away making 3D projects.",
     tools: ["React.js", "SCSS"],
     imageUrl: quoteGen,
     liveLink: ["https://originalquotegenerator.netlify.app/"],
@@ -273,7 +273,7 @@ export const projects = [
   {
     name: "Khronomechanica Vintora",
     description:
-      "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model for a product website.",
+      "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model in a product website.",
     tools: ["PC Recommended", "Three.js", "GSAP", "SCSS"],
     imageUrl: vintora,
     liveLink: ["https://steampunkwatch.netlify.app/"],
