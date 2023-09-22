@@ -23,12 +23,25 @@ export default function About() {
       </p>
       <p className="mb-3">
         When I'm not creating projects, I enjoy running, playing my beloved
-        electric guitar, or just discovering more web technologies, as well as good
-        development practices, and apply them to my projects.
+        electric guitar, or just discovering more web technologies, as well as
+        good development practices, and apply them to my projects.
       </p>
       {/* I'll use GitHub API soon. */}
-      <p className="mb-3"> 
-        Currently, I'm trying to learn the basics of automated testing with <span className="text-[#6E99C4]">Jest</span> and <span className="text-[#6E99C4]">React-Testing-Library</span> on my portfolio, which you can see <a href="https://github.com/jdichh/portfolio-next-TESTING/tree/main/__test__" target="_blank"><span className="text-[#6E99C4] underline underline-offset-4 hover:text-[#E9E9E9] transition ease-in-out duration-150">here</span></a>.
+      <p className="mb-3">
+        Currently, I'm trying to learn the basics of automated testing with{" "}
+        <span className="text-[#6E99C4]">Jest</span> and{" "}
+        <span className="text-[#6E99C4]">React-Testing-Library</span> on my
+        portfolio, which you can see in this{" "}
+        <a
+          href="https://github.com/jdichh/portfolio-next-TESTING/tree/main/__test__"
+          target="_blank"
+          aria-label="Button to the GitHub repo where I'm trying to practice automated testing with jest and react-testing library"
+        >
+          <span className="text-[#6E99C4] underline underline-offset-4 hover:text-[#E9E9E9] transition ease-in-out duration-150">
+            GitHub repo
+          </span>
+        </a>
+        .
       </p>
     </motion.section>
   );
