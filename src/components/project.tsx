@@ -38,7 +38,7 @@ export default function Project({
           <h3 className="text-xl text-center sm:text-2xl sm:text-left text-[#E9E9E9] font-bold">
             {name}
           </h3>
-          <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center sm:justify-start font-medium">
+          <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center sm:justify-start font-semibold">
             {tools.map((tool, index) => (
               <li
                 key={index}
