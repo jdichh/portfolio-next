@@ -28,7 +28,7 @@ export default function About() {
       </p>
       {/* I'll use GitHub API soon. */}
       <p className="mb-3"> 
-        Currently, I'm trying to learn Jest and React-Testing-Library on my portfolio, which you can see <a href="https://github.com/jdichh/portfolio-next-TESTING/tree/main/__test__" target="_blank"><span className="text-[#6E99C4] underline underline-offset-4 hover:text-[#E9E9E9] transition ease-in-out duration-150">here</span></a>.
+        Currently, I'm trying to learn the basics of automated testing with <span className="text-[#6E99C4]">Jest</span> and <span className="text-[#6E99C4]">React-Testing-Library</span> on my portfolio, which you can see <a href="https://github.com/jdichh/portfolio-next-TESTING/tree/main/__test__" target="_blank"><span className="text-[#6E99C4] underline underline-offset-4 hover:text-[#E9E9E9] transition ease-in-out duration-150">here</span></a>.
       </p>
     </motion.section>
   );
