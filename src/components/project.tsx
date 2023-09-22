@@ -54,7 +54,7 @@ export default function Project({
               href={githubLink.toString()}
               target="_blank"
               aria-label="GitHub repository of the project."
-              className="bg-[#6E99C4] hover:bg-[#E9E9E9] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
+              className="bg-[#E9E9E9] hover:bg-[#6E99C4] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
             >
               GitHub
             </a>
@@ -62,7 +62,7 @@ export default function Project({
               href={liveLink.toString()}
               target="_blank"
               aria-label="Live demo of the project."
-              className="bg-[#6E99C4] hover:bg-[#E9E9E9] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
+              className="bg-[#E9E9E9] hover:bg-[#6E99C4] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
             >
               Demo
             </a>
