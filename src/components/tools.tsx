@@ -20,7 +20,7 @@ export default function Tools() {
       animate={{ y: 0, opacity: 1 }}
     >
       <SectionHeading>Web Technologies</SectionHeading>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 mb-24">
+      <ul className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-6 mb-24">
         {webTechTools.map((tool, index) => (
           <li
             key={index}
@@ -39,7 +39,7 @@ export default function Tools() {
       </ul>
 
       <SectionHeading>Coding</SectionHeading>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 mb-24">
+      <ul className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-6 mb-24">
         {codingTools.map((tool, index) => (
           <li
             key={index}
@@ -58,7 +58,7 @@ export default function Tools() {
       </ul>
 
       <SectionHeading>Testing</SectionHeading>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 mb-24">
+      <ul className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-6 mb-24">
         {testingTools.map((tool, index) => (
           <li
             key={index}
@@ -77,7 +77,7 @@ export default function Tools() {
       </ul>
 
       <SectionHeading>Design</SectionHeading>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+      <ul className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-6">
         {designTools.map((tool, index) => (
           <li
             key={index}
