@@ -274,7 +274,7 @@ export const projects = [
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model for a product website.",
-    tools: ["PC Recommended", "Three.js", "GSAP"],
+    tools: ["PC Recommended", "Three.js", "GSAP", "SCSS"],
     imageUrl: vintora,
     liveLink: ["https://steampunkwatch.netlify.app/"],
     githubLink: ["https://github.com/jdichh/steampunk-watch"],
@@ -318,7 +318,7 @@ export const projects = [
     name: "Random Password Generator Extension",
     description:
       "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
-    tools: ["JavaScript"],
+    tools: ["JavaScript", "SCSS"],
     imageUrl: passwordGen,
     liveLink: ["https://youtu.be/pq-EsJa1plw"],
     githubLink: ["https://github.com/jdichh/password-generator"],
