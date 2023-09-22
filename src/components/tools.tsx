@@ -24,7 +24,7 @@ export default function Tools() {
         {webTechTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6"
+            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6 rounded-sm"
           >
             <Image
               src={tool.imageUrl}
@@ -43,7 +43,7 @@ export default function Tools() {
         {codingTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6"
+            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6 rounded-sm"
           >
             <Image
               src={tool.imageUrl}
@@ -62,7 +62,7 @@ export default function Tools() {
         {testingTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6"
+            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6 rounded-sm"
           >
             <Image
               src={tool.imageUrl}
@@ -81,7 +81,7 @@ export default function Tools() {
         {designTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6"
+            className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6 rounded-sm"
           >
             <Image
               src={tool.imageUrl}
