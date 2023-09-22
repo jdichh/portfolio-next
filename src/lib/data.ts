@@ -283,7 +283,7 @@ export const projects = [
     name: "Virtual Car Showroom",
     description:
       "A 3D virtual car showroom mainly inspired by Gran Turismo Sport.",
-    tools: ["PC Recommended", "React-Three-Fiber", "SCSS"],
+    tools: ["PC Required", "React-Three-Fiber", "SCSS"],
     imageUrl: showroom,
     liveLink: ["https://gtshowroom.netlify.app/"],
     githubLink: ["https://github.com/jdichh/car-showroom-r3f/"],
@@ -292,7 +292,7 @@ export const projects = [
     name: "Synthwave Scene",
     description:
       "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
-    tools: ["React.js", "Three.js"],
+    tools: ["PC Recommended", "React.js", "Three.js"],
     imageUrl: synthwave,
     liveLink: ["https://jdsynthwave.netlify.app/"],
     githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"],
