@@ -265,7 +265,7 @@ export const projects = [
     name: "Galaxy Overview",
     description:
       "A 3D overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
-    tools: ["React-Three-Fiber"],
+    tools: ["PC Recommended", "React-Three-Fiber"],
     imageUrl: galaxy,
     liveLink: ["https://jdgalaxy.netlify.app/"],
     githubLink: ["https://github.com/jdichh/galaxy-map"],
@@ -274,7 +274,7 @@ export const projects = [
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model for a product website.",
-    tools: ["Three.js", "GSAP"],
+    tools: ["PC Recommended", "Three.js", "GSAP"],
     imageUrl: vintora,
     liveLink: ["https://steampunkwatch.netlify.app/"],
     githubLink: ["https://github.com/jdichh/steampunk-watch"],
@@ -282,8 +282,8 @@ export const projects = [
   {
     name: "Virtual Car Showroom",
     description:
-      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. Do NOT run it on mobile devices as it performs poorly compared to modern PCs.",
-    tools: ["React-Three-Fiber", "SCSS"],
+      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport.",
+    tools: ["PC Recommended", "React-Three-Fiber", "SCSS"],
     imageUrl: showroom,
     liveLink: ["https://gtshowroom.netlify.app/"],
     githubLink: ["https://github.com/jdichh/car-showroom-r3f/"],
@@ -309,7 +309,7 @@ export const projects = [
     name: "Asteroids Game",
     description:
       "The Asteroids game from Atari, but with my own modifications to it.",
-    tools: ["JavaScript"],
+    tools: ["Unplayable on Mobile", "JavaScript"],
     imageUrl: asteroids,
     liveLink: ["https://jdasteroids.netlify.app/"],
     githubLink: ["https://github.com/jdichh/asteroids"],
