@@ -26,6 +26,10 @@ export default function About() {
         electric guitar, or just discovering more web technologies, as well as good
         development practices, and apply them to my projects.
       </p>
+      {/* I'll use GitHub API soon. */}
+      <p className="mb-3"> 
+        Currently, I'm trying to learn Jest and React-Testing-Library on my portfolio, which you can see <a href="https://github.com/jdichh/portfolio-next-TESTING/tree/main/__test__" target="_blank"><span className="text-[#6E99C4] underline underline-offset-4 hover:text-[#E9E9E9] transition ease-in-out duration-150">here</span></a>.
+      </p>
     </motion.section>
   );
 }
