@@ -3,47 +3,53 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
-import { mainTools, codingTools, testingTools, designTools } from "@/lib/data";
+import { webTechTools, codingTools, testingTools, designTools } from "@/lib/data";
+import Image from "next/image";
 
 export default function Tools() {
   return (
     <motion.section
-      className="px-6 w-full lg:w-10/12 xl:w-9/12 mb-24"
+      className="px-6 w-full lg:w-10/12 xl:w-9/12 mb-24 scroll-mt-[2rem] md:scroll-mt-7 lg:scroll-mt-18 xl:scroll-mt-20"
+      id="tools"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
-      <SectionHeading>Main Tools</SectionHeading>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
-        {mainTools.map((mainTool) => (
-          <li key={mainTool.id} className="flex text-[#E9E9E9] text-center">
-            {mainTool.name}
+      <SectionHeading>Web Technologies</SectionHeading>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 mb-24">
+        {webTechTools.map((tool, index) => (
+          <li key={index} className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6">
+            <Image src={tool.imageUrl} alt={tool.name} height={45} width={45} className="mb-2"/>
+            {tool.name}
           </li>
         ))}
       </div>
 
-      <SectionHeading>Coding Tools</SectionHeading>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
-        {codingTools.map((codingTool) => (
-          <li key={codingTool.id} className="flex text-[#E9E9E9] text-center">
-            {codingTool.name}
+      <SectionHeading>Coding</SectionHeading>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 mb-24">
+        {codingTools.map((tool, index) => (
+          <li key={index} className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6">
+            <Image src={tool.imageUrl} alt={tool.name} height={45} width={45} className="mb-2"/>
+            {tool.name}
           </li>
         ))}
       </div>
 
-      <SectionHeading>Testing Tools</SectionHeading>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
-        {testingTools.map((testingTool) => (
-          <li key={testingTool.id} className="flex text-[#E9E9E9] text-center">
-            {testingTool.name}
+      <SectionHeading>Testing</SectionHeading>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 mb-24">
+        {testingTools.map((tool, index) => (
+          <li key={index} className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6">
+            <Image src={tool.imageUrl} alt={tool.name} height={45} width={45} className="mb-2"/>
+            {tool.name}
           </li>
         ))}
       </div>
 
-      <SectionHeading>Design Tools</SectionHeading>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 mb-24">
-        {designTools.map((designTool) => (
-          <li key={designTool.id} className="flex text-[#E9E9E9] text-center">
-            {designTool.name}
+      <SectionHeading>Design</SectionHeading>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+        {designTools.map((tool, index) => (
+          <li key={index} className="flex flex-col text-[#E9E9E9] text-center outline outline-1 outline-[#6E99C4] items-center m-1 p-6">
+            <Image src={tool.imageUrl} alt={tool.name} height={45} width={45} className="mb-2"/>
+            {tool.name}
           </li>
         ))}
       </div>

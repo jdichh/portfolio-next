@@ -51,20 +51,20 @@ export default function Project({
           <p className="opacity-90 leading-relaxed">{description}</p>
           <ul className="flex flex-wrap gap-2 mt-8 justify-center sm:justify-start">
             <a
-              href={liveLink.toString()}
-              target="_blank"
-              aria-label="Live demo of the project."
-              className="bg-[#6E99C4] hover:bg-[#E9E9E9] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
-            >
-              Demo
-            </a>
-            <a
               href={githubLink.toString()}
               target="_blank"
               aria-label="GitHub repository of the project."
               className="bg-[#6E99C4] hover:bg-[#E9E9E9] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
             >
               GitHub
+            </a>
+            <a
+              href={liveLink.toString()}
+              target="_blank"
+              aria-label="Live demo of the project."
+              className="bg-[#6E99C4] hover:bg-[#E9E9E9] px-6 sm:px-3 text-[#1F1E26] rounded-sm transition ease-in-out duration-150 hover:scale-[1.05]"
+            >
+              Demo
             </a>
           </ul>
         </div>

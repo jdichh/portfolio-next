@@ -1,17 +1,56 @@
-import galaxy from "../../public/project/galaxy.png"
-import vintora from "../../public/project/vintora.png"
-import showroom from "../../public/project/showroom.png"
-import synthwave from "../../public/project/synthwave.png"
-import asteroids from "../../public/project/asteroids.png"
-import passwordGen from "../../public/project/password.png"
-import ssu from "../../public/project/ssu.png"
-import pern from "../../public/project/pern.png"
-import tictactoe from "../../public/project/tictactoe.png"
-import quoteGen from "../../public/project/quote.png"
-import traderView from "../../public/project/traderview.png"
-import weatherApp from "../../public/project/weather.png"
-import chatbot from "../../public/project/chatbot.png"
-import htmlImg from "../../public/tools/html.png"
+// projects
+import galaxy from "../../public/project/galaxy.png";
+import vintora from "../../public/project/vintora.png";
+import showroom from "../../public/project/showroom.png";
+import synthwave from "../../public/project/synthwave.png";
+import asteroids from "../../public/project/asteroids.png";
+import passwordGen from "../../public/project/password.png";
+import ssu from "../../public/project/ssu.png";
+import pern from "../../public/project/pern.png";
+import tictactoe from "../../public/project/tictactoe.png";
+import quoteGen from "../../public/project/quote.png";
+import traderView from "../../public/project/traderview.png";
+import weatherApp from "../../public/project/weather.png";
+import chatbot from "../../public/project/chatbot.png";
+
+// web tech
+import htmlImg from "../../public/tools/html.svg";
+import cssImg from "../../public/tools/css.svg";
+import scssImg from "../../public/tools/scss.svg";
+import jsImg from "../../public/tools/js.svg";
+import reactImg from "../../public/tools/react.svg";
+import nextImg from "../../public/tools/next.svg";
+import threeImg from "../../public/tools/three.svg";
+import r3fImg from "../../public/tools/r3f.svg";
+import zustandImg from "../../public/tools/zustand.svg";
+import bootstrapImg from "../../public/tools/bootstrap.svg";
+import bulmaImg from "../../public/tools/bulma.svg";
+import tailwindImg from "../../public/tools/tailwind.svg";
+import gsapImg from "../../public/tools/gsap.svg";
+import framerMotionImg from "../../public/tools/framermotion.svg";
+import firebaseImg from "../../public/tools/firebase.svg";
+import postgresqlImg from "../../public/tools/postgresql.svg";
+import expressImg from "../../public/tools/express.svg";
+import axiosImg from "../../public/tools/axios.svg";
+import insomniaImg from "../../public/tools/insomnia.svg";
+
+// coding
+import vsImg from "../../public/tools/vs.svg";
+import prettierImg from "../../public/tools/prettier.svg";
+import gitImg from "../../public/tools/git.svg";
+import viteImg from "../../public/tools/vite.svg";
+import npmImg from "../../public/tools/npm.svg";
+import pnpmImg from "../../public/tools/pnpm.svg";
+import nodeImg from "../../public/tools/node.svg";
+
+// testing
+import w3Img from "../../public/tools/w3.svg";
+import waveToolImg from "../../public/tools/wavetool.svg";
+import lighthouseImg from "../../public/tools/lighthouse.svg";
+
+// design
+import figmaImg from "../../public/tools/figma.svg";
+import paintNetImg from "../../public/tools/paint.svg";
 
 export const links = [
   {
@@ -26,150 +65,152 @@ export const links = [
     name: "Projects",
     hash: "#projects",
   },
-] as const;
+]
 
-export const mainTools = [
+export const webTechTools = [
   {
-    id: 1,
     name: "HTML",
-    imageUrl: htmlImg
+    imageUrl: htmlImg,
   },
   {
-    id: 2,
     name: "CSS",
+    imageUrl: cssImg,
   },
   {
-    id: 3,
     name: "SCSS",
+    imageUrl: scssImg,
   },
   {
-    id: 4,
     name: "JavaScript",
+    imageUrl: jsImg,
   },
   {
-    id: 5,
     name: "React.js",
+    imageUrl: reactImg,
   },
   {
-    id: 6,
-    name: "Next.js"
+    name: "Next.js",
+    imageUrl: nextImg,
   },
   {
-    id: 7,
     name: "Three.js",
+    imageUrl: threeImg,
   },
   {
-    id: 8,
     name: "React-Three-Fiber",
+    imageUrl: r3fImg,
   },
   {
-    id: 9,
     name: "Zustand",
+    imageUrl: zustandImg,
   },
   {
-    id: 10,
     name: "Bootstrap",
+    imageUrl: bootstrapImg,
   },
   {
-    id: 11,
     name: "Bulma",
+    imageUrl: bulmaImg,
   },
   {
-    id: 12,
     name: "Tailwind CSS",
+    imageUrl: tailwindImg,
   },
   {
-    id: 13,
     name: "GSAP",
+    imageUrl: gsapImg,
   },
   {
-    id: 14,
-    name: "Firebase",
+    name: "Framer Motion",
+    imageUrl: framerMotionImg,
   },
   {
-    id: 15,
-    name: "PostgreSQL",
-  },
-  {
-    id: 16,
-    name: "Express.js",
-  },
-  {
-    id: 17,
-    name: "Axios",
-  },
-  {
-    id: 18,
     name: "Node.js",
+    imageUrl: nodeImg
   },
   {
-    id: 19,
-    name: "Insomnia",
+    name: "Firebase",
+    imageUrl: firebaseImg
   },
-];
+  {
+    name: "PostgreSQL",
+    imageUrl: postgresqlImg
+  },
+  {
+    name: "Express.js",
+    imageUrl: expressImg
+  },
+  {
+    name: "Axios",
+    imageUrl: axiosImg
+  },
+  {
+    name: "Insomnia",
+    imageUrl: insomniaImg
+  },
+]
 
 export const codingTools = [
   {
-    id: 1,
     name: "VS Codium",
+    imageUrl: vsImg
   },
   {
-    id: 2,
     name: "Prettier",
+    imageUrl: prettierImg
   },
   {
-    id: 3,
     name: "Git",
+    imageUrl: gitImg
   },
   {
-    id: 4,
     name: "Vite",
+    imageUrl: viteImg
   },
   {
-    id: 5,
     name: "NPM",
+    imageUrl: npmImg
   },
   {
-    id: 6,
     name: "PNPM",
+    imageUrl: pnpmImg
   },
-];
+]
 
 export const testingTools = [
   {
-    id: 1,
     name: "W3 Validator",
+    imageUrl: w3Img
   },
   {
-    id: 2,
     name: "Wave Tool",
+    imageUrl: waveToolImg
   },
   {
-    id: 3,
     name: "Lighthouse",
+    imageUrl: lighthouseImg
   },
-];
+]
 
 export const designTools = [
   {
-    id: 1,
     name: "Figma",
+    imageUrl: figmaImg
   },
   {
-    id: 2,
     name: "Paint.NET",
+    imageUrl: paintNetImg
   },
-];
+]
 
 export const projects = [
   {
     name: "To-do App",
-    description:
-      "A to-do app with pagination.",
+    description: "A to-do app with pagination.",
     tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
     imageUrl: pern,
     liveLink: ["https://youtu.be/kRmF8umtA5M"],
-    githubLink: ["https://github.com/jdichh/pern-practice"]
+    githubLink: ["https://github.com/jdichh/pern-practice"],
   },
   {
     name: "Tic-Tac-Toe",
@@ -178,7 +219,7 @@ export const projects = [
     tools: ["Svelte", "SCSS"],
     imageUrl: tictactoe,
     liveLink: ["https://tictacsvelte.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/tic-tac-toe-svelte"] 
+    githubLink: ["https://github.com/jdichh/tic-tac-toe-svelte"],
   },
   {
     name: "Quote Generator",
@@ -187,7 +228,7 @@ export const projects = [
     tools: ["React.js", "SCSS"],
     imageUrl: quoteGen,
     liveLink: ["https://originalquotegenerator.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/quote-gen-react"]
+    githubLink: ["https://github.com/jdichh/quote-gen-react"],
   },
   {
     name: "Galaxy Overview",
@@ -196,7 +237,7 @@ export const projects = [
     tools: ["React-Three-Fiber"],
     imageUrl: galaxy,
     liveLink: ["https://jdgalaxy.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/galaxy-map"]
+    githubLink: ["https://github.com/jdichh/galaxy-map"],
   },
   {
     name: "Khronomechanica Vintora",
@@ -205,7 +246,7 @@ export const projects = [
     tools: ["Three.js", "GSAP"],
     imageUrl: vintora,
     liveLink: ["https://steampunkwatch.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/steampunk-watch"]
+    githubLink: ["https://github.com/jdichh/steampunk-watch"],
   },
   {
     name: "Virtual Car Showroom",
@@ -214,7 +255,7 @@ export const projects = [
     tools: ["React-Three-Fiber", "SCSS"],
     imageUrl: showroom,
     liveLink: ["https://gtshowroom.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/car-showroom-r3f/"]
+    githubLink: ["https://github.com/jdichh/car-showroom-r3f/"],
   },
   {
     name: "Synthwave Scene",
@@ -223,7 +264,7 @@ export const projects = [
     tools: ["React.js", "Three.js"],
     imageUrl: synthwave,
     liveLink: ["https://jdsynthwave.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"]
+    githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"],
   },
   {
     name: "Obligatory Weather App",
@@ -231,7 +272,7 @@ export const projects = [
     tools: ["React.js", "Zustand", "Axios"],
     imageUrl: weatherApp,
     liveLink: ["https://obligatoryweatherapp.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/obligatory-weather-app-react"]
+    githubLink: ["https://github.com/jdichh/obligatory-weather-app-react"],
   },
   {
     name: "Asteroids Game",
@@ -240,7 +281,7 @@ export const projects = [
     tools: ["JavaScript"],
     imageUrl: asteroids,
     liveLink: ["https://jdasteroids.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/asteroids"]
+    githubLink: ["https://github.com/jdichh/asteroids"],
   },
   {
     name: "Random Password Generator Extension",
@@ -249,7 +290,7 @@ export const projects = [
     tools: ["JavaScript"],
     imageUrl: passwordGen,
     liveLink: ["https://youtu.be/pq-EsJa1plw"],
-    githubLink: ["https://github.com/jdichh/password-generator"]
+    githubLink: ["https://github.com/jdichh/password-generator"],
   },
   {
     name: "All-Knowing Bot",
@@ -257,7 +298,7 @@ export const projects = [
     tools: ["JavaScript", "SCSS"],
     imageUrl: chatbot,
     liveLink: ["https://allknowingbot.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/all-knowing-bot"]
+    githubLink: ["https://github.com/jdichh/all-knowing-bot"],
   },
   {
     name: "TraderView",
@@ -265,7 +306,7 @@ export const projects = [
     tools: ["JavaScript", "SCSS"],
     imageUrl: traderView,
     liveLink: ["https://jdichhtradingview.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/tradingviewAPI-practice"]
+    githubLink: ["https://github.com/jdichh/tradingviewAPI-practice"],
   },
   {
     name: "Security Unit Web Portal",
@@ -274,6 +315,6 @@ export const projects = [
     tools: ["Vue.js", "Bootstrap", "Firebase"],
     imageUrl: ssu,
     liveLink: ["https://ssuwebsystem.netlify.app"],
-    githubLink: ["https://github.com/jdichh/websystem_ssu2"]
+    githubLink: ["https://github.com/jdichh/websystem_ssu2"],
   },
-] as const;
+]
