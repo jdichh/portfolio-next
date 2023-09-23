@@ -359,7 +359,7 @@ export const projects = [
     name: " Alternative Horizon XS Radio",
     description:
       "An alternative version to the Horizon XS in-game radio in Forza Horizon 5. The original version of the radio left a bad taste in my mouth.",
-    tools: ["Not Web Dev Related", "Miscellaneous Project"],
+    tools: ["Miscellaneous Project"],
     imageUrl: horizonxs,
     nexusModsLink: "https://www.nexusmods.com/forzahorizon5/mods/65"
   },
