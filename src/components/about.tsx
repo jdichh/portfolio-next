@@ -14,37 +14,41 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
         I am a fresh IT graduate of Colegio de San Juan de Letran-Calamba in the
-        Philippines, and my goal for now is to be a{" "}
-        <span className="text-[#6E99C4]">proficient front-end developer</span>.
-        And down the line, I'll branch out more to{" "}
-        <span className="text-[#6E99C4]">back-end development</span> to be a
-        well-rounded,
-        <span className="text-[#6E99C4]"> full-stack developer</span>.
+        Philippines, but I started my self-learning journey back in June 2023.
+        Since then, I've discovered that I really{" "}
+        <span className="text-[#6E99C4] font-medium">love learning</span>{" "}
+        various web technologies, and when I get to scratch the surface of what
+        a piece of software can be capable of, I get all{" "}
+        <span className="text-[#6E99C4] font-medium">giddy and excited</span>.
       </p>
       <p className="mb-6">
         When I'm not creating projects, I enjoy running, playing my beloved
-        electric guitar, or just discovering more web technologies as well as
+        electric guitar, tinkering with computers, or just discovering more web technologies as well as
         good development practices, and try to apply them to my projects.
       </p>
       {/* I'll use GitHub API soon. */}
       <p className="mb-6">
         Currently, I'm trying to learn the basics of automated testing with{" "}
-        <span className="text-[#6E99C4]">Jest</span> and{" "}
-        <span className="text-[#6E99C4]">React-Testing-Library</span> on my
+        <span className="text-[#6E99C4] font-medium">Jest</span> and{" "}
+        <span className="text-[#6E99C4] font-medium">React-Testing-Library</span> on my
         portfolio, which you can see in this{" "}
         <a
           href="https://github.com/jdichh/portfolio-next-TESTING/tree/main/__test__"
           target="_blank"
           aria-label="Button to the GitHub repo where I'm trying to practice automated testing with jest and react-testing library"
         >
-          <span className="text-[#6E99C4] underline underline-offset-4 hover:text-[#DADADA] transition ease-in-out duration-100">
+          <span className="text-[#6E99C4] font-medium underline underline-offset-4 hover:text-[#DADADA] transition ease-in-out duration-100">
             GitHub repo
           </span>
         </a>
         .
       </p>
       <p className="mb-6">
-        I'm a big fan of question-driven development, by the way.
+        I'm a big fan of{" "}
+        <span className="text-[#6E99C4] font-medium">
+          question-driven development
+        </span>
+        , by the way.
       </p>
     </motion.section>
   );
