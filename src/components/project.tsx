@@ -17,6 +17,7 @@ export default function Project({
   videoLink,
   devFootage,
   oldVersion,
+  nexusModsLink
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -37,7 +38,7 @@ export default function Project({
       }}
     >
       <article className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100">
-        <div className="flex flex-col py-6 px-4 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[16rem]">
+        <div className="flex flex-col py-6 px-4 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <h3 className="text-xl text-center sm:text-2xl sm:text-left text-[#DADADA] font-bold">
             {name}
           </h3>
@@ -101,6 +102,16 @@ export default function Project({
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px- py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03] sm"
               >
                 Old Version
+              </a>
+            )}
+            {nexusModsLink && (
+              <a
+                href={nexusModsLink.toString()}
+                target="_blank"
+                aria-label="The NexusMods page of the project."
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px- py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03] sm"
+              >
+                NexusMods
               </a>
             )}
           </div>

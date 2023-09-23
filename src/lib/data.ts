@@ -12,6 +12,7 @@ import quoteGen from "../../public/project/quote.png";
 import traderView from "../../public/project/traderview.png";
 import weatherApp from "../../public/project/weather.png";
 import chatbot from "../../public/project/chatbot.png";
+import horizonxs from "../../public/project/horizonxs.webp"
 
 // web tech
 import htmlImg from "../../public/tools/html.svg";
@@ -312,7 +313,7 @@ export const projects = [
     githubLink: "https://github.com/jdichh/all-knowing-bot",
   },
   {
-    name: "Another To-do App",
+    name: "Another To-Do App",
     description: "A to-do app but with pagination.",
     tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
     imageUrl: pern,
@@ -353,5 +354,13 @@ export const projects = [
     liveLink: "https://ssuwebsystem.netlify.app",
     videoLink: "https://youtu.be/vkYClk75SS0",
     githubLink: "https://github.com/jdichh/websystem_ssu2",
+  },
+  {
+    name: " Alternative Horizon XS Radio",
+    description:
+      "An alternative version to the Horizon XS in-game radio in Forza Horizon 5. The original version of the radio left a bad taste in my mouth.",
+    tools: ["Not Web Dev Related", "Miscellaneous Project"],
+    imageUrl: horizonxs,
+    nexusModsLink: "https://www.nexusmods.com/forzahorizon5/mods/65"
   },
 ]
