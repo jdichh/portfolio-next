@@ -27,7 +27,7 @@ export default function Hero() {
           <a
             href="https://github.com/jdichh/"
             target="_blank"
-            className="transition duration-100 ease-in-out rounded-sm hover:bg-[#6E99C4]"
+            className="transition duration-100 ease-in-out rounded-sm hover:bg-[#6E99C4] hover:scale-[1.03]"
             aria-label="Button to my GitHub profile"
           >
             <Image
@@ -42,7 +42,7 @@ export default function Hero() {
           <a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
-            className="transition duration-100 ease-in-out rounded-sm hover:bg-[#6E99C4]"
+            className="transition duration-100 ease-in-out rounded-sm hover:bg-[#6E99C4] hover:scale-[1.03]"
             aria-label="Button to my LinkedIn profile"
           >
             <Image
@@ -57,7 +57,7 @@ export default function Hero() {
           <a
             href="/documents/resume.pdf"
             target="_blank"
-            className="transition duration-100 ease-in-out rounded-sm hover:bg-[#6E99C4]"
+            className="transition duration-100 ease-in-out rounded-sm hover:bg-[#6E99C4] hover:scale-[1.03]"
             aria-label="Button to my Resume document"
           >
             <Image
