@@ -1,9 +1,9 @@
 // projects
 import galaxy from "../../public/project/galaxy.png";
-import vintora from "../../public/project/vintora.png";
-import showroom from "../../public/project/showroom.png";
-import synthwave from "../../public/project/synthwave.png";
-import asteroids from "../../public/project/asteroids.png";
+import vintora from "../../public/project/vintora.gif";
+import showroom from "../../public/project/showroom.gif";
+import synthwave from "../../public/project/synthwave.gif";
+import asteroids from "../../public/project/asteroids.gif";
 import passwordGen from "../../public/project/password.png";
 import ssu from "../../public/project/ssu.png";
 import pern from "../../public/project/pern.png";
