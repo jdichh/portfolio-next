@@ -20,7 +20,7 @@ export default function RootLayout({
     <link rel="manifest" href="/pwa/manifest.json" />
     <meta name="theme-color" content="#6e99c4"/>
       <body
-        className={`${spaceGrotesk.className} bg-[#19181E] text-[#E9E9E9] relative max-w-[1920px] my-0 mx-auto pt-32 lg:pt-40`}
+        className={`${spaceGrotesk.className} bg-[#19181E] text-[#DADADA] relative max-w-[1920px] my-0 mx-auto pt-32 lg:pt-40`}
       >
         <Header />
         {children}

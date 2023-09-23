@@ -7,7 +7,7 @@ import asteroids from "../../public/project/asteroids.gif";
 import passwordGen from "../../public/project/password.png";
 import ssu from "../../public/project/ssu.png";
 import pern from "../../public/project/pern.png";
-import tictactoe from "../../public/project/tictactoe.png";
+import portfolio from "../../public/project/portfolio.png";
 import quoteGen from "../../public/project/quote.png";
 import traderView from "../../public/project/traderview.png";
 import weatherApp from "../../public/project/weather.png";
@@ -236,49 +236,63 @@ export const designTools = [
 
 export const projects = [
   {
+    name: "This Portfolio",
+    description:
+      "What you're looking at right now. This is the new version of my portfolio that I designed myself. The initial version was made with HTML, SCSS and JS only, but I figured that I should learn Next.js by recreating it.",
+    tools: ["Next.js 13", "TypeScript", "Framer Motion", "PWA Optimized", "Recommended on PC"],
+    imageUrl: portfolio,
+    githubLink: "https://github.com/jdichh/portfolio-next",
+    oldVersion: "https://jdichh.netlify.app"
+  },
+  {
     name: "Virtual Car Showroom",
     description:
       "A 3D virtual car showroom mainly inspired by Gran Turismo Sport.",
     tools: ["PC Required", "React-Three-Fiber", "SCSS"],
     imageUrl: showroom,
-    liveLink: ["https://gtshowroom.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/car-showroom-r3f/"],
+    liveLink: "https://gtshowroom.netlify.app/",
+    githubLink: "https://github.com/jdichh/car-showroom-r3f/",
+    videoLink: "https://www.youtube.com/watch?v=PhjlgLxL-Zg",
+    devFootage: "https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing",
   },
   {
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model in a product website.",
-    tools: ["PC Recommended", "Three.js", "GSAP", "SCSS"],
+    tools: ["Recommended on PC", "Three.js", "GSAP", "SCSS"],
     imageUrl: vintora,
-    liveLink: ["https://steampunkwatch.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/steampunk-watch"],
+    liveLink: "https://steampunkwatch.netlify.app/",
+    githubLink: "https://github.com/jdichh/steampunk-watch",
+    devFootage: "https://drive.google.com/drive/folders/1Cch-eDcga3LYIGnze3uUez6lN5RWrRtv?usp=sharing",
   },
   {
     name: "Synthwave Scene",
     description:
       "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
-    tools: ["PC Recommended", "React.js", "Three.js"],
+    tools: ["Recommended on PC", "React.js", "Three.js"],
     imageUrl: synthwave,
-    liveLink: ["https://jdsynthwave.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"],
+    liveLink: "https://jdsynthwave.netlify.app/",
+    githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
+    devFootage: "https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
   },
   {
     name: "Asteroids Game",
     description:
       "The Asteroids game from Atari, but with my own modifications to it.",
-    tools: ["Unplayable on Mobile", "JavaScript"],
+    tools: ["Unplayable on Mobile", "PC Required", "JavaScript"],
     imageUrl: asteroids,
-    liveLink: ["https://jdasteroids.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/asteroids"],
+    liveLink: "https://jdasteroids.netlify.app/",
+    githubLink: "https://github.com/jdichh/asteroids",
   },
   {
     name: "Galaxy Overview",
     description:
       "A 3D overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
-    tools: ["PC Recommended", "React-Three-Fiber"],
+    tools: ["Recommended on PC", "React-Three-Fiber"],
     imageUrl: galaxy,
-    liveLink: ["https://jdgalaxy.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/galaxy-map"],
+    liveLink: "https://jdgalaxy.netlify.app/",
+    githubLink: "https://github.com/jdichh/galaxy-map",
+    devFootage: "https://drive.google.com/drive/folders/1jxwLoiLTJ8YCxAhwNnbEtwGzTRTNKw2P?usp=sharing"
   },
   {
     name: "Random Password Generator Extension",
@@ -286,24 +300,24 @@ export const projects = [
       "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
     tools: ["JavaScript", "SCSS"],
     imageUrl: passwordGen,
-    liveLink: ["https://youtu.be/pq-EsJa1plw"],
-    githubLink: ["https://github.com/jdichh/password-generator"],
+    videoLink: "https://youtu.be/pq-EsJa1plw",
+    githubLink: "https://github.com/jdichh/password-generator",
   },
   {
     name: "All-Knowing Bot",
     description: "A chat website that uses LemurBot from Lemur Engine.",
     tools: ["JavaScript", "SCSS"],
     imageUrl: chatbot,
-    liveLink: ["https://allknowingbot.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/all-knowing-bot"],
+    liveLink: "https://allknowingbot.netlify.app/",
+    githubLink: "https://github.com/jdichh/all-knowing-bot",
   },
   {
     name: "Another To-do App",
     description: "A to-do app but with pagination.",
     tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
     imageUrl: pern,
-    liveLink: ["https://youtu.be/kRmF8umtA5M"],
-    githubLink: ["https://github.com/jdichh/pern-practice"],
+    videoLink: "https://youtu.be/kRmF8umtA5M",
+    githubLink: "https://github.com/jdichh/pern-practice",
   },
   {
     name: "Another Quote Generator",
@@ -311,24 +325,24 @@ export const projects = [
       "A quote generator that I made to get back into the flow of learning React after spending time away making 3D projects.",
     tools: ["React.js", "SCSS"],
     imageUrl: quoteGen,
-    liveLink: ["https://originalquotegenerator.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/quote-gen-react"],
+    liveLink: "https://originalquotegenerator.netlify.app/",
+    githubLink: "https://github.com/jdichh/quote-gen-react",
   },
   {
     name: "Another Weather App",
     description: "A weather app. Yeah.",
     tools: ["React.js", "Zustand", "Axios"],
     imageUrl: weatherApp,
-    liveLink: ["https://obligatoryweatherapp.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/obligatory-weather-app-react"],
+    liveLink: "https://obligatoryweatherapp.netlify.app/",
+    githubLink: "https://github.com/jdichh/obligatory-weather-app-react",
   },
   {
     name: "TraderView",
     description: "A market tracker that uses the TradingView API.",
     tools: ["JavaScript", "SCSS"],
     imageUrl: traderView,
-    liveLink: ["https://jdichhtradingview.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/tradingviewAPI-practice"],
+    liveLink: "https://jdichhtradingview.netlify.app/",
+    githubLink: "https://github.com/jdichh/tradingviewAPI-practice",
   },
   {
     name: "Security Unit Web Portal",
@@ -336,7 +350,8 @@ export const projects = [
       "This was part of our capstone project which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at Letran-Calamba.",
     tools: ["Vue.js", "Bootstrap", "Firebase"],
     imageUrl: ssu,
-    liveLink: ["https://ssuwebsystem.netlify.app"],
-    githubLink: ["https://github.com/jdichh/websystem_ssu2"],
+    liveLink: "https://ssuwebsystem.netlify.app",
+    videoLink: "https://youtu.be/vkYClk75SS0",
+    githubLink: "https://github.com/jdichh/websystem_ssu2",
   },
 ]
