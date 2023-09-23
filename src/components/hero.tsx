@@ -17,7 +17,7 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
         >
           <h1 className={`${inter.className} font-medium text-[#6E99C4] text-4xl sm:text-5xl`}>Jason Dichoso</h1>
-          <h2 className="text-md sm:text-xl">Front-End Developer</h2>
+          <h2 className="text-md sm:text-xl">Software Developer</h2>
         </motion.div>
         <motion.div
           className="flex gap-2 mt-2"

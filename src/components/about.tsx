@@ -17,7 +17,7 @@ export default function About() {
         Philippines, but I started my self-learning journey back in June 2023.
         Since then, I've discovered that I really{" "}
         <span className="text-[#6E99C4] font-medium">love learning</span>{" "}
-        various web technologies, and when I get to scratch the surface of what
+        various web technologies, especially front-end tech. And when I get to scratch the surface of what
         a piece of software can be capable of, I get all{" "}
         <span className="text-[#6E99C4] font-medium">giddy and excited</span>.
       </p>
