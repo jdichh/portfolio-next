@@ -236,6 +236,51 @@ export const designTools = [
 
 export const projects = [
   {
+    name: "Virtual Car Showroom",
+    description:
+      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport.",
+    tools: ["PC Required", "React-Three-Fiber", "SCSS"],
+    imageUrl: showroom,
+    liveLink: ["https://gtshowroom.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/car-showroom-r3f/"],
+  },
+  {
+    name: "Khronomechanica Vintora",
+    description:
+      "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model in a product website.",
+    tools: ["PC Recommended", "Three.js", "GSAP", "SCSS"],
+    imageUrl: vintora,
+    liveLink: ["https://steampunkwatch.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/steampunk-watch"],
+  },
+  {
+    name: "Synthwave Scene",
+    description:
+      "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
+    tools: ["PC Recommended", "React.js", "Three.js"],
+    imageUrl: synthwave,
+    liveLink: ["https://jdsynthwave.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"],
+  },
+  {
+    name: "Asteroids Game",
+    description:
+      "The Asteroids game from Atari, but with my own modifications to it.",
+    tools: ["Unplayable on Mobile", "JavaScript"],
+    imageUrl: asteroids,
+    liveLink: ["https://jdasteroids.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/asteroids"],
+  },
+  {
+    name: "Galaxy Overview",
+    description:
+      "A 3D overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
+    tools: ["PC Recommended", "React-Three-Fiber"],
+    imageUrl: galaxy,
+    liveLink: ["https://jdgalaxy.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/galaxy-map"],
+  },
+  {
     name: "To-do App",
     description: "A to-do app with pagination.",
     tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
@@ -262,57 +307,12 @@ export const projects = [
     githubLink: ["https://github.com/jdichh/quote-gen-react"],
   },
   {
-    name: "Galaxy Overview",
-    description:
-      "A 3D overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
-    tools: ["PC Recommended", "React-Three-Fiber"],
-    imageUrl: galaxy,
-    liveLink: ["https://jdgalaxy.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/galaxy-map"],
-  },
-  {
-    name: "Khronomechanica Vintora",
-    description:
-      "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model in a product website.",
-    tools: ["PC Recommended", "Three.js", "GSAP", "SCSS"],
-    imageUrl: vintora,
-    liveLink: ["https://steampunkwatch.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/steampunk-watch"],
-  },
-  {
-    name: "Virtual Car Showroom",
-    description:
-      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport.",
-    tools: ["PC Required", "React-Three-Fiber", "SCSS"],
-    imageUrl: showroom,
-    liveLink: ["https://gtshowroom.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/car-showroom-r3f/"],
-  },
-  {
-    name: "Synthwave Scene",
-    description:
-      "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
-    tools: ["PC Recommended", "React.js", "Three.js"],
-    imageUrl: synthwave,
-    liveLink: ["https://jdsynthwave.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/synthwave-scene-REACT"],
-  },
-  {
     name: "Obligatory Weather App",
-    description: "A weather app that uses the OpenWeatherMap API.",
+    description: "A weather app. Yeah.",
     tools: ["React.js", "Zustand", "Axios"],
     imageUrl: weatherApp,
     liveLink: ["https://obligatoryweatherapp.netlify.app/"],
     githubLink: ["https://github.com/jdichh/obligatory-weather-app-react"],
-  },
-  {
-    name: "Asteroids Game",
-    description:
-      "The Asteroids game from Atari, but with my own modifications to it.",
-    tools: ["Unplayable on Mobile", "JavaScript"],
-    imageUrl: asteroids,
-    liveLink: ["https://jdasteroids.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/asteroids"],
   },
   {
     name: "Random Password Generator Extension",
