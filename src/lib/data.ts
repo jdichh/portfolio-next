@@ -68,7 +68,7 @@ export const links = [
   },
 ]
 
-export const webTechTools = [
+export const frontendTools = [
   {
     name: "HTML",
     imageUrl: htmlImg,
@@ -139,11 +139,9 @@ export const webTechTools = [
     imageUrl: framerMotionImg,
     alt: "Framer motion logo"
   },
-  {
-    name: "Node.js",
-    imageUrl: nodeImg,
-    alt: "Node.js logo"
-  },
+]
+
+export const backendTools = [
   {
     name: "Firebase",
     imageUrl: firebaseImg,
@@ -191,6 +189,11 @@ export const codingTools = [
     name: "Vite",
     imageUrl: viteImg,
     alt: "Vite logo"
+  },
+  {
+    name: "Node.js",
+    imageUrl: nodeImg,
+    alt: "Node.js logo"
   },
   {
     name: "NPM",

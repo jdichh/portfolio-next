@@ -4,7 +4,8 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import {
-  webTechTools,
+  frontendTools,
+  backendTools,
   codingTools,
   testingTools,
   designTools,
@@ -19,9 +20,28 @@ export default function Tools() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
-      <SectionHeading>Web Technologies</SectionHeading>
+      <SectionHeading>Front-End</SectionHeading>
       <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mb-20">
-        {webTechTools.map((tool, index) => (
+        {frontendTools.map((tool, index) => (
+          <li
+            key={index}
+            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
+          >
+            <Image
+              src={tool.imageUrl}
+              alt={tool.alt}
+              height={45}
+              width={45}
+              className="mb-2"
+            />
+            {tool.name}
+          </li>
+        ))}
+      </ul>
+
+      <SectionHeading>Back-End</SectionHeading>
+      <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mb-20">
+        {backendTools.map((tool, index) => (
           <li
             key={index}
             className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
