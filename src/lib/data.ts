@@ -315,7 +315,7 @@ export const projects = [
   },
   {
     name: "Another To-Do App",
-    description: "A to-do app but with pagination.",
+    description: "A to-do app but with pagination to practice my backend skills. Don't expect good looks, I just used Tailwind to do the styling quicker.",
     tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS", "REST API"],
     imageUrl: pern,
     videoLink: "https://youtu.be/kRmF8umtA5M",
@@ -324,7 +324,7 @@ export const projects = [
   {
     name: "Another Quote Generator",
     description:
-      "A quote generator that I made to get back into the flow of learning React after spending time away making 3D projects.",
+      "A quote generator that I made to get back into the flow of learning React after spending time away making 3D projects. Don't expect good looks.",
     tools: ["React.js", "SCSS", "REST API"],
     imageUrl: quoteGen,
     liveLink: "https://originalquotegenerator.netlify.app/",
@@ -332,7 +332,7 @@ export const projects = [
   },
   {
     name: "Another Weather App",
-    description: "A weather app. Yeah.",
+    description: "A weather app.",
     tools: ["React.js", "Zustand", "Axios", "REST API"],
     imageUrl: weatherApp,
     liveLink: "https://obligatoryweatherapp.netlify.app/",
