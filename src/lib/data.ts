@@ -240,7 +240,7 @@ export const projects = [
     name: "This Portfolio",
     description:
       "What you're looking at right now. This is the new version of my portfolio that I designed myself. The initial version was made with HTML, SCSS and JS only, but I figured that I should learn Next.js by recreating it.",
-    tools: ["Next.js 13", "TypeScript", "Framer Motion", "PWA Optimized", "Recommended on PC"],
+    tools: ["Recommended on PC", "PWA Optimized", "Next.js 13", "TypeScript", "Framer Motion"],
     imageUrl: portfolio,
     githubLink: "https://github.com/jdichh/portfolio-next",
     oldVersion: "https://jdichh.netlify.app"
