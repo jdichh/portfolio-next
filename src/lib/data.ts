@@ -281,24 +281,15 @@ export const projects = [
     githubLink: ["https://github.com/jdichh/galaxy-map"],
   },
   {
-    name: "To-do App",
-    description: "A to-do app with pagination.",
+    name: "Another To-do App",
+    description: "A to-do app but with pagination.",
     tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
     imageUrl: pern,
     liveLink: ["https://youtu.be/kRmF8umtA5M"],
     githubLink: ["https://github.com/jdichh/pern-practice"],
   },
   {
-    name: "Tic-Tac-Toe",
-    description:
-      "A Tic-Tac-Toe game that I made to introduce myself to the world of Svelte.",
-    tools: ["Svelte", "SCSS"],
-    imageUrl: tictactoe,
-    liveLink: ["https://tictacsvelte.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/tic-tac-toe-svelte"],
-  },
-  {
-    name: "Quote Generator",
+    name: "Another Quote Generator",
     description:
       "A quote generator that I made to get back into the flow of learning React after spending time away making 3D projects.",
     tools: ["React.js", "SCSS"],
