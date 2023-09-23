@@ -87,7 +87,7 @@ export default function Project({
               <a
                 href={devFootage.toString()}
                 target="_blank"
-                aria-label="Video demonstration of the project."
+                aria-label="Development footage of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
               >
                 Development Footage
@@ -97,7 +97,7 @@ export default function Project({
               <a
                 href={oldVersion.toString()}
                 target="_blank"
-                aria-label="Live demo of the project."
+                aria-label="The old version of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px- py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03] sm"
               >
                 Old Version
