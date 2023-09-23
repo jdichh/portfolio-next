@@ -18,8 +18,8 @@ export default function About() {
         Since then, I've discovered that I really{" "}
         <span className="text-[#6E99C4] font-medium">love learning</span>{" "}
         various web technologies, especially front-end tech. And when I get to scratch the surface of what
-        a piece of software can be capable of, I get all{" "}
-        <span className="text-[#6E99C4] font-medium">giddy and excited</span>.
+        a piece of software can be capable of, I get {" "}
+        <span className="text-[#6E99C4] font-medium">excited</span> to see what else it can do.
       </p>
       {/* I'll use GitHub API soon. */}
       <p className="mb-6">
