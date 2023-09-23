@@ -9,7 +9,6 @@ import ssu from "../../public/project/ssu.png";
 import pern from "../../public/project/pern.png";
 import portfolio from "../../public/project/portfolio.png";
 import quoteGen from "../../public/project/quote.png";
-import traderView from "../../public/project/traderview.png";
 import weatherApp from "../../public/project/weather.png";
 import chatbot from "../../public/project/chatbot.png";
 import horizonxs from "../../public/project/horizonxs.webp"
@@ -263,7 +262,7 @@ export const projects = [
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model in a product website.",
-    tools: ["Recommended on PC", "Three.js", "GSAP", "SCSS"],
+    tools: ["Recommended on PC", "HTML", "SCSS", "Three.js", "GSAP"],
     imageUrl: vintora,
     liveLink: "https://steampunkwatch.netlify.app/",
     githubLink: "https://github.com/jdichh/steampunk-watch",
@@ -272,7 +271,7 @@ export const projects = [
   {
     name: "Synthwave Scene",
     description:
-      "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber).",
+      "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber). Why? Because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
     tools: ["Recommended on PC", "React.js", "Three.js"],
     imageUrl: synthwave,
     liveLink: "https://jdsynthwave.netlify.app/",
@@ -302,7 +301,7 @@ export const projects = [
     name: "Random Password Generator Extension",
     description:
       "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
-    tools: ["JavaScript", "SCSS"],
+    tools: ["HTML", "SCSS", "JavaScript"],
     imageUrl: passwordGen,
     videoLink: "https://youtu.be/pq-EsJa1plw",
     githubLink: "https://github.com/jdichh/password-generator",
@@ -310,7 +309,7 @@ export const projects = [
   {
     name: "All-Knowing Bot",
     description: "A chat website that uses LemurBot from Lemur Engine.",
-    tools: ["JavaScript", "SCSS"],
+    tools: ["HTML", "SCSS", "JavaScript", "REST API"],
     imageUrl: chatbot,
     liveLink: "https://allknowingbot.netlify.app/",
     githubLink: "https://github.com/jdichh/all-knowing-bot",
@@ -318,7 +317,7 @@ export const projects = [
   {
     name: "Another To-Do App",
     description: "A to-do app but with pagination.",
-    tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+    tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS", "REST API"],
     imageUrl: pern,
     videoLink: "https://youtu.be/kRmF8umtA5M",
     githubLink: "https://github.com/jdichh/pern-practice",
@@ -327,7 +326,7 @@ export const projects = [
     name: "Another Quote Generator",
     description:
       "A quote generator that I made to get back into the flow of learning React after spending time away making 3D projects.",
-    tools: ["React.js", "SCSS"],
+    tools: ["React.js", "SCSS", "REST API"],
     imageUrl: quoteGen,
     liveLink: "https://originalquotegenerator.netlify.app/",
     githubLink: "https://github.com/jdichh/quote-gen-react",
@@ -335,7 +334,7 @@ export const projects = [
   {
     name: "Another Weather App",
     description: "A weather app. Yeah.",
-    tools: ["React.js", "Zustand", "Axios"],
+    tools: ["React.js", "Zustand", "Axios", "REST API"],
     imageUrl: weatherApp,
     liveLink: "https://obligatoryweatherapp.netlify.app/",
     githubLink: "https://github.com/jdichh/obligatory-weather-app-react",
