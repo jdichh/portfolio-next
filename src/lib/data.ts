@@ -281,6 +281,23 @@ export const projects = [
     githubLink: ["https://github.com/jdichh/galaxy-map"],
   },
   {
+    name: "Random Password Generator Extension",
+    description:
+      "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
+    tools: ["JavaScript", "SCSS"],
+    imageUrl: passwordGen,
+    liveLink: ["https://youtu.be/pq-EsJa1plw"],
+    githubLink: ["https://github.com/jdichh/password-generator"],
+  },
+  {
+    name: "All-Knowing Bot",
+    description: "A chat website that uses LemurBot from Lemur Engine.",
+    tools: ["JavaScript", "SCSS"],
+    imageUrl: chatbot,
+    liveLink: ["https://allknowingbot.netlify.app/"],
+    githubLink: ["https://github.com/jdichh/all-knowing-bot"],
+  },
+  {
     name: "Another To-do App",
     description: "A to-do app but with pagination.",
     tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
@@ -298,29 +315,12 @@ export const projects = [
     githubLink: ["https://github.com/jdichh/quote-gen-react"],
   },
   {
-    name: "Obligatory Weather App",
+    name: "Another Weather App",
     description: "A weather app. Yeah.",
     tools: ["React.js", "Zustand", "Axios"],
     imageUrl: weatherApp,
     liveLink: ["https://obligatoryweatherapp.netlify.app/"],
     githubLink: ["https://github.com/jdichh/obligatory-weather-app-react"],
-  },
-  {
-    name: "Random Password Generator Extension",
-    description:
-      "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
-    tools: ["JavaScript", "SCSS"],
-    imageUrl: passwordGen,
-    liveLink: ["https://youtu.be/pq-EsJa1plw"],
-    githubLink: ["https://github.com/jdichh/password-generator"],
-  },
-  {
-    name: "All-Knowing Bot",
-    description: "A chat website that uses LemurBot from Lemur Engine.",
-    tools: ["JavaScript", "SCSS"],
-    imageUrl: chatbot,
-    liveLink: ["https://allknowingbot.netlify.app/"],
-    githubLink: ["https://github.com/jdichh/all-knowing-bot"],
   },
   {
     name: "TraderView",
