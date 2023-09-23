@@ -338,14 +338,6 @@ export const projects = [
     githubLink: "https://github.com/jdichh/obligatory-weather-app-react",
   },
   {
-    name: "TraderView",
-    description: "A market tracker that uses the TradingView API.",
-    tools: ["JavaScript", "SCSS"],
-    imageUrl: traderView,
-    liveLink: "https://jdichhtradingview.netlify.app/",
-    githubLink: "https://github.com/jdichh/tradingviewAPI-practice",
-  },
-  {
     name: "Security Unit Web Portal",
     description:
       "This was part of our capstone project which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
