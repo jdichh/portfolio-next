@@ -109,7 +109,7 @@ export default function Project({
           src={imageUrl}
           alt={name}
           quality={95}
-          className="hidden md:block absolute transition ease-in-out duration-100 rounded-sm top-7 md:-right-48 xl:-right-32 2xl:-right-1 w-[34rem] group-hover:scale-[1.03] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-1"
+          className="hidden md:block absolute transition ease-in-out duration-100 rounded-sm top-7 md:-right-52 xl:-right-32 2xl:-right-1 w-[34rem] group-hover:scale-[1.03] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-1"
         />
       </section>
     </motion.div>
