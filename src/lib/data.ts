@@ -341,7 +341,7 @@ export const projects = [
   {
     name: "Security Unit Web Portal",
     description:
-      "This was part of our capstone project which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
+      "This was part of our capstone project back when I was in college, which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
     tools: ["Vue.js", "Bootstrap", "Firebase"],
     imageUrl: ssu,
     liveLink: "https://ssuwebsystem.netlify.app",

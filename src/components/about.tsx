@@ -21,11 +21,6 @@ export default function About() {
         a piece of software can be capable of, I get all{" "}
         <span className="text-[#6E99C4] font-medium">giddy and excited</span>.
       </p>
-      <p className="mb-6">
-        When I'm not creating projects, I enjoy running, playing my beloved
-        electric guitar, tinkering with computers, or just discovering more web technologies as well as
-        good development practices, and try to apply them to my projects.
-      </p>
       {/* I'll use GitHub API soon. */}
       <p className="mb-6">
         Currently, I'm trying to learn the basics of automated testing with{" "}
