@@ -255,7 +255,6 @@ export const projects = [
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
     githubLink: "https://github.com/jdichh/car-showroom-r3f/",
-    videoLink: "https://www.youtube.com/watch?v=PhjlgLxL-Zg",
     devFootage: "https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing",
   },
   {
