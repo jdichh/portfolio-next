@@ -46,7 +46,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-[#6E99C4] hover:bg-[#DADADA] hover:scale-[1.03] transition ease-in-out duration-100 px-2 py-0 uppercase tracking-wider text-[#1F1E26] rounded-sm"
+                className="bg-[#6E99C4] transition ease-in-out duration-100 px-2 py-0 uppercase tracking-wider text-[#1F1E26] rounded-sm"
               >
                 {tool}
               </li>
