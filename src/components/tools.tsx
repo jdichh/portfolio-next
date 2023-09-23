@@ -24,7 +24,7 @@ export default function Tools() {
         {webTechTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] hover:bg-[#25242D] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
+            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
           >
             <Image
               src={tool.imageUrl}
@@ -43,7 +43,7 @@ export default function Tools() {
         {codingTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] hover:bg-[#25242D] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
+            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
           >
             <Image
               src={tool.imageUrl}
@@ -62,7 +62,7 @@ export default function Tools() {
         {testingTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] hover:bg-[#25242D] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
+            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100"
           >
             <Image
               src={tool.imageUrl}
@@ -81,7 +81,7 @@ export default function Tools() {
         {designTools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] hover:bg-[#25242D] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100" 
+            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] items-center m-1 p-6 rounded-sm transition ease-in-out duration-100" 
           >
             <Image
               src={tool.imageUrl}
