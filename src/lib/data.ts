@@ -130,16 +130,6 @@ export const tools = [
     alt: "Node.js logo"
   },
   {
-    name: "Firebase",
-    imageUrl: firebaseImg,
-    alt: "Google firebase logo"
-  },
-  {
-    name: "Figma",
-    imageUrl: figmaImg,
-    alt: "Figma logo"
-  },
-  {
     name: "W3 Validator",
     imageUrl: w3Img,
     alt: "W3 validator logo"
