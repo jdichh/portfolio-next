@@ -135,26 +135,6 @@ export const tools = [
     alt: "Google firebase logo"
   },
   {
-    name: "PostgreSQL",
-    imageUrl: postgresqlImg,
-    alt: "Postgre sql logo"
-  },
-  {
-    name: "Express.js",
-    imageUrl: expressImg,
-    alt: "Express.js logo"
-  },
-  {
-    name: "Axios",
-    imageUrl: axiosImg,
-    alt: "Axios logo"
-  },
-  {
-    name: "Insomnia",
-    imageUrl: insomniaImg,
-    alt: "Insomnia logo"
-  },
-  {
     name: "Figma",
     imageUrl: figmaImg,
     alt: "Figma logo"
@@ -246,31 +226,6 @@ export const projects = [
     imageUrl: chatbot,
     liveLink: "https://allknowingbot.netlify.app/",
     githubLink: "https://github.com/jdichh/all-knowing-bot",
-  },
-  {
-    name: "Another To-Do App",
-    description: "A to-do app but with pagination to practice my backend skills. Don't expect good looks, I just used Tailwind to do the styling quicker.",
-    tools: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Tailwind CSS", "REST API"],
-    imageUrl: pern,
-    videoLink: "https://youtu.be/kRmF8umtA5M",
-    githubLink: "https://github.com/jdichh/pern-practice",
-  },
-  {
-    name: "Another Quote Generator",
-    description:
-      "A quote generator that I made to get back into the flow of learning React after spending time away making 3D projects. Don't expect good looks.",
-    tools: ["React.js", "SCSS", "REST API"],
-    imageUrl: quoteGen,
-    liveLink: "https://originalquotegenerator.netlify.app/",
-    githubLink: "https://github.com/jdichh/quote-gen-react",
-  },
-  {
-    name: "Another Weather App",
-    description: "A weather app.",
-    tools: ["React.js", "Zustand", "Axios", "REST API"],
-    imageUrl: weatherApp,
-    liveLink: "https://obligatoryweatherapp.netlify.app/",
-    githubLink: "https://github.com/jdichh/obligatory-weather-app-react",
   },
   {
     name: "Security Unit Web Portal",
