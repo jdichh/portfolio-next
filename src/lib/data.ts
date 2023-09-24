@@ -37,7 +37,6 @@ import w3Img from "../../public/tools/w3.svg";
 import waveToolImg from "../../public/tools/wavetool.svg";
 import lighthouseImg from "../../public/tools/lighthouse.svg";
 import figmaImg from "../../public/tools/figma.svg";
-import paintNetImg from "../../public/tools/paint.svg";
 
 export const links = [
   {
@@ -159,11 +158,6 @@ export const tools = [
     name: "Figma",
     imageUrl: figmaImg,
     alt: "Figma logo"
-  },
-  {
-    name: "Paint.NET",
-    imageUrl: paintNetImg,
-    alt: "Paint.NET logo"
   },
   {
     name: "W3 Validator",
