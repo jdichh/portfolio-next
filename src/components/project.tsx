@@ -37,11 +37,17 @@ export default function Project({
       }}
     >
       <article className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100">
-        <div className="flex flex-col py-6 px-4 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
-          <h3 className="text-xl text-center sm:text-2xl sm:text-left text-[#DADADA] font-bold">
+        <div className="flex flex-col pt-4 px-4 pb-6 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
+        <Image
+          src={imageUrl}
+          alt={name}
+          quality={95}
+          className="block mx-auto relative md:hidden transition ease-in-out duration-100 rounded-sm my-2"
+        />
+          <h3 className="text-xl text-center sm:text-2xl md:text-left text-[#DADADA] font-bold">
             {name}
           </h3>
-          <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center sm:justify-start font-semibold">
+          <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center md:justify-start font-semibold">
             {tools.map((tool, index) => (
               <li
                 key={index}
@@ -109,7 +115,7 @@ export default function Project({
           src={imageUrl}
           alt={name}
           quality={95}
-          className="hidden md:block absolute transition ease-in-out duration-100 rounded-sm top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] group-hover:scale-[1.03] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-1"
+          className="hidden md:block relative md:absolute transition ease-in-out duration-100 rounded-sm top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-x-2 md:group-hover:-translate-y-2 md:group-hover:-rotate-1"
         />
       </article>
     </motion.div>
