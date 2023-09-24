@@ -180,7 +180,7 @@ export const projects = [
   {
     name: "Virtual Car Showroom",
     description:
-      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also tried replicating some parts of the UI.",
+      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also replicated some parts of the UI.",
     tools: ["PC Required", "React-Three-Fiber", "SCSS"],
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
