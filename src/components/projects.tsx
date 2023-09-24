@@ -10,13 +10,11 @@ export default function Projects() {
       id="projects"
     >
       <SectionHeading>Personal Projects</SectionHeading>
-      <div>
         {projects.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
           </React.Fragment>
         ))}
-      </div>
     </section>
   );
 }
