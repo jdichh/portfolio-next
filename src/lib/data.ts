@@ -205,6 +205,7 @@ export const projects = [
     tools: ["Recommended on PC", "React.js", "Three.js"],
     imageUrl: synthwave,
     liveLink: "https://jdsynthwave.netlify.app/",
+    videoLink: "https://youtu.be/S7RprZc3dEs",
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
     devFootage: "https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
   },
