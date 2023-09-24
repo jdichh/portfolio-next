@@ -214,6 +214,7 @@ export const projects = [
     tools: ["Unplayable on Mobile", "PC Required", "JavaScript"],
     imageUrl: asteroids,
     liveLink: "https://jdasteroids.netlify.app/",
+    videoLink: "https://youtu.be/6LwWaI4WKdg",
     githubLink: "https://github.com/jdichh/asteroids",
   },
   {
