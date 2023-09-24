@@ -21,22 +21,8 @@ export default function About() {
         a piece of software can be capable of, I get {" "}
         <span className="text-[#6E99C4] font-medium">excited</span> to see what else it can do.
       </p>
-      {/* I'll use GitHub API soon. */}
       <p className="mb-6">
-        Currently, I'm trying to learn the basics of automated testing with{" "}
-        <span className="text-[#6E99C4] font-medium">Jest</span> and{" "}
-        <span className="text-[#6E99C4] font-medium">React-Testing-Library</span> on my
-        portfolio, which you can see in this{" "}
-        <a
-          href="https://github.com/jdichh/portfolio-next-TESTING/tree/main/__test__"
-          target="_blank"
-          aria-label="Button to the GitHub repo where I'm trying to practice automated testing with jest and react-testing library"
-        >
-          <span className="text-[#6E99C4] font-medium underline underline-offset-4 hover:text-[#DADADA] transition ease-in-out duration-100">
-            GitHub repo
-          </span>
-        </a>
-        .
+        One of my many goals is to help individuals and/or businesses present themselves in the digital world by creating <span className="text-[#6E99C4] font-medium">good-looking and user friendly websites</span>.
       </p>
       <p className="mb-6">
         I'm a big fan of{" "}
