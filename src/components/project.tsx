@@ -16,7 +16,6 @@ export default function Project({
   githubLink,
   videoLink,
   devFootage,
-  oldVersion,
   nexusModsLink
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -92,16 +91,6 @@ export default function Project({
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
               >
                 Development Footage
-              </a>
-            )}
-            {oldVersion && (
-              <a
-                href={oldVersion.toString()}
-                target="_blank"
-                aria-label="The old version of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px- py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03] sm"
-              >
-                Old Version
               </a>
             )}
             {nexusModsLink && (

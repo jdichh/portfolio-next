@@ -7,13 +7,12 @@ import asteroids from "../../public/project/asteroids.gif";
 import passwordGen from "../../public/project/password.png";
 import ssu from "../../public/project/ssu.png";
 import pern from "../../public/project/pern.png";
-import portfolio from "../../public/project/portfolio.png";
 import quoteGen from "../../public/project/quote.png";
 import weatherApp from "../../public/project/weather.png";
 import chatbot from "../../public/project/chatbot.png";
 import horizonxs from "../../public/project/horizonxs.webp"
 
-// web tech
+// tools
 import htmlImg from "../../public/tools/html.svg";
 import cssImg from "../../public/tools/css.svg";
 import scssImg from "../../public/tools/scss.svg";
@@ -33,22 +32,10 @@ import postgresqlImg from "../../public/tools/postgresql.svg";
 import expressImg from "../../public/tools/express.svg";
 import axiosImg from "../../public/tools/axios.svg";
 import insomniaImg from "../../public/tools/insomnia.svg";
-
-// coding
-import vsImg from "../../public/tools/vs.svg";
-import prettierImg from "../../public/tools/prettier.svg";
-import gitImg from "../../public/tools/git.svg";
-import viteImg from "../../public/tools/vite.svg";
-import npmImg from "../../public/tools/npm.svg";
-import pnpmImg from "../../public/tools/pnpm.svg";
 import nodeImg from "../../public/tools/node.svg";
-
-// testing
 import w3Img from "../../public/tools/w3.svg";
 import waveToolImg from "../../public/tools/wavetool.svg";
 import lighthouseImg from "../../public/tools/lighthouse.svg";
-
-// design
 import figmaImg from "../../public/tools/figma.svg";
 import paintNetImg from "../../public/tools/paint.svg";
 
@@ -67,7 +54,7 @@ export const links = [
   },
 ]
 
-export const frontendTools = [
+export const tools = [
   {
     name: "HTML",
     imageUrl: htmlImg,
@@ -138,9 +125,11 @@ export const frontendTools = [
     imageUrl: framerMotionImg,
     alt: "Framer motion logo"
   },
-]
-
-export const backendTools = [
+  {
+    name: "Node.js",
+    imageUrl: nodeImg,
+    alt: "Node.js logo"
+  },
   {
     name: "Firebase",
     imageUrl: firebaseImg,
@@ -166,47 +155,16 @@ export const backendTools = [
     imageUrl: insomniaImg,
     alt: "Insomnia logo"
   },
-]
-
-export const codingTools = [
   {
-    name: "VS Codium",
-    imageUrl: vsImg,
-    alt: "Visual studio codium logo"
+    name: "Figma",
+    imageUrl: figmaImg,
+    alt: "Figma logo"
   },
   {
-    name: "Prettier",
-    imageUrl: prettierImg,
-    alt: "Pretter logo"
+    name: "Paint.NET",
+    imageUrl: paintNetImg,
+    alt: "Paint.NET logo"
   },
-  {
-    name: "Git",
-    imageUrl: gitImg,
-    alt: "Git logo"
-  },
-  {
-    name: "Vite",
-    imageUrl: viteImg,
-    alt: "Vite logo"
-  },
-  {
-    name: "Node.js",
-    imageUrl: nodeImg,
-    alt: "Node.js logo"
-  },
-  {
-    name: "NPM",
-    imageUrl: npmImg,
-    alt: "NPM logo"
-  },
-  {
-    name: "PNPM",
-    imageUrl: pnpmImg,
-    alt: "PNPM logo"
-  },
-]
-
-export const testingTools = [
   {
     name: "W3 Validator",
     imageUrl: w3Img,
@@ -221,19 +179,6 @@ export const testingTools = [
     name: "Lighthouse",
     imageUrl: lighthouseImg,
     alt: "Lighthouse testing tool logo"
-  },
-]
-
-export const designTools = [
-  {
-    name: "Figma",
-    imageUrl: figmaImg,
-    alt: "Figma logo"
-  },
-  {
-    name: "Paint.NET",
-    imageUrl: paintNetImg,
-    alt: "Paint.NET logo"
   },
 ]
 
