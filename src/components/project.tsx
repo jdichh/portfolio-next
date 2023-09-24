@@ -60,7 +60,7 @@ export default function Project({
                 aria-label="Live demo of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
               >
-                Demo
+                Live Demo
               </a>
             )}
             {videoLink && (

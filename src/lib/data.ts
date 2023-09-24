@@ -184,6 +184,7 @@ export const projects = [
     tools: ["PC Required", "React-Three-Fiber", "SCSS"],
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
+    videoLink: "https://youtu.be/PhjlgLxL-Zg",
     githubLink: "https://github.com/jdichh/car-showroom-r3f/",
     devFootage: "https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing",
   },
@@ -224,6 +225,7 @@ export const projects = [
     tools: ["Recommended on PC", "React-Three-Fiber"],
     imageUrl: galaxy,
     liveLink: "https://jdgalaxy.netlify.app/",
+    videoLink: "https://youtu.be/ODhJYVid_oU",
     githubLink: "https://github.com/jdichh/galaxy-map",
     devFootage: "https://drive.google.com/drive/folders/1jxwLoiLTJ8YCxAhwNnbEtwGzTRTNKw2P?usp=sharing"
   },
