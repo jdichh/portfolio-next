@@ -50,7 +50,7 @@ export default function Project({
         <div className="flex flex-col pt-4 px-4 pb-6 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
             src={imageUrl}
-            alt={name}
+            alt=""
             quality={IMAGE_QUALITY}
             className="block mx-auto relative md:hidden rounded-sm my-2"
           />
@@ -65,7 +65,7 @@ export default function Project({
               >
                 <Image
                   src={toolIcons[index]}
-                  alt={tool}
+                  alt=""
                   quality={TOOL_ICON_QUALITY}
                   width={TOOL_ICON_DIMENSIONS}
                   height={TOOL_ICON_DIMENSIONS}
@@ -141,7 +141,7 @@ export default function Project({
         </div>
         <Image
           src={imageUrl}
-          alt={name}
+          alt=""
           quality={IMAGE_QUALITY}
           className="hidden md:block relative md:absolute transition ease-in-out duration-100 rounded-sm top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-x-2 md:group-hover:-translate-y-2 md:group-hover:-rotate-1"
         />
