@@ -13,7 +13,8 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
-        I am a fresh IT graduate based in the Philippines, looking to become a{" "}
+        I am a fresh IT graduate based in the Philippines, looking to enter the
+        IT industry as a{" "}
         <span className="text-[#6E99C4] font-medium">
           frontend web developer
         </span>
@@ -31,13 +32,6 @@ export default function About() {
           good-looking and user friendly websites
         </span>
         .
-      </p>
-      <p className="mb-6">
-        I'm a big fan of{" "}
-        <span className="text-[#6E99C4] font-medium">
-          question-driven development
-        </span>
-        , by the way.
       </p>
     </motion.section>
   );
