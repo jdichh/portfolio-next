@@ -44,7 +44,7 @@ export default function Project({
       }}
     >
       <motion.article
-        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100"
+        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100 hover:outline hover:outline-1 hover:outline-[#DADADA]"
         whileHover={{ scale: ON_HOVER_SCALE }}
       >
         <div className="flex flex-col pt-4 px-4 pb-6 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
