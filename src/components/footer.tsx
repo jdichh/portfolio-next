@@ -16,13 +16,13 @@ export default function Footer() {
       animate={{ y: 0, opacity: 1 }}
     >
       <div className="grid grid-cols-3 items-center my-6 mx-3 font-semibold">
-        <motion.span className="text-sm sm:text-base text-center flex justify-center md:justify-end">
-          Contact Me
+        <motion.span className="text-base text-center flex justify-center sm:text-lg md:justify-end">
+          Let's work together.
         </motion.span>
         <div
-          className="border-t border-[#DADADA] mx-3"
+          className="border-t-2 border-[#DADADA] mx-3"
         />
-        <div className="flex gap-2 justify-center md:justify-start sm:text-lg uppercase">
+        <div className="flex gap-2 justify-center sm:text-lg md:justify-start uppercase">
           <motion.a
             href="mailto:jpsdichoso21@gmail.com"
             aria-label="Button to send me an email"
