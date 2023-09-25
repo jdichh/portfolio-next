@@ -31,6 +31,7 @@ import waveToolImg from "../../public/tools/wavetool.svg";
 import lighthouseImg from "../../public/tools/lighthouse.svg";
 import miscImg from "../../public/tools/misc.svg";
 import pcImg from "../../public/tools/pc.svg";
+import pcRequiredImg from "../../public/tools/pcrequired.svg";
 
 export const links = [
   {
@@ -141,7 +142,7 @@ export const projects = [
     description:
       "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also replicated some parts of the UI.",
     tools: ["PC Required", "React-Three-Fiber", "SCSS"],
-    toolIcons: [pcImg, r3fImg, scssImg],
+    toolIcons: [pcRequiredImg, r3fImg, scssImg],
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
@@ -165,7 +166,7 @@ export const projects = [
       "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber). Why? Because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
     tools: ["PC Recommended", "React.js", "Three.js"],
     imageUrl: synthwave,
-    toolIcons: [r3fImg, reactImg, threeImg],
+    toolIcons: [pcImg, reactImg, threeImg],
     liveLink: "https://jdsynthwave.netlify.app/",
     videoLink: "https://youtu.be/S7RprZc3dEs",
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
@@ -177,7 +178,7 @@ export const projects = [
       "The Asteroids game from Atari, but with my own modifications to it.",
     tools: ["PC Required", "JavaScript"],
     imageUrl: asteroids,
-    toolIcons: [pcImg, jsImg],
+    toolIcons: [pcRequiredImg, jsImg],
     liveLink: "https://jdasteroids.netlify.app/",
     videoLink: "https://youtu.be/6LwWaI4WKdg",
     githubLink: "https://github.com/jdichh/asteroids",
