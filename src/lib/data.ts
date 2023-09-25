@@ -20,13 +20,10 @@ import vueImg from "../../public/tools/vue.svg";
 import threeImg from "../../public/tools/three.svg";
 import r3fImg from "../../public/tools/r3f.svg";
 import bootstrapImg from "../../public/tools/bootstrap.svg";
-import bulmaImg from "../../public/tools/bulma.svg";
 import tailwindImg from "../../public/tools/tailwind.svg";
 import gsapImg from "../../public/tools/gsap.svg";
 import framerMotionImg from "../../public/tools/framermotion.svg";
-import nodeImg from "../../public/tools/node.svg";
 import firebaseImg from "../../public/tools/firebase.svg";
-import w3Img from "../../public/tools/w3.svg";
 import waveToolImg from "../../public/tools/wavetool.svg";
 import lighthouseImg from "../../public/tools/lighthouse.svg";
 import miscImg from "../../public/tools/misc.svg";
@@ -90,19 +87,9 @@ export const tools = [
     alt: "React-Three-Fiber logo"
   },
   {
-    name: "Bootstrap",
-    imageUrl: bootstrapImg,
-    alt: "Bootstrap logo"
-  },
-  {
-    name: "Bulma",
-    imageUrl: bulmaImg,
-    alt: "Bulma logo"
-  },
-  {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     imageUrl: tailwindImg,
-    alt: "Tailwind css logo"
+    alt: "Tailwind CSS logo"
   },
   {
     name: "GSAP",
@@ -113,16 +100,6 @@ export const tools = [
     name: "Framer Motion",
     imageUrl: framerMotionImg,
     alt: "Framer motion logo"
-  },
-  {
-    name: "Node.js",
-    imageUrl: nodeImg,
-    alt: "Node.js logo"
-  },
-  {
-    name: "W3 Validator",
-    imageUrl: w3Img,
-    alt: "W3 validator logo"
   },
   {
     name: "Wave Tool",
