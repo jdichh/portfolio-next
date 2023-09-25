@@ -47,7 +47,7 @@ export default function Project({
         className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100 hover:outline hover:outline-1 hover:outline-[#DADADA]"
         whileHover={{ scale: ON_HOVER_SCALE }}
       >
-        <div className="flex flex-col pt-4 px-4 pb-6 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
+        <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
             src={imageUrl}
             alt=""
@@ -75,8 +75,8 @@ export default function Project({
               </li>
             ))}
           </ul>
-          <p className="opacity-90 leading-relaxed">{description}</p>
-          <div className="flex flex-col text-center gap-2 mt-8 md:mt-4 font-bold lg:flex-row lg:flex-wrap">
+          <p className="opacity-90 leading-relaxed text-center md:text-left">{description}</p>
+          <div className="flex flex-col text-center gap-2 mt-4 font-bold lg:flex-row lg:flex-wrap">
             {liveLink && (
               <motion.a
                 href={liveLink.toString()}
