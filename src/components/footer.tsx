@@ -16,7 +16,7 @@ export default function Footer() {
       animate={{ y: 0, opacity: 1 }}
     >
       <div className="grid grid-cols-3 items-center my-6 mx-3 font-semibold">
-        <motion.span className="text-sm sm:text-base text-center flex justify-center sm:justify-end">
+        <motion.span className="text-sm sm:text-base text-center flex justify-center md:justify-end">
           Contact Me
         </motion.span>
         <div
