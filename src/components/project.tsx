@@ -11,12 +11,13 @@ export default function Project({
   name,
   description,
   tools,
+  toolIcons,
   imageUrl,
   liveLink,
   githubLink,
   videoLink,
   devFootage,
-  nexusModsLink
+  nexusModsLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -38,12 +39,12 @@ export default function Project({
     >
       <article className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100">
         <div className="flex flex-col pt-4 px-4 pb-6 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
-        <Image
-          src={imageUrl}
-          alt={name}
-          quality={95}
-          className="block mx-auto relative md:hidden transition ease-in-out duration-100 rounded-sm my-2"
-        />
+          <Image
+            src={imageUrl}
+            alt={name}
+            quality={95}
+            className="block mx-auto relative md:hidden transition ease-in-out duration-100 rounded-sm my-2"
+          />
           <h3 className="text-xl text-center sm:text-2xl md:text-left text-[#DADADA] font-bold">
             {name}
           </h3>
@@ -51,8 +52,16 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-[#6E99C4] transition ease-in-out duration-100 px-2 py-0 uppercase tracking-wider text-[#1F1E26] rounded-sm"
+                className="bg-[#1F1E26] transition ease-in-out duration-100 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#DADADA]"
               >
+                <Image
+                  src={toolIcons[index]}
+                  alt={tool}
+                  quality={10}
+                  width={19}
+                  height={19}
+                  className="mr-2"
+                />{" "}
                 {tool}
               </li>
             ))}
@@ -104,7 +113,7 @@ export default function Project({
                 href={nexusModsLink.toString()}
                 target="_blank"
                 aria-label="The NexusMods page of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px- py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
               >
                 NexusMods
               </a>

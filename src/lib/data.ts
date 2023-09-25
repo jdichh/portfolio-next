@@ -9,13 +9,14 @@ import ssu from "../../public/project/ssu.png";
 import chatbot from "../../public/project/chatbot.png";
 import horizonxs from "../../public/project/horizonxs.webp"
 
-// tools
+// icons
 import htmlImg from "../../public/tools/html.svg";
 import cssImg from "../../public/tools/css.svg";
 import scssImg from "../../public/tools/scss.svg";
 import jsImg from "../../public/tools/js.svg";
 import reactImg from "../../public/tools/react.svg";
 import nextImg from "../../public/tools/next.svg";
+import vueImg from "../../public/tools/vue.svg";
 import threeImg from "../../public/tools/three.svg";
 import r3fImg from "../../public/tools/r3f.svg";
 import bootstrapImg from "../../public/tools/bootstrap.svg";
@@ -24,9 +25,12 @@ import tailwindImg from "../../public/tools/tailwind.svg";
 import gsapImg from "../../public/tools/gsap.svg";
 import framerMotionImg from "../../public/tools/framermotion.svg";
 import nodeImg from "../../public/tools/node.svg";
+import firebaseImg from "../../public/tools/firebase.svg";
 import w3Img from "../../public/tools/w3.svg";
 import waveToolImg from "../../public/tools/wavetool.svg";
 import lighthouseImg from "../../public/tools/lighthouse.svg";
+import miscImg from "../../public/tools/misc.svg";
+import pcImg from "../../public/tools/pc.svg";
 
 export const links = [
   {
@@ -137,6 +141,7 @@ export const projects = [
     description:
       "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also replicated some parts of the UI.",
     tools: ["PC Required", "React-Three-Fiber", "SCSS"],
+    toolIcons: [pcImg, r3fImg, scssImg],
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
@@ -147,8 +152,9 @@ export const projects = [
     name: "Khronomechanica Vintora",
     description:
       "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model in a product website.",
-    tools: ["Recommended on PC", "HTML", "SCSS", "Three.js", "GSAP"],
+    tools: ["PC Recommended", "HTML", "SCSS", "Three.js", "GSAP"],
     imageUrl: vintora,
+    toolIcons: [pcImg, htmlImg, scssImg, threeImg, gsapImg],
     liveLink: "https://steampunkwatch.netlify.app/",
     githubLink: "https://github.com/jdichh/steampunk-watch",
     devFootage: "https://drive.google.com/drive/folders/1Cch-eDcga3LYIGnze3uUez6lN5RWrRtv?usp=sharing",
@@ -157,8 +163,9 @@ export const projects = [
     name: "Synthwave Scene",
     description:
       "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber). Why? Because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
-    tools: ["Recommended on PC", "React.js", "Three.js"],
+    tools: ["PC Recommended", "React.js", "Three.js"],
     imageUrl: synthwave,
+    toolIcons: [r3fImg, reactImg, threeImg],
     liveLink: "https://jdsynthwave.netlify.app/",
     videoLink: "https://youtu.be/S7RprZc3dEs",
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
@@ -168,8 +175,9 @@ export const projects = [
     name: "Asteroids Game",
     description:
       "The Asteroids game from Atari, but with my own modifications to it.",
-    tools: ["Unplayable on Mobile", "PC Required", "JavaScript"],
+    tools: ["PC Required", "JavaScript"],
     imageUrl: asteroids,
+    toolIcons: [pcImg, jsImg],
     liveLink: "https://jdasteroids.netlify.app/",
     videoLink: "https://youtu.be/6LwWaI4WKdg",
     githubLink: "https://github.com/jdichh/asteroids",
@@ -178,8 +186,9 @@ export const projects = [
     name: "Galaxy Overview",
     description:
       "A 3D overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
-    tools: ["Recommended on PC", "React-Three-Fiber"],
+    tools: ["PC Recommended", "React-Three-Fiber"],
     imageUrl: galaxy,
+    toolIcons: [pcImg, r3fImg],
     liveLink: "https://jdgalaxy.netlify.app/",
     videoLink: "https://youtu.be/ODhJYVid_oU",
     githubLink: "https://github.com/jdichh/galaxy-map",
@@ -191,14 +200,16 @@ export const projects = [
       "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
     tools: ["HTML", "SCSS", "JavaScript"],
     imageUrl: passwordGen,
+    toolIcons: [htmlImg, scssImg, jsImg],
     videoLink: "https://youtu.be/pq-EsJa1plw",
     githubLink: "https://github.com/jdichh/password-generator",
   },
   {
     name: "All-Knowing Bot",
     description: "A chat website that uses LemurBot from Lemur Engine.",
-    tools: ["HTML", "SCSS", "JavaScript", "REST API"],
+    tools: ["HTML", "SCSS", "JavaScript"],
     imageUrl: chatbot,
+    toolIcons: [htmlImg, scssImg, jsImg],
     liveLink: "https://allknowingbot.netlify.app/",
     githubLink: "https://github.com/jdichh/all-knowing-bot",
   },
@@ -208,6 +219,7 @@ export const projects = [
       "This was part of our capstone project back when I was in college, which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
     tools: ["Vue.js", "Bootstrap", "Firebase"],
     imageUrl: ssu,
+    toolIcons: [vueImg, bootstrapImg, firebaseImg],
     liveLink: "https://ssuwebsystem.netlify.app",
     videoLink: "https://youtu.be/vkYClk75SS0",
     githubLink: "https://github.com/jdichh/websystem_ssu2",
@@ -217,6 +229,7 @@ export const projects = [
     description:
       "An alternative version to the Horizon XS in-game radio in Forza Horizon 5. The original version of the radio left a bad taste in my mouth.",
     tools: ["Miscellaneous Project"],
+    toolIcons: [miscImg],
     imageUrl: horizonxs,
     nexusModsLink: "https://www.nexusmods.com/forzahorizon5/mods/65"
   },
