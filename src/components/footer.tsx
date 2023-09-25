@@ -35,7 +35,7 @@ export default function Footer() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md"
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -51,7 +51,7 @@ export default function Footer() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md"
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
             />
           </motion.a>
         </div>

@@ -25,7 +25,7 @@ export default function Hero() {
           >
             Jason Dichoso
           </h1>
-          <h2 className="text-md sm:text-xl">Front-End Developer</h2>
+          <h2 className="text-md sm:text-xl">Frontend Developer</h2>
         </motion.div>
         <motion.div
           className="flex gap-2 mt-2"
@@ -35,7 +35,7 @@ export default function Hero() {
           <motion.a
             href="https://github.com/jdichh/"
             target="_blank"
-            className="rounded-md transition duration-100 ease-in-out hover:bg-[#6E99C4]"
+            className="rounded-lg transition duration-100 ease-in-out hover:bg-[#6E99C4] border-[1px] p-0.5"
             aria-label="Button to my GitHub profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
@@ -52,7 +52,7 @@ export default function Hero() {
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
-            className="rounded-md transition duration-100 ease-in-out hover:bg-[#6E99C4]"
+            className="rounded-lg transition duration-100 ease-in-out hover:bg-[#6E99C4] border-[1px] p-0.5"
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
@@ -69,7 +69,7 @@ export default function Hero() {
           <motion.a
             href="/documents/resume.pdf"
             target="_blank"
-            className="rounded-md transition duration-100 ease-in-out hover:bg-[#6E99C4]"
+            className="rounded-lg transition duration-100 ease-in-out hover:bg-[#6E99C4] border-[1px] p-0.5"
             aria-label="Button to my Resume document"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
