@@ -6,9 +6,6 @@ import synthwave from "../../public/project/synthwave.gif";
 import asteroids from "../../public/project/asteroids.gif";
 import passwordGen from "../../public/project/password.png";
 import ssu from "../../public/project/ssu.png";
-import pern from "../../public/project/pern.png";
-import quoteGen from "../../public/project/quote.png";
-import weatherApp from "../../public/project/weather.png";
 import chatbot from "../../public/project/chatbot.png";
 import horizonxs from "../../public/project/horizonxs.webp"
 
@@ -21,22 +18,15 @@ import reactImg from "../../public/tools/react.svg";
 import nextImg from "../../public/tools/next.svg";
 import threeImg from "../../public/tools/three.svg";
 import r3fImg from "../../public/tools/r3f.svg";
-import zustandImg from "../../public/tools/zustand.svg";
 import bootstrapImg from "../../public/tools/bootstrap.svg";
 import bulmaImg from "../../public/tools/bulma.svg";
 import tailwindImg from "../../public/tools/tailwind.svg";
 import gsapImg from "../../public/tools/gsap.svg";
 import framerMotionImg from "../../public/tools/framermotion.svg";
-import firebaseImg from "../../public/tools/firebase.svg";
-import postgresqlImg from "../../public/tools/postgresql.svg";
-import expressImg from "../../public/tools/express.svg";
-import axiosImg from "../../public/tools/axios.svg";
-import insomniaImg from "../../public/tools/insomnia.svg";
 import nodeImg from "../../public/tools/node.svg";
 import w3Img from "../../public/tools/w3.svg";
 import waveToolImg from "../../public/tools/wavetool.svg";
 import lighthouseImg from "../../public/tools/lighthouse.svg";
-import figmaImg from "../../public/tools/figma.svg";
 
 export const links = [
   {
@@ -93,11 +83,6 @@ export const tools = [
     name: "React-Three-Fiber",
     imageUrl: r3fImg,
     alt: "React-Three-Fiber logo"
-  },
-  {
-    name: "Zustand",
-    imageUrl: zustandImg,
-    alt: "Zustand logo, a React state management tool"
   },
   {
     name: "Bootstrap",
