@@ -140,7 +140,7 @@ export const projects = [
   {
     name: "Virtual Car Showroom",
     description:
-      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also replicated some parts of the UI.",
+      "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also replicated some parts of the UI from the actual game.",
     tools: ["PC Required", "React-Three-Fiber", "SCSS"],
     toolIcons: [pcRequiredImg, r3fImg, scssImg],
     imageUrl: showroom,
@@ -152,7 +152,7 @@ export const projects = [
   {
     name: "Khronomechanica Vintora",
     description:
-      "A landing page for a fictional steampunk watch. I made this to try out embedding a 3D model in a product website.",
+      "A landing page for a fictional steampunk watch. I wanted to try out embedding a 3D model in a product website.",
     tools: ["PC Recommended", "HTML", "SCSS", "Three.js", "GSAP"],
     imageUrl: vintora,
     toolIcons: [pcImg, htmlImg, scssImg, threeImg, gsapImg],
@@ -163,7 +163,7 @@ export const projects = [
   {
     name: "Synthwave Scene",
     description:
-      "A 3D synthwave scene made with Three.js and React (not to be confused with React-Three-Fiber). Why? Because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
+      "A synthwave scene in 3D. Made with React.js and Three.js because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
     tools: ["PC Recommended", "React.js", "Three.js"],
     imageUrl: synthwave,
     toolIcons: [pcImg, reactImg, threeImg],
@@ -186,7 +186,7 @@ export const projects = [
   {
     name: "Galaxy Overview",
     description:
-      "A 3D overview of a galaxy inspired by the Heleus Cluster in Mass Effect Andromeda.",
+      "A 3D overview of a galaxy, inspired by the Heleus Cluster in Mass Effect Andromeda.",
     tools: ["PC Recommended", "React-Three-Fiber"],
     imageUrl: galaxy,
     toolIcons: [pcImg, r3fImg],
