@@ -14,7 +14,7 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
         I am a fresh IT graduate of Colegio de San Juan de Letran-Calamba in the
-        Philippines, and I have been self-learning since earlier this year.
+        Philippines, and I have been self-learning since early 2023.
         Since then, I've discovered that I really{" "}
         <span className="text-[#6E99C4] font-medium">love learning</span>{" "}
         various web technologies, especially front-end tech. And when I get to scratch the surface of what

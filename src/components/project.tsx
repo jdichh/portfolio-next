@@ -25,25 +25,34 @@ export default function Project({
     offset: ["0 1", "0.7 1"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
+  const SCALE = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
+  const OPACITY = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
+
+  const ON_HOVER_SCALE = 1.03;
+  const ON_TAP_SCALE = 0.95;
+  const TOOL_ICON_QUALITY = 50;
+  const TOOL_ICON_DIMENSIONS = 20
+  const IMAGE_QUALITY = 95;
 
   return (
     <motion.div
       className="mb-6 last:mb-0"
       ref={ref}
       style={{
-        scale: scale,
-        opacity: opacity,
+        scale: SCALE,
+        opacity: OPACITY,
       }}
     >
-      <article className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100">
+      <motion.article
+        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100"
+        whileHover={{ scale: ON_HOVER_SCALE }}
+      >
         <div className="flex flex-col pt-4 px-4 pb-6 sm:pl-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
             src={imageUrl}
             alt={name}
-            quality={95}
-            className="block mx-auto relative md:hidden transition ease-in-out duration-100 rounded-sm my-2"
+            quality={IMAGE_QUALITY}
+            className="block mx-auto relative md:hidden rounded-sm my-2"
           />
           <h3 className="text-xl text-center sm:text-2xl md:text-left text-[#DADADA] font-bold">
             {name}
@@ -57,9 +66,9 @@ export default function Project({
                 <Image
                   src={toolIcons[index]}
                   alt={tool}
-                  quality={10}
-                  width={19}
-                  height={19}
+                  quality={TOOL_ICON_QUALITY}
+                  width={TOOL_ICON_DIMENSIONS}
+                  height={TOOL_ICON_DIMENSIONS}
                   className="mr-2"
                 />{" "}
                 {tool}
@@ -67,66 +76,76 @@ export default function Project({
             ))}
           </ul>
           <p className="opacity-90 leading-relaxed">{description}</p>
-          <div className="flex flex-col text-center gap-2 mt-8 md:mt-4 font-medium lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col text-center gap-2 mt-8 md:mt-4 font-bold lg:flex-row lg:flex-wrap">
             {liveLink && (
-              <a
+              <motion.a
                 href={liveLink.toString()}
                 target="_blank"
                 aria-label="Live demo of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
               >
                 Live Demo
-              </a>
+              </motion.a>
             )}
             {videoLink && (
-              <a
+              <motion.a
                 href={videoLink.toString()}
                 target="_blank"
                 aria-label="Video demonstration of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
               >
                 Video
-              </a>
+              </motion.a>
             )}
             {githubLink && (
-              <a
+              <motion.a
                 href={githubLink.toString()}
                 target="_blank"
                 aria-label="GitHub repository of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
               >
                 GitHub
-              </a>
+              </motion.a>
             )}
             {devFootage && (
-              <a
+              <motion.a
                 href={devFootage.toString()}
                 target="_blank"
                 aria-label="Development footage of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
               >
                 Development Footage
-              </a>
+              </motion.a>
             )}
             {nexusModsLink && (
-              <a
+              <motion.a
                 href={nexusModsLink.toString()}
                 target="_blank"
                 aria-label="The NexusMods page of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100 hover:scale-[1.03]"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
               >
                 NexusMods
-              </a>
+              </motion.a>
             )}
           </div>
         </div>
         <Image
           src={imageUrl}
           alt={name}
-          quality={95}
+          quality={IMAGE_QUALITY}
           className="hidden md:block relative md:absolute transition ease-in-out duration-100 rounded-sm top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-x-2 md:group-hover:-translate-y-2 md:group-hover:-rotate-1"
         />
-      </article>
+      </motion.article>
     </motion.div>
   );
 }
