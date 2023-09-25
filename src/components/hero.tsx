@@ -25,7 +25,7 @@ export default function Hero() {
           >
             Jason Dichoso
           </h1>
-          <h2 className="text-md sm:text-xl">Frontend Developer</h2>
+          <h2 className="text-md sm:text-xl">Frontend Web Developer</h2>
         </motion.div>
         <motion.div
           className="flex gap-2 mt-2"
