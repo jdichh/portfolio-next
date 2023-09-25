@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Footer() {
-  const ICON_DIMENSIONS = 40
+  const ICON_DIMENSIONS = 35
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 

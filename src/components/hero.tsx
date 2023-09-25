@@ -8,7 +8,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
-  const ICON_DIMENSIONS = 40;
+  const ICON_DIMENSIONS = 35;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 
