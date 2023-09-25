@@ -92,11 +92,6 @@ export const tools = [
     alt: "Tailwind CSS logo"
   },
   {
-    name: "GSAP",
-    imageUrl: gsapImg,
-    alt: "GSAP logo"
-  },
-  {
     name: "Framer Motion",
     imageUrl: framerMotionImg,
     alt: "Framer motion logo"
