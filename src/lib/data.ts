@@ -87,6 +87,11 @@ export const tools = [
     alt: "React-Three-Fiber logo"
   },
   {
+    name: "Vue.js",
+    imageUrl: vueImg,
+    alt: "Vue.js logo"
+  },
+  {
     name: "Tailwind",
     imageUrl: tailwindImg,
     alt: "Tailwind CSS logo"
