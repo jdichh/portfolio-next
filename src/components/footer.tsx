@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Footer() {
-  const ICON_DIMENSIONS = 35
+  const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 
@@ -19,25 +19,8 @@ export default function Footer() {
         <motion.span className="text-base text-center flex justify-center sm:text-lg md:justify-end">
           Let's work together.
         </motion.span>
-        <div
-          className="border-t-2 border-[#DADADA] mx-3"
-        />
+        <div className="border-t-2 border-[#DADADA] mx-3" />
         <div className="flex gap-2 justify-center sm:text-lg md:justify-start uppercase">
-          <motion.a
-            href="mailto:jpsdichoso21@gmail.com"
-            aria-label="Button to send me an email"
-            whileHover={{ scale: ON_HOVER_SCALE }}
-            whileTap={{ scale: ON_TAP_SCALE }}
-          >
-            <Image
-              src="/hero-button-icons/mail.svg"
-              alt="Button to send me an email"
-              width={ICON_DIMENSIONS}
-              height={ICON_DIMENSIONS}
-              priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
-            />
-          </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
@@ -48,6 +31,21 @@ export default function Footer() {
             <Image
               src="/hero-button-icons/linkedin.svg"
               alt="Button to my LinkedIn profile"
+              width={ICON_DIMENSIONS}
+              height={ICON_DIMENSIONS}
+              priority={true}
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+            />
+          </motion.a>
+          <motion.a
+            href="mailto:jpsdichoso21@gmail.com"
+            aria-label="Button to send me an email"
+            whileHover={{ scale: ON_HOVER_SCALE }}
+            whileTap={{ scale: ON_TAP_SCALE }}
+          >
+            <Image
+              src="/hero-button-icons/mail.svg"
+              alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}

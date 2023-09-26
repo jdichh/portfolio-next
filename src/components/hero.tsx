@@ -8,7 +8,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
-  const ICON_DIMENSIONS = 35;
+  const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 
@@ -35,7 +35,6 @@ export default function Hero() {
           <motion.a
             href="https://github.com/jdichh/"
             target="_blank"
-            className="rounded-lg transition duration-100 ease-in-out hover:bg-[#6E99C4] border-[1px] p-0.5"
             aria-label="Button to my GitHub profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
@@ -46,13 +45,12 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover rounded-md"
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
-            className="rounded-lg transition duration-100 ease-in-out hover:bg-[#6E99C4] border-[1px] p-0.5"
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
@@ -63,7 +61,22 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover rounded-md"
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+            />
+          </motion.a>
+          <motion.a
+            href="mailto:jpsdichoso21@gmail.com"
+            aria-label="Button to my LinkedIn profile"
+            whileHover={{ scale: ON_HOVER_SCALE }}
+            whileTap={{ scale: ON_TAP_SCALE }}
+          >
+            <Image
+              src="/hero-button-icons/mail.svg"
+              alt="Button to send me an email"
+              width={ICON_DIMENSIONS}
+              height={ICON_DIMENSIONS}
+              priority={true}
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
             />
           </motion.a>
         </motion.div>
