@@ -66,6 +66,23 @@ export default function Hero() {
               className="object-cover rounded-md"
             />
           </motion.a>
+          <motion.a
+            href="documents/resume.pdf"
+            target="_blank"
+            className="rounded-lg transition duration-100 ease-in-out hover:bg-[#6E99C4] border-[1px] p-0.5"
+            aria-label="Button to my LinkedIn profile"
+            whileHover={{ scale: ON_HOVER_SCALE }}
+            whileTap={{ scale: ON_TAP_SCALE }}
+          >
+            <Image
+              src="/hero-button-icons/resume.svg"
+              alt="Button to view my resume"
+              width={ICON_DIMENSIONS}
+              height={ICON_DIMENSIONS}
+              priority={true}
+              className="object-cover rounded-md"
+            />
+          </motion.a>
         </motion.div>
       </div>
     </section>

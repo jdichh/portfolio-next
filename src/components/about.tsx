@@ -34,10 +34,6 @@ export default function About() {
         </span>
         .
       </p>
-      <p className="mb-6">
-        Currently, I'm trying to learn more about testing with Jest and
-        React-Testing-Library.
-      </p>
     </motion.section>
   );
 }
