@@ -13,7 +13,7 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
-        I am a fresh IT graduate based in the Philippines, looking to enter the
+        I am a fresh IT graduate based in the Philippines, determined to enter the
         industry as a{" "}
         <span className="text-[#6E99C4] font-medium">
           frontend web developer
