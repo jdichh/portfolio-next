@@ -14,7 +14,7 @@ export default function Projects() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       >
-        <SectionHeading>Personal Works</SectionHeading>
+        <SectionHeading>Works</SectionHeading>
 
       {projects.map((project, index) => (
         <React.Fragment key={index}>
