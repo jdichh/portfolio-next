@@ -32,16 +32,16 @@ import pcRequiredImg from "../../public/tools/pcrequired.svg";
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
-  },
-  {
     name: "Tools",
     hash: "#tools",
   },
   {
     name: "Works",
-    hash: "#projects",
+    hash: "#works",
+  },
+  {
+    name: "Blogs",
+    hash: "/blogs",
   },
 ]
 
@@ -124,7 +124,7 @@ export const projects = [
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
     githubLink: "https://github.com/jdichh/car-showroom-r3f/",
-    devFootage: "https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing",
+    devFootage: "https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
   },
   {
     name: "Khronomechanica Vintora",
@@ -210,5 +210,14 @@ export const projects = [
     toolIcons: [miscImg],
     imageUrl: horizonxs,
     nexusModsLink: "https://www.nexusmods.com/forzahorizon5/mods/65"
+  },
+]
+
+export const blogs = [
+  {
+    name: "My first shenanigans in 3D",
+    description:"Let me tell you a little story about how I came by 3D so early on in my self-learning journey, and what I've currently finished.",
+    date: "September 27, 2023",
+    link: "/blogs/my-first-shenanigans-in-3d"
   },
 ]

@@ -11,9 +11,10 @@ export default function Footer() {
 
   return (
     <motion.footer
-      className="mt-6 border-t-2 w-full xl:w-[81%] border-[#6E99C4]"
-      initial={{ y: 100, opacity: 0 }}
+      className="mt-6 border-t-2 w-full xl:w-[80.5%] border-[#6E99C4]"
+      initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="grid grid-cols-3 items-center my-6 mx-3 font-semibold">
         <motion.span className="text-base text-center flex justify-center sm:text-lg md:justify-end">
@@ -27,14 +28,15 @@ export default function Footer() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
-              src="/hero-button-icons/linkedin.svg"
+              src="/icons/linkedin.svg"
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -42,14 +44,15 @@ export default function Footer() {
             aria-label="Button to send me an email"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
-              src="/hero-button-icons/mail.svg"
+              src="/icons/mail.svg"
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
         </div>
