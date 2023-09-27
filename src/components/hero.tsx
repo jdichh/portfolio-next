@@ -48,7 +48,7 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -65,7 +65,7 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -81,7 +81,7 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
         </motion.div>

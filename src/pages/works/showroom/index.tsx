@@ -45,7 +45,7 @@ export default function index() {
             <p className="leading-7 px-2 flex justify-end">
               <a
                 href=""
-                className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-100 ease-in-out`}
+                className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
               >
                 Skip to the good stuff.
               </a>
@@ -64,7 +64,7 @@ export default function index() {
             <a
               href="https://threejs.org/"
               target="_blank"
-              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-100 ease-in-out`}
+              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
             >
               Three.js
             </a>
@@ -76,7 +76,7 @@ export default function index() {
             <a
               href="https://roadmap.sh/"
               target="_blank"
-              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-100 ease-in-out`}
+              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
             >
               roadmap.sh
             </a>{" "}
@@ -114,11 +114,16 @@ export default function index() {
           <p className="leading-7 mb-8 opacity-90">
             But anyway, I looked at the documentations that Three.js provided. I
             was so confused at the time, as the details were so sparse for me at
-            the time (or maybe I'm just a big, dumb idiot). Some terms, I knew.
-            Like anti-aliasing, shadow resolution, texture resolution, lighting,
-            models, and etc., because I really love modding Skyrim to the point
-            where my poor laptop starts to sound like hair dryers in a full
-            salon.
+            the time (or maybe I'm just a big, dumb idiot). So I enlisted the
+            help of Chat-GPT, and specifically told it to treat me like I'm a
+            high schooler.
+          </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            Luckily, I already knew what some terms meant; like anti-aliasing,
+            shadow resolution, texture resolution, lighting, models, and etc.,
+            because I really love modding Skyrim to the point where my poor
+            laptop starts to sound like hair dryers in a full salon.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
@@ -132,7 +137,7 @@ export default function index() {
             Sketchfab, and{" "}
             <a
               href="https://porsche930.netlify.app/"
-              className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-100 ease-in-out`}
+              className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
             >
               this was my first output
             </a>

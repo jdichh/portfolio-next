@@ -45,7 +45,7 @@ export default function Project({
       }}
     >
       <motion.article
-        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-md relative transition ease-in-out duration-100 hover:outline hover:outline-1 hover:outline-[#DADADA]"
+        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-md relative transition ease-in-out duration-150 hover:outline hover:outline-1 hover:outline-[#DADADA]"
         whileHover={{ scale: ON_HOVER_SCALE }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
@@ -62,7 +62,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-[#1F1E26] transition ease-in-out duration-100 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#DADADA]"
+                className="bg-[#1F1E26] transition ease-in-out duration-150 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#DADADA]"
               >
                 <Image
                   src={toolIcons[index]}
@@ -82,11 +82,11 @@ export default function Project({
               <motion.a
                 href={fullPageLink.toString()}
                 aria-label="Live demo of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
-                Full
+                Blog Post
               </motion.a>
             )}
             {liveLink && (
@@ -94,7 +94,7 @@ export default function Project({
                 href={liveLink.toString()}
                 target="_blank"
                 aria-label="Live demo of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
@@ -106,7 +106,7 @@ export default function Project({
                 href={videoLink.toString()}
                 target="_blank"
                 aria-label="Video demonstration of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
@@ -118,7 +118,7 @@ export default function Project({
                 href={githubLink.toString()}
                 target="_blank"
                 aria-label="GitHub repository of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
@@ -130,7 +130,7 @@ export default function Project({
                 href={devFootage.toString()}
                 target="_blank"
                 aria-label="Development footage of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
@@ -142,7 +142,7 @@ export default function Project({
                 href={nexusModsLink.toString()}
                 target="_blank"
                 aria-label="The NexusMods page of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
@@ -155,7 +155,7 @@ export default function Project({
           src={imageUrl}
           alt=""
           quality={IMAGE_QUALITY}
-          className="hidden md:block relative md:absolute transition ease-in-out duration-100 rounded-md top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
+          className="hidden md:block relative md:absolute transition ease-in-out duration-150 rounded-md top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
         />
       </motion.article>
     </motion.div>

@@ -30,7 +30,7 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
           <li>
             <Link href="/" aria-label="Back button">
               <motion.div
-                className="transition duration-100 ease-in-out text-lg hover:text-[#6E99C4] rounded-sm"
+                className="transition duration-150 ease-in-out text-lg hover:text-[#6E99C4] rounded-sm"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.05 }}
@@ -41,7 +41,7 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
                   width={ICON_DIMENSIONS}
                   height={ICON_DIMENSIONS}
                   priority={true}
-                  className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md border-[1px] p-0.5"
+                  className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
                 />
               </motion.div>
             </Link>

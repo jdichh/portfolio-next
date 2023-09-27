@@ -26,7 +26,7 @@ export default function Header() {
             >
               <Link
                 href={link.hash}
-                className="transition duration-100 ease-in-out p-4 text-lg hover:text-[#6E99C4] rounded-sm"
+                className="transition duration-150 ease-in-out p-4 text-lg hover:text-[#6E99C4] rounded-sm"
               >
                 {link.name}
               </Link>
