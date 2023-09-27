@@ -16,7 +16,7 @@ export default function index() {
   const IMAGE_DIMENSIONS = 700;
   const IMAGE_QUALITY = 95;
   const FIGURE_BG = "#1F1E26";
-  const WARNING_COLOR = "#3F0F13";
+  const WARNING_COLOR = "#471116";
 
   return (
     <>
@@ -25,13 +25,13 @@ export default function index() {
       </Head>
       <RouteHeader title="Virtual Car Showroom" />
       <motion.main
-        className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 h-[7000px] ${spaceGrotesk.className}`}
+        className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
         <article>
-          <div className="mt-32 lg:mt-40" />
+          <div className="mt-20 lg:mt-40" />
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold mb-3">
               Creating a virtual car showroom with React-Three-Fiber
@@ -57,7 +57,7 @@ export default function index() {
             </p>
           </aside>
 
-          <h2 className="text-xl sm:text-2xl font-bold mb-3">
+          <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
             Moment of discovery
           </h2>
 
@@ -81,8 +81,8 @@ export default function index() {
             I was shocked, but in a good way. Because I thought, at the time,
             that frontend was just about React, Vue, Angular, and all that jazz.
             So I took it upon myself to get to know and learn how Three.js
-            worked. But don't follow what I did, kids, because I could've spent
-            time learning React and its ecosystem instead of 3D stuff.
+            worked. But don't do what I did, kids, because I could've spent time
+            learning more about React and its ecosystem instead of 3D stuff.
           </p>
 
           <p className="leading-7 mb-8">
@@ -100,7 +100,7 @@ export default function index() {
             this article's writing, about 3D applications with browsers.
           </p>
 
-          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
+          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
             <Image
               src="/article-images/showroom/threejs.png"
               alt="A screenshot of the Three.js home page."
@@ -114,16 +114,16 @@ export default function index() {
             </figcaption>
           </figure>
 
-          <h2 className="text-xl sm:text-2xl font-bold mb-3">
+          <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
             I understand, and I am confused at the same time
           </h2>
 
           <p className="leading-7 mb-8 opacity-90">
-            But anyway, I looked at the documentations that Three.js provided. I
-            was so confused at the time, as the details were so sparse for me at
-            the time (or maybe I'm just a big, dumb idiot). So I enlisted the
-            help of Chat-GPT, and specifically told it to treat me like I'm a
-            high schooler.
+            I looked at the documentations that Three.js provided. I was so
+            confused at the time, as the details in the documentation were so
+            sparse for me at the time (or maybe I'm just a big, dumb idiot). So
+            I enlisted the help of Chat-GPT, and specifically told it to answer
+            me like I'm a high schooler.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
@@ -171,7 +171,7 @@ export default function index() {
             amount of time.
           </p>
 
-          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
+          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
             <Image
               src="/article-images/showroom/vaporwave.png"
               alt="A screenshot of Maxime Heckel's vaporwave project."
@@ -185,18 +185,29 @@ export default function index() {
             </figcaption>
           </figure>
 
-          <h2 className="text-xl sm:text-2xl font-bold mb-3 scroll-mt-20" id="actual">
-            Getting my hands dirty
-          </h2>
+          <p className="leading-7 mb-8 opacity-90">
+            I followed Maxime's instructions and guidelines, but not blindly. I took the time to
+            understand what some things meant, because what's the point of
+            tutorials if you're just going to copy code for code, and not
+            understand it? Yeah, I'm talking to you, Jason from
+            3 months ago.
+          </p>
 
           <p className="leading-7 mb-8 opacity-90">
-            But, I didn't want to end "my" project with a 1:1 copy of their
+            Anyway, I didn't want to end "my" project with a 1:1 copy of their
             project, I wanted to add more things, like a sun, a skybox,
             background music, and some post-processing effects. So I set out to
             accomplish these tasks that I set for myself.
           </p>
 
-          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
+          <h2
+            className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
+            id="actual"
+          >
+            Getting my hands dirty
+          </h2>
+
+          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
             <Image
               src="/project/showroom.png"
               alt="The virtual car showroom project."

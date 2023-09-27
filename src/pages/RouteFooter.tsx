@@ -14,7 +14,7 @@ export default function RouteFooter() {
 
   return (
     <motion.footer
-      className={`mt-6 mx-auto border-t-2 w-full xl:w-[67.25%] font-semibold border-[#6E99C4] ${spaceGrotesk.className}`}
+      className={`mt-6 mx-auto border-t-2 w-full max-w-[700px] font-semibold border-[#6E99C4] ${spaceGrotesk.className}`}
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 1, ease: [0.22, 1, 0.36, 1] }}
