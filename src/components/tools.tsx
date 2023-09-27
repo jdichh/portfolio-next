@@ -22,7 +22,7 @@ export default function Tools() {
         {tools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] hover:bg-[#25242D] items-center m-1 p-3 rounded-sm transition ease-in-out duration-100"
+            className="flex flex-col text-[#DADADA] text-center bg-[#1F1E26] hover:bg-[#25242D] items-center m-1 p-3 rounded-md transition ease-in-out duration-100"
           >
             <Image
               src={tool.imageUrl}

@@ -45,7 +45,7 @@ export default function Project({
       }}
     >
       <motion.article
-        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-sm relative transition ease-in-out duration-100 hover:outline hover:outline-1 hover:outline-[#DADADA]"
+        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-md relative transition ease-in-out duration-100 hover:outline hover:outline-1 hover:outline-[#DADADA]"
         whileHover={{ scale: ON_HOVER_SCALE }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
@@ -53,7 +53,7 @@ export default function Project({
             src={imageUrl}
             alt=""
             quality={IMAGE_QUALITY}
-            className="block mx-auto relative md:hidden rounded-sm my-2"
+            className="block mx-auto relative md:hidden rounded-md my-2"
           />
           <h3 className="text-xl text-center sm:text-2xl md:text-left text-[#DADADA] font-bold">
             {name}
@@ -155,7 +155,7 @@ export default function Project({
           src={imageUrl}
           alt=""
           quality={IMAGE_QUALITY}
-          className="hidden md:block relative md:absolute transition ease-in-out duration-100 rounded-sm top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
+          className="hidden md:block relative md:absolute transition ease-in-out duration-100 rounded-md top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
         />
       </motion.article>
     </motion.div>

@@ -8,7 +8,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
-  const ICON_DIMENSIONS = 35;
+  const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 
@@ -40,6 +40,7 @@ export default function Hero() {
             aria-label="Button to my GitHub profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
               src="/icons/github.svg"
@@ -47,7 +48,7 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -56,6 +57,7 @@ export default function Hero() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
               src="/icons/linkedin.svg"
@@ -63,7 +65,7 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -71,6 +73,7 @@ export default function Hero() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
               src="/icons/mail.svg"
@@ -78,7 +81,7 @@ export default function Hero() {
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
         </motion.div>
