@@ -20,9 +20,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Blog | My shenanigans in 3D</title>
+        <title>Blog | My shenanigans in 3D format</title>
       </Head>
-      <BlogHeader title="My shenanigans in 3D" />
+      <BlogHeader title="My shenanigans in 3D format" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -33,7 +33,7 @@ export default function index() {
           <div className="mt-20 lg:mt-40" />
           <div className="mb-8">
             <h1 className="text-2xl sm:text-3xl font-bold mb-2">
-              My shenanigans in 3D
+              My shenanigans in 3D format
             </h1>
             <p className="opacity-50">Posted on September 27, 2023</p>
           </div>
@@ -101,10 +101,10 @@ export default function index() {
 
           <p className="leading-7 mb-8 opacity-90">
             I looked at the documentations that Three.js provided. I was so
-            confused at the time, as the details in the documentation were so
-            sparse for me at the time (or maybe I'm just a big, dumb idiot). So
-            I enlisted the help of ChatGPT, and specifically told it to answer
-            me like I'm a high schooler.
+            confused, as the details in the documentation were so sparse for me
+            at the time (or maybe I'm just a big, dumb idiot). So I enlisted the
+            help of ChatGPT, and specifically told it to answer me like I'm a
+            high schooler.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
@@ -118,14 +118,14 @@ export default function index() {
             >
               poor laptop{" "}
             </a>
-            starts to sound like hair dryers in a full salon. It was because of
-            my unhealthy relationship in modding Skyrim that I managed to
-            understand some of the documentation.
+            started to sound like hair dryers in a full salon. Anyway, it was
+            because of my unhealthy relationship with Skyrim modding that I
+            managed to understand some of the documentation.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
-            After some time watching and reading tutorials , I managed to load
-            my first 3D model, which I downloaded from Sketchfab, and{" "}
+            After some time watching and reading tutorials, I managed to load my
+            first 3D model, which I downloaded from Sketchfab, and{" "}
             <a
               href="https://porsche930.netlify.app/"
               target="_blank"
@@ -133,7 +133,11 @@ export default function index() {
             >
               this was my first output
             </a>
-            . Granted, this isn't anything impressive, but at the time, I was so
+            .
+          </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            Granted, this isn't anything impressive, but at the time, I was so
             ecstatic that I managed to do it.
           </p>
 
@@ -221,7 +225,7 @@ export default function index() {
               className="rounded-md"
             />
             <figcaption className="mt-2 text-center">
-              A visual example of directional light.
+              A visual example of directional light—credits go to viblo.asia.
             </figcaption>
           </figure>
 
@@ -229,12 +233,118 @@ export default function index() {
             className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
             id="actual"
           >
-            Filling up the void
+            Filling up the soulless husk
           </h2>
 
           <p className="leading-7 mb-8 opacity-90">
             The sun exists, but there's a dark void just, staring. This is the
-            time where we add 
+            time where we add in the sky.
+          </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            <span className="font-bold">My initial solution was this:</span>{" "}
+            create a big box that has the textures of a sky within it. And here
+            it is:
+          </p>
+
+          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <Image
+              src="/article-images/blog1/skybox-trial.png"
+              alt="My initial skybox trial"
+              width={IMAGE_DIMENSIONS}
+              height={IMAGE_DIMENSIONS}
+              quality={IMAGE_QUALITY}
+              className="rounded-md"
+            />
+            <figcaption className="mt-2 text-center">
+              Yeah...nice try, dumbass.
+            </figcaption>
+          </figure>
+
+          <p className="leading-7 mb-8 opacity-90">
+            The problem was that I didn't set a proper size for the box itself.
+            At this point, I was scratching my head. Because I didn't know how
+            to create a custom size for a box at the time, and I was about to
+            ask GPT how to do it.
+          </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            Let me remind you, I was new to Three.js. So don't get all
+            judgmental towards me when I ask an AI to read and relay
+            documentation to me in an easier way, especially when I initially
+            found it to be sparse and quite complicated.
+          </p>
+
+          <h2
+            className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
+            id="actual"
+          >
+            Staring into the void, but giving me the light
+          </h2>
+
+          <p className="leading-7 mb-8 opacity-90">
+            When I was just about to open up ChatGPT, it suddenly hit me—why not
+            just make the dark background use the texture itself?
+          </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            So I scoured the documentation on how to load an image as a texture
+            for the dark background to use as a skybox. And I found out that{" "}
+            <a
+              href="https://threejs.org/docs/index.html?q=textureload#api/en/loaders/TextureLoader"
+              target="_blank"
+              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+            >
+              TextureLoader
+            </a>{" "}
+            is the right tool for the job.
+          </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            As the name implies, it loads textures. Couldn't get any more
+            obvious than this.
+          </p>
+
+          <h2
+            className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
+            id="actual"
+          >
+            Filling up the soulless husk, pt.2
+          </h2>
+
+          <p className="leading-7 mb-8 opacity-90">
+            So I created an image to be used as a texture. The initial version
+            was, from bottom to top, was a gradient going from orange to red.
+            But after creating the texture, I thought that this looked
+            apocalyptic. So I switched to cooler colors, and I added some stars too.
+          </p>
+
+          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <Image
+              src="/article-images/blog1/skybox.webp"
+              alt="Skybox texture"
+              width={IMAGE_DIMENSIONS}
+              height={IMAGE_DIMENSIONS}
+              quality={IMAGE_QUALITY}
+              className="rounded-md"
+            />
+            <figcaption className="mt-2 text-center">
+              My skybox texture
+            </figcaption>
+          </figure>
+
+          <p className="leading-7 mb-8 opacity-90">
+            This was made with my ol' trusty tool and long time partner{" "}
+            <a
+              href="https://getpaint.net/"
+              target="_blank"
+              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+            >
+              Paint.NET
+            </a>
+            . I'm not used to working with Photoshop (yet), because I find that
+            Paint.NET gets the job done, and I haven't really come across
+            problems that Paint.NET couldn't solve for me.
           </p>
         </article>
       </motion.main>
