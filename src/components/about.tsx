@@ -10,6 +10,7 @@ export default function About() {
       className="px-6 w-full lg:w-8/12 xl:w-6/12 leading-relaxed text-center my-20 scroll-mt-[2rem] lg:scroll-mt-20"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">

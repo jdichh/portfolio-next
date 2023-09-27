@@ -8,7 +8,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
-  const ICON_DIMENSIONS = 40;
+  const ICON_DIMENSIONS = 35;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 
@@ -19,6 +19,7 @@ export default function Hero() {
           className="text-right"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <h1
             className={`${inter.className} font-medium text-[#6E99C4] text-4xl sm:text-5xl`}
@@ -31,6 +32,7 @@ export default function Hero() {
           className="flex gap-2 mt-2"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.a
             href="https://github.com/jdichh/"
@@ -40,7 +42,7 @@ export default function Hero() {
             whileTap={{ scale: ON_TAP_SCALE }}
           >
             <Image
-              src="/hero-button-icons/github.svg"
+              src="/icons/github.svg"
               alt="Button to my GitHub profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
@@ -56,7 +58,7 @@ export default function Hero() {
             whileTap={{ scale: ON_TAP_SCALE }}
           >
             <Image
-              src="/hero-button-icons/linkedin.svg"
+              src="/icons/linkedin.svg"
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
@@ -71,7 +73,7 @@ export default function Hero() {
             whileTap={{ scale: ON_TAP_SCALE }}
           >
             <Image
-              src="/hero-button-icons/mail.svg"
+              src="/icons/mail.svg"
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}

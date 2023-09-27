@@ -81,7 +81,6 @@ export default function Project({
           {fullPageLink && (
               <motion.a
                 href={fullPageLink.toString()}
-                target="_blank"
                 aria-label="Live demo of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-100"
                 whileHover={{ scale: ON_HOVER_SCALE }}

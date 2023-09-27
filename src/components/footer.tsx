@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Footer() {
-  const ICON_DIMENSIONS = 40;
+  const ICON_DIMENSIONS = 35;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 
@@ -14,6 +14,7 @@ export default function Footer() {
       className="mt-6 border-t-2 w-full xl:w-[81%] border-[#6E99C4]"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="grid grid-cols-3 items-center my-6 mx-3 font-semibold">
         <motion.span className="text-base text-center flex justify-center sm:text-lg md:justify-end">
@@ -29,7 +30,7 @@ export default function Footer() {
             whileTap={{ scale: ON_TAP_SCALE }}
           >
             <Image
-              src="/hero-button-icons/linkedin.svg"
+              src="/icons/linkedin.svg"
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
@@ -44,7 +45,7 @@ export default function Footer() {
             whileTap={{ scale: ON_TAP_SCALE }}
           >
             <Image
-              src="/hero-button-icons/mail.svg"
+              src="/icons/mail.svg"
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
