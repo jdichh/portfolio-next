@@ -215,9 +215,9 @@ export const projects = [
 
 export const blogs = [
   {
-    name: "My shenanigans in 3D",
+    name: "My first shenanigans in 3D",
     description:"Let me tell you a little story about how I came by 3D so early on in my self-learning journey, and what I've currently finished.",
     date: "September 27, 2023",
-    link: "/blogs/my-shenanigans-in-3d"
+    link: "/blogs/my-first-shenanigans-in-3d"
   },
 ]
