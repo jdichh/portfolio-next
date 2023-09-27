@@ -28,7 +28,7 @@ const BlogHeader: React.FC<RouteHeaderProps> = ({
       <nav className="fixed flex justify-between items-center w-full max-w-[700px] mx-auto left-1/2 -translate-x-[50%] px-4 h-16">
         <ul>
           <li className="flex flex-row gap-2">
-            <Link href="/blogs" aria-label="Back button">
+            <Link href="/posts" aria-label="Back button">
               <motion.div
                 className="transition duration-150 ease-in-out text-lg hover:text-[#6E99C4] rounded-sm"
                 whileHover={{ scale: ON_HOVER_SCALE }}
