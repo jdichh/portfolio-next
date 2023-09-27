@@ -29,7 +29,7 @@ export default function index() {
         <article>
           <div className="mt-32 lg:mt-40" />
           <div className="mb-8">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-3">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">
               Creating a virtual car showroom with React-Three-Fiber
             </h1>
             <p className="opacity-50">Posted on September 27, 2023</p>
@@ -39,15 +39,15 @@ export default function index() {
             className={`w-full bg-[${WARNING_COLOR}] px-2 py-3 rounded-md my-12`}
           >
             <p className="leading-7 mb-6 px-2">
-              Before you start reading, the section below isn't about me
-              creating the project, it's how I came about using 3D in browsers.
+              Before you start reading, the long section below isn't about me
+              creating the showroom project, it's how I came about Three.js and React-Three-Fiber.
             </p>
             <p className="leading-7 px-2 flex justify-end">
               <a
                 href=""
                 className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
               >
-                Skip to the good stuff.
+                Skip to the actual part.
               </a>
             </p>
           </aside>
@@ -82,8 +82,8 @@ export default function index() {
             </a>{" "}
             as a guide in my self-learning journey. It's very good by the way,
             it's full of quality resources and its "difficulty scaling" is quite
-            linear, at least for me. But, it didn't have a guide, as of this
-            article's writing, about 3D applications using browsers.
+            linear, at least for me. But, it didn't have a guide, at least as of this
+            article's writing, about 3D applications with browsers.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
@@ -105,11 +105,13 @@ export default function index() {
               className="rounded-md"
             />
             <figcaption className="mt-2 text-center">
-              Three.js website.
+              Three.js home page.
             </figcaption>
           </figure>
 
-          <h2 className="text-xl sm:text-2xl font-bold mb-3">I am confusion</h2>
+          <h2 className="text-xl sm:text-2xl font-bold mb-3">
+            I understand, and I am confused at the same time
+          </h2>
 
           <p className="leading-7 mb-8 opacity-90">
             But anyway, I looked at the documentations that Three.js provided. I
@@ -120,29 +122,50 @@ export default function index() {
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
-            Luckily, I already knew what some terms meant; like anti-aliasing,
+            Luckily, I already knew what some terms meant, like anti-aliasing,
             shadow resolution, texture resolution, lighting, models, and etc.,
-            because I really love modding Skyrim to the point where my poor
-            laptop starts to sound like hair dryers in a full salon.
+            because I really loved modding Skyrim to the point where my{" "}
+            <a
+              href="https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-gaming-laptops/ideapad-l340-15irh-gaming/88ipl301161"
+              target="_blank"
+              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+            >
+              poor laptop{" "}
+            </a>
+            starts to sound like hair dryers in a full salon. It was because of my
+            unhealthy relationship in modding Skyrim that I managed to
+            understand some of the documentation.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
-            It's because of my unhealthy love in modding Skyrim that I somehow
-            managed to understand some of the documentation.
-          </p>
-
-          <p className="leading-7 mb-8 opacity-90">
-            After some time watching tutorials and reading documentation, I
-            managed to load my first 3D model, which I downloaded from
-            Sketchfab, and{" "}
+            After some time watching and reading tutorials , I managed to load
+            my first 3D model, which I downloaded from Sketchfab, and{" "}
             <a
               href="https://porsche930.netlify.app/"
+              target="_blank"
               className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
             >
               this was my first output
             </a>
-            .
+            . Granted, this isn't anything impressive, but at the time, I was so
+            ecstatic that I managed to do it.
           </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            Some time after that, I came across an{" "}
+            <a
+              href="https://blog.maximeheckel.com/posts/vaporwave-3d-scene-with-threejs/"
+              target="_blank"
+              className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+            >
+              article by Maxime Heckel
+            </a>
+            , on how to create a vaporwave scene with Three.js. This article was
+            a great read by the way, as it helped me understand more of the more
+            complicated stuff like how to regenerate terrain for an indefinite
+            amount of time.
+          </p>
+          
 
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
             <Image
