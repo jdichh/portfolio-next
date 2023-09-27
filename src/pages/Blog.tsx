@@ -16,7 +16,7 @@ export default function Blog({ name, description, date, link }: BlogProps) {
       >
         <a href={link}>
         <div className="flex flex-col py-4 px-4">
-          <h3 className="text-xl text-center sm:text-2xl md:text-left text-[#DADADA] font-bold">
+          <h3 className="text-xl text-left sm:text-2xl text-[#DADADA] font-bold">
             {name}
           </h3>
           <h4 className="opacity-50 mb-2">{date}</h4>

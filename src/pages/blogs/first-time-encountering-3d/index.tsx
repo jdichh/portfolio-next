@@ -20,9 +20,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Blog | My shenanigans in 3D format</title>
+        <title>Blog | My shenanigans in 3D</title>
       </Head>
-      <BlogHeader title="My shenanigans in 3D format" />
+      <BlogHeader title="My shenanigans in 3D" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -32,10 +32,10 @@ export default function index() {
         <article>
           <div className="mt-20 lg:mt-40" />
           <div className="mb-8">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-2">
-              My shenanigans in 3D format
+            <h1 className="text-xl sm:text-2xl font-bold mb-2">
+              My shenanigans in 3D
             </h1>
-            <p className="opacity-50">Posted on September 27, 2023</p>
+            <p className="opacity-50 text-sm sm:text-base"> September 27, 2023</p>
           </div>
 
           <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
