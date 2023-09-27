@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import SectionDivider from "@/components/SectionDivider";
 import Tools from "@/components/Tools";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
