@@ -253,8 +253,8 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              The sun exists, but there's a dark void just, staring at you. This
-              is the time where we add in the sky.{" "}
+              The sun exists (in a way), but there's a dark void just, staring
+              at you. This is the time where we add in the sky.{" "}
               <span className="font-bold">My initial solution was this:</span>{" "}
               create a big box that has the textures of a sky within it.
             </p>
@@ -283,10 +283,11 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              Let me remind you, I was new to Three.js. So don't get all
-              judgmental towards me when I ask an AI to read and relay
-              documentation to me in an easier way, especially when I initially
-              found it to be sparse and quite complicated.
+              Let me remind you, I was new to Three.js, reading documentations,
+              and all that. So don't get all judgmental towards me when I ask an
+              AI to read and relay documentation to me in an easier way,
+              especially when I initially found it to be sparse and quite
+              complicated.
             </p>
           </section>
 
@@ -466,7 +467,7 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              But notice the red rectangles. It means that there are little to
+              But notice the darker colors in the red rectangles. It means that there are little to
               no bumps there—meaning gaps are existing inbetween the terrains.
             </p>
 
@@ -552,7 +553,6 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               I also added sun rays using DirectionalLight.
             </p>
-
           </section>
         </article>
       </motion.main>
