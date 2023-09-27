@@ -49,7 +49,7 @@ export default function index() {
             </p>
             <p className="leading-7 px-2 flex justify-end">
               <a
-                href=""
+                href="#actual"
                 className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
               >
                 Skip to the actual part.
@@ -64,8 +64,8 @@ export default function index() {
           <p className="leading-7 mb-8 opacity-90">
             During the earlier days of my journey in learning frontend
             development, which started around June 2023, I came across a video
-            in my recommended section in YouTube. It was about a web developer's
-            portfolio in 3D, made with something called{" "}
+            in my recommended section in YouTube. It was about making a
+            portfolio in 3D, with something called{" "}
             <a
               href="https://threejs.org/"
               target="_blank"
@@ -74,6 +74,15 @@ export default function index() {
               Three.js
             </a>
             .
+          </p>
+
+          <p className="leading-7 mb-8 opacity-90">
+            So imagine how amused I was at the video YouTube recommended to me.
+            I was shocked, but in a good way. Because I thought, at the time,
+            that frontend was just about React, Vue, Angular, and all that jazz.
+            So I took it upon myself to get to know and learn how Three.js
+            worked. But don't follow what I did, kids, because I could've spent
+            time learning React and its ecosystem instead of 3D stuff.
           </p>
 
           <p className="leading-7 mb-8">
@@ -89,15 +98,6 @@ export default function index() {
             it's full of quality resources and its "difficulty scaling" is quite
             linear, at least for me. But, it didn't have a guide, at least as of
             this article's writing, about 3D applications with browsers.
-          </p>
-
-          <p className="leading-7 mb-8 opacity-90">
-            So, imagine how amused I was at the video YouTube recommended to me.
-            I was shocked, but in a good way. Because I thought, at the time,
-            that frontend was just about React, Vue, Angular, and all that jazz.
-            So I took it upon myself to get to know and learn how Three.js
-            worked. But don't follow what I did, kids, because I could've spent
-            time learning React and its ecosystem instead of 3D stuff.
           </p>
 
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
@@ -171,8 +171,26 @@ export default function index() {
             amount of time.
           </p>
 
+          <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
+            <Image
+              src="/article-images/showroom/vaporwave.png"
+              alt="A screenshot of Maxime Heckel's vaporwave project."
+              width={IMAGE_DIMENSIONS}
+              height={IMAGE_DIMENSIONS}
+              quality={IMAGE_QUALITY}
+              className="rounded-md"
+            />
+            <figcaption className="mt-2 text-center">
+              Maxime Heckel's vaporwave project.
+            </figcaption>
+          </figure>
+
+          <h2 className="text-xl sm:text-2xl font-bold mb-3 scroll-mt-20" id="actual">
+            Getting my hands dirty
+          </h2>
+
           <p className="leading-7 mb-8 opacity-90">
-            But, I didn't want to end the project with a 1:1 copy of their
+            But, I didn't want to end "my" project with a 1:1 copy of their
             project, I wanted to add more things, like a sun, a skybox,
             background music, and some post-processing effects. So I set out to
             accomplish these tasks that I set for myself.
@@ -181,7 +199,7 @@ export default function index() {
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
             <Image
               src="/project/showroom.png"
-              alt=""
+              alt="The virtual car showroom project."
               width={IMAGE_DIMENSIONS}
               height={IMAGE_DIMENSIONS}
               quality={IMAGE_QUALITY}
