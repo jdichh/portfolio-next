@@ -20,9 +20,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Blog | My first time encountering 3D</title>
+        <title>Blog | My shenanigans in 3D</title>
       </Head>
-      <BlogHeader title="My first time encountering 3D" />
+      <BlogHeader title="My shenanigans in 3D" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -33,7 +33,7 @@ export default function index() {
           <div className="mt-20 lg:mt-40" />
           <div className="mb-8">
             <h1 className="text-2xl sm:text-3xl font-bold mb-2">
-              My first time encountering 3D
+              My shenanigans in 3D
             </h1>
             <p className="opacity-50">Posted on September 27, 2023</p>
           </div>
@@ -78,12 +78,12 @@ export default function index() {
             as a guide in my self-learning journey. It's very good by the way,
             it's full of quality resources and its "difficulty scaling" is quite
             linear, at least for me. But, it didn't have a guide, at least as of
-            this article's writing, about 3D applications with browsers.
+            this article's writing, about utilizing 3D capabilities in browsers.
           </p>
 
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
             <Image
-              src="/article-images/showroom/threejs.png"
+              src="/article-images/blog1/threejs.webp"
               alt="A screenshot of the Three.js home page."
               width={IMAGE_DIMENSIONS}
               height={IMAGE_DIMENSIONS}
@@ -96,7 +96,7 @@ export default function index() {
           </figure>
 
           <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-            I understand, and I am confused at the same time
+            I understand, yet I am confused at the same time
           </h2>
 
           <p className="leading-7 mb-8 opacity-90">
@@ -137,6 +137,10 @@ export default function index() {
             ecstatic that I managed to do it.
           </p>
 
+          <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+            A little help goes a long way, sometimes
+          </h2>
+
           <p className="leading-7 mb-8 opacity-90">
             Some time after that, I came across an{" "}
             <a
@@ -152,9 +156,16 @@ export default function index() {
             amount of time.
           </p>
 
+          <p className="leading-7 mb-8 opacity-90">
+            Which is a trick used by many games by the way, to trick you that
+            there's a huge map—when in actuality, a part of the map's terrain is
+            just regenerated after the camera has passed it. It's like walking
+            or running on a treadmill, in simpler terms.
+          </p>
+
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
             <Image
-              src="/article-images/showroom/vaporwave.png"
+              src="/article-images/blog1/vaporwave.webp"
               alt="A screenshot of Maxime Heckel's vaporwave project."
               width={IMAGE_DIMENSIONS}
               height={IMAGE_DIMENSIONS}
@@ -167,40 +178,64 @@ export default function index() {
           </figure>
 
           <p className="leading-7 mb-8 opacity-90">
-            I followed Maxime's instructions and guidelines, but not blindly. I took the time to
-            understand what some things meant, because what's the point of
-            tutorials if you're just going to copy code for code, and not
-            understand it? Yeah, I'm talking to you, Jason from
-            3 months ago.
+            I followed Maxime's instructions and guidelines, but not blindly. I
+            took the time to understand what some things meant, because what's
+            the point of tutorials if you're just going to copy code for code,
+            and not understand it? Yeah, I'm talking to you, Jason from 3 months
+            ago.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
-            Anyway, I didn't want to end "my" project with a 1:1 copy of their
-            project, I wanted to add more things, like a sun, a skybox,
-            background music, and some post-processing effects. So I set out to
-            accomplish these tasks that I set for myself.
+            Anyway, I didn't want to end "my" project with a 1:1 copy, I wanted
+            to add more things, like a sun, a skybox, background music, and some
+            post-processing effects like blur and a CRT filter. So I made sure
+            to accomplish these tasks that I set for myself.
           </p>
 
           <h2
             className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
             id="actual"
           >
-            Getting my hands dirty
+            Let there be light!
           </h2>
+
+          <p className="leading-7 mb-8 opacity-90">
+            Okay, task one: illuminate the world. This is done by using{" "}
+            <a
+              href="https://threejs.org/docs/index.html?q=direction#api/en/lights/DirectionalLight"
+              target="_blank"
+              className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+            >
+              DirectionalLight
+            </a>
+            —it's basically the sun.
+          </p>
 
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
             <Image
-              src="/project/showroom.png"
-              alt="The virtual car showroom project."
+              src="/article-images/blog1/light-directional.png"
+              alt="Directional light"
               width={IMAGE_DIMENSIONS}
               height={IMAGE_DIMENSIONS}
               quality={IMAGE_QUALITY}
               className="rounded-md"
             />
             <figcaption className="mt-2 text-center">
-              A screenshot of the virtual car showroom project.
+              A visual example of directional light.
             </figcaption>
           </figure>
+
+          <h2
+            className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
+            id="actual"
+          >
+            Filling up the void
+          </h2>
+
+          <p className="leading-7 mb-8 opacity-90">
+            The sun exists, but there's a dark void just, staring. This is the
+            time where we add 
+          </p>
         </article>
       </motion.main>
       <RouteFooter />

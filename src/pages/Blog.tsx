@@ -19,8 +19,8 @@ export default function Blog({ name, description, date, link }: BlogProps) {
           <h3 className="text-xl text-center sm:text-2xl md:text-left text-[#DADADA] font-bold">
             {name}
           </h3>
-          <h4>{date}</h4>
-          <p>{description}</p>
+          <h4 className="opacity-50 mb-2">{date}</h4>
+          <p className="opacity-90"> {description}</p>
         </div>
         </a>
       </motion.article>

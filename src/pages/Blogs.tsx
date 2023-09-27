@@ -8,7 +8,7 @@ import Blog from "./Blog";
 export default function Blogs() {
   return (
     <motion.section
-      className="px-0 w-full leading-8"
+      className="px-0 w-full"
       id="works"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
