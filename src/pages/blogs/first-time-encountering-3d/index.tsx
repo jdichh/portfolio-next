@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import RouteHeader from "@/pages/RouteHeader";
+import BlogHeader from "@/pages/BlogHeader";
 import RouteFooter from "@/pages/RouteFooter";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
@@ -20,9 +20,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Creating a virtual car showroom with React-Three-Fiber</title>
+        <title>Blog | My first time encountering 3D</title>
       </Head>
-      <RouteHeader title="Virtual Car Showroom" />
+      <BlogHeader title="My first time encountering 3D" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}

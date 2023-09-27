@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import RouteHeader from "@/pages/RouteHeader";
+import RouteHeader from "../RouteHeader";
 import RouteFooter from "@/pages/RouteFooter";
 import Head from "next/dist/shared/lib/head";
 import { motion } from "framer-motion";
