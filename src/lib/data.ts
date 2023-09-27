@@ -212,3 +212,12 @@ export const projects = [
     nexusModsLink: "https://www.nexusmods.com/forzahorizon5/mods/65"
   },
 ]
+
+export const blogs = [
+  {
+    name: "My first time encountering 3D",
+    description:"Let me tell you a little story about how I came by 3D so early on in my self-learning journey.",
+    date: "September 27, 2023",
+    link: "/blogs/first-time-encountering-3d"
+  },
+]

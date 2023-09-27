@@ -3,10 +3,10 @@
 import React from "react";
 import RouteHeader from "@/pages/RouteHeader";
 import RouteFooter from "@/pages/RouteFooter";
-import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
+import Blogs from "../Blogs";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -14,9 +14,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Jason Dichoso's Blog</title>
+        <title>Jason Dichoso | Blogs</title>
       </Head>
-      <RouteHeader title="Blog" />
+      <RouteHeader title="Blogs" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -27,15 +27,17 @@ export default function index() {
         <div className="mb-8">
           <h1 className="text-2xl sm:text-3xl mb-3">
             <span className="font-semibold">
-              Kamusta! I'm Jason Dichoso, and this is where you can read just
-              about any of my ramblings;{" "}
+              Kamusta! I'm Jason, a fresh IT graduate from the Philippines, and
+              this is where you can read just about any of my ramblings;{" "}
             </span>
-            <span className="opacity-95">
-              be it about web development, my job, books, or just life in general.
+            <span className="opacity-90">
+              be it about web development, my job, books, or just life in
+              general.
             </span>
           </h1>
-          <p className="opacity-50">Posted on September 27, 2023</p>
         </div>
+
+        <Blogs />
       </motion.main>
       <RouteFooter />
     </>

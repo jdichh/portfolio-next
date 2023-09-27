@@ -16,7 +16,6 @@ export default function index() {
   const IMAGE_DIMENSIONS = 700;
   const IMAGE_QUALITY = 95;
   const FIGURE_BG = "#1F1E26";
-  const WARNING_COLOR = "#471116";
 
   return (
     <>
@@ -33,29 +32,11 @@ export default function index() {
         <article>
           <div className="mt-20 lg:mt-40" />
           <div className="mb-8">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-3">
-              Creating a virtual car showroom with React-Three-Fiber
+            <h1 className="text-2xl sm:text-3xl font-bold mb-2">
+              My first time encountering 3D
             </h1>
             <p className="opacity-50">Posted on September 27, 2023</p>
           </div>
-
-          <aside
-            className={`w-full bg-[${WARNING_COLOR}] px-2 py-3 rounded-md my-12`}
-          >
-            <p className="leading-7 mb-6 px-2">
-              Before you start reading, the long section below isn't about me
-              creating the showroom project, it's how I came about Three.js and
-              React-Three-Fiber.
-            </p>
-            <p className="leading-7 px-2 flex justify-end">
-              <a
-                href="#actual"
-                className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
-              >
-                Skip to the actual part.
-              </a>
-            </p>
-          </aside>
 
           <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
             Moment of discovery
@@ -122,7 +103,7 @@ export default function index() {
             I looked at the documentations that Three.js provided. I was so
             confused at the time, as the details in the documentation were so
             sparse for me at the time (or maybe I'm just a big, dumb idiot). So
-            I enlisted the help of Chat-GPT, and specifically told it to answer
+            I enlisted the help of ChatGPT, and specifically told it to answer
             me like I'm a high schooler.
           </p>
 
