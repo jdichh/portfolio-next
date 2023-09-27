@@ -14,11 +14,12 @@ export default function Hero() {
 
   return (
     <section id="home" className="scroll-mt-[100rem]">
-      <div className="flex justify-end items-end flex-col my-20">
+      <div className="flex flex-col justify-end items-end my-20">
         <motion.div
           className="text-right"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <h1
             className={`${inter.className} font-medium text-[#6E99C4] text-4xl sm:text-5xl`}
@@ -31,6 +32,7 @@ export default function Hero() {
           className="flex gap-2 mt-2"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.a
             href="https://github.com/jdichh/"
@@ -38,14 +40,15 @@ export default function Hero() {
             aria-label="Button to my GitHub profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
-              src="/hero-button-icons/github.svg"
+              src="/icons/github.svg"
               alt="Button to my GitHub profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -54,14 +57,15 @@ export default function Hero() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
-              src="/hero-button-icons/linkedin.svg"
+              src="/icons/linkedin.svg"
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -69,14 +73,15 @@ export default function Hero() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0.05 }}
           >
             <Image
-              src="/hero-button-icons/mail.svg"
+              src="/icons/mail.svg"
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
               priority={true}
-              className="object-cover hover:bg-[#6E99C4] transition duration-100 ease-in-out rounded-lg border-[1px] p-0.5"
+              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
         </motion.div>
