@@ -15,13 +15,21 @@ export default function Header() {
       />
       <nav className="fixed left-1/2 -translate-x-[50%] top-0">
         <ul className="flex flex-row w-[22rem] justify-center gap-8 sm:gap-12">
-            {links.map(link => (
-                <motion.li key={link.hash} className="flex text-[#DADADA]"  
-                initial={{ y: -50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}>
-                    <Link href={link.hash} className="transition duration-100 ease-in-out p-4 text-lg hover:text-[#6E99C4] rounded-sm">{link.name}</Link>
-                </motion.li>
-            ))}
+          {links.map((link) => (
+            <motion.li
+              key={link.hash}
+              className="flex text-[#DADADA]"
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+            >
+              <Link
+                href={link.hash}
+                className="transition duration-100 ease-in-out p-4 text-lg hover:text-[#6E99C4] rounded-sm"
+              >
+                {link.name}
+              </Link>
+            </motion.li>
+          ))}
         </ul>
       </nav>
     </header>

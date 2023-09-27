@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="scroll-mt-[100rem]">
-      <div className="flex justify-end items-end flex-col my-20">
+      <div className="flex flex-col justify-end items-end my-20">
         <motion.div
           className="text-right"
           initial={{ y: 50, opacity: 0 }}

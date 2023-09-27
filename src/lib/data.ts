@@ -41,7 +41,7 @@ export const links = [
   },
   {
     name: "Works",
-    hash: "#projects",
+    hash: "#works",
   },
 ]
 
