@@ -213,7 +213,7 @@ export const projects = [
   },
 ]
 
-export const blogs = [
+export const posts = [
   {
     name: "My first shenanigans in 3D",
     description:"Let me tell you a little story about how I came by 3D so early on in my self-learning journey, and what I've currently finished.",

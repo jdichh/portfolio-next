@@ -6,7 +6,7 @@ import RouteFooter from "@/pages/RouteFooter";
 import Head from "next/dist/shared/lib/head";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
-import Blogs from "../Blogs";
+import Posts from "../PostsPage";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -14,9 +14,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Jason Dichoso | Blogs</title>
+        <title>Jason Dichoso | Posts</title>
       </Head>
-      <RouteHeader title="Blogs" />
+      <RouteHeader title="Posts" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -36,7 +36,7 @@ export default function index() {
           </h1>
         </div>
 
-        <Blogs />
+        <Posts />
       </motion.main>
       <RouteFooter />
     </>

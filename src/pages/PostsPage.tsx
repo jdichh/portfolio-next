@@ -1,11 +1,11 @@
 "use client"
 
 import React from "react";
-import { blogs } from "@/lib/data";
+import { posts } from "@/lib/data";
 import { motion } from "framer-motion";
-import Blog from "./Blog";
+import Post from "./PostsBoilerplate";
 
-export default function Blogs() {
+export default function Posts() {
   return (
     <motion.section
       className="px-0 w-full"
@@ -15,9 +15,9 @@ export default function Blogs() {
       transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
 
-      {blogs.map((blog, index) => (
+      {posts.map((blog, index) => (
         <React.Fragment key={index}>
-          <Blog {...blog} />
+          <Post {...blog} />
         </React.Fragment>
       ))}
     </motion.section>

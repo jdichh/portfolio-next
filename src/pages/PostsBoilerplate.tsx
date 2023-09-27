@@ -1,11 +1,11 @@
 "use client";
 
-import { blogs } from "@/lib/data";
+import { posts } from "@/lib/data";
 import { motion } from "framer-motion";
 
-type BlogProps = (typeof blogs)[number];
+type PostProps = (typeof posts)[number];
 
-export default function Blog({ name, description, date, link }: BlogProps) {
+export default function Post({ name, description, date, link }: PostProps) {
   const ON_HOVER_SCALE = 1.03;
 
   return (

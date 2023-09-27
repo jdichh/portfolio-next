@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import BlogHeader from "@/pages/BlogHeader";
+import PostsHeader from "@/pages/PostsHeader";
 import RouteFooter from "@/pages/RouteFooter";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
@@ -23,9 +23,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Blog | My first shenanigans in 3D</title>
+        <title>Posts | My first shenanigans in 3D</title>
       </Head>
-      <BlogHeader title="My first shenanigans in 3D" />
+      <PostsHeader title="My first shenanigans in 3D" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
