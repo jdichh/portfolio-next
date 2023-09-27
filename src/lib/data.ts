@@ -125,6 +125,7 @@ export const projects = [
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
     githubLink: "https://github.com/jdichh/car-showroom-r3f/",
     devFootage: "https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing",
+    fullPageLink: "/works/car-showroom",
   },
   {
     name: "Khronomechanica Vintora",
