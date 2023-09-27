@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import { projects } from "@/lib/data";
-import Project from "./Project";
+import Project from "./project";
 import { motion } from "framer-motion";
 
 export default function Projects() {
