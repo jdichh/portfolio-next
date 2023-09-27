@@ -15,7 +15,7 @@ export default function Tools() {
       id="tools"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
       <SectionHeading>Tools</SectionHeading>
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mb-16">

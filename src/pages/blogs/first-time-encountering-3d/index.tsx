@@ -33,7 +33,7 @@ export default function index() {
         <article>
           <div className="mt-20 lg:mt-40" />
           <div className="mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-3">
               Creating a virtual car showroom with React-Three-Fiber
             </h1>
             <p className="opacity-50">Posted on September 27, 2023</p>

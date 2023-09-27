@@ -18,7 +18,6 @@ export default function Project({
   videoLink,
   devFootage,
   nexusModsLink,
-  fullPageLink
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -78,17 +77,6 @@ export default function Project({
           </ul>
           <p className="opacity-90 leading-relaxed text-center md:text-left">{description}</p>
           <div className="flex flex-col text-center gap-2 mt-4 font-bold lg:flex-row lg:flex-wrap">
-          {fullPageLink && (
-              <motion.a
-                href={fullPageLink.toString()}
-                aria-label="Live demo of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-6 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-              >
-                Blog Post
-              </motion.a>
-            )}
             {liveLink && (
               <motion.a
                 href={liveLink.toString()}
