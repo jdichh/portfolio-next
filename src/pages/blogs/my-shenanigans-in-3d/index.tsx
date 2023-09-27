@@ -30,7 +30,7 @@ export default function index() {
         transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
         <article>
-          <div className="mt-20 lg:mt-40" />
+          <div className="mt-20" />
           <div className="mb-8">
             <h1 className="text-xl sm:text-2xl font-bold mb-2">
               My shenanigans in 3D

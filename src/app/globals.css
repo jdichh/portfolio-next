@@ -6,3 +6,11 @@ html, body {
     background-color: #19181E;
     color: #DADADA
 }
+
+#__next {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

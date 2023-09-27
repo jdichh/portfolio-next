@@ -9,9 +9,11 @@ import {
 import Image from "next/image";
 
 export default function Tools() {
+  const ICON_DIMENSIONS = 40
+
   return (
     <motion.section
-      className="px-6 w-full xl:w-10/12 mb-16 scroll-mt-20"
+      className="px-3 w-full xl:w-10/12 mb-16 scroll-mt-20"
       id="tools"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -27,8 +29,8 @@ export default function Tools() {
             <Image
               src={tool.imageUrl}
               alt={tool.alt}
-              height={45}
-              width={45}
+              height={ICON_DIMENSIONS}
+              width={ICON_DIMENSIONS}
               className="mb-2"
             />
             {tool.name}
