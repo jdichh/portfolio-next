@@ -4,6 +4,7 @@ import React from "react";
 import RouteHeader from "@/pages/RouteHeader";
 import RouteFooter from "@/pages/RouteFooter";
 import Image from "next/image";
+import Head from "next/dist/shared/lib/head";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
 
@@ -19,6 +20,9 @@ export default function index() {
 
   return (
     <>
+      <Head>
+        <title>Creating a virtual car showroom with React-Three-Fiber</title>
+      </Head>
       <RouteHeader title="Virtual Car Showroom" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 h-[7000px] ${spaceGrotesk.className}`}
@@ -40,7 +44,8 @@ export default function index() {
           >
             <p className="leading-7 mb-6 px-2">
               Before you start reading, the long section below isn't about me
-              creating the showroom project, it's how I came about Three.js and React-Three-Fiber.
+              creating the showroom project, it's how I came about Three.js and
+              React-Three-Fiber.
             </p>
             <p className="leading-7 px-2 flex justify-end">
               <a
@@ -82,8 +87,8 @@ export default function index() {
             </a>{" "}
             as a guide in my self-learning journey. It's very good by the way,
             it's full of quality resources and its "difficulty scaling" is quite
-            linear, at least for me. But, it didn't have a guide, at least as of this
-            article's writing, about 3D applications with browsers.
+            linear, at least for me. But, it didn't have a guide, at least as of
+            this article's writing, about 3D applications with browsers.
           </p>
 
           <p className="leading-7 mb-8 opacity-90">
@@ -98,7 +103,7 @@ export default function index() {
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
             <Image
               src="/article-images/showroom/threejs.png"
-              alt=""
+              alt="A screenshot of the Three.js home page."
               width={IMAGE_DIMENSIONS}
               height={IMAGE_DIMENSIONS}
               quality={IMAGE_QUALITY}
@@ -132,8 +137,8 @@ export default function index() {
             >
               poor laptop{" "}
             </a>
-            starts to sound like hair dryers in a full salon. It was because of my
-            unhealthy relationship in modding Skyrim that I managed to
+            starts to sound like hair dryers in a full salon. It was because of
+            my unhealthy relationship in modding Skyrim that I managed to
             understand some of the documentation.
           </p>
 
@@ -165,7 +170,13 @@ export default function index() {
             complicated stuff like how to regenerate terrain for an indefinite
             amount of time.
           </p>
-          
+
+          <p className="leading-7 mb-8 opacity-90">
+            But, I didn't want to end the project with a 1:1 copy of their
+            project, I wanted to add more things, like a sun, a skybox,
+            background music, and some post-processing effects. So I set out to
+            accomplish these tasks that I set for myself.
+          </p>
 
           <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-16 mx-auto`}>
             <Image
