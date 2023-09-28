@@ -736,7 +736,7 @@ export default function index() {
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.05 }}
               >
-                Dev't Videos
+                Dev Videos
               </motion.a>
             </div>
           </section>

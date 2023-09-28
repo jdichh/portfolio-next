@@ -5,10 +5,12 @@ import PostsHeader from "@/pages/PostsHeader";
 import RouteFooter from "@/pages/RouteFooter";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
+import Accordion from "@/components/accordion";
+import FloorSnippet from "./floorSnippet";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
-import Accordion from "@/components/accordion";
-import CodeSnippet from "./codeSnippet";
+import ShadowSnippet from "./shadowSnippet";
+import DirectionalLightSnippet from "./directionalLightSnippet";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -236,6 +238,28 @@ export default function index() {
               format.
             </p>
 
+            <p className="leading-7 mb-8 opacity-90">
+              Ah! But before that, of course, is the lighting. Remember
+              DirectionalLight? If you don't, it's equivalent to the sun in the
+              real world. So, I'll set it up first, because if I don't, then the
+              whole scene will just be pitch black.
+            </p>
+
+            <Accordion title="How I added in DirectionalLight">
+              <DirectionalLightSnippet />
+
+              <div className="leading-7 my-4 opacity-90 w-11/12 mx-auto code-snippet">
+                <h2 className="text-xl sm:text-2xl font-bold my-3 ">
+                  Quick Rundown
+                </h2>
+                <ul className="list-disc">
+                  <li className="mb-3">
+                    I set a constant value of 0.0.75 for the <code>DIRECTIONAL_LIGHT_INTENSITY</code>.
+                  </li>
+                </ul>
+              </div>
+            </Accordion>
+
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/gran-turismo-showroom/supra_models.png"
@@ -341,8 +365,8 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               At the time when I was making this project, I didn't manage to
-              find any guide in the documentation about properly scaling
-              textures. But, some days later, I found out that it was called{" "}
+              find any information in the docs about properly scaling textures.
+              But, some days later, I found out that it was called{" "}
               <a
                 href="https://threejs.org/docs/#api/en/textures/Texture.repeat"
                 target="_blank"
@@ -368,11 +392,11 @@ export default function index() {
             </p>
 
             <Accordion title="My configuration for the floor">
-              <CodeSnippet />
+              <FloorSnippet />
 
               <div className="leading-7 my-4 opacity-90 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
-                  Quick Breakdown
+                  Quick Rundown
                 </h2>
                 <ul className="list-disc">
                   <li className="mb-3">
@@ -473,18 +497,51 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              Well not really, I'm spreading misinformation. I just
-              couldn't think of a better transition.
+              <strong>
+                Well not really, I'm spreading misinformation. I just couldn't
+                think of a better transition.
+              </strong>
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              From that point on, I decided to change the direction I was going
-              towards; I decided that I should create a showroom inspired by
-              modern Gran Turismo games. And maybe, this could be used as a
-              reference for a future project if I do ever get to work with a
-              manufacturer.
+              Anyway, I decided to change the direction I was going towards. I
+              decided that I should create a showroom inspired by modern Gran
+              Turismo games. And maybe, this could be used as a reference for a
+              future project if I do ever get to work with a manufacturer. But
+              right now, one can only dream, huh?
+            </p>
+          </section>
+
+          <section id="section8">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+              My shadow, my shadow's stuck!
+            </h2>
+
+            <p className="leading-7 mb-8 opacity-90">
+              To repeat, I've managed to set up the lighting, the floor with the
+              correct settings, and the car models. However, there are no
+              shadows yet. So I'll enable it quickly.
             </p>
 
+            <Accordion title="How I loaded my model and shadows for it">
+              <ShadowSnippet />
+
+              <div className="leading-7 my-4 opacity-90 w-11/12 mx-auto code-snippet">
+                <h2 className="text-xl sm:text-2xl font-bold my-3 ">
+                  Quick Rundown
+                </h2>
+                <ul className="list-disc">
+                  <li className="mb-3">
+                    The code starts by using a <code>Promise.all()</code>{" "}
+                    function to load a 3D car model file, specifically a Toyota
+                    Supra in GLB format. The <code>loader.load()</code> a new
+                    instance of the <code>GLTFLoader</code> class, is used to
+                    load the model file, and it waits for the loading to finish
+                    before moving on. But that's a topic for later.
+                  </li>
+                </ul>
+              </div>
+            </Accordion>
           </section>
         </article>
       </motion.main>

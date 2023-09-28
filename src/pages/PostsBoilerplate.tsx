@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 type PostProps = (typeof posts)[number];
 
-export default function Post({ name, description, date, link }: PostProps) {
+export default function PostsBoilerplate({ name, description, date, link }: PostProps) {
   const ON_HOVER_SCALE = 1.015;
 
   return (

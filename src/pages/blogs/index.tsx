@@ -4,9 +4,9 @@ import React from "react";
 import RouteHeader from "../RouteHeader";
 import RouteFooter from "@/pages/RouteFooter";
 import Head from "next/dist/shared/lib/head";
+import PostItem from "../PostItem";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
-import Posts from "../PostsPage";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -36,7 +36,7 @@ export default function index() {
           </h1>
         </div>
 
-        <Posts />
+        <PostItem />
       </motion.main>
       <RouteFooter />
     </>

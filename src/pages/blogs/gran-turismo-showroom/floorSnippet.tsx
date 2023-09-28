@@ -2,7 +2,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/prism";
 import dracula from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 
-export default function CodeSnippet() {
+export default function FloorSnippet() {
   const codeSnippet = `const FLOOR_TEX = "./assets/floor/concrete1k/Concrete042A_1K_Color.png";
 const DISPLACEMENT_MAP = "./assets/floor/concrete1k/Concrete042A_1K_Displacement.png";
 const NORMAL_GL = "./assets/floor/concrete1k/Concrete042A_1K_NormalGL.png";

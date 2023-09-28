@@ -6,12 +6,14 @@ type AccordionProps = {
   children: ReactNode;
 };
 
-export default function Accordion({ title, children }: AccordionProps) {
+function Accordion({ title, children }: AccordionProps) {
   const LIGHTER_BG = "#1F1E26";
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-3`}>
+    <div
+      className={`w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-3`}
+    >
       <div className={`bg-[${LIGHTER_BG}] rounded-md`}>
         <button
           role="button"
@@ -44,17 +46,27 @@ export default function Accordion({ title, children }: AccordionProps) {
           </AnimatePresence>
         </button>
       </div>
-      <motion.div
-        id="accordion-panel"
-        initial={{ height: 0, overflow: "hidden" }}
-        animate={{
-          height: isOpen ? "auto" : 0,
-          overflow: isOpen ? "visible" : "hidden",
-        }}
-        transition={{ duration: 0.5 }}
-      >
-        {children}
-      </motion.div>
+      <AnimatePresence>
+        <motion.div
+          id="accordion-panel"
+          initial={{ height: 0, overflow: "hidden" }}
+          animate={{
+            height: isOpen ? "auto" : 0,
+            overflow: isOpen ? "visible" : "hidden",
+          }}
+          transition={{ duration: 0.2 }}
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.15, delay: 2 }}
+          >
+            {children}
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }
+
+export default React.memo(Accordion)
