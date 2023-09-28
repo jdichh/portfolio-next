@@ -1,7 +1,7 @@
 import About from "@/components/about";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
-import SectionDivider from "@/components/SectionDivider";
+import SectionDivider from "@/components/sectionDivider";
 import Tools from "@/components/tools";
 import Footer from "@/components/footer";
 

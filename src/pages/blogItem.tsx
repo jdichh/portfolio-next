@@ -1,9 +1,9 @@
 "use client"
 
 import React from "react";
-import { posts } from "@/lib/data";
+import { blogs } from "@/lib/data";
 import { motion } from "framer-motion";
-import PostsBoilerplate from "./PostsBoilerplate";
+import BlogBoilerplate from "./blogBoilerplate";
 
 export default function PostItem() {
   return (
@@ -15,9 +15,9 @@ export default function PostItem() {
       transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
 
-      {posts.map((post, index) => (
+      {blogs.map((blog, index) => (
         <React.Fragment key={index}>
-          <PostsBoilerplate {...post} />
+          <BlogBoilerplate {...blog} />
         </React.Fragment>
       ))}
     </motion.section>

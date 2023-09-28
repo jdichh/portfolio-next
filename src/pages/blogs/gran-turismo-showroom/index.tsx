@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import PostsHeader from "@/pages/PostsHeader";
-import RouteFooter from "@/pages/RouteFooter";
+import BlogHeader from "@/pages/blogHeader";
+import RouteFooter from "@/pages/routeFooter";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
 import Accordion from "@/components/accordion";
@@ -31,10 +31,10 @@ export default function index() {
     <>
       <Head>
         <title>
-          Posts | Creating a Gran Turismo-esque showroom with Three.js
+          Blog | Creating a Gran Turismo-esque showroom with Three.js
         </title>
       </Head>
-      <PostsHeader title="Creating a Gran Turismo-esque showroom with Three.js" />
+      <BlogHeader title="Creating a Gran Turismo-esque showroom with Three.js" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}

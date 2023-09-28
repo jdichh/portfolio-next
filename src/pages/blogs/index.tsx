@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import RouteHeader from "../RouteHeader";
-import RouteFooter from "@/pages/RouteFooter";
+import RouteHeader from "../routeHeader";
+import RouteFooter from "../routeFooter";
 import Head from "next/dist/shared/lib/head";
-import PostItem from "../PostItem";
+import PostItem from "../blogItem";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
 

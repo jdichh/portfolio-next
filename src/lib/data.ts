@@ -185,13 +185,13 @@ export const projects = [
   },
 ]
 
-export const posts = [
-  {
-    name: "Creating a Gran Turismo-esque showroom with Three.js",
-    description: "I originally wanted to create a promotional website for a car manufacturer (not a partnership), but I ended up recreating Gran Turismo (a bit) for browsers. Wanna know how?",
-    date: "September 29, 2023",
-    link: "/blogs/gran-turismo-showroom"
-  },
+export const blogs = [
+  // {
+  //   name: "Creating a Gran Turismo-esque showroom with Three.js",
+  //   description: "I originally wanted to create a promotional website for a car manufacturer (not a partnership), but I ended up recreating Gran Turismo (a bit) for browsers. Wanna know how?",
+  //   date: "September 29, 2023",
+  //   link: "/blogs/gran-turismo-showroom"
+  // },
   {
     name: "My first shenanigans in 3D",
     description: "The story of how I came by 3D so early on in my self-learning journey.",

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "./sectionHeading";
 
 export default function About() {
   return (
