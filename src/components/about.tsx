@@ -14,9 +14,18 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
-        I aim to build <span className="text-[#6E99C4] font-medium">user-friendly and impressive-looking websites</span> here in the Philippines.
-        <br/>
-        I'm also a recent IT graduate of Colegio de San Juan De Letran-Calamba.
+        I aim to build{" "}
+        <span className="text-[#6E99C4] font-medium">
+          user-friendly and impressive-looking websites
+        </span>{" "}
+        here in the Philippines.
+        <br />
+        I'm also a recent IT graduate of Colegio de San Juan De Letran-Calamba,
+        <br /> and{" "}
+        <span className="text-[#6E99C4] font-medium">
+          looking to get my foot in the door in the tech industry
+        </span>
+        .
       </p>
     </motion.section>
   );
