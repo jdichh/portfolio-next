@@ -14,3 +14,10 @@ html, body {
     justify-content: space-between;
 }
 
+code {
+    background-color: #1F1E26;
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+    border-radius: 0.25rem;
+}
+

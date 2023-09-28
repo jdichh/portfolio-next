@@ -7,6 +7,7 @@ import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
+import Accordion from "@/components/accordion";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -195,10 +196,10 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              I perused Sketchfab for car models, and I came across an A80 and
-              A90 Supra in the same page. And I thought to myself, "Why not
-              something about honoring the past car, and welcoming the new one?
-              Like, a passing of the baton of sorts?".
+              I perused Sketchfab for car models, and came across an A80 and A90
+              Supra in the same page. And I suddenly thought to myself, "Why not
+              a 3D project about honoring the past model, and welcoming the new
+              one? Like, a passing of the baton of sorts?".
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -208,7 +209,7 @@ export default function index() {
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/gran-turismo-showroom/supras.jpg"
-                alt=""
+                alt="Picture of the old and new Supras"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
@@ -236,7 +237,7 @@ export default function index() {
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/gran-turismo-showroom/supra_models.png"
-                alt=""
+                alt="Loaded in the two supras"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
@@ -271,27 +272,156 @@ export default function index() {
 
           <section id="section6">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
-              The floor is...concrete
+              The floor is...I don't even know
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              So not only one, but two (2) Supras!
+              So I had the models loaded in. Now, the floor textures. We can
+              load the floor textures similarly to how I loaded the terrain in
+              the previous project by using{" "}
+              <a
+                href="https://threejs.org/docs/index.html?q=orbit#examples/en/controls/OrbitControls"
+                target="_blank"
+                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                PlaneGeometry
+              </a>
+              . As the name suggests, it loads in a plane (terrain).
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              But I have to source the floor textures first. So I did.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
-                src="/article-files/gran-turismo-showroom/supras.jpg"
-                alt=""
+                src="/article-files/gran-turismo-showroom/floor.png"
+                alt="Loading the floor textures"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                A80 Supra on the left, A90 on the right—credits to Car and
-                Driver for the picture.
+                Yeah, that's not right.
               </figcaption>
             </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Currently, it's only taking up one segment. So I have to configure
+              PlaneGeometry to my liking. Initially, I tried to "duplicate" the
+              plane by enlarging the texture. And this was the outcome:
+            </p>
+
+            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+              <Image
+                src="/article-files/gran-turismo-showroom/toys.png"
+                alt="A mishap in the model and texture scales"
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                Yeah, that's not right either.
+              </figcaption>
+            </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I admit, it made me chuckle a bit when I saw it for the first
+              time; because look at them, they look like toys on the floor.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              There wasn't any guide in the documentations on how to set a scale
+              for the PlaneGeometry. So I asked GPT on how to do it, so that the
+              cars wouldn't look like toys.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Fortunately, it gave me the correct solution. I won't go too much
+              into the technicalities of it—but to put it simply, I created a
+              scale variable, and set it to the plane's settings.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              <strong>
+                But, if you want to nerd out with me, you can take a look below:
+              </strong>
+            </p>
+
+            <Accordion title="My configuration for the floor">
+              <figure
+                className={`bg-[${FIGURE_BG}] p-3 rounded-md mt-3 mx-auto`}
+              >
+                <Image
+                  src="/article-files/gran-turismo-showroom/floor_codes.png"
+                  alt="A peek at the settings for the floor"
+                  width={IMAGE_DIMENSIONS}
+                  height={IMAGE_DIMENSIONS}
+                  quality={IMAGE_QUALITY}
+                  className="rounded-md"
+                />
+                <figcaption className="mt-2 text-center">
+                  My configuration for the floor.
+                </figcaption>
+              </figure>
+
+              <div className="leading-8 my-4 opacity-90 w-11/12 mx-auto">
+                <h2 className="text-xl sm:text-2xl font-bold my-3 ">
+                  Quick Breakdown
+                </h2>
+                <ul className="list-disc">
+                  <li className="mb-3">
+                    I'm defining some file paths to texture images for the
+                    floor.
+                  </li>
+                  <li className="mb-3">
+                    I created the <code>TEX_SCALE</code>,{" "}
+                    <code>PLANE_WIDTH</code> & <code>PLANE_HEIGHT</code>{" "}
+                    variables to determine the scale and dimensions of the
+                    floor.
+                  </li>
+                  <li className="mb-3">
+                    The <code>Promise.all([...])</code> block is used to load
+                    multiple textures asynchronously. It waits for all the
+                    textures to be loaded before proceeding.
+                  </li>
+                  <li className="mb-3">
+                    Each loaded texture is configured to repeat its pattern
+                    across the floor, making it look like a tiled surface.
+                  </li>
+                  <li className="mb-3">
+                    I created a geometry for the floor (essentially defining its
+                    shape) using <code>THREE.PlaneGeometry</code>, and it will
+                    have the width and height I specified.
+                  </li>
+                  <li className="mb-3">
+                    I defined a material for the floor using{" "}
+                    <code>THREE.MeshLambertMaterial</code>. This material
+                    combines several textures: <code>map</code> is the main
+                    color texture (floorTexture) applied to the floor.{" "}
+                    <code>displacementMap</code> (dispMap) gives the floor a
+                    bumpy appearance. <code>normalMap</code> (normalGL) adds
+                    details to the surface to simulate lighting effects. and{" "}
+                    <code>aoMap</code> (amb_occ) represents ambient occlusion,
+                    which affects how light interacts with the surface.
+                  </li>
+                  <li className="mb-3">
+                    I created a 3D mesh object (the floor) by combining the
+                    geometry and material.
+                  </li>
+                  <li className="mb-3">
+                    I applied some more additional settings to the floor, such
+                    as allowing it to receive shadows and adjusting its position
+                    and rotation.
+                  </li>
+                  <li className="mb-3">
+                    And then, I added the floor to the scene itself.
+                  </li>
+                </ul>
+              </div>
+            </Accordion>
           </section>
         </article>
       </motion.main>
