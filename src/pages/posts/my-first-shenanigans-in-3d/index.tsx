@@ -277,7 +277,7 @@ export default function index() {
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
             >
-              Filling up the soulless husk
+              Filling up the void
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
