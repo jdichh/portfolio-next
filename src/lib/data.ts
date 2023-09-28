@@ -142,7 +142,7 @@ export const projects = [
     toolIcons: [pcImg, reactImg, threeImg],
     liveLink: "https://jdsynthwave.netlify.app/",
     videoLink: "https://youtu.be/S7RprZc3dEs",
-    blogLink: "/posts/my-first-shenanigans-in-3d/"
+    blogLink: "/blogs/my-first-shenanigans-in-3d/"
   },
   {
     name: "Asteroids",
