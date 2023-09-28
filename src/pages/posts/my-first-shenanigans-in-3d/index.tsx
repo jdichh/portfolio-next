@@ -453,7 +453,7 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               A displacement map basically tells a computer how to make a flat
               surface look bumpy. The darker it is, the flatter the surface is.
-              And the brighter it is, the terrain gets bumpier.
+              And the brighter it is, the bumpier it gets.
             </p>
           </section>
 
@@ -466,7 +466,7 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              But notice the darker colors in the red rectangles. As I said, the
+              Notice the darker colors in the red rectangles. As I said, the
               darker the colors are, the flatter it is, and the brighter it is,
               the bumpier it gets.
             </p>
