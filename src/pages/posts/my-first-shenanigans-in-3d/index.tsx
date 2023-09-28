@@ -66,13 +66,29 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               So imagine how amused I was at the video YouTube recommended to
-              me. I was shocked, but in a good way. Because I thought, at the
+              me. I was shocked, but in a positive manner. Because I thought, at the
               time, that frontend was just about React, Vue, Angular, and all
               that jazz. So I took it upon myself to get to know and learn how
-              Three.js worked. But don't do what I did, kids, because I could've
-              spent time learning more about React and its ecosystem instead of
-              3D stuff.
+              Three.js worked.{" "}
+              <strong>
+                But don't do what I did, kids, because I could've spent time
+                learning more about React and its ecosystem instead of 3D stuff.
+              </strong>
             </p>
+
+            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+              <Image
+                src="/article-files/my-first-shenanigans-in-3d/my_reaction.png"
+                alt=""
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                My reaction to that information:
+              </figcaption>
+            </figure>
 
             <p className="leading-7 mb-8">
               Now, I use Kamran Ahmed's{" "}
@@ -89,26 +105,26 @@ export default function index() {
               least as of this article's writing, about utilizing 3D
               capabilities in browsers.
             </p>
-
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
-              <Image
-                src="/article-files/my-first-shenanigans-in-3d/threejs.webp"
-                alt="A screenshot of the Three.js home page."
-                width={IMAGE_DIMENSIONS}
-                height={IMAGE_DIMENSIONS}
-                quality={IMAGE_QUALITY}
-                className="rounded-md"
-              />
-              <figcaption className="mt-2 text-center">
-                Three.js home page.
-              </figcaption>
-            </figure>
           </section>
 
           <section id="section2">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               I understand, yet I am confused at the same time
             </h2>
+
+            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+              <Image
+                src="/article-files/my-first-shenanigans-in-3d/threejs.webp"
+                alt=""
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                Three.js homepage
+              </figcaption>
+            </figure>
 
             <p className="leading-7 mb-8 opacity-90">
               I looked at the documentations that Three.js provided. I was so
@@ -136,16 +152,23 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               After some time watching and reading tutorials, I managed to load
-              my first 3D model, which I downloaded from Sketchfab, and{" "}
-              <a
-                href="https://porsche930.netlify.app/"
-                target="_blank"
-                className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
-              >
-                this was my first output
-              </a>
-              .
+              my first 3D model, which I downloaded from Sketchfab, and this was
+              my first output:
             </p>
+
+            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+              <Image
+                src="/article-files/my-first-shenanigans-in-3d/first_output.png"
+                alt="My first output in Three.js"
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                My first time displaying a model with Three.js.
+              </figcaption>
+            </figure>
 
             <p className="leading-7 mb-8 opacity-90">
               Granted, this isn't anything impressive, but at the time, I was so
@@ -169,16 +192,16 @@ export default function index() {
               </a>
               , on how to create a vaporwave scene with Three.js. This article
               was a great read by the way, as it helped me understand more of
-              the more complicated stuff like how to regenerate terrain for an
+              the complicated stuff like how to regenerate terrain for an
               indefinite amount of time.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              Which is a trick used by many games by the way, to trick you that
-              there's a huge map during a corridor-style level—when in
-              actuality, a part of the map's terrain is just regenerated after
-              the camera has passed it. It's like walking or running on a
-              treadmill, in simpler terms.
+              It's a trick used by many games by the way, to trick you that
+              there's a huge map during a corridor-style level (like Temple Run,
+              remember that?)—when in actuality, a part of the map's terrain is
+              just regenerated after the camera has passed it. It's like walking
+              or running on a treadmill, in simpler terms.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -204,11 +227,12 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              Anyway, I didn't want to end "my" project with a 1:1 copy, I
-              wanted to add more things, like a sun, a skybox, background music,
-              some postprocessing effects like blur and a CRT filter, and some
-              fixes to the terrain. So I made sure to accomplish these tasks
-              that I set for myself.
+              Anyway, I didn't want to end the project with a 1:1 copy of his
+              work; I wanted to add more things, like a sun, a skybox,
+              background music, some postprocessing effects like bloom and a CRT
+              filter, and maybe some other tweaks if I found the need to act
+              upon them. So I made sure to accomplish these tasks that I set for
+              myself.
             </p>
           </section>
 
@@ -256,10 +280,26 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              The sun exists (in a way), but there's a dark void just, staring
+              The sun now exists (in a way), but there's a dark void just staring
               at you. This is the time where we add in the sky.{" "}
               <span className="font-bold">My initial solution was this:</span>{" "}
-              create a big box that has the textures of a sky within it.
+              create a big box by using{" "}
+              <a
+                href="https://threejs.org/docs/index.html?q=geom#api/en/geometries/BoxGeometry"
+                target="_blank"
+                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+              >
+                BoxGeometry
+              </a>{" "}
+              and add in a texture image of a sky within it using{" "}
+              <a
+                href="https://threejs.org/docs/index.html?q=textureload#api/en/loaders/TextureLoader"
+                target="_blank"
+                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+              >
+                TextureLoader
+              </a>
+              .
             </p>
 
             <p className="leading-7 mb-8 opacity-90">And here it is:</p>
@@ -280,17 +320,13 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               The problem was that I didn't set a proper size for the box
-              itself. At this point, I was scratching my head. Because I didn't
-              know how to create a custom size for a box at the time, and I was
-              about to ask GPT how to do it.
+              itself. Secondly, the textures don't really fit the colors of the
+              lighting and terrain, there's too much contrast between them.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              Let me remind you, I was new to Three.js, reading documentations,
-              and all that. So don't get all judgmental towards me when I ask an
-              AI to read and relay documentation to me in an easier way,
-              especially when I initially found it to be sparse and quite
-              complicated.
+              At this point, I started to notice something. Something that
+              exists beyond the terrain and the box. A black background.
             </p>
           </section>
 
@@ -299,54 +335,27 @@ export default function index() {
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
             >
-              Staring into the void, but somehow, it's shining a light to me
+              Staring into the void, yet somehow, it's shining a light to me
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              When I was just about to open up ChatGPT, it suddenly hit me—why
-              not just make the dark background use the sky's texture itself?
+              This was my "eureka" moment. It suddenly hit me, why not just make
+              the dark background just use the sky's texture instead of using a
+              big box?
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              So I scoured the documentation on how to load an image as a
-              texture for the dark background to use as a skybox. And I found
-              out that{" "}
-              <a
-                href="https://threejs.org/docs/index.html?q=textureload#api/en/loaders/TextureLoader"
-                target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
-              >
-                TextureLoader
-              </a>{" "}
-              is the right tool for the job.
-            </p>
-
-            <p className="leading-7 mb-8 opacity-90">
-              As the name implies, it loads textures. Couldn't get any more
-              obvious than this.
-            </p>
-          </section>
-
-          <section id="section7">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
-              Filling up the soulless husk, pt.2
-            </h2>
-
-            <p className="leading-7 mb-8 opacity-90">
-              So I created an image to be used as a texture. The initial version
-              was, from bottom to top, was a gradient going from orange to red.
-              But after creating the texture, I thought that it looked quite
-              apocalyptic, and wasn't the "vibe" I was going for. So I switched
-              to cooler colors, and I added some stars too.
+              So I created an image to be used as a texture. The initial
+              version, from bottom to top, was a gradient going from orange to
+              red. But after creating the texture, I thought that it looked
+              quite apocalyptic, and wasn't the "vibe" I was going for. So I
+              switched to cooler colors, and I added some stars too.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/skybox.webp"
-                alt="Skybox texture"
+                alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
@@ -391,7 +400,7 @@ export default function index() {
             </figure>
           </section>
 
-          <section id="section8">
+          <section id="section7">
             <h2
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
@@ -399,22 +408,17 @@ export default function index() {
               The boys in the better land...?
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
-              I may haven't mentioned it yet, but if you're following Maxime's
-              article, you may have noticed some changes to the terrain.
-            </p>
-
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/issues.png"
-                alt="Issues with the terrain"
+                alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                The issues that the terrain has.
+                The issues that the terrain in brighter lighting.
               </figcaption>
             </figure>
 
@@ -448,31 +452,22 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               A displacement map basically tells a computer how to make a flat
               surface look bumpy. The darker it is, the flatter the surface is.
-              And the whiter it is, the less seasoning they have on their food.
-            </p>
-
-            <p className="leading-7 mb-8 opacity-90">
-              <strong>Sorry, I'm just kidding. Please don't cancel me.</strong>
-            </p>
-
-            <p className="leading-7 mb-8 opacity-90">
-              Anyway, the darker it is, the flatter the surface is. And when it
-              gets whiter, the terrain gets bumpier.
+              And the brighter it is, the terrain gets bumpier.
             </p>
           </section>
 
-          <section id="section9">
+          <section id="section8">
             <h2
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
             >
-              The process of elimination
+              The process of elimination, with no hint of desperation
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              But notice the darker colors in the red rectangles. It means that
-              there are little to no bumps there—meaning gaps are existing
-              inbetween the terrains.
+              But notice the darker colors in the red rectangles. As I said, the
+              darker the colors are, the flatter it is, and the brighter it is,
+              it gets bumpier.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -490,12 +485,13 @@ export default function index() {
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
-              So I fixed it with Paint.NET by adding whites to those areas of
-              interest.
+              In this case, the issues I showed above can be simply solved using
+              the magic of photo editing; so I fixed it with Paint.NET by adding
+              whites to those areas of interest.
             </p>
           </section>
 
-          <section id="section10">
+          <section id="section9">
             <h2
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
@@ -559,17 +555,17 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section11">
+          <section id="section10">
             <h2
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
             >
-              Adding the postprocessing effects
+              Adding on make-up
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
               So, we're nearly done with the project, just some more things to
-              add like blur and a CRT filter. And{" "}
+              add like bloom and a CRT filter. And{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=effect#examples/en/postprocessing/EffectComposer"
                 target="_blank"
@@ -581,8 +577,30 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
+              In Maxime's article, he had chromatic aberration on. I decided to
+              leave it on because it kinda fit the "vibe" I was going for, and
+              supplemented with my postprocessing effects of choice, this can
+              only look good.
+            </p>
+
+            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+              <Image
+                src="/article-files/my-first-shenanigans-in-3d/chromatic_aberration.jpg"
+                alt="Chromatic aberration example"
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                Comparison between chromatic aberration enabled (top), and
+                disabled (bottom). Credits to photographylife.
+              </figcaption>
+            </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
               There are lots of postprocessing effects in Three.js, but I
-              decided to go for blur and a CRT filter, as I wanted to capture
+              decided to go for bloom and a CRT filter, as I wanted to capture
               the "vibe of the 80's", so to speak.
             </p>
 
@@ -600,12 +618,12 @@ export default function index() {
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                The scene, now with blur and a CRT filter.
+                The scene, with chromatic aberration, bloom and a CRT filter.
               </figcaption>
             </figure>
           </section>
 
-          <section id="section12">
+          <section id="section11">
             <h2
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
@@ -635,7 +653,7 @@ export default function index() {
             </figure>
           </section>
 
-          <section id="section13">
+          <section id="section12">
             <h2
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
@@ -644,9 +662,9 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              So, we're at the finish line (that I set). But, I'm sure there are
-              more people out there that can add more to this project. But for
-              me, I think it's perfect now.
+              So, we've crossed the finish line (that I set). But, I'm sure
+              there are more people out there that can add more to this project.
+              But for me, I think it's perfect now.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -662,16 +680,18 @@ export default function index() {
                   className="absolute top-0 left-0 w-full h-full rounded-md"
                 ></iframe>
               </div>
-              <figcaption className="mt-2 text-center">YouTube Video</figcaption>
+              <figcaption className="mt-2 text-center">
+                YouTube Video
+              </figcaption>
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
               So yeah, I hope you enjoyed this story on how I started on
-              Three.js. Thanks for reading!
+              Three.js, and a tutorial of sorts. Thanks for reading!
             </p>
           </section>
 
-          <section id="section14">
+          <section id="section13">
             <h2
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
@@ -680,7 +700,11 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              Here are the links for the project if you're interested.
+              Here are the links for the project if you're interested.{" "}
+              <strong>
+                I recommend opening the project itself on a high resolution
+                monitor.
+              </strong>
             </p>
 
             <div className="flex flex-row gap-2 justify-center mx-auto">
