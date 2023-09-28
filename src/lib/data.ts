@@ -172,7 +172,6 @@ export const projects = [
     imageUrl: passwordGen,
     toolIcons: [htmlImg, scssImg, jsImg],
     videoLink: "https://youtu.be/pq-EsJa1plw",
-    githubLink: "https://github.com/jdichh/password-generator",
   },
   {
     name: "Security Unit Web Portal",
@@ -187,9 +186,15 @@ export const projects = [
 ]
 
 export const posts = [
+  // {
+  //   name: "Creating a Gran Turismo-esque showroom with Three.js",
+  //   description: "I originally wanted to create a promotional website for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
+  //   date: "September 28, 2023",
+  //   link: "/posts/gran-turismo-showroom"
+  // },
   {
     name: "My first shenanigans in 3D",
-    description:"Let me tell you a little story about how I came by 3D so early on in my self-learning journey.",
+    description: "The story of how I came by 3D so early on in my self-learning journey.",
     date: "September 27, 2023",
     link: "/posts/my-first-shenanigans-in-3d"
   },

@@ -64,7 +64,7 @@ const BlogHeader: React.FC<RouteHeaderProps> = ({
             </Link>
           </li>
         </ul>
-        <h1 className="font-semibold text-sm sm:text-lg">{title}</h1>
+        <h1 className="pl-3 font-semibold text-sm sm:text-lg text-right max-w-8/12 sm:max-w-full">{title}</h1>
       </nav>
     </motion.header>
   );
