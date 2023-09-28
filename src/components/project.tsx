@@ -36,7 +36,7 @@ export default function Project({
 
   return (
     <motion.div
-      className="mb-6 last:mb-0"
+      className="mb-3 last:mb-0"
       ref={ref}
       style={{
         scale: SCALE,
