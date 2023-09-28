@@ -547,7 +547,7 @@ export default function index() {
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                The scene, now with a sun
+                The scene, now with a sun and terrain fixes.
               </figcaption>
             </figure>
 
