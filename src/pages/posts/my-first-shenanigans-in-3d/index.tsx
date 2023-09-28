@@ -702,40 +702,28 @@ export default function index() {
               </strong>
             </p>
 
-            <div className="flex flex-row gap-2 justify-center mx-auto">
+            <div className="flex flex-row gap-2 justify-center mx-auto font-bold">
               <motion.a
                 href="https://github.com/jdichh/synthwave-scene"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-2 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.05 }}
               >
-                <Image
-                  src="/icons/github.svg"
-                  alt="Button to the GitHub repo of the project"
-                  width={ICON_DIMENSIONS}
-                  height={ICON_DIMENSIONS}
-                  priority={true}
-                  className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
-                />
+                GitHub
               </motion.a>
               <motion.a
                 href="https://jdsynthwave.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-2 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.05 }}
               >
-                <Image
-                  src="/icons/netlify.svg"
-                  alt="Button for the live link of the project"
-                  width={ICON_DIMENSIONS}
-                  height={ICON_DIMENSIONS}
-                  priority={true}
-                  className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
-                />
+                Live Demo
               </motion.a>
             </div>
           </section>
