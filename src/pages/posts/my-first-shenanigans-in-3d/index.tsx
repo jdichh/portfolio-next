@@ -198,7 +198,7 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              It's a trick used by many games by the way, to trick you that
+              It's a trick used by many games, to give you the illusion that
               there's a huge map during a corridor-style level (like Temple Run,
               remember that?)—when in actuality, a part of the map's terrain is
               just regenerated after the camera has passed it. It's like walking
