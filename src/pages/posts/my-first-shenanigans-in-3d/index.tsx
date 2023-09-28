@@ -419,7 +419,7 @@ export default function index() {
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                The issues that the terrain in brighter lighting.
+                The issues that the terrain has in brighter lighting.
               </figcaption>
             </figure>
 
