@@ -6,11 +6,14 @@ import RouteFooter from "@/pages/RouteFooter";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
 import Accordion from "@/components/accordion";
-import FloorSnippet from "./floorSnippet";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
-import ShadowSnippet from "./shadowSnippet";
-import DirectionalLightSnippet from "./directionalLightSnippet";
+import DirectionalLightSnippet from "@/components/gran-turismo-showroom-accordion-components/snippets/directionalLightSnippet";
+import FloorSnippet from "@/components/gran-turismo-showroom-accordion-components/snippets/floorSnippet";
+import ModelShadowSnippet from "@/components/gran-turismo-showroom-accordion-components/snippets/modelShadowSnippet";
+import ModelShadowSnippetDescription from "@/components/gran-turismo-showroom-accordion-components/snippets/snippet-descriptions/modelShadowSnippetDescription";
+import DirectionalLightSnippetDescription from "@/components/gran-turismo-showroom-accordion-components/snippets/snippet-descriptions/directionalLightSnippetDescription";
+import FloorSnippetDescription from "@/components/gran-turismo-showroom-accordion-components/snippets/snippet-descriptions/floorSnippetDescription";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -19,7 +22,7 @@ export default function index() {
   const OFF_WHITE = "#DADADA";
   const IMAGE_DIMENSIONS = 700;
   const IMAGE_QUALITY = 95;
-  const FIGURE_BG = "#1F1E26";
+  const LIGHTER_BG = "#1F1E26";
   const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
@@ -45,8 +48,7 @@ export default function index() {
               Creating a Gran Turismo-esque showroom with Three.js
             </h1>
             <p className="opacity-50 text-sm sm:text-base">
-              {" "}
-              September 28, 2023
+              September 29, 2023
             </p>
           </div>
 
@@ -74,23 +76,31 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               Would you believe me, a 22 year-old guy, doesn't have a driver's
               license yet or hasn't driven a car out on public roads? Well maybe
-              you will, but, anyway, I hadn't really experienced driving, not
-              grandma-style driving—I mean, REALLY driving a car. Revving the
-              engine to the redline, and only for the cycle to repeat after
-              ripping through the transmission; hearing the tires squeal for
-              your mercy, shouting at you that they're at the tipping point
-              between traction and slippage.
+              you will, but, anyway, I hadn't really experienced driving yet,
+              not grandma-style driving—I mean, REALLY driving a car. So,
+              naturally, playing driving/racing games was my escape.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              My love for cars, especially the Dodge Viper, and just about
-              anything automotive, began with a game on the PlayStation 1 called
-              Test Drive 6. Just hearing Gary Numan's song "Cars", and crashing
-              out police cars and other competitors alike, just reminds me of
-              good times back from when I was just a young, chubby boy.
+              Revving the engine to the redline, only for the cycle to repeat
+              after ripping through the transmission to change gears; hearing
+              the tires squeal for mercy, telling you—shouting at you that the
+              car is at the tipping point between traction and slippage. For the
+              sole reason of beating the other guys to the finish line.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <p className="leading-7 mb-8 opacity-90">
+              My love for cars, especially the Dodge Viper and all of its
+              iterations, and just about anything automotive, began with a game
+              on the PlayStation 1 called Test Drive 6. Just hearing Gary
+              Numan's song "Cars" play in the intro, and crashing out police
+              cars and other competitors alike, reminds me of good times back
+              from when I was just a young, fat(ter) kid.
+            </p>
+
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
               <Image
                 src="/article-files/gran-turismo-showroom/testdrive6.jpg"
                 alt=""
@@ -130,7 +140,9 @@ export default function index() {
               "The Real Driving Simulator"
             </h2>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
               <Image
                 src="/article-files/gran-turismo-showroom/gtlogo.png"
                 alt=""
@@ -210,7 +222,9 @@ export default function index() {
               So I got not only one, but two Toyota Supras!
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
               <Image
                 src="/article-files/gran-turismo-showroom/supras.jpg"
                 alt="Picture of the old and new Supras"
@@ -237,6 +251,12 @@ export default function index() {
               . This just loads any models in the JSON (.gltf) or binary (.glb)
               format.
             </p>
+          </section>
+
+          <section id="section6">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
+              Lighten up, man
+            </h2>
 
             <p className="leading-7 mb-8 opacity-90">
               Ah! But before that, of course, is the lighting. Remember
@@ -245,22 +265,24 @@ export default function index() {
               whole scene will just be pitch black.
             </p>
 
-            <Accordion title="How I added in DirectionalLight">
-              <DirectionalLightSnippet />
+            <Accordion title="How I added in sunlight">
+              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+                <DirectionalLightSnippet />
+              </div>
 
-              <div className="leading-7 my-4 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
                 <ul className="list-disc">
-                  <li className="mb-3">
-                    I set a constant value of 0.0.75 for the <code>DIRECTIONAL_LIGHT_INTENSITY</code>.
-                  </li>
+                  <DirectionalLightSnippetDescription />
                 </ul>
               </div>
             </Accordion>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
               <Image
                 src="/article-files/gran-turismo-showroom/supra_models.png"
                 alt="Loaded in the two supras"
@@ -296,9 +318,9 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section6">
+          <section id="section7">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
-              The floor is...I don't even know
+              Hmm yes...the floor here is made out of floor
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -323,7 +345,9 @@ export default function index() {
               type of project yourself.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
               <Image
                 src="/article-files/gran-turismo-showroom/floor.png"
                 alt="Loading the floor textures"
@@ -344,7 +368,9 @@ export default function index() {
               texture. And this was the outcome:
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
               <Image
                 src="/article-files/gran-turismo-showroom/toys.png"
                 alt="A mishap in the model and texture scales"
@@ -391,61 +417,17 @@ export default function index() {
               </strong>
             </p>
 
-            <Accordion title="My configuration for the floor">
-              <FloorSnippet />
+            <Accordion title="My floor config">
+              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+                <FloorSnippet />
+              </div>
 
-              <div className="leading-7 my-4 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
                 <ul className="list-disc">
-                  <li className="mb-3">
-                    I'm defining some file paths to texture images for the
-                    floor.
-                  </li>
-                  <li className="mb-3">
-                    I created the <code>TEX_SCALE</code>,{" "}
-                    <code>PLANE_WIDTH</code> & <code>PLANE_HEIGHT</code>{" "}
-                    variables to determine the scale and dimensions of the
-                    floor.
-                  </li>
-                  <li className="mb-3">
-                    The <code>Promise.all([...])</code> block is used to load
-                    multiple textures asynchronously. It waits for all the
-                    textures to be loaded before proceeding.
-                  </li>
-                  <li className="mb-3">
-                    Each loaded texture is configured to repeat its pattern
-                    across the floor, making it look like a tiled surface.
-                  </li>
-                  <li className="mb-3">
-                    I created a geometry for the floor (essentially defining its
-                    shape) using <code>THREE.PlaneGeometry</code>, and it will
-                    have the width and height I specified.
-                  </li>
-                  <li className="mb-3">
-                    I defined a material for the floor using{" "}
-                    <code>THREE.MeshLambertMaterial</code>. This material
-                    combines several textures: <code>map</code> is the main
-                    color texture (floorTexture) applied to the floor.{" "}
-                    <code>displacementMap</code> (dispMap) gives the floor a
-                    bumpy appearance. <code>normalMap</code> (normalGL) adds
-                    details to the surface to simulate lighting effects. and{" "}
-                    <code>aoMap</code> (amb_occ) represents ambient occlusion,
-                    which affects how light interacts with the surface.
-                  </li>
-                  <li className="mb-3">
-                    I created a 3D mesh object (the floor) by combining the
-                    geometry and material.
-                  </li>
-                  <li className="mb-3">
-                    I applied some more additional settings to the floor, such
-                    as allowing it to receive shadows and adjusting its position
-                    and rotation.
-                  </li>
-                  <li className="mb-3">
-                    And then, I added the floor to the scene itself.
-                  </li>
+                  <FloorSnippetDescription />
                 </ul>
               </div>
             </Accordion>
@@ -454,7 +436,9 @@ export default function index() {
               Lo, and behold, the cars don't look like toys anymore:
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
               <Image
                 src="/article-files/gran-turismo-showroom/added_floor.png"
                 alt="Floor texture with the corrected scaling"
@@ -476,7 +460,7 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section7">
+          <section id="section8">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               Still a million miles away, but closing in quickly
             </h2>
@@ -512,7 +496,7 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section8">
+          <section id="section9">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               My shadow, my shadow's stuck!
             </h2>
@@ -523,22 +507,16 @@ export default function index() {
               shadows yet. So I'll enable it quickly.
             </p>
 
-            <Accordion title="How I loaded my model and shadows for it">
-              <ShadowSnippet />
-
-              <div className="leading-7 my-4 opacity-90 w-11/12 mx-auto code-snippet">
+            <Accordion title="Loading models and enabling shadows">
+              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+                <ModelShadowSnippet />
+              </div>
+              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
                 <ul className="list-disc">
-                  <li className="mb-3">
-                    The code starts by using a <code>Promise.all()</code>{" "}
-                    function to load a 3D car model file, specifically a Toyota
-                    Supra in GLB format. The <code>loader.load()</code> a new
-                    instance of the <code>GLTFLoader</code> class, is used to
-                    load the model file, and it waits for the loading to finish
-                    before moving on. But that's a topic for later.
-                  </li>
+                  <ModelShadowSnippetDescription />
                 </ul>
               </div>
             </Accordion>

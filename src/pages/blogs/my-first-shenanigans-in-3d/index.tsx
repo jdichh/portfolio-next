@@ -15,8 +15,8 @@ export default function index() {
   const OFF_WHITE = "#DADADA";
   const IMAGE_DIMENSIONS = 700;
   const IMAGE_QUALITY = 95;
-  const FIGURE_BG = "#1F1E26";
-  const BTN_TEXT_COLOR = FIGURE_BG;
+  const LIGHTER_BG = "#1F1E26";
+  const BTN_TEXT_COLOR = LIGHTER_BG;
   const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
@@ -40,7 +40,6 @@ export default function index() {
               My first shenanigans in 3D
             </h1>
             <p className="opacity-50 text-sm sm:text-base">
-              {" "}
               September 27, 2023
             </p>
           </div>
@@ -78,7 +77,7 @@ export default function index() {
               </strong>
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/my_reaction.png"
                 alt=""
@@ -114,7 +113,7 @@ export default function index() {
               I'm getting mixed signals here
             </h2>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/threejs.webp"
                 alt=""
@@ -158,7 +157,7 @@ export default function index() {
               my first output:
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/first_output.png"
                 alt="My first output in Three.js"
@@ -206,7 +205,7 @@ export default function index() {
               or running on a treadmill, in simpler terms.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/vaporwave.webp"
                 alt="A screenshot of Maxime Heckel's vaporwave project."
@@ -258,7 +257,7 @@ export default function index() {
               —it's basically the sun.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/light-directional.png"
                 alt="Directional light"
@@ -306,7 +305,7 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">And here it is:</p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/skybox-trial.png"
                 alt="My initial skybox trial"
@@ -354,7 +353,7 @@ export default function index() {
               switched to cooler colors, and I added some stars too.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/skybox.webp"
                 alt=""
@@ -387,7 +386,7 @@ export default function index() {
               TextureLoader for it to load the texture as the background.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act1.png"
                 alt="First part of my changes to the project"
@@ -410,7 +409,7 @@ export default function index() {
               The boys in the better land...?
             </h2>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/issues.png"
                 alt=""
@@ -438,7 +437,7 @@ export default function index() {
               because of something called a <strong>displacement map</strong>.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/displacementmap.png"
                 alt="The terrain's displacement map"
@@ -473,7 +472,7 @@ export default function index() {
               the bumpier it gets.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/displacementmap_issues.png"
                 alt="The issues to be addressed in the displacement map"
@@ -520,7 +519,7 @@ export default function index() {
               sun. So here it is:
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/sun.webp"
                 alt="The sun's textures"
@@ -539,7 +538,7 @@ export default function index() {
               applied to it. So, we'll use TextureLoader, and voila:
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act2.png"
                 alt="Second part of my changes to the project"
@@ -586,7 +585,7 @@ export default function index() {
               this can only look good.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/chromatic_aberration.jpg"
                 alt="Chromatic aberration example"
@@ -605,7 +604,7 @@ export default function index() {
               And here it is, with my other postprocessing effects of choice:
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act3.png"
                 alt="The third and last part of my changes to the project"
@@ -635,7 +634,7 @@ export default function index() {
               legally use his music.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/home.png"
                 alt="HOME, the artist"
@@ -664,7 +663,7 @@ export default function index() {
               But for me, I think it's perfect now.
             </p>
 
-            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+            <figure className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}>
               <div className="relative w-full pb-[56.25%] h-0">
                 <iframe
                   width="560"

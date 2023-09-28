@@ -1,9 +1,10 @@
 import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/prism";
-import dracula from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 
 export default function FloorSnippet() {
-  const codeSnippet = `const FLOOR_TEX = "./assets/floor/concrete1k/Concrete042A_1K_Color.png";
+  return (
+    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.65rem] sm:text-sm">
+      <code>
+{`const FLOOR_TEX = "./assets/floor/concrete1k/Concrete042A_1K_Color.png";
 const DISPLACEMENT_MAP = "./assets/floor/concrete1k/Concrete042A_1K_Displacement.png";
 const NORMAL_GL = "./assets/floor/concrete1k/Concrete042A_1K_NormalGL.png";
 const AMBIENT_OCCLUSION = "./assets/floor/concrete1k/Concrete042A_1K_AmbientOcclusion.png";
@@ -50,19 +51,8 @@ Promise.all([
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -0.8;
   scene.add(floor);
-});`;
-  return (
-    <SyntaxHighlighter
-      language="javascript"
-      style={dracula}
-      customStyle={{ 
-        fontSize: "12px", 
-        background: "#1F1E26",
-        marginTop: "0.5rem",
-        borderRadius: "0.375rem",
-      }}
-    >
-      {codeSnippet}
-    </SyntaxHighlighter>
+});`}
+      </code>
+    </pre>
   );
 }

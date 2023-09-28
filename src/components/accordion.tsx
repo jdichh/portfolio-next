@@ -10,7 +10,7 @@ function Accordion({ title, children }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-3">
+    <div className="w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-1">
       <div className="bg-[#1F1E26] rounded-md">
         <button
           role="button"
@@ -20,14 +20,14 @@ function Accordion({ title, children }: AccordionProps) {
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="font-medium">{title}</span>
-          <motion.span
-            key={isOpen ? "up" : "down"}
-            initial={{ rotate: 0 }}
-            animate={{ rotate: 180 }}
-            transition={{ ease: [0.22, 1, 0.36, 1] }}
-          >
-            {isOpen ? "▲" : "▼"}
-          </motion.span>
+            <motion.span
+              key={isOpen ? "up" : "down"}
+              initial={{ rotate: 0 }}
+              animate={{ rotate: 180 }}
+              transition={{ ease: [0.22, 1, 0.36, 1] }}
+            >
+              {isOpen ? "▲" : "▼"}
+            </motion.span>
         </button>
       </div>
       <AnimatePresence>
@@ -53,4 +53,4 @@ function Accordion({ title, children }: AccordionProps) {
   );
 }
 
-export default React.memo(Accordion);
+export default React.memo(Accordion)

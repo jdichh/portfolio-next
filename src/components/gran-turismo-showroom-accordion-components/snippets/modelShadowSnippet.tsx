@@ -1,9 +1,10 @@
 import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/prism";
-import dracula from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 
-export default function ShadowSnippet() {
-  const codeSnippet = `const loader = new GLTFLoader();
+export default function ModelShadowSnippet() {
+  return (
+    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.65rem] sm:text-sm">
+      <code>
+        {`const loader = new GLTFLoader();
   Promise.all([
   new Promise((resolve) => loader.load("/assets/cars/toy_sup_red.glb", resolve)),
 ]).then(([gltf1]) => {
@@ -34,19 +35,8 @@ export default function ShadowSnippet() {
   showOnCanvas();
 }).catch((error) => {
   console.error("Error loading car model:", error);
-});`;
-  return (
-    <SyntaxHighlighter
-      language="javascript"
-      style={dracula}
-      customStyle={{ 
-        fontSize: "12px", 
-        background: "#1F1E26",
-        marginTop: "0.5rem",
-        borderRadius: "0.375rem",
-      }}
-    >
-      {codeSnippet}
-    </SyntaxHighlighter>
+});`}
+      </code>
+    </pre>
   );
 }
