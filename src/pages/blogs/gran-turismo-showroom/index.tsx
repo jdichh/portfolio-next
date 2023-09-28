@@ -8,19 +8,21 @@ import Head from "next/dist/shared/lib/head";
 import Accordion from "@/components/accordion";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
-import DirectionalLightSnippet from "@/components/gran-turismo-showroom-accordion-components/snippets/directionalLightSnippet";
-import FloorSnippet from "@/components/gran-turismo-showroom-accordion-components/snippets/floorSnippet";
-import ModelShadowSnippet from "@/components/gran-turismo-showroom-accordion-components/snippets/modelShadowSnippet";
-import ModelShadowSnippetDescription from "@/components/gran-turismo-showroom-accordion-components/snippets/snippet-descriptions/modelShadowSnippetDescription";
-import DirectionalLightSnippetDescription from "@/components/gran-turismo-showroom-accordion-components/snippets/snippet-descriptions/directionalLightSnippetDescription";
-import FloorSnippetDescription from "@/components/gran-turismo-showroom-accordion-components/snippets/snippet-descriptions/floorSnippetDescription";
+
+import DirectionalLightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/directionalLightSnippet";
+import FloorSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/floorSnippet";
+import ModelShadowSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/modelShadowSnippet";
+
+import ModelShadowSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/modelShadowSnippetDescription";
+import DirectionalLightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/directionalLightSnippetDescription";
+import FloorSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/floorSnippetDescription";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
   const SONIC_BLUE = "#6E99C4";
   const OFF_WHITE = "#DADADA";
-  const IMAGE_DIMENSIONS = 700;
+  const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
   const LIGHTER_BG = "#1F1E26";
   const ICON_DIMENSIONS = 40;
@@ -30,13 +32,11 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>
-          Blog | Creating a Gran Turismo-esque showroom with Three.js
-        </title>
+        <title>Blog | A Gran Turismo-esque showroom with Three.js</title>
       </Head>
-      <BlogHeader title="Creating a Gran Turismo-esque showroom with Three.js" />
+      <BlogHeader title="A Gran Turismo-esque showroom with Three.js" />
       <motion.main
-        className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
+        className={`flex flex-col items-start w-full max-w-[750px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
@@ -45,7 +45,7 @@ export default function index() {
           <div className="mt-44" />
           <div className="mb-8">
             <h1 className="text-xl sm:text-2xl font-bold mb-2">
-              Creating a Gran Turismo-esque showroom with Three.js
+              A Gran Turismo-esque showroom with Three.js
             </h1>
             <p className="opacity-50 text-sm sm:text-base">
               September 29, 2023

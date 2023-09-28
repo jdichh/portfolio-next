@@ -187,8 +187,8 @@ export const projects = [
 
 export const blogs = [
   // {
-  //   name: "Creating a Gran Turismo-esque showroom with Three.js",
-  //   description: "I originally wanted to create a promotional website for a car manufacturer (not a partnership), but I ended up recreating Gran Turismo (a bit) for browsers. Wanna know how?",
+  //   name: "A Gran Turismo-esque showroom with Three.js",
+  //   description: "I originally wanted to create a promotional website in 3D for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
   //   date: "September 29, 2023",
   //   link: "/blogs/gran-turismo-showroom"
   // },

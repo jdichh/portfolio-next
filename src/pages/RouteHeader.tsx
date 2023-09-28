@@ -25,7 +25,7 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
       transition={{ delay: 1, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="fixed border-b-2 border-[#6E99C4] backdrop-blur bg-opacity-80 bg-[#19181E] top-0 h-16 w-full" />
-      <nav className="fixed flex justify-between items-center w-full max-w-[700px] mx-auto left-1/2 -translate-x-[50%] px-4 h-16">
+      <nav className="fixed flex justify-between items-center w-full max-w-[750px] mx-auto left-1/2 -translate-x-[50%] px-4 h-16">
         <ul>
           <li>
             <Link href="/" aria-label="Back button">
