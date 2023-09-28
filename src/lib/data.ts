@@ -123,19 +123,15 @@ export const projects = [
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
-    githubLink: "https://github.com/jdichh/car-showroom-r3f/",
-    devFootage: "https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
   },
   {
     name: "Khronomechanica Vintora",
     description:
-      "A landing page for a fictional steampunk watch. I wanted to try out embedding a 3D model in a product website.",
+      "A website for a fictional steampunk watch. I wanted to try out embedding a 3D model in a product website.",
     tools: ["PC Recommended", "HTML", "SCSS", "Three.js", "GSAP"],
     imageUrl: vintora,
     toolIcons: [pcImg, htmlImg, scssImg, threeImg, gsapImg],
     liveLink: "https://steampunkwatch.netlify.app/",
-    githubLink: "https://github.com/jdichh/steampunk-watch",
-    devFootage: "https://drive.google.com/drive/folders/1Cch-eDcga3LYIGnze3uUez6lN5RWrRtv?usp=sharing",
   },
   {
     name: "Synthwave Scene",
@@ -146,11 +142,10 @@ export const projects = [
     toolIcons: [pcImg, reactImg, threeImg],
     liveLink: "https://jdsynthwave.netlify.app/",
     videoLink: "https://youtu.be/S7RprZc3dEs",
-    githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
-    devFootage: "https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
+    blogLink: "/posts/my-first-shenanigans-in-3d/"
   },
   {
-    name: "Asteroids Game",
+    name: "Asteroids",
     description:
       "The Asteroids game from Atari, but with my own modifications to it.",
     tools: ["PC Required", "JavaScript"],
@@ -158,7 +153,6 @@ export const projects = [
     toolIcons: [pcRequiredImg, jsImg],
     liveLink: "https://jdasteroids.netlify.app/",
     videoLink: "https://youtu.be/6LwWaI4WKdg",
-    githubLink: "https://github.com/jdichh/asteroids",
   },
   {
     name: "Galaxy Overview",
@@ -169,8 +163,6 @@ export const projects = [
     toolIcons: [pcImg, r3fImg],
     liveLink: "https://jdgalaxy.netlify.app/",
     videoLink: "https://youtu.be/ODhJYVid_oU",
-    githubLink: "https://github.com/jdichh/galaxy-map",
-    devFootage: "https://drive.google.com/drive/folders/1jxwLoiLTJ8YCxAhwNnbEtwGzTRTNKw2P?usp=sharing"
   },
   {
     name: "Random Password Generator Extension",
@@ -183,15 +175,6 @@ export const projects = [
     githubLink: "https://github.com/jdichh/password-generator",
   },
   {
-    name: "All-Knowing Bot",
-    description: "A chat website that uses LemurBot from Lemur Engine.",
-    tools: ["HTML", "SCSS", "JavaScript"],
-    imageUrl: chatbot,
-    toolIcons: [htmlImg, scssImg, jsImg],
-    liveLink: "https://allknowingbot.netlify.app/",
-    githubLink: "https://github.com/jdichh/all-knowing-bot",
-  },
-  {
     name: "Security Unit Web Portal",
     description:
       "This was part of our capstone project back when I was in college, which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
@@ -200,16 +183,6 @@ export const projects = [
     toolIcons: [vueImg, bootstrapImg, firebaseImg],
     liveLink: "https://ssuwebsystem.netlify.app",
     videoLink: "https://youtu.be/vkYClk75SS0",
-    githubLink: "https://github.com/jdichh/websystem_ssu2",
-  },
-  {
-    name: " Alternative Horizon XS Radio",
-    description:
-      "An alternative version to the Horizon XS in-game radio in Forza Horizon 5. The original version of the radio left a bad taste in my mouth.",
-    tools: ["Miscellaneous"],
-    toolIcons: [miscImg],
-    imageUrl: horizonxs,
-    nexusModsLink: "https://www.nexusmods.com/forzahorizon5/mods/65"
   },
 ]
 

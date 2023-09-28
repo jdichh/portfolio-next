@@ -57,7 +57,7 @@ export default function index() {
               <a
                 href="https://threejs.org/"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[#6E99C4] font-medium hover:text-[#DADADA] transition duration-150 ease-in-out`}
               >
                 Three.js
               </a>
@@ -178,7 +178,7 @@ export default function index() {
           </section>
 
           <section id="section3">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               A little help goes a long way
             </h2>
 

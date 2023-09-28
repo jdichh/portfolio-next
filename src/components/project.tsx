@@ -16,8 +16,7 @@ export default function Project({
   liveLink,
   githubLink,
   videoLink,
-  devFootage,
-  nexusModsLink,
+  blogLink
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -87,7 +86,7 @@ export default function Project({
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
-                Live Demo
+                Demo
               </motion.a>
             )}
             {videoLink && (
@@ -102,6 +101,18 @@ export default function Project({
                 Video
               </motion.a>
             )}
+            {blogLink && (
+              <motion.a
+                href={blogLink.toString()}
+                target="_blank"
+                aria-label="Button for my blog post of the project."
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+              >
+                Blog
+              </motion.a>
+            )}
             {githubLink && (
               <motion.a
                 href={githubLink.toString()}
@@ -112,30 +123,6 @@ export default function Project({
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
                 GitHub
-              </motion.a>
-            )}
-            {devFootage && (
-              <motion.a
-                href={devFootage.toString()}
-                target="_blank"
-                aria-label="Development footage of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-              >
-                Development Footage
-              </motion.a>
-            )}
-            {nexusModsLink && (
-              <motion.a
-                href={nexusModsLink.toString()}
-                target="_blank"
-                aria-label="The NexusMods page of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-              >
-                NexusMods
               </motion.a>
             )}
           </div>
