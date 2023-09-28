@@ -143,7 +143,7 @@ export default function Project({
           src={imageUrl}
           alt=""
           quality={IMAGE_QUALITY}
-          className="hidden md:block relative md:absolute transition ease-in-out duration-150 rounded-md top-7 md:-right-52 lg:-right-16 xl:-right-24 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
+          className="hidden md:block relative md:absolute transition ease-in-out duration-150 rounded-md top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
         />
       </motion.article>
     </motion.div>
