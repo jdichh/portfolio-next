@@ -8,6 +8,7 @@ import Head from "next/dist/shared/lib/head";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
 import Accordion from "@/components/accordion";
+import CodeSnippet from "./codeSnippet";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -190,9 +191,10 @@ export default function index() {
           </section>
 
           <div id="good-stuff" className="scroll-mt-12" />
+
           <section id="section5">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
-              Bro, is that a (Toyota) Supra?!
+              Is that a Supra?!
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -203,7 +205,7 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              So I got not only one, but two Supras!
+              So I got not only one, but two Toyota Supras!
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -276,11 +278,11 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              So I had the models loaded in. Now, the floor textures. We can
-              load the floor textures similarly to how I loaded the terrain in
-              the previous project by using{" "}
+              So I had the models loaded in. Now, the floor textures is next in
+              the list. We can load the floor textures similarly to how I loaded
+              the terrain in the previous project by using{" "}
               <a
-                href="https://threejs.org/docs/index.html?q=orbit#examples/en/controls/OrbitControls"
+                href="https://threejs.org/docs/index.html?q=wrap#api/en/geometries/PlaneGeometry"
                 target="_blank"
                 className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
@@ -290,7 +292,11 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              But I have to source the floor textures first. So I did.
+              But I have to source the floor textures first. So I did, by
+              downloading textures from a repository of HQ textures, I forgot
+              what website it was called, but there are numerous repositories
+              out there that can serve you well if you decide to take on this
+              type of project yourself.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -309,8 +315,9 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               Currently, it's only taking up one segment. So I have to configure
-              PlaneGeometry to my liking. Initially, I tried to "duplicate" the
-              plane by enlarging the texture. And this was the outcome:
+              PlaneGeometry to essentially repeat itself multiple times.
+              Initially, I tried to "duplicate" the plane by enlarging the
+              texture. And this was the outcome:
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -323,7 +330,7 @@ export default function index() {
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                Yeah, that's not right either.
+                Yeah, that's still not right.
               </figcaption>
             </figure>
 
@@ -333,15 +340,25 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              There wasn't any guide in the documentations on how to set a scale
-              for the PlaneGeometry. So I asked GPT on how to do it, so that the
-              cars wouldn't look like toys.
+              At the time when I was making this project, I didn't manage to
+              find any guide in the documentation about properly scaling
+              textures. But, some days later, I found out that it was called{" "}
+              <a
+                href="https://threejs.org/docs/#api/en/textures/Texture.repeat"
+                target="_blank"
+                className="font-medium text-[#6E99C4] hover:text-[#DADADA] transition duration-150 ease-in-out"
+              >
+                repeat
+              </a>
+              , and not something like, "textureScale".
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              Fortunately, it gave me the correct solution. I won't go too much
-              into the technicalities of it—but to put it simply, I created a
-              scale variable, and set it to the plane's settings.
+              Fortunately, GPT pointed me in the right direction when I asked
+              about it. I won't go too much into the technicalities of it—but to
+              put it simply, I created some variables that would define the size
+              and scale of the floor, and then I inserted the floor into the
+              scene.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -351,23 +368,9 @@ export default function index() {
             </p>
 
             <Accordion title="My configuration for the floor">
-              <figure
-                className={`bg-[${FIGURE_BG}] p-3 rounded-md mt-3 mx-auto`}
-              >
-                <Image
-                  src="/article-files/gran-turismo-showroom/floor_codes.png"
-                  alt="A peek at the settings for the floor"
-                  width={IMAGE_DIMENSIONS}
-                  height={IMAGE_DIMENSIONS}
-                  quality={IMAGE_QUALITY}
-                  className="rounded-md"
-                />
-                <figcaption className="mt-2 text-center">
-                  My configuration for the floor.
-                </figcaption>
-              </figure>
+              <CodeSnippet />
 
-              <div className="leading-8 my-4 opacity-90 w-11/12 mx-auto">
+              <div className="leading-7 my-4 opacity-90 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Breakdown
                 </h2>
@@ -422,6 +425,66 @@ export default function index() {
                 </ul>
               </div>
             </Accordion>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Lo, and behold, the cars don't look like toys anymore:
+            </p>
+
+            <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
+              <Image
+                src="/article-files/gran-turismo-showroom/added_floor.png"
+                alt="Floor texture with the corrected scaling"
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                Yep, it's gaming time.
+              </figcaption>
+            </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              <strong>
+                Don't mind the floor texture, I was just checking out other
+                textures.
+              </strong>
+            </p>
+          </section>
+
+          <section id="section7">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+              Still a million miles away, but closing in quickly
+            </h2>
+
+            <p className="leading-7 mb-8 opacity-90">
+              So, I've successfully loaded the models, and solved my issues with
+              the floor making the cars from looking like toys. But I was stuck.
+              Staring at the cars while the camera pans around them. I was just
+              thinking, "Now what?"
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              When I was creating this project, I was listening to a Daily Mix
+              playlist in Spotify. A song called "A Million Miles Away" by
+              Ulrich Schnauss played after the previous one ended. I then
+              suddenly remembered what game I associated the song with—Gran
+              Turismo 4!
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Well not really, I'm spreading misinformation. I just
+              couldn't think of a better transition.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              From that point on, I decided to change the direction I was going
+              towards; I decided that I should create a showroom inspired by
+              modern Gran Turismo games. And maybe, this could be used as a
+              reference for a future project if I do ever get to work with a
+              manufacturer.
+            </p>
+
           </section>
         </article>
       </motion.main>

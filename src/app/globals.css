@@ -14,10 +14,11 @@ html, body {
     justify-content: space-between;
 }
 
-code {
+.code-snippet code {
     background-color: #1F1E26;
-    padding-inline: 0.5rem;
-    padding-block: 0.25rem;
-    border-radius: 0.25rem;
-}
-
+    padding-inline: 0.3rem;
+    padding-block: 0.1rem;
+    border-radius: 0.15rem;
+    outline: 1px solid #DADADA;
+    margin-inline: 0.25rem;
+  }
