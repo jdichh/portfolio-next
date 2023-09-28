@@ -66,10 +66,10 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               So imagine how amused I was at the video YouTube recommended to
-              me. I was shocked, but in a positive manner. Because I thought, at the
-              time, that frontend was just about React, Vue, Angular, and all
-              that jazz. So I took it upon myself to get to know and learn how
-              Three.js worked.{" "}
+              me. I was shocked, but in a positive manner. Because I thought, at
+              the time, that frontend was just about React, Vue, Angular, and
+              all that jazz. So I took it upon myself to get to know and learn
+              how Three.js worked.{" "}
               <strong>
                 But don't do what I did, kids, because I could've spent time
                 learning more about React and its ecosystem instead of 3D stuff.
@@ -109,7 +109,7 @@ export default function index() {
 
           <section id="section2">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              I understand, yet I am confused at the same time
+              I am confused, yet understand at the same time
             </h2>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -280,8 +280,8 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              The sun now exists (in a way), but there's a dark void just staring
-              at you. This is the time where we add in the sky.{" "}
+              The sun now exists (in a way), but there's a dark void just
+              staring at you. This is the time where we add in the sky.{" "}
               <span className="font-bold">My initial solution was this:</span>{" "}
               create a big box by using{" "}
               <a
@@ -467,7 +467,7 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               But notice the darker colors in the red rectangles. As I said, the
               darker the colors are, the flatter it is, and the brighter it is,
-              it gets bumpier.
+              the bumpier it gets.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -496,12 +496,12 @@ export default function index() {
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
             >
-              Praise the sun!
+              Praise the sun
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              So, we fixed the issues regarding the displacement map. Now we add
-              the sun, by using{" "}
+              So, we fixed the issues regarding the terrain data. This time,
+              let's add in the sun by using{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=sphere#api/en/geometries/SphereGeometry"
                 target="_blank"
@@ -564,8 +564,8 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              So, we're nearly done with the project, just some more things to
-              add like bloom and a CRT filter. And{" "}
+              So, we're nearly done with the project, just some more
+              postprocessing effects to add like bloom and a CRT filter. And{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=effect#examples/en/postprocessing/EffectComposer"
                 target="_blank"
@@ -579,7 +579,7 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               In Maxime's article, he had chromatic aberration on. I decided to
               leave it on because it kinda fit the "vibe" I was going for, and
-              supplemented with my postprocessing effects of choice, this can
+              supplemented with my other postprocessing effects of choice, this can
               only look good.
             </p>
 
@@ -599,13 +599,7 @@ export default function index() {
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
-              There are lots of postprocessing effects in Three.js, but I
-              decided to go for bloom and a CRT filter, as I wanted to capture
-              the "vibe of the 80's", so to speak.
-            </p>
-
-            <p className="leading-7 mb-8 opacity-90">
-              And here it is, with the postprocessing effects:
+              And here it is, with my other postprocessing effects of choice:
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
