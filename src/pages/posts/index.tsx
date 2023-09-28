@@ -27,11 +27,11 @@ export default function index() {
         <div className="mb-8">
           <h1 className="mb-3 text-xl sm:text-2xl">
             <span className="font-semibold">
-              Kamusta! I'm Jason, a fresh IT graduate from the Philippines, and
+              Kamusta! I'm Jason, a recent IT graduate from the Philippines, and
               this is where you can read just about any of my ramblings—
             </span>
             <span className="opacity-90">
-              be it about web development, books, or just life in general.
+              be it about web development, music, books, or just life in general.
             </span>
           </h1>
         </div>
