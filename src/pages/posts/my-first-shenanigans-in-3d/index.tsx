@@ -346,8 +346,8 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               So I created an image to be used as a texture. The initial
-              version, from bottom to top, was a gradient going from orange to
-              red. But after creating the texture, I thought that it looked
+              version, from bottom to top, was a gradient going from red to
+              orange. But after creating the texture, I thought that it looked
               quite apocalyptic, and wasn't the "vibe" I was going for. So I
               switched to cooler colors, and I added some stars too.
             </p>
