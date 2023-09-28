@@ -14,6 +14,9 @@ export default function Accordion({ title, children }: AccordionProps) {
     <div className={`w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-3`}>
       <div className={`bg-[${LIGHTER_BG}] rounded-md`}>
         <button
+          role="button"
+          aria-expanded={isOpen}
+          aria-controls="accordion-panel"
           className="flex justify-between items-center py-3 px-5 w-full text-left"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -42,6 +45,7 @@ export default function Accordion({ title, children }: AccordionProps) {
         </button>
       </div>
       <motion.div
+        id="accordion-panel"
         initial={{ height: 0, overflow: "hidden" }}
         animate={{
           height: isOpen ? "auto" : 0,
