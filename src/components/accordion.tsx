@@ -7,14 +7,11 @@ type AccordionProps = {
 };
 
 function Accordion({ title, children }: AccordionProps) {
-  const LIGHTER_BG = "#1F1E26";
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
-      className={`w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-3`}
-    >
-      <div className={`bg-[${LIGHTER_BG}] rounded-md`}>
+    <div className="w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-3">
+      <div className="bg-[#1F1E26] rounded-md">
         <button
           role="button"
           aria-expanded={isOpen}
@@ -23,27 +20,14 @@ function Accordion({ title, children }: AccordionProps) {
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="font-medium">{title}</span>
-          <AnimatePresence mode="wait">
-            {isOpen ? (
-              <motion.span
-                key="up"
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 180 }}
-                transition={{ ease: [0.22, 1, 0.36, 1] }}
-              >
-                ▲
-              </motion.span>
-            ) : (
-              <motion.span
-                key="down"
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 180 }}
-                transition={{ ease: [0.22, 1, 0.36, 1] }}
-              >
-                ▼
-              </motion.span>
-            )}
-          </AnimatePresence>
+          <motion.span
+            key={isOpen ? "up" : "down"}
+            initial={{ rotate: 0 }}
+            animate={{ rotate: 180 }}
+            transition={{ ease: [0.22, 1, 0.36, 1] }}
+          >
+            {isOpen ? "▲" : "▼"}
+          </motion.span>
         </button>
       </div>
       <AnimatePresence>
@@ -69,4 +53,4 @@ function Accordion({ title, children }: AccordionProps) {
   );
 }
 
-export default React.memo(Accordion)
+export default React.memo(Accordion);
