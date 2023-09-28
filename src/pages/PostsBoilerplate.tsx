@@ -16,10 +16,10 @@ export default function Post({ name, description, date, link }: PostProps) {
       >
         <a href={link}>
         <div className="flex flex-col py-4 px-4">
-          <h3 className="text-xl text-left sm:text-2xl text-[#DADADA] font-bold">
+          <h2 className="text-xl text-left sm:text-2xl text-[#DADADA] font-bold">
             {name}
-          </h3>
-          <h4 className="opacity-50 mb-2">{date}</h4>
+          </h2>
+          <h3 className="opacity-50 mb-2">{date}</h3>
           <p className="opacity-90"> {description}</p>
         </div>
         </a>
