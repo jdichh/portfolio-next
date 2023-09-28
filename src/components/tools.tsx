@@ -13,7 +13,7 @@ export default function Tools() {
 
   return (
     <motion.section
-      className="px-3 w-full xl:w-10/12 mb-16 scroll-mt-20"
+      className="px-4 w-full xl:w-10/12 mb-16 scroll-mt-20"
       id="tools"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
