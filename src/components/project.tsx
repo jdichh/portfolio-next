@@ -46,6 +46,7 @@ export default function Project({
       <motion.article
         className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-md relative transition ease-in-out duration-150 hover:outline hover:outline-1 hover:outline-[#DADADA]"
         whileHover={{ scale: ON_HOVER_SCALE }}
+        transition={{ duration: 0.01 }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
