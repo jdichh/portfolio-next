@@ -424,8 +424,9 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               <strong>
-                Don't mind the sun and the postprocessing effects like bloom and
-                the CRT filter, let's focus on the terrain's issues for now.
+                Don't mind the color of the sky, the sun and the postprocessing
+                effects like bloom and the CRT filter, let's focus on the
+                terrain's issues for now.
               </strong>
             </p>
 
@@ -579,8 +580,8 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               In Maxime's article, he had chromatic aberration on. I decided to
               leave it on because it kinda fit the "vibe" I was going for, and
-              supplemented with my other postprocessing effects of choice, this can
-              only look good.
+              supplemented with my other postprocessing effects of choice, this
+              can only look good.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
