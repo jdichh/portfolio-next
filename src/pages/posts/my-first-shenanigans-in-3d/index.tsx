@@ -11,11 +11,12 @@ import { Space_Grotesk } from "next/font/google";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
-  const SPAN_COLOR = "#6E99C4";
-  const HOVER_COLOR = "#DADADA";
+  const SONIC_BLUE = "#6E99C4";
+  const OFF_WHITE = "#DADADA";
   const IMAGE_DIMENSIONS = 700;
   const IMAGE_QUALITY = 95;
   const FIGURE_BG = "#1F1E26";
+  const BTN_TEXT_COLOR = FIGURE_BG;
   const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
@@ -72,8 +73,8 @@ export default function index() {
               how Three.js worked.{" "}
               <strong>
                 But don't do what I did, kids, because I could've spent time
-                learning more about the fundamentals of programming, React and its
-                ecosystem instead of 3D stuff.
+                learning more about the fundamentals of programming, React and
+                its ecosystem instead of 3D stuff.
               </strong>
             </p>
 
@@ -96,7 +97,7 @@ export default function index() {
               <a
                 href="https://roadmap.sh/"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 roadmap.sh
               </a>{" "}
@@ -142,7 +143,7 @@ export default function index() {
               <a
                 href="https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-gaming-laptops/ideapad-l340-15irh-gaming/88ipl301161"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 poor laptop{" "}
               </a>
@@ -187,7 +188,7 @@ export default function index() {
               <a
                 href="https://blog.maximeheckel.com/posts/vaporwave-3d-scene-with-threejs/"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-semibold hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 article by Maxime Heckel
               </a>
@@ -250,7 +251,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html?q=direction#api/en/lights/DirectionalLight"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 DirectionalLight
               </a>
@@ -288,7 +289,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html?q=geom#api/en/geometries/BoxGeometry"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 BoxGeometry
               </a>{" "}
@@ -296,7 +297,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html?q=textureload#api/en/loaders/TextureLoader"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 TextureLoader
               </a>
@@ -372,7 +373,7 @@ export default function index() {
               <a
                 href="https://getpaint.net/"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 Paint.NET
               </a>
@@ -507,7 +508,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html?q=sphere#api/en/geometries/SphereGeometry"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 SphereGeometry.
               </a>{" "}
@@ -571,7 +572,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html?q=effect#examples/en/postprocessing/EffectComposer"
                 target="_blank"
-                className={`text-[${SPAN_COLOR}] font-medium hover:text-[${HOVER_COLOR}] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-medium hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 EffectComposer{" "}
               </a>
@@ -581,8 +582,8 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               In Maxime's article, he had chromatic aberration on. I decided to
               leave it on because it kinda fit the "vibe" I was going for, and
-              supplemented with my other postprocessing effects of choice, this
-              can only look good.
+              when supplemented with my other postprocessing effects of choice,
+              this can only look good.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -629,8 +630,8 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               Lastly, the music. The scene wouldn't feel complete without some
-              synthwave music. So I picked a track from HOME (great artist, by
-              the way), because his music captures the "vibe" well. Plus, I can
+              synthwave. So I picked a track from HOME (great artist, by the
+              way), because his music captures the "vibe" well. Plus, I can
               legally use his music.
             </p>
 
@@ -654,7 +655,7 @@ export default function index() {
               className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
               id="actual"
             >
-              The end has no end, the end has no end
+              The end has no end
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -708,7 +709,7 @@ export default function index() {
                 href="https://github.com/jdichh/synthwave-scene"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-2 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.05 }}
@@ -719,12 +720,23 @@ export default function index() {
                 href="https://jdsynthwave.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-2 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.05 }}
               >
                 Live Demo
+              </motion.a>
+              <motion.a
+                href="https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
+                target="_blank"
+                aria-label="Button for the development videos of the project"
+                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.05 }}
+              >
+                Dev't Videos
               </motion.a>
             </div>
           </section>

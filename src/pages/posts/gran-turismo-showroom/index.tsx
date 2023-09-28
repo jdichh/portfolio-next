@@ -11,8 +11,8 @@ import { Space_Grotesk } from "next/font/google";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
-  const SPAN_COLOR = "#6E99C4";
-  const HOVER_COLOR = "#DADADA";
+  const SONIC_BLUE = "#6E99C4";
+  const OFF_WHITE = "#DADADA";
   const IMAGE_DIMENSIONS = 700;
   const IMAGE_QUALITY = 95;
   const FIGURE_BG = "#1F1E26";
@@ -23,7 +23,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Posts | Creating a Gran Turismo-esque showroom with Three.js</title>
+        <title>
+          Posts | Creating a Gran Turismo-esque showroom with Three.js
+        </title>
       </Head>
       <PostsHeader title="Creating a Gran Turismo-esque showroom with Three.js" />
       <motion.main
@@ -51,7 +53,7 @@ export default function index() {
               </p>
               <div className="flex justify-end">
                 <a
-                  href="#section5"
+                  href="#good-stuff"
                   className="font-medium text-[#6E99C4] hover:text-[#DADADA] transition duration-150 ease-in-out"
                 >
                   Skip to the good stuff.
@@ -61,7 +63,7 @@ export default function index() {
           </section>
 
           <section id="section2">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-[24rem]">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               Gentlemen, start your engines!
             </h2>
 
@@ -94,7 +96,7 @@ export default function index() {
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                Test Drive 6 cover.
+                Test Drive 6 PS1 cover.
               </figcaption>
             </figure>
 
@@ -139,30 +141,33 @@ export default function index() {
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
-              The Gran Turismo series, as a whole, has always been in my heart.
-              Not just because of the cars, and the quality of the racetracks
-              themselves; the presentation, coupled with the glorious
-              soundtrack, has always been top-tier ever since its first release.
-              This was also where I discovered my love for jazz. Imagine, being
-              in the comfort of your home to wind down after a long, tiresome
-              day, and listening to the games' jazz collection.
+              Test Drive 6 was great (to me). But the Gran Turismo series, as a
+              whole, has always been closer to my heart. Not just because of the
+              cars, and the quality of the racetracks themselves; the
+              presentation, coupled with the glorious soundtrack, has always
+              been top-tier ever since its first release. This was also where I
+              discovered my love for jazz. Imagine, being in the comfort of your
+              home to wind down after a long, tiresome day, and listening to the
+              games' jazz collection.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              Anyway, I'm going on a tangent here. If you've read my{" "}
+              Anyway, I'm going on a tangent here about my love for cars and
+              driving/racing video games. If you've read my{" "}
               <a
                 href="/posts/my-first-shenanigans-in-3d"
                 target="_blank"
-                className={`text-[#6E99C4] font-semibold hover:text-[#DADADA] transition duration-150 ease-in-out`}
+                className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 previous post
               </a>
-              , then you'd know how I came by Three.js, and in my self-learning
-              journey. And now, to show you how I made the showroom project.
+              , then you'd know how I came by Three.js so early on in my
+              self-learning journey. And now, to show you how I made the
+              showroom project.
             </p>
           </section>
 
-          <section id="section4"> 
+          <section id="section4">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               A bright idea
             </h2>
@@ -183,7 +188,8 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section5"  className="scroll-mt-24">
+          <div id="good-stuff" className="scroll-mt-12" />
+          <section id="section5">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               Bro, is that a (Toyota) Supra?!
             </h2>
@@ -192,11 +198,11 @@ export default function index() {
               I perused Sketchfab for car models, and I came across an A80 and
               A90 Supra in the same page. And I thought to myself, "Why not
               something about honoring the past car, and welcoming the new one?
-              A passing of the baton of sorts.".
+              Like, a passing of the baton of sorts?".
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              So not only one, but two (2) Supras!
+              So I got not only one, but two Supras!
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -215,7 +221,16 @@ export default function index() {
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
-              Now that we secured the car models, let's load it in.
+              Now that I've secured the car models, let's load them in using{" "}
+              <a
+                href="https://threejs.org/docs/index.html?q=gltf#examples/en/loaders/GLTFLoader"
+                target="_blank"
+                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                GLTFLoader
+              </a>
+              . This just loads any models in the JSON (.gltf) or binary (.glb)
+              format.
             </p>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -228,17 +243,36 @@ export default function index() {
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                The Supras
+                Supras in action.
               </figcaption>
             </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              <strong>
+                This is just a zoomed-in view of it, and not the actual
+                perspective itself.
+              </strong>
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I won't get too much into the technical aspect of it, but I
+              initially set up the camera using{" "}
+              <a
+                href="https://threejs.org/docs/index.html?q=orbit#examples/en/controls/OrbitControls"
+                target="_blank"
+                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                OrbitCamera
+              </a>{" "}
+              to hover and rotate above the cars, at an angle, and looking at
+              the center point of the two cars combined.
+            </p>
           </section>
 
           <section id="section6">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               The floor is...concrete
             </h2>
-
-
 
             <p className="leading-7 mb-8 opacity-90">
               So not only one, but two (2) Supras!
@@ -259,7 +293,6 @@ export default function index() {
               </figcaption>
             </figure>
           </section>
-
         </article>
       </motion.main>
       <RouteFooter />
