@@ -72,7 +72,7 @@ export default function index() {
               how Three.js worked.{" "}
               <strong>
                 But don't do what I did, kids, because I could've spent time
-                learning more about fundamentals of programming, React and its
+                learning more about the fundamentals of programming, React and its
                 ecosystem instead of 3D stuff.
               </strong>
             </p>
