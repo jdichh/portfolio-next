@@ -40,8 +40,8 @@ export const links = [
     hash: "#works",
   },
   {
-    name: "Posts",
-    hash: "/posts",
+    name: "Blogs",
+    hash: "/blogs",
   },
 ]
 
@@ -190,12 +190,12 @@ export const posts = [
   //   name: "Creating a Gran Turismo-esque showroom with Three.js",
   //   description: "I originally wanted to create a promotional website for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
   //   date: "September 28, 2023",
-  //   link: "/posts/gran-turismo-showroom"
+  //   link: "/blogs/gran-turismo-showroom"
   // },
   {
     name: "My first shenanigans in 3D",
     description: "The story of how I came by 3D so early on in my self-learning journey.",
     date: "September 27, 2023",
-    link: "/posts/my-first-shenanigans-in-3d"
+    link: "/blogs/my-first-shenanigans-in-3d"
   },
 ]

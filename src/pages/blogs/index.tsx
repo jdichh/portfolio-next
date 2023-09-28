@@ -14,9 +14,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Jason Dichoso | Posts</title>
+        <title>Jason Dichoso | Blogs</title>
       </Head>
-      <RouteHeader title="Posts" />
+      <RouteHeader title="Blogs" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[700px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}

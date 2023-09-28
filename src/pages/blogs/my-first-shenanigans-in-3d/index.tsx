@@ -111,7 +111,7 @@ export default function index() {
 
           <section id="section2">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              I am confused, and I understand it at the same time
+              I'm getting mixed signals here
             </h2>
 
             <figure className={`bg-[${FIGURE_BG}] p-3 rounded-md my-8 mx-auto`}>
@@ -490,7 +490,7 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               In this case, the issues I showed above can be simply solved using
               the magic of photo editing; so I fixed it with Paint.NET by adding
-              whites to those areas of interest.
+              whites to these areas of interest.
             </p>
           </section>
 
