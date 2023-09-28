@@ -322,7 +322,7 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               The problem was that I didn't set a proper size for the box
               itself. Secondly, the textures don't really fit the colors of the
-              lighting and terrain, there's too much contrast between them.
+              lighting and terrain—there's too much contrast between them.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
