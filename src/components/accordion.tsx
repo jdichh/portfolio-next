@@ -13,7 +13,6 @@ function Accordion({ title, children }: AccordionProps) {
     <div className="w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-1">
       <div className="bg-[#1F1E26] rounded-md">
         <button
-          role="button"
           className="flex justify-between items-center py-3 px-4 w-full text-left"
           onClick={() => setIsOpen(!isOpen)}
         >
