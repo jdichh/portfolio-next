@@ -12,7 +12,7 @@ export default function BlogItem() {
       id="blogs"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ ease: [0.22, 1, 0.36, 1] }}
       >
 
       {blogs.map((blog, index) => (
