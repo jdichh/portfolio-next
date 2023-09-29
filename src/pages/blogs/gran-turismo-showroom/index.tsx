@@ -40,7 +40,10 @@ export default function index() {
     <>
       <Head>
         <title>Blog | A Gran Turismo-esque showroom with Three.js</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
       </Head>
       <BlogHeader title="A Gran Turismo-esque showroom with Three.js" />
       <motion.main
@@ -92,19 +95,18 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               Revving the engine to the redline, only for the cycle to repeat
               after ripping through the transmission to change gears; hearing
-              the tires squeal for mercy, telling you—shouting at you that the
-              tyres are at the tipping point between traction and slippage. For
+              the tires squeal for mercy, telling you—shouting at you that
+              they're at the tipping point between traction and slippage. For
               the sole reason of beating the other guys to the finish line.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
               My love for cars, especially the Dodge Viper and all of its
               iterations, and just about anything automotive, began with a game
-              on the PlayStation 1 called Test Drive 6. Hearing a cover of
-              Gary Numan's song "Cars" play in the intro (the original is
-              better), crashing out police cars and other competitors alike,
-              reminds me of good times back from when I was just a young,
-              fat(ter) kid.
+              on the PlayStation 1 called Test Drive 6. Hearing a cover of Gary
+              Numan's song "Cars" play in the intro (the original is better),
+              crashing out police cars and other competitors alike, reminds me
+              of good times back from when I was just a young, fat(ter) kid.
             </p>
 
             <figure
