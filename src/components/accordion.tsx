@@ -16,7 +16,7 @@ function Accordion({ title, children }: AccordionProps) {
           role="button"
           aria-expanded={isOpen}
           aria-controls="accordion-panel"
-          className="flex justify-between items-center py-3 px-5 w-full text-left"
+          className="flex justify-between items-center py-3 px-4 w-full text-left"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="font-medium">{title}</span>

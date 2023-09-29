@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DirectionalLightSnippet() {
   return (
-    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.65rem] sm:text-sm">
+    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.5rem] sm:text-sm">
       <code>
         {`const DL_INTENSITY = 0.075;
 

@@ -2,12 +2,12 @@ import React from "react";
 
 export default function FloorSnippet() {
   return (
-    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.65rem] sm:text-sm">
+    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.5rem] sm:text-sm">
       <code>
-{`const FLOOR_TEX = "./assets/floor/concrete1k/Concrete042A_1K_Color.png";
-const DISPLACEMENT_MAP = "./assets/floor/concrete1k/Concrete042A_1K_Displacement.png";
-const NORMAL_GL = "./assets/floor/concrete1k/Concrete042A_1K_NormalGL.png";
-const AMBIENT_OCCLUSION = "./assets/floor/concrete1k/Concrete042A_1K_AmbientOcclusion.png";
+{`const FLOOR_TEX = "./concrete1k/Concrete042A_1K_Color.png";
+const DISPLACEMENT_MAP = "./concrete1k/Concrete042A_1K_Displacement.png";
+const NORMAL_GL = "./concrete1k/Concrete042A_1K_NormalGL.png";
+const AMBIENT_OCCLUSION = "./concrete1k/Concrete042A_1K_AmbientOcclusion.png";
 const TEX_SCALE = 15;
 const PLANE_WIDTH = 225;
 const PLANE_HEIGHT = 225;

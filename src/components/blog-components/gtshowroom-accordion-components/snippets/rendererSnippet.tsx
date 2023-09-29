@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RendererSnippet() {
   return (
-    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.65rem] sm:text-sm">
+    <pre className="whitespace-pre-wrap break-words rounded-md text-[0.5rem] sm:text-sm">
       <code>
         {`import * as THREE from "three"; 
 

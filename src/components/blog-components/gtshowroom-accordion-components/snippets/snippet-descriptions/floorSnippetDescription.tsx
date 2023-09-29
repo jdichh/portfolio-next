@@ -43,7 +43,7 @@ export default function FloorSnippetDescription() {
         I applied some more additional settings to the floor, such as allowing
         it to receive shadows and adjusting its position and rotation. Because
         the default setting is that the plane is upright, so I used some "quick
-        maffs" to make it lie down (Refer to <code>floor.rotation.x</code>).
+        maths" to make it lie down (Refer to <code>floor.rotation.x</code>).
       </li>
       <li className="mb-3">And then, I added the floor to the scene itself.</li>
     </>

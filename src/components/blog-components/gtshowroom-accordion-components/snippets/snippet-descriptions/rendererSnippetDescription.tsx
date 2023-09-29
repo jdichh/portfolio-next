@@ -4,7 +4,7 @@ export default function RendererSnippetDescription() {
   return (
     <>
       <li className="mb-3">
-        Of course, we have to import the whole Three.js library to be able to
+        First, we have to import the whole Three.js library to be able to
         use all of its features.
       </li>
       <li className="mb-3">

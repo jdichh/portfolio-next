@@ -4,14 +4,14 @@ export default function RendererSettingsSnippetDescription() {
   return (
     <>
       <li className="mb-3">
-        <code>{"renderer.setSize()"}</code> sets the size of the renderer's
+        <code>{"renderer.setSize(...)"}</code> sets the size of the renderer's
         output canvas to match the dimensions specified by
         <code>window.innerWidth</code> and <code>window.innerHeight</code>. This
         typically corresponds to the size of the browser window or a specific
         container where the 3D scene is displayed.
       </li>
       <li className="mb-3">
-        <code>{"renderer.setPixelRatio()"}</code> sets the pixel ratio of the
+        <code>{"renderer.setPixelRatio(...)"}</code> sets the pixel ratio of the
         renderer. The pixel ratio is a factor that determines the relationship
         between CSS pixels and physical device pixels. It affects the rendering
         quality on high-resolution displays (e.g., Retina displays) and can help
@@ -23,7 +23,7 @@ export default function RendererSettingsSnippetDescription() {
         greater than 1 on high-DPI displays.
       </li>
       <li className="mb-3">
-        <code>{"Math.min()"}</code> ensures that the
+        <code>{"Math.min(...)"}</code> ensures that the
         pixel ratio is capped at a maximum value of 2. This means that even on
         very high-DPI displays, the renderer won't use a pixel ratio greater
         than 2, which can help balance rendering quality and performance.

@@ -6,8 +6,6 @@ import synthwave from "../../public/project/synthwave.gif";
 import asteroids from "../../public/project/asteroids.gif";
 import passwordGen from "../../public/project/password.png";
 import ssu from "../../public/project/ssu.png";
-import chatbot from "../../public/project/chatbot.png";
-import horizonxs from "../../public/project/horizonxs.webp"
 
 // icons
 import htmlImg from "../../public/tools/html.svg";
@@ -17,6 +15,7 @@ import jsImg from "../../public/tools/js.svg";
 import reactImg from "../../public/tools/react.svg";
 import nextImg from "../../public/tools/next.svg";
 import vueImg from "../../public/tools/vue.svg";
+import firebase from "../../public/tools/firebase.svg"
 import threeImg from "../../public/tools/three.svg";
 import r3fImg from "../../public/tools/r3f.svg";
 import bootstrapImg from "../../public/tools/bootstrap.svg";
@@ -26,7 +25,6 @@ import framerMotionImg from "../../public/tools/framermotion.svg";
 import firebaseImg from "../../public/tools/firebase.svg";
 import waveToolImg from "../../public/tools/wavetool.svg";
 import lighthouseImg from "../../public/tools/lighthouse.svg";
-import miscImg from "../../public/tools/misc.svg";
 import pcImg from "../../public/tools/pc.svg";
 import pcRequiredImg from "../../public/tools/pcrequired.svg";
 
@@ -102,6 +100,11 @@ export const tools = [
     alt: "Framer motion logo"
   },
   {
+    name: "Firebase",
+    imageUrl: firebaseImg,
+    alt: "Firebase logo"
+  },
+  {
     name: "Wave Tool",
     imageUrl: waveToolImg,
     alt: "Wave tool logo"
@@ -123,6 +126,8 @@ export const projects = [
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
+    blogLink: "/blogs/gran-turismo-showroom",
+    githubLink: "https://github.com/jdichh/car-showroom-r3f/"
   },
   {
     name: "Khronomechanica Vintora",
@@ -132,6 +137,7 @@ export const projects = [
     imageUrl: vintora,
     toolIcons: [pcImg, htmlImg, scssImg, threeImg, gsapImg],
     liveLink: "https://steampunkwatch.netlify.app/",
+    githubLink: "https://github.com/jdichh/steampunk-watch",
   },
   {
     name: "Synthwave Scene",
@@ -142,7 +148,8 @@ export const projects = [
     toolIcons: [pcImg, reactImg, threeImg],
     liveLink: "https://jdsynthwave.netlify.app/",
     videoLink: "https://youtu.be/S7RprZc3dEs",
-    blogLink: "/blogs/my-first-shenanigans-in-3d/"
+    blogLink: "/blogs/my-first-shenanigans-in-3d/",
+    githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
   },
   {
     name: "Asteroids",
@@ -153,6 +160,7 @@ export const projects = [
     toolIcons: [pcRequiredImg, jsImg],
     liveLink: "https://jdasteroids.netlify.app/",
     videoLink: "https://youtu.be/6LwWaI4WKdg",
+    githubLink: "https://github.com/jdichh/asteroids",
   },
   {
     name: "Galaxy Overview",
@@ -163,6 +171,7 @@ export const projects = [
     toolIcons: [pcImg, r3fImg],
     liveLink: "https://jdgalaxy.netlify.app/",
     videoLink: "https://youtu.be/ODhJYVid_oU",
+    githubLink: "https://github.com/jdichh/galaxy-map",
   },
   {
     name: "Random Password Generator Extension",
@@ -172,6 +181,7 @@ export const projects = [
     imageUrl: passwordGen,
     toolIcons: [htmlImg, scssImg, jsImg],
     videoLink: "https://youtu.be/pq-EsJa1plw",
+    githubLink: "https://github.com/jdichh/password-generator",
   },
   {
     name: "Security Unit Web Portal",
@@ -182,16 +192,17 @@ export const projects = [
     toolIcons: [vueImg, bootstrapImg, firebaseImg],
     liveLink: "https://ssuwebsystem.netlify.app",
     videoLink: "https://youtu.be/vkYClk75SS0",
+    githubLink: "https://github.com/jdichh/websystem_ssu2",
   },
 ]
 
 export const blogs = [
-  // {
-  //   name: "A Gran Turismo-esque showroom with Three.js",
-  //   description: "I originally wanted to create a promotional website in 3D for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
-  //   date: "September 29, 2023",
-  //   link: "/blogs/gran-turismo-showroom"
-  // },
+  {
+    name: "A Gran Turismo-esque showroom with Three.js",
+    description: "I originally wanted to create a promotional website in 3D for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
+    date: "September 29, 2023",
+    link: "/blogs/gran-turismo-showroom"
+  },
   {
     name: "My first shenanigans in 3D",
     description: "The story of how I came by 3D so early on in my self-learning journey.",

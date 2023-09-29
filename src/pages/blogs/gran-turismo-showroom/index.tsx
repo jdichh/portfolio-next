@@ -31,6 +31,7 @@ export default function index() {
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
   const LIGHTER_BG = "#1F1E26";
+  const BTN_TEXT_COLOR = LIGHTER_BG;
   const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
@@ -91,17 +92,18 @@ export default function index() {
               Revving the engine to the redline, only for the cycle to repeat
               after ripping through the transmission to change gears; hearing
               the tires squeal for mercy, telling you—shouting at you that the
-              car is at the tipping point between traction and slippage. For the
-              sole reason of beating the other guys to the finish line.
+              tyres are at the tipping point between traction and slippage. For
+              the sole reason of beating the other guys to the finish line.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
               My love for cars, especially the Dodge Viper and all of its
               iterations, and just about anything automotive, began with a game
-              on the PlayStation 1 called Test Drive 6. Just hearing Gary
-              Numan's song "Cars" play in the intro, crashing out police cars
-              and other competitors alike, reminds me of good times back from
-              when I was just a young, fat(ter) kid.
+              on the PlayStation 1 called Test Drive 6. Hearing a cover of
+              Gary Numan's song "Cars" play in the intro (the original is
+              better), crashing out police cars and other competitors alike,
+              reminds me of good times back from when I was just a young,
+              fat(ter) kid.
             </p>
 
             <figure
@@ -121,10 +123,11 @@ export default function index() {
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
-              And since then, I've just about exhausted list after list of great
-              driving/racing games to play; from racing on dirt, on gravel, and
-              on asphalt. If you ask me if I played a certain driving/racing
-              game, there is a 99.9% chance that I'll say that I already have.
+              Ever since then, I've just about exhausted list after list of
+              great driving/racing games to play; from racing on dirt, on
+              gravel, and on asphalt. If you ask me if I played a certain
+              driving/racing game, there is a 99.9% chance that I'll say that I
+              already have.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -198,6 +201,8 @@ export default function index() {
             </p>
           </section>
 
+          <div id="good-stuff" className="scroll-mt-12" />
+
           <section id="section4">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               A bright idea
@@ -219,8 +224,6 @@ export default function index() {
             </p>
           </section>
 
-          <div id="good-stuff" className="scroll-mt-12" />
-
           <section id="section5">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               Is that a Supra?!
@@ -228,9 +231,12 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               I perused Sketchfab for car models, and came across an A80 and A90
-              Supra in the same page. And I suddenly thought to myself, "Why not
-              a 3D project about honoring the past model, and welcoming the new
-              one? Like, a passing of the baton of sorts?".
+              Supra in the same page. And I suddenly thought to myself,{" "}
+              <strong>
+                "Why not a 3D project about honoring the past model, and
+                welcoming the new one? Like, a passing of the baton of sorts?"
+              </strong>
+              .
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -266,7 +272,9 @@ export default function index() {
             </p>
 
             <Accordion title="Setting up the canvas">
-              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+              <div
+                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
+              >
                 <RendererSnippet />
               </div>
 
@@ -286,7 +294,9 @@ export default function index() {
             </p>
 
             <Accordion title="My renderer configuration">
-              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+              <div
+                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
+              >
                 <RendererSettingsSnippet />
               </div>
               <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
@@ -300,19 +310,28 @@ export default function index() {
             </Accordion>
           </section>
 
-          <section id="section6">
+          <section id="section7">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               Lighten up, man
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              We have to set up DirectionalLight, because if we don't, then the
-              whole scene will just be pitch black. It's basically equivalent to
-              the sun in the real world.
+              We have to set up{" "}
+              <a
+                href="https://threejs.org/docs/index.html#api/en/lights/DirectionalLight"
+                target="_blank"
+                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                DirectionalLight
+              </a>
+              , because if we don't, then the whole scene will just be pitch
+              black. It's basically equivalent to the sun in the real world.
             </p>
 
             <Accordion title="How I added in sunlight">
-              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+              <div
+                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
+              >
                 <DirectionalLightSnippet />
               </div>
 
@@ -329,7 +348,7 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               Now we'll load in the models using{" "}
               <a
-                href="https://threejs.org/docs/index.html?q=gltf#examples/en/loaders/GLTFLoader"
+                href="https://threejs.org/docs/index.html#examples/en/loaders/GLTFLoader"
                 target="_blank"
                 className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
@@ -363,30 +382,45 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              I won't get too much into the technical aspect of setting up the
-              camera, at least just for this instance, but I initially set it up
-              with{" "}
+              Oh yeah, I forgot to mention about{" "}
               <a
-                href="https://threejs.org/docs/index.html?q=orbit#examples/en/controls/OrbitControls"
+                href="https://threejs.org/docs/index.html#api/en/cameras/PerspectiveCamera"
+                target="_blank"
+                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                PerspectiveCamera
+              </a>
+              . It's used to basically mimic the way that the human eye sees. I
+              set it up to have a low field of view, but zoomed out as well, so
+              that the entire scene looks like it could be a wallpaper, and not
+              have a fish-eye effect.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              In setting up the rotating camera, at least just for this
+              instance, I initially set it up using{" "}
+              <a
+                href="https://threejs.org/docs/index.html#examples/en/controls/OrbitControls"
                 target="_blank"
                 className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 OrbitCamera
               </a>{" "}
               to hover and rotate above the cars, at an angle, and looking at
-              the center point of the two cars.
+              the center point of the two cars. But during the project's life
+              cycle, I changed it a bit. You'll now why later.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              You may be wondering,{" "}
+              And you may be wondering,{" "}
               <strong>
                 "Jason, you didn't show us how to load the models!"
               </strong>{" "}
-              Well, I'll you all about it in a section below.
+              Well, I'll you about it later as well. Sorry.
             </p>
           </section>
 
-          <section id="section7">
+          <section id="section8">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
               Hmm yes...the floor here is made out of floor
             </h2>
@@ -396,7 +430,7 @@ export default function index() {
               the list. We can load the floor texture similarly to how I loaded
               the terrain in the previous project by using{" "}
               <a
-                href="https://threejs.org/docs/index.html?q=wrap#api/en/geometries/PlaneGeometry"
+                href="https://threejs.org/docs/index.html#api/en/geometries/PlaneGeometry"
                 target="_blank"
                 className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
@@ -454,7 +488,7 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               I admit, it made me chuckle a bit when I saw it for the first
-              time; because look at them, they look like toys on the floor.
+              time. They look like toys on the floor.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -474,7 +508,9 @@ export default function index() {
             </p>
 
             <Accordion title="My floor config">
-              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+              <div
+                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
+              >
                 <FloorSnippet />
               </div>
 
@@ -489,7 +525,7 @@ export default function index() {
             </Accordion>
 
             <p className="leading-7 mb-8 opacity-90">
-              Lo, and behold, the cars don't look like toys anymore:
+              Lo and behold, the cars don't look like toys anymore:
             </p>
 
             <figure
@@ -516,7 +552,7 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section8">
+          <section id="section9">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               I'm stuck, stepbro
             </h2>
@@ -552,9 +588,9 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section9">
+          <section id="section10">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Gaining traction
+              Still a million miles away, but closing in quickly
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -571,7 +607,9 @@ export default function index() {
             </p>
 
             <Accordion title="Loading a model and enabling its shadows">
-              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+              <div
+                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
+              >
                 <ModelShadowSnippet />
               </div>
               <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
@@ -635,7 +673,7 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section10">
+          <section id="section11">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               Setting the mood
             </h2>
@@ -652,7 +690,7 @@ export default function index() {
               DirectionalLight. I also thought of adding more lights by creating
               new instances of{" "}
               <a
-                href="https://threejs.org/docs/index.html?q=spot#api/en/lights/SpotLight"
+                href="https://threejs.org/docs/index.html#api/en/lights/SpotLight"
                 target="_blank"
                 className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
@@ -680,10 +718,10 @@ export default function index() {
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
-              I initially had 2 instances of SpotLight that are on the front
-              right side and rear right side of the car. And I was checking out
-              how different lighting values and placements played with each
-              other.
+              I initially had 2 instances of SpotLight that were placed on the
+              front right side and rear right side of the car. And I was
+              checking out how different lighting values and placements played
+              with each other.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -695,24 +733,22 @@ export default function index() {
             </p>
           </section>
 
-          <section id="section11">
+          <section id="section12">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Here's Johnny!
+              The Shining
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              After testing out different lighting settings, I had an idea where
-              there could be another light source pointing towards the car, but
-              coming from above.
+              After testing out different lighting settings, I suddenly had the
+              notion where there could be another light source pointing towards
+              the car, but coming from above.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              It's a trick used by many to create a dramatic and for lack of a
-              better word, sort of "menacing" mood for many scenes. You know
-              those horror movies/games, where there's a narrow corridor and
-              there's a figure standing at the end of the corridor, with a
-              spotlight pointing towards it from above? Something similar to the
-              corridor scenes in Stanley Kubrick's "The Shining".
+              It's a trick used by many to create a dramatic and a sort of
+              "menacing" look. You know those horror movies/games, where there's
+              a narrow corridor and there's a figure standing at the end of the
+              corridor, with a spotlight directly above it?
             </p>
 
             <figure
@@ -727,19 +763,19 @@ export default function index() {
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
-                The look I'm going for
+                The look I'm going for.
               </figcaption>
             </figure>
 
             <p className="leading-7 mb-8 opacity-90">
-              I also decided that there would be other light sources coming from
-              directly the rear, right, left and front sides of the car. And
-              this is the point where I'll tell you my settings.
+              I also decided that there should be other light sources coming
+              from directly the rear, right, left and front sides of the car.
+              And this is the point where I'll how I set them up.
             </p>
 
             <Accordion title="Setting up the spotlights">
               <div
-                className={`bg-[${LIGHTER_BG}] py-3 px-2 rounded-md my-2 mx-auto`}
+                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
               >
                 <SpotlightSnippet />
               </div>
@@ -754,14 +790,189 @@ export default function index() {
             </Accordion>
           </section>
 
-          <section id="section12">
+          <section id="section13">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Closing in on the finish line
+              Closing in
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              We're pretty close to the end now—just some more minor adjustments
-              to the lighting.
+              We're pretty close to the end now—just some more minor
+              adjustments.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Also, at this point, I was preoccupied with improving performance
+              by playing around with the shadow resolution, different
+              anti-aliasing configs, trying out different car models, etc.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              After I was finished with optimizing the scene's performance, I
+              set out to copy some aspects of the UI from the Gran Turismo
+              Sport, and had this photo as a reference:
+            </p>
+
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
+              <Image
+                src="/article-files/gran-turismo-showroom/ui.png"
+                alt=""
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                Gran Turismo Sport showroom UI
+              </figcaption>
+            </figure>
+          </section>
+
+          <section id="section14">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+              CSS woes
+            </h2>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Most things went pretty smoothly, I was barrelling along up until
+              I had to replicate the bottom part, along with the sliding text.
+              So, I'm thinking:{" "}
+              <strong>"How the hell do I do the bottom part?"</strong>
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I was experimenting with CSS flexbox and grid for it. I spent
+              about 30-40 minutes trying to figure this thing out. And suddenly,
+              my brain decided to fire in all cylinders and thought of something
+              very viable:{" "}
+              <strong>
+                a grid layout with 4 columns, and inside those columns, flexbox
+                items.
+              </strong>
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              As for the sliding text, it can be achieved by basically disabling
+              the ability for the text to wrap, creating a single line of text.
+              And I added a sliding animation for the text with CSS keyframes.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              <strong>"Yun nga! (That's it!)"</strong>, I told myself. And after
+              long hours of non-stop work, I managed to finish it.
+            </p>
+          </section>
+
+          <section id="section15">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+              The finish line
+            </h2>
+            <p className="leading-7 mb-8 opacity-90">
+              One more thing, the music. So, I added in some from the Gran
+              Turismo Sport soundtrack list, and the menu theme from Race
+              Driver: GRID.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              So, I've reached the end, after up to 16 hours of work for about
+              3-4 days. Do I regret it? Nope, not a single bit. I loved working
+              on this project. Hopefully, I'd get the chance to do it again but
+              in a professional setting, and with a more powerful computer. Oh,
+              my poor 4 year-old laptop, I'm so sorry.
+            </p>
+
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
+              <div className="relative w-full pb-[56.25%] h-0">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/PhjlgLxL-Zg?si=5LnBX6373yIeYjPW"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full rounded-md"
+                ></iframe>
+              </div>
+              <figcaption className="mt-2 text-center">
+                YouTube Video
+              </figcaption>
+            </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Hope you enjoyed my story, mixed with a tutorial. Thanks for
+              reading!
+            </p>
+          </section>
+
+          <section id="section16">
+            <h2
+              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
+              id="actual"
+            >
+              Links
+            </h2>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Here are the links for the project if you're interested.{" "}
+              <strong>
+                But, I cannot stress this enough: You HAVE to open the project
+                itself on a PC. Your mobile device will likely lag or maybe
+                restart due to the fact that this project wasn't made with
+                mobile in mind.
+              </strong>
+            </p>
+
+            <div className="flex flex-row gap-2 justify-center mx-auto font-bold">
+              <motion.a
+                href="https://github.com/jdichh/car-showroom"
+                target="_blank"
+                aria-label="Button to the GitHub repo of the project"
+                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.05 }}
+              >
+                GitHub
+              </motion.a>
+              <motion.a
+                href="https://gtshowroom.netlify.app/"
+                target="_blank"
+                aria-label="Button for the live link of the project"
+                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.05 }}
+              >
+                Live Demo
+              </motion.a>
+              <motion.a
+                href="https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
+                target="_blank"
+                aria-label="Button for the development videos of the project"
+                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.05 }}
+              >
+                Dev Videos
+              </motion.a>
+            </div>
+
+            <p className="leading-7 my-8 opacity-90">
+              Now you may have noticed that the video is different from the
+              project itself. It's because I migrated the project from Three.js
+              to React-Three-Fiber to learn how it worked, and then made some
+              changes from the original Three.js version. But that's another
+              topic in and of itself.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I now prefer working in React-Three-Fiber for Three.js projects. I
+              don't have to do the initial setup and all that jazz in R3F.
             </p>
           </section>
         </article>

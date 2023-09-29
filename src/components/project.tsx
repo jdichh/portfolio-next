@@ -15,7 +15,8 @@ export default function Project({
   imageUrl,
   liveLink,
   videoLink,
-  blogLink
+  blogLink,
+  githubLink
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -110,6 +111,18 @@ export default function Project({
                 whileTap={{ scale: ON_TAP_SCALE }}
               >
                 Blog
+              </motion.a>
+            )}
+            {githubLink && (
+              <motion.a
+                href={githubLink.toString()}
+                target="_blank"
+                aria-label="Button for my blog post of the project."
+                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+              >
+                GitHub
               </motion.a>
             )}
           </div>
