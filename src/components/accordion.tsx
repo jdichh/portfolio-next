@@ -24,7 +24,6 @@ function Accordion({ title, children }: AccordionProps) {
               key={isOpen ? "up" : "down"}
               initial={{ rotate: 0 }}
               animate={{ rotate: 180 }}
-              transition={{ ease: [0.22, 1, 0.36, 1] }}
             >
               {isOpen ? "▲" : "▼"}
             </motion.span>

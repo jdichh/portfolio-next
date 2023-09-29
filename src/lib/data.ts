@@ -32,8 +32,8 @@ import pcRequiredImg from "../../public/tools/pcrequired.svg";
 
 export const links = [
   {
-    name: "Tools",
-    hash: "#tools",
+    name: "Home",
+    hash: "#home",
   },
   {
     name: "Works",

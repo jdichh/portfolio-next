@@ -93,9 +93,9 @@ export default function index() {
               My love for cars, especially the Dodge Viper and all of its
               iterations, and just about anything automotive, began with a game
               on the PlayStation 1 called Test Drive 6. Just hearing Gary
-              Numan's song "Cars" play in the intro, and crashing out police
-              cars and other competitors alike, reminds me of good times back
-              from when I was just a young, fat(ter) kid.
+              Numan's song "Cars" play in the intro, crashing out police cars
+              and other competitors alike, reminds me of good times back from
+              when I was just a young, fat(ter) kid.
             </p>
 
             <figure
@@ -259,10 +259,10 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              Ah! But before that, of course, is the lighting. Remember
-              DirectionalLight? If you don't, it's equivalent to the sun in the
-              real world. So, I'll set it up first, because if I don't, then the
-              whole scene will just be pitch black.
+              Ah! But before that, of course, is the lighting. We first have to
+              set up DirectionalLight, because if I don't, then the whole scene
+              will just be pitch black. It's basically equivalent to the sun in
+              the real world.
             </p>
 
             <Accordion title="How I added in sunlight">
@@ -279,6 +279,18 @@ export default function index() {
                 </ul>
               </div>
             </Accordion>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Now we'll load in the models using GLTFLoader.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              You may be wondering,{" "}
+              <strong>
+                "Jason, you didn't show us how to load the models!"
+              </strong>{" "}
+              Well, I'll you all about it in a section below.
+            </p>
 
             <figure
               className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
@@ -324,8 +336,8 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              So I had the models loaded in. Now, the floor textures is next in
-              the list. We can load the floor textures similarly to how I loaded
+              So I had the models loaded in. Now, the floor texture is next in
+              the list. We can load the floor texture similarly to how I loaded
               the terrain in the previous project by using{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=wrap#api/en/geometries/PlaneGeometry"
@@ -405,10 +417,10 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               Fortunately, GPT pointed me in the right direction when I asked
-              about it. I won't go too much into the technicalities of it—but to
-              put it simply, I created some variables that would define the size
-              and scale of the floor, and then I inserted the floor into the
-              scene.
+              about it. Again, I won't go too much into the technicalities—but
+              to put it simply, I created some variables that would define the
+              size and scale of the floor, and then I inserted the floor into
+              the scene.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -503,11 +515,18 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               To repeat, I've managed to set up the lighting, the floor with the
-              correct settings, and the car models. However, there are no
-              shadows yet. So I'll enable it quickly.
+              correct settings, and the car model itself. But, if you haven't
+              noticed it yet, there aren't any shadows.
             </p>
 
-            <Accordion title="Loading models and enabling shadows">
+            <p className="leading-7 mb-8 opacity-90">
+              <strong>
+                And this is also the part where I explain how I load my car
+                model.
+              </strong>
+            </p>
+
+            <Accordion title="Loading a model and enabling its shadows">
               <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
                 <ModelShadowSnippet />
               </div>
@@ -520,6 +539,86 @@ export default function index() {
                 </ul>
               </div>
             </Accordion>
+
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
+              <Image
+                src="/article-files/gran-turismo-showroom/shadows.png"
+                alt=""
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                Enabled shadows for the model
+              </figcaption>
+            </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              And with that, I've now successfully enabled the capability for
+              the model to cast and receive shadows from light sources.
+            </p>
+          </section>
+
+          <section className="section10">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+              Gaining traction
+            </h2>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Next task, setting up the lighting and background to have a dark,
+              intimate setting, similar to modern Gran Turismo games. But this
+              wasn't a simple task for me. Finding the "sweet spot" for the
+              lighting I wanted really took a lot of time for me.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              The way I started was testing out the values of my
+              DirectionalLight. I also thought of adding more lights by creating
+              new instances of{" "}
+              <a
+                href="https://threejs.org/docs/index.html?q=spot#api/en/lights/SpotLight"
+                target="_blank"
+                className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                SpotLight
+              </a>{" "}
+              that point towards the car, but at this point, I didn't know yet
+              where and how far should the lights be from the car. So I started
+              to experiment.
+            </p>
+
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
+              <Image
+                src="/article-files/gran-turismo-showroom/testing_lighting.png"
+                alt=""
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                Testing out lighting settings
+              </figcaption>
+            </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I initially had 2 instances of SpotLight that are on the front
+              right side and rear right side of the car. And I was checking out
+              how different lighting values and placements played with each
+              other.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              If you've noticed, the background is still gray-ish even with the
+              darker lighting. It's because it's just a color that I set
+              initially so I can properly scope out the entire scene. It'll be
+              changed later on.
+            </p>
           </section>
         </article>
       </motion.main>
