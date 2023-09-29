@@ -4,9 +4,7 @@ export default function DirectionalLightSnippet() {
   return (
     <pre className="whitespace-pre-wrap break-words rounded-md text-[0.65rem] sm:text-sm">
       <code>
-        {`import * as THREE from "three"; 
-    
-const DL_INTENSITY = 0.075;
+        {`const DL_INTENSITY = 0.075;
 
 const scene = new THREE.Scene(); 
 const directionalLight = new THREE.DirectionalLight(0xffffff, DL_INTENSITY);

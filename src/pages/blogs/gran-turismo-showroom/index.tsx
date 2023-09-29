@@ -13,11 +13,15 @@ import DirectionalLightSnippet from "@/components/blog-components/gtshowroom-acc
 import FloorSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/floorSnippet";
 import ModelShadowSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/modelShadowSnippet";
 import SpotlightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/spotlightSnippet";
+import RendererSettingsSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/rendererSettingsSnippet";
+import RendererSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/rendererSnippet";
 
 import ModelShadowSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/modelShadowSnippetDescription";
 import DirectionalLightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/directionalLightSnippetDescription";
 import FloorSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/floorSnippetDescription";
 import SpotlightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/spotlightSnippetDescription";
+import RendererSettingsSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/rendererSettingsSnippetDescription";
+import RendererSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/rendererSnippetDescription";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -127,8 +131,8 @@ export default function index() {
               DiRT games? Check. GRID games? Check. NASCAR? Check. The Ridge
               Racer series? Check. Need for Speed/Burnout/Forza games? Of
               course! Why would you even ask that? And the list goes on and on.
-              Point is, like most of other car guys/gals out there, my love of
-              cars began with video games.
+              Point is, like most of the other car guys/gals out there, my love
+              of cars began with video games.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -164,24 +168,33 @@ export default function index() {
               cars, and the quality of the racetracks themselves; the
               presentation, coupled with the glorious soundtrack, has always
               been top-tier ever since its first release. This was also where I
-              discovered my love for jazz. Imagine, being in the comfort of your
-              home to wind down after a long, tiresome day, and listening to the
-              games' jazz collection.
+              discovered my love for jazz and funk.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I remember the times, where I'm "fatly" walking to the PS1,
+              inserting my disc of Gran Turismo 2 in the console, powering it
+              on, showing me the glorious boot-up screen, and then off to the
+              races for hours on end.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
               Anyway, I'm going on a tangent here about my love for cars and
-              driving/racing video games. If you've read my{" "}
+              driving/racing video games and childhood memories. If you've read
+              my{" "}
               <a
-                href="/posts/my-first-shenanigans-in-3d"
+                href="/blogs/my-first-shenanigans-in-3d"
                 target="_blank"
                 className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
               >
                 previous post
               </a>
               , then you'd know how I came by Three.js so early on in my
-              self-learning journey. And now, to show you how I made the
-              showroom project.
+              self-learning journey.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              And now, to show you how I made the showroom project.
             </p>
           </section>
 
@@ -240,19 +253,51 @@ export default function index() {
                 Driver for the picture.
               </figcaption>
             </figure>
+          </section>
+
+          <section id="section6">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
+              Paint me like one of your french girls
+            </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              Now that I've secured the car models, let's load them in using{" "}
-              <a
-                href="https://threejs.org/docs/index.html?q=gltf#examples/en/loaders/GLTFLoader"
-                target="_blank"
-                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
-              >
-                GLTFLoader
-              </a>
-              . This just loads any models in the JSON (.gltf) or binary (.glb)
-              format.
+              Ah! But before that, of course, is the canvas so that we can start
+              doing our painting, so to speak.
             </p>
+
+            <Accordion title="Setting up the canvas">
+              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+                <RendererSnippet />
+              </div>
+
+              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+                <h2 className="text-xl sm:text-2xl font-bold my-3 ">
+                  Quick Rundown
+                </h2>
+                <ul className="list-disc">
+                  <RendererSnippetDescription />
+                </ul>
+              </div>
+            </Accordion>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I also customized the configurations of my renderer. Here they
+              are:
+            </p>
+
+            <Accordion title="My renderer configuration">
+              <div className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-2 mx-auto`}>
+                <RendererSettingsSnippet />
+              </div>
+              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+                <h2 className="text-xl sm:text-2xl font-bold my-3 ">
+                  Quick Rundown
+                </h2>
+                <ul className="list-disc">
+                  <RendererSettingsSnippetDescription />
+                </ul>
+              </div>
+            </Accordion>
           </section>
 
           <section id="section6">
@@ -261,10 +306,9 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              Ah! But before that, of course, is the lighting. We first have to
-              set up DirectionalLight, because if I don't, then the whole scene
-              will just be pitch black. It's basically equivalent to the sun in
-              the real world.
+              We have to set up DirectionalLight, because if we don't, then the
+              whole scene will just be pitch black. It's basically equivalent to
+              the sun in the real world.
             </p>
 
             <Accordion title="How I added in sunlight">
@@ -283,15 +327,16 @@ export default function index() {
             </Accordion>
 
             <p className="leading-7 mb-8 opacity-90">
-              Now we'll load in the models using GLTFLoader.
-            </p>
-
-            <p className="leading-7 mb-8 opacity-90">
-              You may be wondering,{" "}
-              <strong>
-                "Jason, you didn't show us how to load the models!"
-              </strong>{" "}
-              Well, I'll you all about it in a section below.
+              Now we'll load in the models using{" "}
+              <a
+                href="https://threejs.org/docs/index.html?q=gltf#examples/en/loaders/GLTFLoader"
+                target="_blank"
+                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                GLTFLoader
+              </a>
+              . This just loads any models in the JSON (.gltf) or binary (.glb)
+              format.
             </p>
 
             <figure
@@ -318,8 +363,9 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              I won't get too much into the technical aspect of it, but I
-              initially set up the camera using{" "}
+              I won't get too much into the technical aspect of setting up the
+              camera, at least just for this instance, but I initially set it up
+              with{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=orbit#examples/en/controls/OrbitControls"
                 target="_blank"
@@ -328,7 +374,15 @@ export default function index() {
                 OrbitCamera
               </a>{" "}
               to hover and rotate above the cars, at an angle, and looking at
-              the center point of the two cars combined.
+              the center point of the two cars.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              You may be wondering,{" "}
+              <strong>
+                "Jason, you didn't show us how to load the models!"
+              </strong>{" "}
+              Well, I'll you all about it in a section below.
             </p>
           </section>
 
@@ -348,7 +402,7 @@ export default function index() {
               >
                 PlaneGeometry
               </a>
-              . As the name suggests, it loads in a plane (terrain).
+              . As the name suggests, it loads in a plane.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -406,29 +460,17 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               At the time when I was making this project, I didn't manage to
               find any information in the docs about properly scaling textures.
-              But, some days later, I found out that it was called{" "}
-              <a
-                href="https://threejs.org/docs/#api/en/textures/Texture.repeat"
-                target="_blank"
-                className="font-medium text-[#6E99C4] hover:text-[#DADADA] transition duration-150 ease-in-out"
-              >
-                repeat
-              </a>
-              , and not something like, "textureScale".
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
               Fortunately, GPT pointed me in the right direction when I asked
-              about it. Again, I won't go too much into the technicalities—but
-              to put it simply, I created some variables that would define the
-              size and scale of the floor, and then I inserted the floor into
-              the scene.
+              about it. Basically, I created some variables that would define
+              the size and scale of the floor, and then I inserted the floor
+              into the scene.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              <strong>
-                But, if you want to nerd out with me, you can take a look below:
-              </strong>
+              Here's the more detailed answer:
             </p>
 
             <Accordion title="My floor config">
@@ -476,14 +518,14 @@ export default function index() {
 
           <section id="section8">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Still a million miles away, but closing in quickly
+              I'm stuck, stepbro
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
               So, I've successfully loaded the models, and solved my issues with
               the floor making the cars from looking like toys. But I was stuck.
               Staring at the cars while the camera pans around them. I was just
-              thinking, "Now what?"
+              thinking, <strong>"Now what?"</strong>
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -512,12 +554,12 @@ export default function index() {
 
           <section id="section9">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              My shadow, my shadow's stuck!
+              Gaining traction
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
               To repeat, I've managed to set up the lighting, the floor with the
-              correct settings, and the car model itself. But, if you haven't
+              correct settings, and the car models as well. But, if you haven't
               noticed it yet, there aren't any shadows.
             </p>
 
@@ -562,11 +604,40 @@ export default function index() {
               And with that, I've now successfully enabled the capability for
               the model to cast and receive shadows from light sources.
             </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              You might be thinking right now,{" "}
+              <strong>
+                "Jason, If you already enabled shadows in the renderer, then why
+                do you have to enable it again during the model loading
+                process?"
+              </strong>
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              Great question! Setting shadowMap.enabled to true does indeed
+              enable shadows globally.{" "}
+              <strong>
+                However, enabling shadows at the renderer level doesn't
+                automatically make individual objects cast or receive shadows by
+                default.
+              </strong>{" "}
+              We still need to configure an object individually if we want it to
+              participate in shadow casting or receiving.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              In short, while enabling shadows at the renderer level sets up the
+              framework for shadow rendering, we need to specify which objects
+              cast and receive shadows in the 3D scene. This level of control
+              ensures that we can optimize shadow rendering for our specific
+              scene requirements and performance constraints.
+            </p>
           </section>
 
-          <section className="section10">
+          <section id="section10">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Gaining traction
+              Setting the mood
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -624,9 +695,9 @@ export default function index() {
             </p>
           </section>
 
-          <section className="section11">
+          <section id="section11">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Getting in the mood
+              Here's Johnny!
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -641,7 +712,7 @@ export default function index() {
               those horror movies/games, where there's a narrow corridor and
               there's a figure standing at the end of the corridor, with a
               spotlight pointing towards it from above? Something similar to the
-              corridor scene in Stanley Kubrick's "The Shining".
+              corridor scenes in Stanley Kubrick's "The Shining".
             </p>
 
             <figure
@@ -667,7 +738,9 @@ export default function index() {
             </p>
 
             <Accordion title="Setting up the spotlights">
-              <div className={`bg-[${LIGHTER_BG}] py-3 px-2 rounded-md my-2 mx-auto`}>
+              <div
+                className={`bg-[${LIGHTER_BG}] py-3 px-2 rounded-md my-2 mx-auto`}
+              >
                 <SpotlightSnippet />
               </div>
               <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
@@ -675,11 +748,21 @@ export default function index() {
                   Quick Rundown
                 </h2>
                 <ul className="list-disc">
-                  <SpotlightSnippetDescription/>
+                  <SpotlightSnippetDescription />
                 </ul>
               </div>
             </Accordion>
+          </section>
 
+          <section id="section12">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+              Closing in on the finish line
+            </h2>
+
+            <p className="leading-7 mb-8 opacity-90">
+              We're pretty close to the end now—just some more minor adjustments
+              to the lighting.
+            </p>
           </section>
         </article>
       </motion.main>

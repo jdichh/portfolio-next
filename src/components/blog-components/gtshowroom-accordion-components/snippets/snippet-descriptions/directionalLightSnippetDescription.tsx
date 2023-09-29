@@ -4,11 +4,8 @@ export default function DirectionalLightSnippetDescription() {
   return (
     <>
       <li className="mb-3">
-        Of course, we have to import the whole Three.js library to be able to
-        use all of its features.
-      </li>
-      <li className="mb-3">
-        I set a constant value of 0.075 for the <code>DL_INTENSITY</code>.
+        I set a constant value of 0.075 for <code>DL_INTENSITY</code>, to be
+        passed onto the new instance of DirectionalLight.
       </li>
       <li className="mb-3">
         I created an instance of <code>THREE.Scene</code>, which initializes the
@@ -30,7 +27,8 @@ export default function DirectionalLightSnippetDescription() {
         illuminate everything in the 3D scene.
       </li>
       <li className="mb-3">
-        I enabled shadows by setting <code>castShadow</code> to true.
+        I enabled the ability for it to cast shadows by setting{" "}
+        <code>castShadow</code> to true.
       </li>
       <li className="mb-3">
         And I configured the <code>directionalLight</code>'s shadow camera. They
