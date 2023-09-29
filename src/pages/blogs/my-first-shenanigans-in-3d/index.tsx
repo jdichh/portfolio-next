@@ -29,6 +29,7 @@ export default function index() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
+        <meta name="description" content="A story of how I came by 3D so early on in my self-learning journey in frontend development." />
       </Head>
       <BlogHeader title="My first shenanigans in 3D" />
       <motion.main

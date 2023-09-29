@@ -44,6 +44,7 @@ export default function index() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
+        <meta name="description" content="A story about how I ended up recreating Gran Turismo (not really) with Three.js." />
       </Head>
       <BlogHeader title="A Gran Turismo-esque showroom with Three.js" />
       <motion.main
