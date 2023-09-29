@@ -29,6 +29,11 @@ export default function About() {
         </span>
         .
       </p>
+      <p className="mb-6">
+        Formalities aside, I love running, playing my electric guitar, tinkering
+        with computers, and discovering web technologies, especially frontend
+        tech.
+      </p>
     </motion.section>
   );
 }
