@@ -1,7 +1,7 @@
 // projects
 import galaxy from "../../public/project/galaxy.png";
 import vintora from "../../public/project/vintora.gif";
-import showroom from "../../public/project/showroom.gif";
+import showroom from "../../public/project/showroom.png";
 import synthwave from "../../public/project/synthwave.gif";
 import asteroids from "../../public/project/asteroids.gif";
 import passwordGen from "../../public/project/password.png";
