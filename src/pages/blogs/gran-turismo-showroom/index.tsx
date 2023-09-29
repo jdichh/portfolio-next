@@ -40,6 +40,7 @@ export default function index() {
     <>
       <Head>
         <title>Blog | A Gran Turismo-esque showroom with Three.js</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
       <BlogHeader title="A Gran Turismo-esque showroom with Three.js" />
       <motion.main

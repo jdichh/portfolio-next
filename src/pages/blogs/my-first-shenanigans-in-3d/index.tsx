@@ -25,6 +25,7 @@ export default function index() {
     <>
       <Head>
         <title>Blog | My first shenanigans in 3D</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
       <BlogHeader title="My first shenanigans in 3D" />
       <motion.main
