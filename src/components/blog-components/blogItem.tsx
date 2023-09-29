@@ -5,7 +5,7 @@ import { blogs } from "@/lib/data";
 import { motion } from "framer-motion";
 import BlogBoilerplate from "./blogBoilerplate";
 
-export default function PostItem() {
+export default function BlogItem() {
   return (
     <motion.section
       className="px-0 w-full"

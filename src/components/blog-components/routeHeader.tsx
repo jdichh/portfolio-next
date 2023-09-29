@@ -33,7 +33,7 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
                 className="transition duration-150 ease-in-out text-lg hover:text-[#6E99C4] rounded-sm"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.05 }}
+                transition={{ duration: 0.01 }}
               >
                 <Image
                   src="/icons/back.svg"

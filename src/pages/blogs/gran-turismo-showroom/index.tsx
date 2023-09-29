@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import BlogHeader from "@/pages/blogHeader";
-import RouteFooter from "@/pages/routeFooter";
+import BlogHeader from "@/components/blog-components/blogHeader";
+import RouteFooter from "@/components/blog-components/routeFooter";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
 import Accordion from "@/components/accordion";
@@ -937,7 +937,7 @@ export default function index() {
                 className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.05 }}
+                transition={{ duration: 0.01 }}
               >
                 GitHub
               </motion.a>
@@ -948,7 +948,7 @@ export default function index() {
                 className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.05 }}
+                transition={{ duration: 0.01 }}
               >
                 Live Demo
               </motion.a>
@@ -959,7 +959,7 @@ export default function index() {
                 className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.05 }}
+                transition={{ duration: 0.01 }}
               >
                 Dev Videos
               </motion.a>

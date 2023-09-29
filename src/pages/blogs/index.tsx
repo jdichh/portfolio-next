@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import RouteHeader from "../routeHeader";
-import RouteFooter from "../routeFooter";
+import RouteHeader from "@/components/blog-components/routeHeader";
+import RouteFooter from "@/components/blog-components/routeFooter";
 import Head from "next/dist/shared/lib/head";
-import PostItem from "../blogItem";
+import BlogItem from "@/components/blog-components/blogItem";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
 
@@ -36,7 +36,7 @@ export default function index() {
           </h1>
         </div>
 
-        <PostItem />
+        <BlogItem />
       </motion.main>
       <RouteFooter />
     </>

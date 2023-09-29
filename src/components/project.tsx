@@ -27,7 +27,8 @@ export default function Project({
   const SCALE = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
   const OPACITY = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
 
-  const ON_HOVER_SCALE = 1.015;
+  const PROJ_HOVER_SCALE = 1.015;
+  const BTN_HOVER_SCALE = 1.1
   const ON_TAP_SCALE = 0.95;
   const TOOL_ICON_QUALITY = 50;
   const TOOL_ICON_DIMENSIONS = 20
@@ -44,7 +45,7 @@ export default function Project({
     >
       <motion.article
         className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-md relative transition ease-in-out duration-150 hover:outline hover:outline-1 hover:outline-[#DADADA]"
-        whileHover={{ scale: ON_HOVER_SCALE }}
+        whileHover={{ scale: PROJ_HOVER_SCALE }}
         transition={{ duration: 0.01 }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
@@ -83,8 +84,9 @@ export default function Project({
                 target="_blank"
                 aria-label="Live demo of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileHover={{ scale: BTN_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.01 }}
               >
                 Demo
               </motion.a>
@@ -95,8 +97,9 @@ export default function Project({
                 target="_blank"
                 aria-label="Video demonstration of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileHover={{ scale: BTN_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.01 }}
               >
                 Video
               </motion.a>
@@ -107,8 +110,9 @@ export default function Project({
                 target="_blank"
                 aria-label="Button for my blog post of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileHover={{ scale: BTN_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.01 }}
               >
                 Blog
               </motion.a>
@@ -119,8 +123,9 @@ export default function Project({
                 target="_blank"
                 aria-label="Button for my blog post of the project."
                 className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileHover={{ scale: BTN_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0.01 }}
               >
                 GitHub
               </motion.a>
