@@ -17,7 +17,7 @@ export default function RouteFooter() {
       className={`mt-6 mx-auto border-t-2 w-full max-w-[750px] font-semibold border-[#6E99C4] ${spaceGrotesk.className}`}
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="grid grid-cols-3 items-center my-6 font-semibold w-full max-w-[750px] mx-auto">
         <motion.span className="text-base text-center flex justify-center sm:text-lg">
@@ -38,7 +38,6 @@ export default function RouteFooter() {
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              priority={true}
               className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
@@ -54,7 +53,6 @@ export default function RouteFooter() {
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              priority={true}
               className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
             />
           </motion.a>
