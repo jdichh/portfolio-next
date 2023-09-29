@@ -46,7 +46,7 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
             </Link>
           </li>
         </ul>
-        <h1 className="font-semibold text-lg">{title}</h1>
+        <span className="font-semibold text-lg">{title}</span>
       </nav>
     </motion.header>
   );
