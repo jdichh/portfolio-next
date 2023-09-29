@@ -802,12 +802,12 @@ export default function index() {
 
           <section id="section13">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Closing in
+              Reeling it in
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
               We're pretty close to the end now—just some more minor
-              adjustments.
+              adjustments to the lighting settings.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
