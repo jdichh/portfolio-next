@@ -780,7 +780,7 @@ export default function index() {
             <p className="leading-7 mb-8 opacity-90">
               I also decided that there should be other light sources coming
               from directly the rear, right, left and front sides of the car.
-              And this is the point where I'll how I set them up.
+              And this is the point where I'll show how I set them up.
             </p>
 
             <Accordion title="Setting up the spotlights">
