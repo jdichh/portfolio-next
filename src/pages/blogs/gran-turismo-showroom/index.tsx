@@ -818,7 +818,7 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               After I was finished with optimizing the scene's performance, I
-              set out to copy some aspects of the UI from the Gran Turismo
+              set out to copy some aspects of the UI from Gran Turismo
               Sport, and had this photo as a reference:
             </p>
 
