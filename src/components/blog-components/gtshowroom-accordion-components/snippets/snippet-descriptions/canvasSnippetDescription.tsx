@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RendererSnippetDescription() {
+export default function CanvasSnippetDescription() {
   return (
     <>
       <li className="mb-3">

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RendererSnippet() {
+export default function CanvasSnippet() {
   return (
     <pre className="whitespace-pre-wrap break-words rounded-md text-[0.5rem] sm:text-sm">
       <code>

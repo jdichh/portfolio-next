@@ -21,8 +21,9 @@ export default function About() {
         here in the Philippines.
       </p>
       <p className="mb-6">
-        I'm also a recent IT graduate of Colegio de San Juan De Letran-Calamba,
-        and{" "}
+        I'm also a{" "}
+        <span className="text-[#6E99C4] font-medium">recent IT graduate</span>{" "}
+        of Colegio de San Juan De Letran-Calamba, and{" "}
         <span className="text-[#6E99C4] font-medium">
           looking to get my foot in the door in the tech industry
         </span>

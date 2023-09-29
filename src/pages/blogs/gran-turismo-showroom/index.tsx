@@ -14,14 +14,14 @@ import FloorSnippet from "@/components/blog-components/gtshowroom-accordion-comp
 import ModelShadowSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/modelShadowSnippet";
 import SpotlightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/spotlightSnippet";
 import RendererSettingsSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/rendererSettingsSnippet";
-import RendererSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/rendererSnippet";
+import CanvasSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/canvasSnippet";
 
 import ModelShadowSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/modelShadowSnippetDescription";
 import DirectionalLightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/directionalLightSnippetDescription";
 import FloorSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/floorSnippetDescription";
 import SpotlightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/spotlightSnippetDescription";
 import RendererSettingsSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/rendererSettingsSnippetDescription";
-import RendererSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/rendererSnippetDescription";
+import CanvasSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/canvasSnippetDescription";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -278,7 +278,7 @@ export default function index() {
               <div
                 className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
               >
-                <RendererSnippet />
+                <CanvasSnippet />
               </div>
 
               <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
@@ -286,7 +286,7 @@ export default function index() {
                   Quick Rundown
                 </h2>
                 <ul className="list-disc">
-                  <RendererSnippetDescription />
+                  <CanvasSnippetDescription />
                 </ul>
               </div>
             </Accordion>
