@@ -63,7 +63,7 @@ export default function index() {
             </p>
           </div>
 
-          <section id="section1">
+          <aside>
             <div className="bg-[#591414] rounded-md p-3">
               <p className="leading-7 mb-8">
                 The section below isn't relevant to the title.
@@ -77,7 +77,7 @@ export default function index() {
                 </a>
               </div>
             </div>
-          </section>
+          </aside>
 
           <section id="section2">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
@@ -912,10 +912,7 @@ export default function index() {
           </section>
 
           <section id="section16">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               Links
             </h2>
 

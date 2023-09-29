@@ -7,7 +7,7 @@ import BlogBoilerplate from "./blogBoilerplate";
 
 export default function BlogItem() {
   return (
-    <motion.section
+    <motion.div
       className="px-0 w-full"
       id="blogs"
       initial={{ y: 100, opacity: 0 }}
@@ -20,7 +20,7 @@ export default function BlogItem() {
           <BlogBoilerplate {...blog} />
         </React.Fragment>
       ))}
-    </motion.section>
+    </motion.div>
 
   );
 }

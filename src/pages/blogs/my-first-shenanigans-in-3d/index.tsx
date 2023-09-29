@@ -285,10 +285,7 @@ export default function index() {
           </section>
 
           <section id="section5">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               Filling up the void
             </h2>
 
@@ -351,10 +348,7 @@ export default function index() {
           </section>
 
           <section id="section6">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               Staring into the void, yet somehow, it's shining a light to me
             </h2>
 
@@ -425,10 +419,7 @@ export default function index() {
           </section>
 
           <section id="section7">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               The boys in the better land...?
             </h2>
 
@@ -486,10 +477,7 @@ export default function index() {
           </section>
 
           <section id="section8">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               The process of elimination, with no hint of desperation
             </h2>
 
@@ -523,10 +511,7 @@ export default function index() {
           </section>
 
           <section id="section9">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               Praise the sun
             </h2>
 
@@ -591,10 +576,7 @@ export default function index() {
           </section>
 
           <section id="section10">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               Putting on some make-up
             </h2>
 
@@ -657,10 +639,7 @@ export default function index() {
           </section>
 
           <section id="section11">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               (Synth)wavy, dude!
             </h2>
 
@@ -689,10 +668,7 @@ export default function index() {
           </section>
 
           <section id="section12">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               The end has no end
             </h2>
 
@@ -729,10 +705,7 @@ export default function index() {
           </section>
 
           <section id="section13">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               Links
             </h2>
 
