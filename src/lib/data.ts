@@ -55,11 +55,6 @@ export const tools = [
     alt: "CSS3 logo"
   },
   {
-    name: "SCSS",
-    imageUrl: scssImg,
-    alt: "SCSS logo"
-  },
-  {
     name: "JavaScript",
     imageUrl: jsImg,
     alt: "JavaScript logo"
@@ -85,9 +80,9 @@ export const tools = [
     alt: "React-Three-Fiber logo"
   },
   {
-    name: "Vue.js",
-    imageUrl: vueImg,
-    alt: "Vue.js logo"
+    name: "SCSS",
+    imageUrl: scssImg,
+    alt: "SCSS logo"
   },
   {
     name: "Tailwind",
@@ -98,11 +93,6 @@ export const tools = [
     name: "Framer Motion",
     imageUrl: framerMotionImg,
     alt: "Framer motion logo"
-  },
-  {
-    name: "Firebase",
-    imageUrl: firebaseImg,
-    alt: "Firebase logo"
   },
   {
     name: "Wave Tool",
