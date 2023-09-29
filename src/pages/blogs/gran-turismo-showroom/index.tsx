@@ -44,7 +44,10 @@ export default function index() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
-        <meta name="description" content="A story about how I ended up recreating Gran Turismo (not really) with Three.js." />
+        <meta
+          name="description"
+          content="A story about how I ended up recreating Gran Turismo (not really) with Three.js."
+        />
       </Head>
       <BlogHeader title="A Gran Turismo-esque showroom with Three.js" />
       <motion.main
@@ -150,7 +153,7 @@ export default function index() {
 
           <section id="section3">
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              "The Real Driving Simulator"
+              Life is a highway
             </h2>
 
             <figure
@@ -187,17 +190,7 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               Anyway, I'm going on a tangent here about my love for cars and
-              driving/racing video games and childhood memories. If you've read
-              my{" "}
-              <a
-                href="/blogs/my-first-shenanigans-in-3d"
-                target="_blank"
-                className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
-              >
-                previous post
-              </a>
-              , then you'd know how I came by Three.js so early on in my
-              self-learning journey.
+              driving/racing video games and childhood memories.{" "}
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -213,18 +206,31 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
+              If you've read my{" "}
+              <a
+                href="/blogs/my-first-shenanigans-in-3d"
+                target="_blank"
+                className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+              >
+                previous post
+              </a>
+              , then you'd know how I came by Three.js so early on in my
+              self-learning journey, and how I expanded upon someone's work.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
               After finishing the synthwave project, I started to think what
               else could I do with Three.js. Another scene but with a different
               aesthetic? Nah. Time for something different. A product
               configurator in 3D? Nope, I don't even know where to start with
               that yet. How about a product page, featuring the product in 3D?
-              In the future, perhaps.
+              Perhaps.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              And it suddenly dawned on me, my first output was displaying a
-              car's 3D model—and I really love anything automotive, so I'll do a
-              commercial of sorts for a manufacturer made with Three.js!
+              And it suddenly dawned on me, my first output was displaying a 3D
+              model of a car—and I really love anything automotive, so I'll do a
+              project involving a car or two, and made with Three.js!
             </p>
           </section>
 

@@ -22,7 +22,7 @@ export default function ModelShadowSnippetDescription() {
         I then assign <code>gltf1.scene</code> to a variable named{" "}
         <code>car1</code>, and set its scale and positioning. I scaled up the
         car by a factor of 1.5 in all dimensions, and setting the positioning of
-        the car by -0.75 in the y-coordinate.{" "}
+        the car by -0.75 in the y-axis.{" "}
         <strong>
           I do this because I have a specific configuration, you don't have to
           follow everything I did.
