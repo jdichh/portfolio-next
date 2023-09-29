@@ -12,10 +12,12 @@ import { Space_Grotesk } from "next/font/google";
 import DirectionalLightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/directionalLightSnippet";
 import FloorSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/floorSnippet";
 import ModelShadowSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/modelShadowSnippet";
+import SpotlightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/spotlightSnippet";
 
 import ModelShadowSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/modelShadowSnippetDescription";
 import DirectionalLightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/directionalLightSnippetDescription";
 import FloorSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/floorSnippetDescription";
+import SpotlightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/spotlightSnippetDescription";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -615,10 +617,69 @@ export default function index() {
 
             <p className="leading-7 mb-8 opacity-90">
               If you've noticed, the background is still gray-ish even with the
-              darker lighting. It's because it's just a color that I set
-              initially so I can properly scope out the entire scene. It'll be
-              changed later on.
+              darker lighting. It's because it doesn't get affected by
+              DirectionalLight and it's just a color that I set initially so I
+              can properly scope out the entire scene. It'll be changed later
+              on.
             </p>
+          </section>
+
+          <section className="section11">
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+              Getting in the mood
+            </h2>
+
+            <p className="leading-7 mb-8 opacity-90">
+              After testing out different lighting settings, I had an idea where
+              there could be another light source pointing towards the car, but
+              coming from above.
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              It's a trick used by many to create a dramatic and for lack of a
+              better word, sort of "menacing" mood for many scenes. You know
+              those horror movies/games, where there's a narrow corridor and
+              there's a figure standing at the end of the corridor, with a
+              spotlight pointing towards it from above? Something similar to the
+              corridor scene in Stanley Kubrick's "The Shining".
+            </p>
+
+            <figure
+              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
+            >
+              <Image
+                src="/article-files/gran-turismo-showroom/topspotlight.png"
+                alt=""
+                width={IMAGE_DIMENSIONS}
+                height={IMAGE_DIMENSIONS}
+                quality={IMAGE_QUALITY}
+                className="rounded-md"
+              />
+              <figcaption className="mt-2 text-center">
+                The look I'm going for
+              </figcaption>
+            </figure>
+
+            <p className="leading-7 mb-8 opacity-90">
+              I also decided that there would be other light sources coming from
+              directly the rear, right, left and front sides of the car. And
+              this is the point where I'll tell you my settings.
+            </p>
+
+            <Accordion title="Setting up the spotlights">
+              <div className={`bg-[${LIGHTER_BG}] py-3 px-2 rounded-md my-2 mx-auto`}>
+                <SpotlightSnippet />
+              </div>
+              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+                <h2 className="text-xl sm:text-2xl font-bold my-3 ">
+                  Quick Rundown
+                </h2>
+                <ul className="list-disc">
+                  <SpotlightSnippetDescription/>
+                </ul>
+              </div>
+            </Accordion>
+
           </section>
         </article>
       </motion.main>
