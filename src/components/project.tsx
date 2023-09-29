@@ -28,7 +28,7 @@ export default function Project({
   const OPACITY = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
 
   const PROJ_HOVER_SCALE = 1.015;
-  const BTN_HOVER_SCALE = 1.1
+  const BTN_HOVER_SCALE = 1.05
   const ON_TAP_SCALE = 0.95;
   const TOOL_ICON_QUALITY = 50;
   const TOOL_ICON_DIMENSIONS = 20
