@@ -806,8 +806,8 @@ export default function index() {
             </h2>
 
             <p className="leading-7 mb-8 opacity-90">
-              We're pretty close to the end now—just some more minor
-              adjustments to the lighting settings.
+              We're pretty close to the end now—just some more minor adjustments
+              to the lighting settings.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
@@ -852,25 +852,26 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              I was experimenting with CSS flexbox and grid for it. I spent
-              about 30-40 minutes trying to figure this thing out. And suddenly,
-              my brain decided to fire in all cylinders and thought of something
-              very viable:{" "}
+              I was experimenting with CSS flexbox and grid, and I spent about
+              30-40 minutes trying to figure this damn thing out. Then suddenly,
+              my brain decided to fire in all cylinders, and thought of
+              something very viable:{" "}
               <strong>
                 a grid layout with 4 columns, and inside those columns, flexbox
-                items.
+                items, which contains the car's specs.
               </strong>
+            </p>
+
+            <p className="leading-7 mb-8 opacity-90">
+              <strong>"Yun nga! (That's it!)"</strong>, I told myself. And after
+              what seemed to be hours, I managed to replicate the bottom section
+              of the UI.
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
               As for the sliding text, it can be achieved by basically disabling
               the ability for the text to wrap, creating a single line of text.
               And I added a sliding animation for the text with CSS keyframes.
-            </p>
-
-            <p className="leading-7 mb-8 opacity-90">
-              <strong>"Yun nga! (That's it!)"</strong>, I told myself. And after
-              long hours of non-stop work, I managed to finish it.
             </p>
           </section>
 
