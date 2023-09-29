@@ -40,6 +40,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
                   alt="Back button"
                   width={ICON_DIMENSIONS}
                   height={ICON_DIMENSIONS}
+                  priority={true}
                   className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
                 />
               </motion.div>
@@ -56,6 +57,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
                   alt="Home button"
                   width={ICON_DIMENSIONS}
                   height={ICON_DIMENSIONS}
+                  priority={true}
                   className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
                 />
               </motion.div>

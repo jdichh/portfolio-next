@@ -25,7 +25,10 @@ export default function index() {
     <>
       <Head>
         <title>Blog | My first shenanigans in 3D</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
       </Head>
       <BlogHeader title="My first shenanigans in 3D" />
       <motion.main
@@ -40,7 +43,7 @@ export default function index() {
             <h1 className="text-xl sm:text-2xl font-bold mb-2">
               My first shenanigans in 3D
             </h1>
-            <p className="opacity-50 text-sm sm:text-base">
+            <p className="opacity-70 text-sm sm:text-base">
               September 27, 2023
             </p>
           </div>
@@ -87,6 +90,7 @@ export default function index() {
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
+                priority={true}
                 className="rounded-md"
               />
               <figcaption className="mt-2 text-center">
@@ -247,10 +251,7 @@ export default function index() {
           </section>
 
           <section id="section4">
-            <h2
-              className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20"
-              id="actual"
-            >
+            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
               Let there be light
             </h2>
 
@@ -342,9 +343,10 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8 opacity-90">
-              However, I started to notice something. Something that I
-              didn't really pay attention to before. The vast space of emptiness
-              itself—the dark background that's been staring at me all this time.
+              However, I started to notice something. Something that I didn't
+              really pay attention to before. The vast space of emptiness
+              itself—the dark background that's been staring at me all this
+              time.
             </p>
           </section>
 

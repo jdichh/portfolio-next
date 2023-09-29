@@ -55,7 +55,7 @@ export default function index() {
             <h1 className="text-xl sm:text-2xl font-bold mb-2">
               A Gran Turismo-esque showroom with Three.js
             </h1>
-            <p className="opacity-50 text-sm sm:text-base">
+            <p className="opacity-70 text-sm sm:text-base">
               September 29, 2023
             </p>
           </div>

@@ -31,7 +31,7 @@ function Accordion({ title, children }: AccordionProps) {
       </div>
       <AnimatePresence>
         <motion.div
-          id="accordion-panel"
+          id="accordion-panel-body"
           initial={{ height: 0, overflow: "hidden" }}
           animate={{
             height: isOpen ? "auto" : 0,
