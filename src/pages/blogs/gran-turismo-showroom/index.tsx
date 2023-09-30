@@ -216,7 +216,7 @@ export default function index() {
             </p>
           </section>
 
-          <div id="good-stuff" className="scroll-mt-12" />
+          <div id="good-stuff" className="scroll-mt-[70px]" />
 
           <section id="section5">
             <h2 className="article-section-title">Is that a Supra?!</h2>
@@ -392,6 +392,17 @@ export default function index() {
               </strong>{" "}
               Well, I'll you about it later as well. Sorry.
             </p>
+
+            <aside className="article-disclaimer">
+              <p className="article-text">
+                Here's a skip button if you immediately want to know how I loaded a model.
+              </p>
+              <div className="flex justify-end">
+                <a href="#loading-the-model" className="article-hrefs">
+                  Skip to loading the model.
+                </a>
+              </div>
+            </aside>
           </section>
 
           <section id="section8">
@@ -533,6 +544,8 @@ export default function index() {
               to work with a manufacturer. But right now, one can only dream.
             </p>
           </section>
+
+          <div id="loading-the-model" className="scroll-mt-[70px]" />
 
           <section id="section10">
             <h2 className="article-section-title">
