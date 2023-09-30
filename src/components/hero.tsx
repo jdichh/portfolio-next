@@ -47,6 +47,7 @@ export default function Hero() {
               alt="Button to my GitHub profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
+              priority={true}
               className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
@@ -63,6 +64,7 @@ export default function Hero() {
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
+              priority={true}
               className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
@@ -78,6 +80,7 @@ export default function Hero() {
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
+              priority={true}
               className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>

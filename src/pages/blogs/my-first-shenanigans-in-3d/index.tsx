@@ -53,7 +53,7 @@ export default function index() {
               Moment of discovery
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               During the earlier days of my journey in learning frontend
               development, which started around June 2023, I came across a video
               in my recommended section in YouTube. It was about making a
@@ -68,7 +68,7 @@ export default function index() {
               .
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So imagine what my reaction was at the video YouTube recommended
               to me. Think about it, if you were new to frontend web
               development, and you saw that? What would your reaction be? Oh
@@ -99,7 +99,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Now, I use Kamran Ahmed's{" "}
               <a
                 href="https://roadmap.sh/"
@@ -135,7 +135,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I looked at the documentations that Three.js provided. I was so
               confused, as the details in the documentation were so sparse for
               me at the time (or maybe I'm just a big, dumb idiot). So I
@@ -143,7 +143,7 @@ export default function index() {
               me like I'm a high schooler.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Luckily, I already knew what some terms meant, like anti-aliasing,
               shadow resolution, texture resolution, lighting, models, and etc.,
               because I really loved modding Skyrim to the point where my{" "}
@@ -159,7 +159,7 @@ export default function index() {
               managed to understand some of the documentation.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               After some time watching and reading tutorials, I managed to load
               my first 3D model, which I downloaded from Sketchfab, and this was
               my first output:
@@ -179,7 +179,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Granted, this isn't anything impressive, but at the time, I was so
               ecstatic that I managed to do it.
             </p>
@@ -190,7 +190,7 @@ export default function index() {
               A little help can go a long way
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Some time after that, I came across an{" "}
               <a
                 href="https://blog.maximeheckel.com/posts/vaporwave-3d-scene-with-threejs/"
@@ -205,7 +205,7 @@ export default function index() {
               indefinite amount of time.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               It's a trick used by many games, to give you the illusion that
               there's a huge map during a corridor-style level (like Temple Run,
               remember that?)—when in actuality, a part of the map's terrain is
@@ -227,7 +227,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I followed Maxime's instructions and guidelines, but not blindly.
               I took the time to understand what some things meant, because
               what's the point of tutorials if you're just going to copy code
@@ -235,7 +235,7 @@ export default function index() {
               from 3 months ago.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Anyway, I didn't want to end the project with a 1:1 copy of his
               work; I wanted to add more things, like a sun, a skybox,
               background music, some postprocessing effects like bloom and a CRT
@@ -250,7 +250,7 @@ export default function index() {
               Let there be light
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Okay, task one: illuminate the world. This is done by using{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=direction#api/en/lights/DirectionalLight"
@@ -282,12 +282,12 @@ export default function index() {
               Filling up the void
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               The sun now exists (in a way), but there's a dark emptiness just
               staring at you. To fix that, we'll add in a sky.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               <strong>So, my initial solution was this:</strong> create a big
               box by using{" "}
               <a
@@ -308,7 +308,7 @@ export default function index() {
               .
             </p>
 
-            <p className="leading-7 mb-8">And here it is:</p>
+            <p className="leading-7 mb-8 font-[450]">And here it is:</p>
 
             <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
@@ -324,13 +324,13 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               The problem was that I didn't set a proper size for the box
               itself. Secondly, the textures don't really fit the colors of the
               lighting and terrain—there's too much contrast between them.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               However, I started to notice something. Something that I didn't
               really pay attention to before. The vast space of emptiness
               itself—the dark background that's been staring at me all this
@@ -343,13 +343,13 @@ export default function index() {
               Staring into the void, yet somehow, it's shining a light to me
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               This was my "eureka" moment. It suddenly hit me, why not just make
               the dark background just use the sky's texture instead of using a
               big box?
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So I created an image to be used as a texture. The initial
               version, from bottom to top, was a gradient going from red to
               orange. But after creating the texture, I thought that it looked
@@ -371,7 +371,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               This was made with my ol' trusty tool and long time partner{" "}
               <a
                 href="https://getpaint.net/"
@@ -385,7 +385,7 @@ export default function index() {
               problems that Paint.NET couldn't solve for me.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So, we have our texture. Now we basically pass it along to
               TextureLoader for it to load the texture as the background.
             </p>
@@ -424,7 +424,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               <strong>
                 Don't mind the color of the sky, the sun and the postprocessing
                 effects like bloom and the CRT filter, let's focus on the
@@ -432,7 +432,7 @@ export default function index() {
               </strong>
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               As a consequence of lighting up the world, we can see the huge gap
               on the right, and the seemingly empty section on the left. This is
               because of something called a <strong>displacement map</strong>.
@@ -452,7 +452,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               A displacement map basically tells a computer how to make a flat
               surface look bumpy. The darker it is, the flatter the surface is.
               And the brighter it is, the bumpier it gets.
@@ -464,7 +464,7 @@ export default function index() {
               The process of elimination, with no hint of desperation
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Notice the darker colors in the red rectangles. As I said, the
               darker the colors are, the flatter it is, and the brighter it is,
               the bumpier it gets.
@@ -484,7 +484,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               In this case, the issues I showed above can be simply solved using
               the magic of photo editing; so I fixed it with Paint.NET by adding
               whites to these areas of interest.
@@ -496,7 +496,7 @@ export default function index() {
               Praise the sun
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So, we fixed the issues regarding the terrain data. This time,
               let's add in the sun by using{" "}
               <a
@@ -509,7 +509,7 @@ export default function index() {
               As the name implies, it allows us to create sphere geometries.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               But, same with the sky, we also have to create textures for the
               sun. So here it is:
             </p>
@@ -528,7 +528,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               We're basically ready now to add the sun with the texture file
               applied to it. So, we'll use TextureLoader, and voila:
             </p>
@@ -547,7 +547,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I also added sun rays using DirectionalLight.
             </p>
           </section>
@@ -557,7 +557,7 @@ export default function index() {
               Putting on some make-up
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So, we're nearly done with the project, just some more
               postprocessing effects to add like bloom and a CRT filter. And{" "}
               <a
@@ -570,7 +570,7 @@ export default function index() {
               is the right tool for the job.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               In Maxime's article, he had chromatic aberration on. I decided to
               leave it on because it kinda fit the "vibe" I was going for, and
               when supplemented with my other postprocessing effects of choice,
@@ -592,7 +592,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               And here it is, with my other postprocessing effects of choice:
             </p>
 
@@ -616,7 +616,7 @@ export default function index() {
               (Synth)wavy, dude!
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Lastly, the music. The scene wouldn't feel complete without some
               synthwave. So I picked a track from HOME (great artist, by the
               way), because his music captures the "vibe" well. Plus, I can
@@ -643,7 +643,7 @@ export default function index() {
               The end has no end
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So, we've crossed the finish line (that I set). But, I'm sure
               there are more people out there that can add more to this project.
               But for me, I think it's perfect now.
@@ -666,7 +666,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So yeah, I hope you enjoyed this story on how I started on
               Three.js, and a tutorial of sorts. Thanks for reading!
             </p>
@@ -677,7 +677,7 @@ export default function index() {
               Links
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Here are the links for the project if you're interested.{" "}
               <strong>
                 I recommend opening the project itself on a high resolution

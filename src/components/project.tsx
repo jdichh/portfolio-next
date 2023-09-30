@@ -74,7 +74,7 @@ export default function Project({
               </li>
             ))}
           </ul>
-          <p className="leading-relaxed text-left md:text-left">
+          <p className="leading-relaxed text-left md:text-left font-[450]">
             {description}
           </p>
           <div className="flex flex-col text-center gap-2 mt-4 lg:flex-row lg:flex-wrap font-medium">

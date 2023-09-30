@@ -21,7 +21,7 @@ export default function BlogBoilerplate({ name, description, date, link }: BlogP
             {name}
           </h2>
           <h3 className="mb-2 font-semibold text-sm text-[#285955]">{date}</h3>
-          <p>{description}</p>
+          <p className="font-[450]">{description}</p>
         </div>
         </a>
       </motion.article>

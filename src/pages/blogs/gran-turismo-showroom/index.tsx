@@ -67,7 +67,7 @@ export default function index() {
               <h2 className="text-4xl font-bold mb-2 text-[#285955]">
                 HEY! YOU THERE!
               </h2>
-              <p className="leading-7 mb-8">
+              <p className="leading-7 mb-8 font-[450]">
                 I just want to tell you that the section below isn't relevant to
                 the title.
               </p>
@@ -86,7 +86,7 @@ export default function index() {
               Gentlemen, start your engines!
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Would you believe me, a 22 year-old guy, doesn't have a driver's
               license yet or hasn't driven a car out on public roads? Well maybe
               you will, but, anyway, I hadn't really experienced driving yet,
@@ -95,7 +95,7 @@ export default function index() {
               escape.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Revving the engine to the redline, only for the cycle to repeat
               after ripping through the transmission to change gears; hearing
               the tires squeal for mercy, telling you—shouting at you that
@@ -103,7 +103,7 @@ export default function index() {
               the sole reason of beating the other guys to the finish line.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               My love for cars, especially the Dodge Viper and all of its
               iterations, and just about anything automotive, began with a game
               on the PlayStation 1 called Test Drive 6. Hearing a cover of Gary
@@ -126,7 +126,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Ever since then, I've just about exhausted list after list of
               great driving/racing games to play; from racing on dirt, on
               gravel, and on asphalt. If you ask me if I played a certain
@@ -134,7 +134,7 @@ export default function index() {
               already have.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               DiRT games? Check. GRID games? Check. NASCAR? Check. The Ridge
               Racer series? Check. Need for Speed/Burnout/Forza games? Of
               course! Why would you even ask that? And the list goes on and on.
@@ -142,7 +142,7 @@ export default function index() {
               of cars began with video games.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               But there's one more series that I haven't mentioned it yet, and
               that is Gran Turismo.
             </p>
@@ -167,7 +167,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Test Drive 6 was great (to me). But the Gran Turismo series, as a
               whole, has always been closer to my heart. Not just because of the
               cars, and the quality of the racetracks themselves; the
@@ -176,19 +176,19 @@ export default function index() {
               discovered my love for jazz and funk.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I remember the times, where I'm "fatly" walking to the PS1,
               inserting my disc of Gran Turismo 2 in the console, powering it
               on, showing me the glorious boot-up screen, and then off to the
               races for hours on end.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Anyway, I'm going on a tangent here about my love for cars and
               driving/racing video games and childhood memories.{" "}
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               And now, to show you how I made the showroom project.
             </p>
           </section>
@@ -200,7 +200,7 @@ export default function index() {
               A bright idea
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               If you've read my{" "}
               <a
                 href="/blogs/my-first-shenanigans-in-3d"
@@ -213,7 +213,7 @@ export default function index() {
               self-learning journey, and how I expanded upon someone's work.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               After finishing the synthwave project, I started to think what
               else could I do with Three.js. Another scene but with a different
               aesthetic? Nah. Time for something different. A product
@@ -222,7 +222,7 @@ export default function index() {
               Perhaps.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               And it suddenly dawned on me, my first output was displaying a 3D
               model of a car—and I really love anything automotive, so I'll do a
               project involving a car or two, and made with Three.js!
@@ -234,7 +234,7 @@ export default function index() {
               Is that a Supra?!
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I perused Sketchfab for car models, and came across an A80 and A90
               Supra in the same page. And I suddenly thought to myself,{" "}
               <strong>
@@ -244,7 +244,7 @@ export default function index() {
               .
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So I got not only one, but two Toyota Supras!
             </p>
 
@@ -269,7 +269,7 @@ export default function index() {
               Paint me like one of your french girls
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Ah! But before that, of course, is the canvas so that we can start
               doing our painting, so to speak.
             </p>
@@ -289,7 +289,7 @@ export default function index() {
               </div>
             </Accordion>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I also customized the configurations of my renderer. Here they
               are:
             </p>
@@ -314,7 +314,7 @@ export default function index() {
               Lighten up, man
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               We have to set up{" "}
               <a
                 href="https://threejs.org/docs/index.html#api/en/lights/DirectionalLight"
@@ -342,7 +342,7 @@ export default function index() {
               </div>
             </Accordion>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Now we'll load in the models using{" "}
               <a
                 href="https://threejs.org/docs/index.html#examples/en/loaders/GLTFLoader"
@@ -369,14 +369,14 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               <strong>
                 This is just a zoomed-in view of it, and not the actual
                 perspective itself.
               </strong>
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Oh yeah, I forgot to mention about{" "}
               <a
                 href="https://threejs.org/docs/index.html#api/en/cameras/PerspectiveCamera"
@@ -391,7 +391,7 @@ export default function index() {
               have a fish-eye effect.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               In setting up the rotating camera, at least just for this
               instance, I initially set it up using{" "}
               <a
@@ -406,7 +406,7 @@ export default function index() {
               cycle, I changed it a bit. You'll now why later.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               And you may be wondering,{" "}
               <strong>
                 "Jason, you didn't show us how to load the models!"
@@ -420,7 +420,7 @@ export default function index() {
               Hmm yes...the floor here is made out of floor
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So I had the models loaded in. Now, the floor texture is next in
               the list. We can load the floor texture similarly to how I loaded
               the terrain in the previous project by using{" "}
@@ -434,7 +434,7 @@ export default function index() {
               . As the name suggests, it loads in a plane.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               But I have to source the floor textures first. So I did, by
               downloading textures from a repository of HQ textures, I forgot
               what website it was called, but there are numerous repositories
@@ -456,7 +456,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Currently, it's only taking up one segment. So I have to configure
               PlaneGeometry to essentially repeat itself multiple times.
               Initially, I tried to "duplicate" the plane by enlarging the
@@ -477,24 +477,24 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I admit, it made me chuckle a bit when I saw it for the first
               time. They look like toys on the floor.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               At the time when I was making this project, I didn't manage to
               find any information in the docs about properly scaling textures.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Fortunately, GPT pointed me in the right direction when I asked
               about it. Basically, I created some variables that would define
               the size and scale of the floor, and then I inserted the floor
               into the scene.
             </p>
 
-            <p className="leading-7 mb-8">Here's the more detailed answer:</p>
+            <p className="leading-7 mb-8 font-[450]">Here's the more detailed answer:</p>
 
             <Accordion title="My floor config">
               <div className="p-2 my-2 rounded-sm mx-auto">
@@ -511,7 +511,7 @@ export default function index() {
               </div>
             </Accordion>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Lo and behold, the cars don't look like toys anymore:
             </p>
 
@@ -529,7 +529,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               <strong>
                 Don't mind the floor texture, I was just checking out other
                 textures.
@@ -542,14 +542,14 @@ export default function index() {
               I'm stuck, stepbro
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So, I've successfully loaded the models, and solved my issues with
               the floor making the cars from looking like toys. But I was stuck.
               Staring at the cars while the camera pans around them. I was just
               thinking, <strong>"Now what?"</strong>
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               When I was creating this project, I was listening to a Daily Mix
               playlist in Spotify. A song called "A Million Miles Away" by
               Ulrich Schnauss played after the previous one ended. I then
@@ -557,14 +557,14 @@ export default function index() {
               Turismo 4!
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               <strong>
                 Well not really, I'm spreading misinformation. I just couldn't
                 think of a better transition.
               </strong>
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Anyway, I decided to change the direction I was going towards. I
               decided that I should create a showroom inspired by modern Gran
               Turismo games. And maybe, this could be used as a reference for a
@@ -578,13 +578,13 @@ export default function index() {
               Still a million miles away, but closing in quickly
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               To repeat, I've managed to set up the lighting, the floor with the
               correct settings, and the car models as well. But, if you haven't
               noticed it yet, there aren't any shadows.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               <strong>
                 And this is also the part where I explain how I load my car
                 model.
@@ -619,12 +619,12 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               And with that, I've now successfully enabled the capability for
               the model to cast and receive shadows from light sources.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               You might be thinking right now,{" "}
               <strong>
                 "Jason, If you already enabled shadows in the renderer, then why
@@ -633,7 +633,7 @@ export default function index() {
               </strong>
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Great question! Setting shadowMap.enabled to true does indeed
               enable shadows globally.{" "}
               <strong>
@@ -645,7 +645,7 @@ export default function index() {
               participate in shadow casting or receiving.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               In short, while enabling shadows at the renderer level sets up the
               framework for shadow rendering, we need to specify which objects
               cast and receive shadows in the 3D scene. This level of control
@@ -659,14 +659,14 @@ export default function index() {
               Setting the mood
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Next task, setting up the lighting and background to have a dark,
               intimate setting, similar to modern Gran Turismo games. But this
               wasn't a simple task for me. Finding the "sweet spot" for the
               lighting I wanted really took a lot of time for me.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               The way I started was testing out the values of my
               DirectionalLight. I also thought of adding more lights by creating
               new instances of{" "}
@@ -696,14 +696,14 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I initially had 2 instances of SpotLight that were placed on the
               front right side and rear right side of the car. And I was
               checking out how different lighting values and placements played
               with each other.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               If you've noticed, the background is still gray-ish even with the
               darker lighting. It's because it doesn't get affected by
               DirectionalLight and it's just a color that I set initially so I
@@ -717,13 +717,13 @@ export default function index() {
               The Shining
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               After testing out different lighting settings, I suddenly had the
               notion where there could be another light source pointing towards
               the car, but coming from above.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               It's a trick used by many to create a dramatic and a sort of
               "menacing" look. You know those horror movies/games, where there's
               a narrow corridor and there's a figure standing at the end of the
@@ -744,7 +744,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I also decided that there should be other light sources coming
               from directly the rear, right, left and front sides of the car.
               And this is the point where I'll show how I set them up.
@@ -770,18 +770,18 @@ export default function index() {
               Reeling it in
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               We're pretty close to the end now—just some more minor adjustments
               to the lighting settings.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Also, at this point, I was preoccupied with improving performance
               by playing around with the shadow resolution, different
               anti-aliasing configs, trying out different car models, etc.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               After I was finished with optimizing the scene's performance, I
               set out to copy some aspects of the UI from Gran Turismo Sport,
               and had this photo as a reference:
@@ -807,14 +807,14 @@ export default function index() {
               CSS woes
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Most things went pretty smoothly, I was barrelling along up until
               I had to replicate the bottom part, along with the sliding text.
               So, I'm thinking:{" "}
               <strong>"How the hell do I do the bottom part?"</strong>
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I was experimenting with CSS flexbox and grid, and I spent about
               30-40 minutes trying to figure this damn thing out. Then suddenly,
               my brain decided to fire in all cylinders, and thought of
@@ -825,13 +825,13 @@ export default function index() {
               </strong>
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               <strong>"Yun nga! (That's it!)"</strong>, I told myself. And after
               what seemed to be hours, I managed to replicate the bottom section
               of the UI.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               As for the sliding text, it can be achieved by basically disabling
               the ability for the text to wrap, creating a single line of text.
               And I added a sliding animation for the text with CSS keyframes.
@@ -842,13 +842,13 @@ export default function index() {
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               The finish line
             </h2>
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               One more thing, the music. So, I added in some from the Gran
               Turismo Sport soundtrack list, and the menu theme from Race
               Driver: GRID.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               So, I've reached the end, after up to 16 hours of work for about
               3-4 days. Do I regret it? Nope, not a single bit. I loved working
               on this project. Hopefully, I'd get the chance to do it again but
@@ -873,7 +873,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Hope you enjoyed my story, mixed with a tutorial. Thanks for
               reading!
             </p>
@@ -884,7 +884,7 @@ export default function index() {
               Links
             </h2>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               Here are the links for the project if you're interested.{" "}
               <strong>
                 But, I cannot stress this enough: You HAVE to open the project
@@ -929,7 +929,7 @@ export default function index() {
               another topic in and of itself.
             </p>
 
-            <p className="leading-7 mb-8">
+            <p className="leading-7 mb-8 font-[450]">
               I now prefer working in React-Three-Fiber for Three.js projects. I
               don't have to do the initial setup and all that jazz in R3F.
             </p>
