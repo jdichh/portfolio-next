@@ -540,9 +540,13 @@ export default function index() {
               I was listening to the soundtrack in Gran Turismo Sport since I
               started this project, because most of it is relaxing stuff. Then,
               I suddenly made the switch from a promotional website, to creating
-              a showroom inspired by modern Gran Turismo games. Also, maybe this
-              could be used as a reference for a future project if I do ever get
-              to work with a manufacturer. But right now, one can only dream.
+              a showroom inspired by modern Gran Turismo games.
+            </p>
+
+            <p className="article-text">
+              Also, maybe this could be used as a reference for a future project
+              if I do ever get to work with a manufacturer. But right now, one
+              can only dream.
             </p>
           </section>
 
