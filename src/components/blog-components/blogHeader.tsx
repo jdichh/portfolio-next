@@ -21,7 +21,7 @@ export default function BlogHeader() {
       <div className="fixed border-b-2 border-[#111111] bg-light-theme-bg top-0 h-16 w-full" />
       <nav className="fixed flex justify-between items-center w-full max-w-[750px] mx-auto left-1/2 -translate-x-[50%] px-4 h-16">
         <ul>
-          <li className="flex flex-row gap-2">
+          <li className="flex flex-row gap-1">
             <Link href="/blogs" aria-label="Back button">
               <motion.div
                 className="transition duration-150 ease-in-out text-lg hover: rounded-sm"
