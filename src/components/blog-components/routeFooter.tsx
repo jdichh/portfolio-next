@@ -19,12 +19,12 @@ export default function RouteFooter() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="grid grid-cols-3 items-center my-6 font-semibold w-full max-w-[750px] mx-auto">
+      <div className="grid grid-cols-3 items-center my-6 font-semibold mx-auto">
         <motion.span className="text-base text-center flex justify-center sm:text-lg">
           Let's work together.
         </motion.span>
         <div className="border-t-2 border-[#111111] mx-3" />
-        <div className="flex gap-2 justify-center sm:text-lg uppercase">
+        <div className="flex gap-1 justify-center sm:text-lg uppercase">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
