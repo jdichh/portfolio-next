@@ -635,10 +635,10 @@ export default function index() {
             <h2 className="article-section-title">Setting the mood</h2>
 
             <p className="article-text">
-              Next task, setting up the lighting and background to have a dark,
-              intimate setting, similar to modern Gran Turismo games. But this
-              wasn't a simple task for me. Finding the "sweet spot" for the
-              lighting I wanted really took a lot of time for me.
+              Next task, setting up the scene to have a dark, intimate setting;
+              similar to modern Gran Turismo games. But this wasn't a simple
+              task for me. Finding the "sweet spot" for the lighting I wanted
+              really took a lot of time for me.
             </p>
 
             <p className="article-text">
