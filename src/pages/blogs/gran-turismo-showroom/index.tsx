@@ -395,7 +395,8 @@ export default function index() {
 
             <aside className="article-disclaimer">
               <p className="article-text">
-                Here's a skip button if you immediately want to know how I loaded a model.
+                Here's a skip button if you immediately want to know how I
+                loaded a model.
               </p>
               <div className="flex justify-end">
                 <a href="#loading-the-model" className="article-hrefs">
@@ -880,11 +881,11 @@ export default function index() {
             </div>
 
             <p className="leading-7 my-8 text-my-standard">
-              Now, you may have noticed that the YouTube video is different from
-              the demo that I shared. It's because I migrated the project from
-              Three.js to React-Three-Fiber to learn how it worked, and then
-              made some changes from the original Three.js version. But that's
-              another topic in and of itself.
+              If you viewed the demo, you may have noticed that the YouTube
+              video is different from the demo. It's because I migrated the
+              project from Three.js to React-Three-Fiber to learn how it worked,
+              and then made some changes from the original Three.js version. But
+              that's another topic in and of itself.
             </p>
 
             <p className="article-text">
