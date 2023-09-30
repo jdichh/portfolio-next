@@ -21,11 +21,11 @@ export default function Project({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "0.7 1"],
+    offset: ["0 1", "1 1"],
   });
 
-  const SCALE = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
-  const OPACITY = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
+  const SCALE = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const OPACITY = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   const PROJ_HOVER_SCALE = 1.015;
   const BTN_HOVER_SCALE = 1.05
