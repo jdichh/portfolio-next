@@ -37,7 +37,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Blog | Creating a Gran Turismo-esque showroom with Three.js</title>
+        <title>
+          Blog | Creating a Gran Turismo-esque showroom with Three.js
+        </title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -65,7 +67,9 @@ export default function index() {
 
           <aside>
             <div className="outline outline-1 outline-[#111111] rounded-sm p-3">
-              <h2 className="text-4xl font-bold mb-2 text-[#005959]">HEY! YOU THERE!</h2>
+              <h2 className="text-4xl font-bold mb-2 text-[#005959]">
+                HEY! YOU THERE!
+              </h2>
               <p className="leading-7 mb-8">
                 I just want to tell you that the section below isn't relevant to
                 the title.
@@ -205,7 +209,7 @@ export default function index() {
               <a
                 href="/blogs/my-first-shenanigans-in-3d"
                 target="_blank"
-                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 previous post
               </a>
@@ -319,7 +323,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html#api/en/lights/DirectionalLight"
                 target="_blank"
-                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 DirectionalLight
               </a>
@@ -347,7 +351,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html#examples/en/loaders/GLTFLoader"
                 target="_blank"
-                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 GLTFLoader
               </a>
@@ -381,7 +385,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html#api/en/cameras/PerspectiveCamera"
                 target="_blank"
-                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 PerspectiveCamera
               </a>
@@ -397,7 +401,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html#examples/en/controls/OrbitControls"
                 target="_blank"
-                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 OrbitCamera
               </a>{" "}
@@ -427,7 +431,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html#api/en/geometries/PlaneGeometry"
                 target="_blank"
-                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 PlaneGeometry
               </a>
@@ -673,7 +677,7 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html#api/en/lights/SpotLight"
                 target="_blank"
-                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 SpotLight
               </a>{" "}
@@ -894,48 +898,39 @@ export default function index() {
               </strong>
             </p>
 
-            <div className="flex flex-row gap-2 justify-center mx-auto font-bold">
-              <motion.a
+            <div className="flex flex-row gap-2 justify-center mx-auto font-medium">
+              <a
                 href="https://github.com/jdichh/car-showroom"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
               >
-                GitHub
-              </motion.a>
-              <motion.a
+                GITHUB
+              </a>
+              <a
                 href="https://gtshowroom.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
               >
-                Live Demo
-              </motion.a>
-              <motion.a
+                DEMO
+              </a>
+              <a
                 href="https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
                 target="_blank"
                 aria-label="Button for the development videos of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
               >
-                Dev Videos
-              </motion.a>
+                DEV'T VIDEOS
+              </a>
             </div>
 
             <p className="leading-7 my-8">
-              Now you may have noticed that the video is different from the
-              project itself. It's because I migrated the project from Three.js
-              to React-Three-Fiber to learn how it worked, and then made some
-              changes from the original Three.js version. But that's another
-              topic in and of itself.
+              Now, you may have noticed that the YouTube video is different from
+              the demo that I shared. It's because I migrated the project from
+              Three.js to React-Three-Fiber to learn how it worked, and then
+              made some changes from the original Three.js version. But that's
+              another topic in and of itself.
             </p>
 
             <p className="leading-7 mb-8">

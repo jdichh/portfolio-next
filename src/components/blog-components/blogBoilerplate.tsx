@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 type BlogProps = (typeof blogs)[number];
 
 export default function BlogBoilerplate({ name, description, date, link }: BlogProps) {
-  const ON_HOVER_SCALE = 1.015;
+  const ON_HOVER_SCALE = 1.03;
 
   return (
     <div className="mb-6 last:mb-0">
@@ -16,11 +16,11 @@ export default function BlogBoilerplate({ name, description, date, link }: BlogP
         transition={{ duration: 0.01 }}
       >
         <a href={link}>
-        <div className="flex flex-col py-4 px-4">
+        <div className="flex flex-col p-4">
           <h2 className="text-xl text-left sm:text-2xl font-semibold">
             {name}
           </h2>
-          <h3 className="mb-2 font-semibold opacity-80 text-sm">{date}</h3>
+          <h3 className="mb-2 font-semibold text-sm">{date}</h3>
           <p>{description}</p>
         </div>
         </a>

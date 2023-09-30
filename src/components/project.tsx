@@ -27,9 +27,9 @@ export default function Project({
   const SCALE = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   const OPACITY = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
-  const PROJ_HOVER_SCALE = 1.015;
+  const PROJ_HOVER_SCALE = 1.03;
   const TOOL_ICON_QUALITY = 50;
-  const TOOL_ICON_DIMENSIONS = 18;
+  const TOOL_ICON_DIMENSIONS = 20;
   const IMAGE_QUALITY = 95;
 
   return (
@@ -60,7 +60,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-[#F0E9D8] transition ease-in-out duration-150 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#111111]"
+                className="bg-[#F0E9D8] font-medium transition ease-in-out duration-150 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#111111]"
               >
                 <Image
                   src={toolIcons[index]}

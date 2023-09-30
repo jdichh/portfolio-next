@@ -683,40 +683,31 @@ export default function index() {
               </strong>
             </p>
 
-            <div className="flex flex-row gap-2 justify-center mx-auto font-bold">
-              <motion.a
+            <div className="flex flex-row gap-2 justify-center mx-auto font-medium">
+              <a
                 href="https://github.com/jdichh/synthwave-scene"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
               >
-                GitHub
-              </motion.a>
-              <motion.a
+                GITHUB
+              </a>
+              <a
                 href="https://jdsynthwave.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
               >
-                Live Demo
-              </motion.a>
-              <motion.a
+                DEMO
+              </a>
+              <a
                 href="https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
                 target="_blank"
                 aria-label="Button for the development videos of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
-                whileHover={{ scale: ON_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
               >
-                Dev Videos
-              </motion.a>
+                DEV'T VIDEOS
+              </a>
             </div>
           </section>
         </article>
