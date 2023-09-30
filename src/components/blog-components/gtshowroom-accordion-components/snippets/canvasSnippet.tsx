@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CanvasSnippet() {
   return (
-    <pre className="whitespace-pre-wrap break-words rounded-sm text-[0.6rem] sm:text-sm outline outline-1 outline-[#111111] p-2">
+    <pre className="blog-components-snippets-bigger-text">
       <code>
         {`import * as THREE from "three"; 
 

@@ -19,12 +19,12 @@ export default function RouteFooter() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="grid grid-cols-3 items-center my-6 font-semibold mx-auto">
-        <motion.span className="text-base text-center flex justify-center sm:text-lg">
+      <div className="footer-layout">
+        <motion.span className="footer-text">
           Let's work together.
         </motion.span>
         <div className="border-t-2 border-[#111111] mx-3" />
-        <div className="flex gap-1 justify-center sm:text-lg uppercase">
+        <div className="flex gap-1 justify-center">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
@@ -38,7 +38,7 @@ export default function RouteFooter() {
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
+              className="icons"
             />
           </motion.a>
           <motion.a
@@ -53,7 +53,7 @@ export default function RouteFooter() {
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
+              className="icons"
             />
           </motion.a>
         </div>

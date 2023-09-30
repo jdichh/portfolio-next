@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SpotlightSnippet() {
     return (
-      <pre className="whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline outline-1 outline-[#111111] p-2">
+      <pre className="blog-components-snippets-smaller-text">
         <code>
           {`const spotlight = new THREE.SpotLight(WHITE, 5, 20, Math.PI / 3, 0.2);
 const frontSpotlight = new THREE.SpotLight(WHITE, 90, 20, Math.PI * 0.1, 0.25);

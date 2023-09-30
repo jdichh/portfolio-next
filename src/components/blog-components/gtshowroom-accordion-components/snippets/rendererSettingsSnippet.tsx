@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function RendererSettingsSnippet() {
     return (
-      <pre className="whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline outline-1 outline-[#111111] p-2">
+      <pre className="blog-components-snippets-smaller-text">
         <code>
           {`renderer.setSize(windowSize.width, windowSize.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));

@@ -21,6 +21,135 @@
   justify-content: space-between;
 }
 
+/* Landing Page */
+.text-emphasize {
+  @apply font-semibold text-[#285955];
+}
+
+.text-my-standard {
+  @apply font-[450] md:text-[17px];
+}
+
+.outline-my-standard {
+  @apply outline outline-1 outline-[#111111];
+}
+
+.icons {
+  @apply object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5;
+}
+
+.footer-layout {
+  @apply grid grid-cols-3 items-center my-6 mx-3 font-semibold;
+}
+
+.footer-text {
+  @apply text-base text-center flex justify-center sm:text-lg;
+}
+
+.project-item-buttons {
+  @apply bg-light-theme-bg group-hover:bg-[#EDE6DA] outline-my-standard px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150;
+}
+/* End */
+
+/* 
+
+  CSS INSIDE MY ROUTES
+
+*/
+
+/* Inside Blog Components Folder */
+.blog-components-snippets-bigger-text {
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.6rem] sm:text-sm outline-my-standard p-2;
+}
+
+.blog-components-snippets-smaller-text {
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline-my-standard p-2;
+}
+/* End */
+
+/* Pages Folder */
+.pages-folder-div-navbars {
+  @apply fixed border-b-2 border-[#111111] bg-light-theme-bg top-0 h-16 w-full;
+}
+
+.pages-folder-navbars {
+  @apply fixed flex justify-between items-center w-full max-w-[750px] mx-auto left-1/2 -translate-x-[50%] px-4 h-16;
+}
+/* End */
+
+/* Blogs Section */
+.article {
+  @apply flex flex-col items-start w-full max-w-[750px] mx-auto p-4;
+}
+
+.article-title {
+  @apply text-3xl font-bold mb-2;
+}
+
+.article-date {
+  @apply text-[#285955] font-semibold;
+}
+
+.article-disclaimer {
+  @apply outline-my-standard rounded-sm p-3 bg-light-theme-bg;
+}
+
+.article-disclaimer-text {
+  @apply text-4xl font-bold mb-2 text-[#285955];
+}
+
+.article-text {
+  @apply leading-7 mb-8 font-[450] text-[17px];
+}
+
+.article-text-bold {
+  @apply leading-7 mb-8 font-bold;
+}
+
+.article-figure {
+  @apply outline-my-standard p-2 rounded-sm my-8 mx-auto bg-light-theme-bg;
+}
+
+.article-figure-caption {
+  @apply mt-2 text-center;
+}
+
+.article-section-title {
+  @apply text-xl sm:text-2xl font-bold mt-20 mb-3;
+}
+
+.article-links-container {
+  @apply flex flex-row gap-2 justify-center mx-auto font-medium;
+}
+
+.article-links {
+  @apply px-3 py-2 text-[#111111] outline-my-standard rounded-sm transition ease-in-out duration-150 bg-light-theme-bg;
+}
+
+.article-iframe {
+  @apply absolute top-0 left-0 w-full h-full rounded-sm;
+}
+
+.article-iframe-container {
+  @apply relative w-full pb-[56.25%] h-0;
+}
+
+.article-hrefs {
+  @apply font-semibold text-[#285955] transition duration-150 ease-in-out;
+}
+
+.code-snippet-container {
+  @apply leading-7 my-2 px-2 w-11/12 mx-auto;
+}
+
+.code-snippet-sub-title {
+  @apply text-xl sm:text-2xl font-bold my-3;
+}
+
+.code-snippet-pre-code {
+  @apply p-2 my-2 rounded-sm mx-auto;
+}
+
 .code-snippet code {
   padding-inline: 0.3rem;
   padding-block: 0.1rem;
@@ -29,3 +158,4 @@
   margin-inline: 0.25rem;
   font-size: 0.9rem;
 }
+/* End */

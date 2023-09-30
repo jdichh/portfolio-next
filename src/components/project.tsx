@@ -42,9 +42,9 @@ export default function Project({
       }}
     >
       <motion.article
-        className="group overflow-hidden bg-light-theme-bg hover:bg-[#EDE6DA] rounded-sm relative transition ease-in-out duration-150 outline outline-1 outline-[#111111]"
+        className="group overflow-hidden bg-light-theme-bg hover:bg-[#EDE6DA] rounded-sm relative transition ease-in-out duration-150 outline-my-standard"
         whileHover={{ scale: PROJ_HOVER_SCALE }}
-        transition={{ duration: 0.01 }}
+        transition={{ duration: 0.05 }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
@@ -60,7 +60,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] diamond font-medium transition ease-in-out duration-150 px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#111111]"
+                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] diamond font-medium transition ease-in-out duration-150 px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
               >
                 <Image
                   src={toolIcons[index]}
@@ -74,7 +74,7 @@ export default function Project({
               </li>
             ))}
           </ul>
-          <p className="leading-relaxed text-left md:text-[17px] font-[450]">
+          <p className="leading-relaxed text-left text-my-standard">
             {description}
           </p>
           <div className="flex flex-col text-center gap-2 mt-4 lg:flex-row lg:flex-wrap font-medium">
@@ -83,7 +83,7 @@ export default function Project({
                 href={liveLink.toString()}
                 target="_blank"
                 aria-label="Live demo of the project."
-                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="project-item-buttons"
               >
                 DEMO
               </a>
@@ -93,7 +93,7 @@ export default function Project({
                 href={videoLink.toString()}
                 target="_blank"
                 aria-label="Video demonstration of the project."
-                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="project-item-buttons"
               >
                 VIDEO
               </a>
@@ -103,7 +103,7 @@ export default function Project({
                 href={blogLink.toString()}
                 target="_blank"
                 aria-label="Button for my blog post of the project."
-                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="project-item-buttons"
               >
                 BLOG
               </a>
@@ -113,7 +113,7 @@ export default function Project({
                 href={githubLink.toString()}
                 target="_blank"
                 aria-label="Button for the GitHub repo of the project."
-                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="project-item-buttons"
               >
                 GITHUB
               </a>

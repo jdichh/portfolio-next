@@ -11,13 +11,8 @@ import { Space_Grotesk } from "next/font/google";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
-  const TEAL = "#285955";
-  const OUTLINE = "#111111";
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
-  const BTN_TEXT_COLOR = OUTLINE;
-  const ON_HOVER_SCALE = 1.05;
-  const ON_TAP_SCALE = 0.95;
 
   return (
     <>
@@ -34,7 +29,7 @@ export default function index() {
       </Head>
       <BlogHeader />
       <motion.main
-        className={`flex flex-col items-start w-full max-w-[750px] mx-auto p-4 ${spaceGrotesk.className}`}
+        className={`article ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: [0.22, 1, 0.36, 1] }}
@@ -42,18 +37,16 @@ export default function index() {
         <article>
           <div className="mt-44" />
           <div className="mb-8">
-            <h1 className="text-3xl font-bold mb-2">
+            <h1 className="article-title">
               My first shenanigans in 3D
             </h1>
-            <p className="text-[#285955] font-semibold">September 27, 2023</p>
+            <p className="article-date">September 27, 2023</p>
           </div>
 
           <section id="section1">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
-              Moment of discovery
-            </h2>
+            <h2 className="article-section-title">Moment of discovery</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               During the earlier days of my journey in learning frontend
               development, which started around June 2023, I came across a video
               in my recommended section in YouTube. It was about making a
@@ -61,14 +54,14 @@ export default function index() {
               <a
                 href="https://threejs.org/"
                 target="_blank"
-                className="font-semibold text-[#285955] transition duration-150 ease-in-out"
+                className="article-hrefs"
               >
                 Three.js
               </a>
               .
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               So imagine what my reaction was at the video YouTube recommended
               to me. Think about it, if you were new to frontend web
               development, and you saw that? What would your reaction be? Oh
@@ -78,13 +71,13 @@ export default function index() {
               know and learn how Three.js worked.
             </p>
 
-            <p className="leading-7 mb-8 font-bold">
+            <p className="article-text-bold">
               But don't do what I did, kids, because I could've spent time
               learning more about the fundamentals of programming, React and its
               ecosystem instead of 3D stuff.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/my_reaction.png"
                 alt=""
@@ -94,17 +87,17 @@ export default function index() {
                 priority={true}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 My reaction to that information:
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Now, I use Kamran Ahmed's{" "}
               <a
                 href="https://roadmap.sh/"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 roadmap.sh
               </a>{" "}
@@ -117,11 +110,11 @@ export default function index() {
           </section>
 
           <section id="section2">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
+            <h2 className="article-section-title">
               I'm confused, and I can understand it at the same time
             </h2>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/threejs.webp"
                 alt=""
@@ -130,12 +123,12 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 Three.js homepage
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               I looked at the documentations that Three.js provided. I was so
               confused, as the details in the documentation were so sparse for
               me at the time (or maybe I'm just a big, dumb idiot). So I
@@ -143,14 +136,14 @@ export default function index() {
               me like I'm a high schooler.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Luckily, I already knew what some terms meant, like anti-aliasing,
               shadow resolution, texture resolution, lighting, models, and etc.,
               because I really loved modding Skyrim to the point where my{" "}
               <a
                 href="https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-gaming-laptops/ideapad-l340-15irh-gaming/88ipl301161"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 poor laptop{" "}
               </a>
@@ -159,13 +152,13 @@ export default function index() {
               managed to understand some of the documentation.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               After some time watching and reading tutorials, I managed to load
               my first 3D model, which I downloaded from Sketchfab, and this was
               my first output:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/first_output.png"
                 alt="My first output in Three.js"
@@ -174,28 +167,28 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 My first time displaying a model with Three.js.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Granted, this isn't anything impressive, but at the time, I was so
               ecstatic that I managed to do it.
             </p>
           </section>
 
           <section id="section3">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 ">
+            <h2 className="article-section-title ">
               A little help can go a long way
             </h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Some time after that, I came across an{" "}
               <a
                 href="https://blog.maximeheckel.com/posts/vaporwave-3d-scene-with-threejs/"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 article by Maxime Heckel
               </a>
@@ -205,7 +198,7 @@ export default function index() {
               indefinite amount of time.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               It's a trick used by many games, to give you the illusion that
               there's a huge map during a corridor-style level (like Temple Run,
               remember that?)—when in actuality, a part of the map's terrain is
@@ -213,7 +206,7 @@ export default function index() {
               or running on a treadmill, in simpler terms.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/vaporwave.webp"
                 alt="A screenshot of Maxime Heckel's vaporwave project."
@@ -222,12 +215,12 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 Maxime Heckel's vaporwave project.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               I followed Maxime's instructions and guidelines, but not blindly.
               I took the time to understand what some things meant, because
               what's the point of tutorials if you're just going to copy code
@@ -235,7 +228,7 @@ export default function index() {
               from 3 months ago.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Anyway, I didn't want to end the project with a 1:1 copy of his
               work; I wanted to add more things, like a sun, a skybox,
               background music, some postprocessing effects like bloom and a CRT
@@ -246,23 +239,21 @@ export default function index() {
           </section>
 
           <section id="section4">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
-              Let there be light
-            </h2>
+            <h2 className="article-section-title">Let there be light</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Okay, task one: illuminate the world. This is done by using{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=direction#api/en/lights/DirectionalLight"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 DirectionalLight
               </a>
               —it's basically the sun.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/light-directional.png"
                 alt="Directional light"
@@ -271,29 +262,27 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 A visual example of directional light—credits go to viblo.asia.
               </figcaption>
             </figure>
           </section>
 
           <section id="section5">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
-              Filling up the void
-            </h2>
+            <h2 className="article-section-title">Filling up the void</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               The sun now exists (in a way), but there's a dark emptiness just
               staring at you. To fix that, we'll add in a sky.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               <strong>So, my initial solution was this:</strong> create a big
               box by using{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=geom#api/en/geometries/BoxGeometry"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 BoxGeometry
               </a>{" "}
@@ -301,16 +290,16 @@ export default function index() {
               <a
                 href="https://threejs.org/docs/index.html?q=textureload#api/en/loaders/TextureLoader"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 TextureLoader
               </a>
               .
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">And here it is:</p>
+            <p className="article-text">And here it is:</p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/skybox-trial.png"
                 alt="My initial skybox trial"
@@ -319,18 +308,18 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 Yeah...nice try, dumbass.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               The problem was that I didn't set a proper size for the box
               itself. Secondly, the textures don't really fit the colors of the
               lighting and terrain—there's too much contrast between them.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               However, I started to notice something. Something that I didn't
               really pay attention to before. The vast space of emptiness
               itself—the dark background that's been staring at me all this
@@ -339,17 +328,17 @@ export default function index() {
           </section>
 
           <section id="section6">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
+            <h2 className="article-section-title">
               Staring into the void, yet somehow, it's shining a light to me
             </h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               This was my "eureka" moment. It suddenly hit me, why not just make
               the dark background just use the sky's texture instead of using a
               big box?
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               So I created an image to be used as a texture. The initial
               version, from bottom to top, was a gradient going from red to
               orange. But after creating the texture, I thought that it looked
@@ -357,7 +346,7 @@ export default function index() {
               switched to cooler colors, and I added some stars too.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/skybox.webp"
                 alt=""
@@ -366,17 +355,17 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 My skybox texture.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               This was made with my ol' trusty tool and long time partner{" "}
               <a
                 href="https://getpaint.net/"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 Paint.NET
               </a>
@@ -385,12 +374,12 @@ export default function index() {
               problems that Paint.NET couldn't solve for me.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               So, we have our texture. Now we basically pass it along to
               TextureLoader for it to load the texture as the background.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act1.png"
                 alt="First part of my changes to the project"
@@ -399,18 +388,18 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 The scene so far, complete with my previous changes.
               </figcaption>
             </figure>
           </section>
 
           <section id="section7">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
+            <h2 className="article-section-title ">
               The boys in the better land...?
             </h2>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/issues.png"
                 alt=""
@@ -419,12 +408,12 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 The issues that the terrain has in brighter lighting.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               <strong>
                 Don't mind the color of the sky, the sun and the postprocessing
                 effects like bloom and the CRT filter, let's focus on the
@@ -432,13 +421,13 @@ export default function index() {
               </strong>
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               As a consequence of lighting up the world, we can see the huge gap
               on the right, and the seemingly empty section on the left. This is
               because of something called a <strong>displacement map</strong>.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/displacementmap.png"
                 alt="The terrain's displacement map"
@@ -447,12 +436,12 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 Displacement map—credits to Maxime Heckel.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               A displacement map basically tells a computer how to make a flat
               surface look bumpy. The darker it is, the flatter the surface is.
               And the brighter it is, the bumpier it gets.
@@ -460,17 +449,17 @@ export default function index() {
           </section>
 
           <section id="section8">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
+            <h2 className="article-section-title ">
               The process of elimination, with no hint of desperation
             </h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Notice the darker colors in the red rectangles. As I said, the
               darker the colors are, the flatter it is, and the brighter it is,
               the bumpier it gets.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/displacementmap_issues.png"
                 alt="The issues to be addressed in the displacement map"
@@ -479,12 +468,12 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 Areas of interest.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               In this case, the issues I showed above can be simply solved using
               the magic of photo editing; so I fixed it with Paint.NET by adding
               whites to these areas of interest.
@@ -492,29 +481,27 @@ export default function index() {
           </section>
 
           <section id="section9">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
-              Praise the sun
-            </h2>
+            <h2 className="article-section-title">Praise the sun</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               So, we fixed the issues regarding the terrain data. This time,
               let's add in the sun by using{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=sphere#api/en/geometries/SphereGeometry"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 SphereGeometry.
               </a>{" "}
               As the name implies, it allows us to create sphere geometries.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               But, same with the sky, we also have to create textures for the
               sun. So here it is:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/sun.webp"
                 alt="The sun's textures"
@@ -523,17 +510,17 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 The texture file of the sun
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               We're basically ready now to add the sun with the texture file
               applied to it. So, we'll use TextureLoader, and voila:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act2.png"
                 alt="Second part of my changes to the project"
@@ -542,42 +529,40 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 The scene, now with a sun and terrain fixes.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               I also added sun rays using DirectionalLight.
             </p>
           </section>
 
           <section id="section10">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
-              Putting on some make-up
-            </h2>
+            <h2 className="article-section-title ">Putting on some make-up</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               So, we're nearly done with the project, just some more
               postprocessing effects to add like bloom and a CRT filter. And{" "}
               <a
                 href="https://threejs.org/docs/index.html?q=effect#examples/en/postprocessing/EffectComposer"
                 target="_blank"
-                className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
+                className="article-hrefs"
               >
                 EffectComposer{" "}
               </a>
               is the right tool for the job.
             </p>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               In Maxime's article, he had chromatic aberration on. I decided to
               leave it on because it kinda fit the "vibe" I was going for, and
               when supplemented with my other postprocessing effects of choice,
               this can only look good.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/chromatic_aberration.jpg"
                 alt="Chromatic aberration example"
@@ -586,17 +571,17 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 Comparison between chromatic aberration enabled (top), and
                 disabled (bottom). Credits to photographylife.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               And here it is, with my other postprocessing effects of choice:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act3.png"
                 alt="The third and last part of my changes to the project"
@@ -605,25 +590,23 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 The scene, with chromatic aberration, bloom and a CRT filter.
               </figcaption>
             </figure>
           </section>
 
           <section id="section11">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
-              (Synth)wavy, dude!
-            </h2>
+            <h2 className="article-section-title">(Synth)wavy, dude!</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Lastly, the music. The scene wouldn't feel complete without some
               synthwave. So I picked a track from HOME (great artist, by the
               way), because his music captures the "vibe" well. Plus, I can
               legally use his music.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
+            <figure className="article-figure">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/home.png"
                 alt="HOME, the artist"
@@ -632,25 +615,23 @@ export default function index() {
                 quality={IMAGE_QUALITY}
                 className="rounded-sm"
               />
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 No permissions needed from the artist.
               </figcaption>
             </figure>
           </section>
 
           <section id="section12">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
-              The end has no end
-            </h2>
+            <h2 className="article-section-title">The end has no end</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               So, we've crossed the finish line (that I set). But, I'm sure
               there are more people out there that can add more to this project.
               But for me, I think it's perfect now.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
-              <div className="relative w-full pb-[56.25%] h-0">
+            <figure className="article-figure">
+              <div className="article-iframe-container">
                 <iframe
                   width="560"
                   height="315"
@@ -658,26 +639,24 @@ export default function index() {
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full rounded-sm"
+                  className="article-iframe"
                 ></iframe>
               </div>
-              <figcaption className="mt-2 text-center">
+              <figcaption className="article-figure-caption">
                 YouTube Video
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               So yeah, I hope you enjoyed this story on how I started on
               Three.js, and a tutorial of sorts. Thanks for reading!
             </p>
           </section>
 
           <section id="section13">
-            <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3 scroll-mt-20">
-              Links
-            </h2>
+            <h2 className="article-section-title">Links</h2>
 
-            <p className="leading-7 mb-8 font-[450] text-[17px]">
+            <p className="article-text">
               Here are the links for the project if you're interested.{" "}
               <strong>
                 I recommend opening the project itself on a high resolution
@@ -685,12 +664,12 @@ export default function index() {
               </strong>
             </p>
 
-            <div className="flex flex-row gap-2 justify-center mx-auto font-medium">
+            <div className="article-links-container">
               <a
                 href="https://github.com/jdichh/synthwave-scene"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
+                className="article-links"
               >
                 GITHUB
               </a>
@@ -698,7 +677,7 @@ export default function index() {
                 href="https://jdsynthwave.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
+                className="article-links"
               >
                 DEMO
               </a>
@@ -706,7 +685,7 @@ export default function index() {
                 href="https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
                 target="_blank"
                 aria-label="Button for the development videos of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
+                className="article-links"
               >
                 DEV VIDEOS
               </a>

@@ -24,23 +24,23 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="fixed border-b-2 border-[#111111] bg-light-theme-bg top-0 h-16 w-full" />
-      <nav className="fixed flex justify-between items-center w-full max-w-[750px] mx-auto left-1/2 -translate-x-[50%] px-4 h-16">
+      <div className="pages-folder-div-navbars" />
+      <nav className="pages-folder-navbars">
         <ul>
           <li>
             <Link href="/" aria-label="Back button">
               <motion.div
-                className="transition duration-150 ease-in-out text-lg hover: rounded-sm"
+                className="transition duration-150 ease-in-out text-lg rounded-sm"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
+                transition={{ duration: 0.05 }}
               >
                 <Image
                   src="/icons/back.svg"
                   alt="Back button"
                   width={ICON_DIMENSIONS}
                   height={ICON_DIMENSIONS}
-                  className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
+                  className="icons"
                 />
               </motion.div>
             </Link>
