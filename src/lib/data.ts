@@ -142,17 +142,6 @@ export const projects = [
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
   },
   {
-    name: "Asteroids",
-    description:
-      "The Asteroids game from Atari, but with my own modifications to it.",
-    tools: ["PC Required", "JavaScript"],
-    imageUrl: asteroids,
-    toolIcons: [pcRequiredImg, jsImg],
-    liveLink: "https://jdasteroids.netlify.app/",
-    videoLink: "https://youtu.be/6LwWaI4WKdg",
-    githubLink: "https://github.com/jdichh/asteroids",
-  },
-  {
     name: "Galaxy Overview",
     description:
       "A 3D overview of a galaxy, inspired by the Heleus Cluster in Mass Effect Andromeda.",
@@ -162,6 +151,17 @@ export const projects = [
     liveLink: "https://jdgalaxy.netlify.app/",
     videoLink: "https://youtu.be/ODhJYVid_oU",
     githubLink: "https://github.com/jdichh/galaxy-map",
+  },
+  {
+    name: "Asteroids",
+    description:
+      "The Asteroids game from Atari, but with my own modifications to it.",
+    tools: ["PC Required", "JavaScript"],
+    imageUrl: asteroids,
+    toolIcons: [pcRequiredImg, jsImg],
+    liveLink: "https://jdasteroids.netlify.app/",
+    videoLink: "https://youtu.be/6LwWaI4WKdg",
+    githubLink: "https://github.com/jdichh/asteroids",
   },
   {
     name: "Random Password Generator Extension",
