@@ -99,11 +99,7 @@
 }
 
 .article-text {
-  @apply leading-7 mb-8 font-[450] text-[17px];
-}
-
-.article-text-bold {
-  @apply leading-7 mb-8 font-bold;
+  @apply leading-7 mb-8 text-my-standard;
 }
 
 .article-figure {

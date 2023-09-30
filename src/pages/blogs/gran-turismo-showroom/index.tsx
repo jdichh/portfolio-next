@@ -878,7 +878,7 @@ export default function index() {
               </a>
             </div>
 
-            <p className="leading-7 my-8">
+            <p className="leading-7 my-8 text-my-standard">
               Now, you may have noticed that the YouTube video is different from
               the demo that I shared. It's because I migrated the project from
               Three.js to React-Three-Fiber to learn how it worked, and then

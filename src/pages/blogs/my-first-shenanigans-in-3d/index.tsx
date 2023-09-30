@@ -37,9 +37,7 @@ export default function index() {
         <article>
           <div className="mt-44" />
           <div className="mb-8">
-            <h1 className="article-title">
-              My first shenanigans in 3D
-            </h1>
+            <h1 className="article-title">My first shenanigans in 3D</h1>
             <p className="article-date">September 27, 2023</p>
           </div>
 
@@ -71,10 +69,12 @@ export default function index() {
               know and learn how Three.js worked.
             </p>
 
-            <p className="article-text-bold">
-              But don't do what I did, kids, because I could've spent time
-              learning more about the fundamentals of programming, React and its
-              ecosystem instead of 3D stuff.
+            <p className="article-text">
+              <strong>
+                But don't do what I did, kids, because I could've spent time
+                learning more about the fundamentals of programming, React and
+                its ecosystem instead of 3D stuff.
+              </strong>
             </p>
 
             <figure className="article-figure">
