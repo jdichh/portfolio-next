@@ -14,7 +14,7 @@ export default function RouteFooter() {
 
   return (
     <motion.footer
-      className={`mt-6 mx-auto border-t-2 w-full max-w-[750px] font-semibold border-[#6E99C4] ${spaceGrotesk.className}`}
+      className={`mt-6 mx-auto border-t-2 w-full max-w-[750px] font-semibold border-[#111111] ${spaceGrotesk.className}`}
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: [0.22, 1, 0.36, 1] }}
@@ -23,7 +23,7 @@ export default function RouteFooter() {
         <motion.span className="text-base text-center flex justify-center sm:text-lg">
           Let's work together.
         </motion.span>
-        <div className="border-t-2 border-[#DADADA] mx-3" />
+        <div className="border-t-2 border-[#111111] mx-3" />
         <div className="flex gap-2 justify-center sm:text-lg uppercase">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
@@ -38,7 +38,7 @@ export default function RouteFooter() {
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -53,7 +53,7 @@ export default function RouteFooter() {
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
         </div>

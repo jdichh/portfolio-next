@@ -26,13 +26,11 @@ export default function index() {
         <div className="mt-20" />
         <div className="mb-8">
           <h1 className="mb-3 text-xl sm:text-2xl">
-            <span className="font-semibold">
+            <span className="font-bold">
               Kamusta! I'm Jason, a recent IT graduate from the Philippines, and
               this is where you can read just about any of my ramblings—
             </span>
-            <span className="opacity-90">
-              be it about web development, music, books, or just life in general.
-            </span>
+            be it about web development, music, books, or just life in general.
           </h1>
         </div>
 

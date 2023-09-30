@@ -10,17 +10,18 @@ function Accordion({ title, children }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full mx-auto mb-6 outline outline-2 outline-[#1F1E26] rounded-md p-1">
-      <div className="bg-[#1F1E26] rounded-md">
+    <div className="w-full mx-auto mb-6 outline outline-1 outline-[#111111] rounded-sm p-1">
+      <div className="rounded-sm">
         <button
-          className="flex justify-between items-center py-3 px-4 w-full text-left"
+          className="flex justify-between items-center p-2 w-full text-left"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span className="font-medium">{title}</span>
+          <span className="font-semibold text-[#111111]">{title}</span>
             <motion.span
               key={isOpen ? "up" : "down"}
               initial={{ rotate: 0 }}
               animate={{ rotate: 180 }}
+              className="text-[#111111]"
             >
               {isOpen ? "▲" : "▼"}
             </motion.span>

@@ -16,7 +16,7 @@ export default function Project({
   liveLink,
   videoLink,
   blogLink,
-  githubLink
+  githubLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -28,10 +28,8 @@ export default function Project({
   const OPACITY = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   const PROJ_HOVER_SCALE = 1.015;
-  const BTN_HOVER_SCALE = 1.1
-  const ON_TAP_SCALE = 0.95;
   const TOOL_ICON_QUALITY = 50;
-  const TOOL_ICON_DIMENSIONS = 20
+  const TOOL_ICON_DIMENSIONS = 18;
   const IMAGE_QUALITY = 95;
 
   return (
@@ -44,7 +42,7 @@ export default function Project({
       }}
     >
       <motion.article
-        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-md relative transition ease-in-out duration-150 hover:outline hover:outline-1 hover:outline-[#DADADA]"
+        className="group overflow-hidden bg-[#F0E9D8] rounded-sm relative transition ease-in-out duration-150 outline outline-1 outline-[#111111]"
         whileHover={{ scale: PROJ_HOVER_SCALE }}
         transition={{ duration: 0.01 }}
       >
@@ -53,16 +51,16 @@ export default function Project({
             src={imageUrl}
             alt=""
             quality={IMAGE_QUALITY}
-            className="block mx-auto relative md:hidden rounded-md my-2"
+            className="block mx-auto relative md:hidden rounded-sm my-2"
           />
-          <h3 className="text-xl text-center sm:text-2xl md:text-left text-[#DADADA] font-bold">
+          <h3 className="text-center md:text-left text-2xl font-medium">
             {name}
           </h3>
-          <ul className="flex flex-wrap my-2 gap-2 text-sm justify-center md:justify-start font-semibold">
+          <ul className="flex flex-wrap my-2 gap-2 justify-center md:justify-start text-sm">
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-[#1F1E26] transition ease-in-out duration-150 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#DADADA]"
+                className="bg-[#F0E9D8] transition ease-in-out duration-150 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#111111]"
               >
                 <Image
                   src={toolIcons[index]}
@@ -76,59 +74,49 @@ export default function Project({
               </li>
             ))}
           </ul>
-          <p className="opacity-90 leading-relaxed text-left md:text-left">{description}</p>
-          <div className="flex flex-col text-center gap-2 mt-4 font-bold lg:flex-row lg:flex-wrap">
+          <p className="leading-relaxed text-left md:text-left">
+            {description}
+          </p>
+          <div className="flex flex-col text-center gap-2 mt-4 lg:flex-row lg:flex-wrap font-medium">
             {liveLink && (
-              <motion.a
+              <a
                 href={liveLink.toString()}
                 target="_blank"
                 aria-label="Live demo of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: BTN_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
+                className="bg-[#F0E9D8] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
-                Demo
-              </motion.a>
+                DEMO
+              </a>
             )}
             {videoLink && (
-              <motion.a
+              <a
                 href={videoLink.toString()}
                 target="_blank"
                 aria-label="Video demonstration of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: BTN_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
+                className="bg-[#F0E9D8] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
-                Video
-              </motion.a>
+                VIDEO
+              </a>
             )}
             {blogLink && (
-              <motion.a
+              <a
                 href={blogLink.toString()}
                 target="_blank"
                 aria-label="Button for my blog post of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: BTN_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
+                className="bg-[#F0E9D8] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
-                Blog
-              </motion.a>
+                BLOG
+              </a>
             )}
             {githubLink && (
-              <motion.a
+              <a
                 href={githubLink.toString()}
                 target="_blank"
                 aria-label="Button for the GitHub repo of the project."
-                className="bg-[#DADADA] hover:bg-[#6E99C4] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
-                whileHover={{ scale: BTN_HOVER_SCALE }}
-                whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.01 }}
+                className="bg-[#F0E9D8] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
-                GitHub
-              </motion.a>
+                GITHUB
+              </a>
             )}
           </div>
         </div>
@@ -136,7 +124,7 @@ export default function Project({
           src={imageUrl}
           alt=""
           quality={IMAGE_QUALITY}
-          className="hidden md:block relative md:absolute transition ease-in-out duration-150 rounded-md top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
+          className="hidden md:block relative md:absolute transition ease-in-out duration-150 rounded-sm top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
         />
       </motion.article>
     </motion.div>

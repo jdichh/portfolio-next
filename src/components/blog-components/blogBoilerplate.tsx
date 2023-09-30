@@ -11,17 +11,17 @@ export default function BlogBoilerplate({ name, description, date, link }: BlogP
   return (
     <div className="mb-6 last:mb-0">
       <motion.article
-        className="group overflow-hidden bg-[#1F1E26] hover:bg-[#25242D] rounded-md relative transition ease-in-out duration-150 hover:outline hover:outline-1 hover:outline-[#DADADA]"
+        className="group overflow-hidden bg-[#F0E9D8] rounded-sm relative transition ease-in-out duration-150 outline outline-1 outline-[#111111]"
         whileHover={{ scale: ON_HOVER_SCALE }}
         transition={{ duration: 0.01 }}
       >
         <a href={link}>
         <div className="flex flex-col py-4 px-4">
-          <h2 className="text-xl text-left sm:text-2xl text-[#DADADA] font-bold">
+          <h2 className="text-xl text-left sm:text-2xl font-semibold">
             {name}
           </h2>
-          <h3 className="opacity-50 mb-2">{date}</h3>
-          <p className="opacity-90"> {description}</p>
+          <h3 className="mb-2 font-semibold opacity-80 text-sm">{date}</h3>
+          <p>{description}</p>
         </div>
         </a>
       </motion.article>

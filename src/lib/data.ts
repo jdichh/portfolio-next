@@ -155,7 +155,7 @@ export const projects = [
   {
     name: "Asteroids",
     description:
-      "The Asteroids game from Atari, but with my own modifications to it.",
+      "The Asteroids game from Atari, but with my own modifications to it. I made this to further expand my JavaScript knowledge.",
     tools: ["PC Required", "JavaScript"],
     imageUrl: asteroids,
     toolIcons: [pcRequiredImg, jsImg],
@@ -188,7 +188,7 @@ export const projects = [
 
 export const blogs = [
   {
-    name: "A Gran Turismo-esque showroom with Three.js",
+    name: "Creating a Gran Turismo-esque showroom with Three.js",
     description: "I originally wanted to create a promotional website in 3D for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
     date: "September 29, 2023",
     link: "/blogs/gran-turismo-showroom"

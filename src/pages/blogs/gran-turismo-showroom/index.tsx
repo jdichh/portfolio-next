@@ -26,20 +26,18 @@ import CanvasSnippetDescription from "@/components/blog-components/gtshowroom-ac
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
-  const SONIC_BLUE = "#6E99C4";
-  const OFF_WHITE = "#DADADA";
+  const TEAL = "#005959";
+  const OUTLINE = "#111111";
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
-  const LIGHTER_BG = "#1F1E26";
-  const BTN_TEXT_COLOR = LIGHTER_BG;
-  const ICON_DIMENSIONS = 40;
-  const ON_HOVER_SCALE = 1.1;
-  const ON_TAP_SCALE = 0.9;
+  const BTN_TEXT_COLOR = OUTLINE;
+  const ON_HOVER_SCALE = 1.05;
+  const ON_TAP_SCALE = 0.95;
 
   return (
     <>
       <Head>
-        <title>Blog | A Gran Turismo-esque showroom with Three.js</title>
+        <title>Blog | Creating a Gran Turismo-esque showroom with Three.js</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -49,7 +47,7 @@ export default function index() {
           content="A story about how I ended up recreating Gran Turismo (not really) with Three.js."
         />
       </Head>
-      <BlogHeader title="A Gran Turismo-esque showroom with Three.js" />
+      <BlogHeader title="Creating a Gran Turismo-esque showroom with Three.js" />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[750px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -59,23 +57,23 @@ export default function index() {
         <article>
           <div className="mt-44" />
           <div className="mb-8">
-            <h1 className="text-xl sm:text-2xl font-bold mb-2">
-              A Gran Turismo-esque showroom with Three.js
+            <h1 className="text-3xl font-bold mb-2">
+              Creating a Gran Turismo-esque showroom with Three.js
             </h1>
-            <p className="opacity-70 text-sm sm:text-base">
-              September 29, 2023
-            </p>
+            <p className="text-[#005959] font-semibold">September 29, 2023</p>
           </div>
 
           <aside>
-            <div className="bg-[#591414] rounded-md p-3">
+            <div className="outline outline-1 outline-[#111111] rounded-sm p-3">
+              <h2 className="text-4xl font-bold mb-2 text-[#005959]">HEY! YOU THERE!</h2>
               <p className="leading-7 mb-8">
-                The section below isn't relevant to the title.
+                I just want to tell you that the section below isn't relevant to
+                the title.
               </p>
               <div className="flex justify-end">
                 <a
                   href="#good-stuff"
-                  className="font-medium text-[#6E99C4] hover:text-[#DADADA] transition duration-150 ease-in-out"
+                  className="font-semibold text-[#005959] transition duration-150 ease-in-out"
                 >
                   Skip to the good stuff.
                 </a>
@@ -88,15 +86,16 @@ export default function index() {
               Gentlemen, start your engines!
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Would you believe me, a 22 year-old guy, doesn't have a driver's
               license yet or hasn't driven a car out on public roads? Well maybe
               you will, but, anyway, I hadn't really experienced driving yet,
-              not grandma-style driving—I mean, REALLY driving a car. So,
-              naturally, playing driving/racing games was my escape.
+              especially the type of driving that can potentially put you in a
+              police chase. So, naturally, playing driving/racing games was my
+              escape.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Revving the engine to the redline, only for the cycle to repeat
               after ripping through the transmission to change gears; hearing
               the tires squeal for mercy, telling you—shouting at you that
@@ -104,7 +103,7 @@ export default function index() {
               the sole reason of beating the other guys to the finish line.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               My love for cars, especially the Dodge Viper and all of its
               iterations, and just about anything automotive, began with a game
               on the PlayStation 1 called Test Drive 6. Hearing a cover of Gary
@@ -113,23 +112,21 @@ export default function index() {
               of good times back from when I was just a young, fat(ter) kid.
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/testdrive6.jpg"
                 alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Test Drive 6 PS1 cover.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Ever since then, I've just about exhausted list after list of
               great driving/racing games to play; from racing on dirt, on
               gravel, and on asphalt. If you ask me if I played a certain
@@ -137,7 +134,7 @@ export default function index() {
               already have.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               DiRT games? Check. GRID games? Check. NASCAR? Check. The Ridge
               Racer series? Check. Need for Speed/Burnout/Forza games? Of
               course! Why would you even ask that? And the list goes on and on.
@@ -145,7 +142,7 @@ export default function index() {
               of cars began with video games.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               But there's one more series that I haven't mentioned it yet, and
               that is Gran Turismo.
             </p>
@@ -156,23 +153,21 @@ export default function index() {
               Life is a highway
             </h2>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/gtlogo.png"
                 alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Gran Turismo logo and tagline.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Test Drive 6 was great (to me). But the Gran Turismo series, as a
               whole, has always been closer to my heart. Not just because of the
               cars, and the quality of the racetracks themselves; the
@@ -181,19 +176,19 @@ export default function index() {
               discovered my love for jazz and funk.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I remember the times, where I'm "fatly" walking to the PS1,
               inserting my disc of Gran Turismo 2 in the console, powering it
               on, showing me the glorious boot-up screen, and then off to the
               races for hours on end.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Anyway, I'm going on a tangent here about my love for cars and
               driving/racing video games and childhood memories.{" "}
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               And now, to show you how I made the showroom project.
             </p>
           </section>
@@ -205,12 +200,12 @@ export default function index() {
               A bright idea
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               If you've read my{" "}
               <a
                 href="/blogs/my-first-shenanigans-in-3d"
                 target="_blank"
-                className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 previous post
               </a>
@@ -218,7 +213,7 @@ export default function index() {
               self-learning journey, and how I expanded upon someone's work.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               After finishing the synthwave project, I started to think what
               else could I do with Three.js. Another scene but with a different
               aesthetic? Nah. Time for something different. A product
@@ -227,7 +222,7 @@ export default function index() {
               Perhaps.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               And it suddenly dawned on me, my first output was displaying a 3D
               model of a car—and I really love anything automotive, so I'll do a
               project involving a car or two, and made with Three.js!
@@ -239,7 +234,7 @@ export default function index() {
               Is that a Supra?!
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I perused Sketchfab for car models, and came across an A80 and A90
               Supra in the same page. And I suddenly thought to myself,{" "}
               <strong>
@@ -249,20 +244,18 @@ export default function index() {
               .
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               So I got not only one, but two Toyota Supras!
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/supras.jpg"
                 alt="Picture of the old and new Supras"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 A80 Supra on the left, A90 on the right—credits to Car and
@@ -276,19 +269,17 @@ export default function index() {
               Paint me like one of your french girls
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Ah! But before that, of course, is the canvas so that we can start
               doing our painting, so to speak.
             </p>
 
             <Accordion title="Setting up the canvas">
-              <div
-                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
-              >
+              <div className="p-2 my-2 rounded-sm mx-auto">
                 <CanvasSnippet />
               </div>
 
-              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-2 px-2 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
@@ -298,18 +289,16 @@ export default function index() {
               </div>
             </Accordion>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I also customized the configurations of my renderer. Here they
               are:
             </p>
 
             <Accordion title="My renderer configuration">
-              <div
-                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
-              >
+              <div className="p-2 my-2 rounded-sm mx-auto">
                 <RendererSettingsSnippet />
               </div>
-              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-2 px-2 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
@@ -325,12 +314,12 @@ export default function index() {
               Lighten up, man
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               We have to set up{" "}
               <a
                 href="https://threejs.org/docs/index.html#api/en/lights/DirectionalLight"
                 target="_blank"
-                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 DirectionalLight
               </a>
@@ -339,13 +328,11 @@ export default function index() {
             </p>
 
             <Accordion title="How I added in sunlight">
-              <div
-                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
-              >
+              <div className="p-2 my-2 rounded-sm mx-auto">
                 <DirectionalLightSnippet />
               </div>
 
-              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-2 px-2 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
@@ -355,12 +342,12 @@ export default function index() {
               </div>
             </Accordion>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Now we'll load in the models using{" "}
               <a
                 href="https://threejs.org/docs/index.html#examples/en/loaders/GLTFLoader"
                 target="_blank"
-                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 GLTFLoader
               </a>
@@ -368,35 +355,33 @@ export default function index() {
               format.
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/supra_models.png"
                 alt="Loaded in the two supras"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Supras in action.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               <strong>
                 This is just a zoomed-in view of it, and not the actual
                 perspective itself.
               </strong>
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Oh yeah, I forgot to mention about{" "}
               <a
                 href="https://threejs.org/docs/index.html#api/en/cameras/PerspectiveCamera"
                 target="_blank"
-                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 PerspectiveCamera
               </a>
@@ -406,13 +391,13 @@ export default function index() {
               have a fish-eye effect.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               In setting up the rotating camera, at least just for this
               instance, I initially set it up using{" "}
               <a
                 href="https://threejs.org/docs/index.html#examples/en/controls/OrbitControls"
                 target="_blank"
-                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 OrbitCamera
               </a>{" "}
@@ -421,7 +406,7 @@ export default function index() {
               cycle, I changed it a bit. You'll now why later.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               And you may be wondering,{" "}
               <strong>
                 "Jason, you didn't show us how to load the models!"
@@ -435,21 +420,21 @@ export default function index() {
               Hmm yes...the floor here is made out of floor
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               So I had the models loaded in. Now, the floor texture is next in
               the list. We can load the floor texture similarly to how I loaded
               the terrain in the previous project by using{" "}
               <a
                 href="https://threejs.org/docs/index.html#api/en/geometries/PlaneGeometry"
                 target="_blank"
-                className={`font-medium text-[${SONIC_BLUE}] hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 PlaneGeometry
               </a>
               . As the name suggests, it loads in a plane.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               But I have to source the floor textures first. So I did, by
               downloading textures from a repository of HQ textures, I forgot
               what website it was called, but there are numerous repositories
@@ -457,74 +442,66 @@ export default function index() {
               type of project yourself.
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/floor.png"
                 alt="Loading the floor textures"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Yeah, that's not right.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Currently, it's only taking up one segment. So I have to configure
               PlaneGeometry to essentially repeat itself multiple times.
               Initially, I tried to "duplicate" the plane by enlarging the
               texture. And this was the outcome:
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/toys.png"
                 alt="A mishap in the model and texture scales"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Yeah, that's still not right.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I admit, it made me chuckle a bit when I saw it for the first
               time. They look like toys on the floor.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               At the time when I was making this project, I didn't manage to
               find any information in the docs about properly scaling textures.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Fortunately, GPT pointed me in the right direction when I asked
               about it. Basically, I created some variables that would define
               the size and scale of the floor, and then I inserted the floor
               into the scene.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
-              Here's the more detailed answer:
-            </p>
+            <p className="leading-7 mb-8">Here's the more detailed answer:</p>
 
             <Accordion title="My floor config">
-              <div
-                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
-              >
+              <div className="p-2 my-2 rounded-sm mx-auto">
                 <FloorSnippet />
               </div>
 
-              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-2 px-2 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
@@ -534,27 +511,25 @@ export default function index() {
               </div>
             </Accordion>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Lo and behold, the cars don't look like toys anymore:
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/added_floor.png"
                 alt="Floor texture with the corrected scaling"
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Yep, it's gaming time.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               <strong>
                 Don't mind the floor texture, I was just checking out other
                 textures.
@@ -567,14 +542,14 @@ export default function index() {
               I'm stuck, stepbro
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               So, I've successfully loaded the models, and solved my issues with
               the floor making the cars from looking like toys. But I was stuck.
               Staring at the cars while the camera pans around them. I was just
               thinking, <strong>"Now what?"</strong>
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               When I was creating this project, I was listening to a Daily Mix
               playlist in Spotify. A song called "A Million Miles Away" by
               Ulrich Schnauss played after the previous one ended. I then
@@ -582,14 +557,14 @@ export default function index() {
               Turismo 4!
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               <strong>
                 Well not really, I'm spreading misinformation. I just couldn't
                 think of a better transition.
               </strong>
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Anyway, I decided to change the direction I was going towards. I
               decided that I should create a showroom inspired by modern Gran
               Turismo games. And maybe, this could be used as a reference for a
@@ -603,13 +578,13 @@ export default function index() {
               Still a million miles away, but closing in quickly
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               To repeat, I've managed to set up the lighting, the floor with the
               correct settings, and the car models as well. But, if you haven't
               noticed it yet, there aren't any shadows.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               <strong>
                 And this is also the part where I explain how I load my car
                 model.
@@ -617,12 +592,10 @@ export default function index() {
             </p>
 
             <Accordion title="Loading a model and enabling its shadows">
-              <div
-                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
-              >
+              <div className="p-2 my-2 rounded-sm mx-auto">
                 <ModelShadowSnippet />
               </div>
-              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-2 px-2 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
@@ -632,28 +605,26 @@ export default function index() {
               </div>
             </Accordion>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/shadows.png"
                 alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Enabled shadows for the model
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               And with that, I've now successfully enabled the capability for
               the model to cast and receive shadows from light sources.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               You might be thinking right now,{" "}
               <strong>
                 "Jason, If you already enabled shadows in the renderer, then why
@@ -662,7 +633,7 @@ export default function index() {
               </strong>
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Great question! Setting shadowMap.enabled to true does indeed
               enable shadows globally.{" "}
               <strong>
@@ -674,7 +645,7 @@ export default function index() {
               participate in shadow casting or receiving.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               In short, while enabling shadows at the renderer level sets up the
               framework for shadow rendering, we need to specify which objects
               cast and receive shadows in the 3D scene. This level of control
@@ -688,21 +659,21 @@ export default function index() {
               Setting the mood
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Next task, setting up the lighting and background to have a dark,
               intimate setting, similar to modern Gran Turismo games. But this
               wasn't a simple task for me. Finding the "sweet spot" for the
               lighting I wanted really took a lot of time for me.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               The way I started was testing out the values of my
               DirectionalLight. I also thought of adding more lights by creating
               new instances of{" "}
               <a
                 href="https://threejs.org/docs/index.html#api/en/lights/SpotLight"
                 target="_blank"
-                className={`text-[${SONIC_BLUE}] font-semibold hover:text-[${OFF_WHITE}] transition duration-150 ease-in-out`}
+                 className={`text-[${TEAL}] font-semibold transition duration-150 ease-in-out`}
               >
                 SpotLight
               </a>{" "}
@@ -711,30 +682,28 @@ export default function index() {
               to experiment.
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/testing_lighting.png"
                 alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Testing out lighting settings
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I initially had 2 instances of SpotLight that were placed on the
               front right side and rear right side of the car. And I was
               checking out how different lighting values and placements played
               with each other.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               If you've noticed, the background is still gray-ish even with the
               darker lighting. It's because it doesn't get affected by
               DirectionalLight and it's just a color that I set initially so I
@@ -748,48 +717,44 @@ export default function index() {
               The Shining
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               After testing out different lighting settings, I suddenly had the
               notion where there could be another light source pointing towards
               the car, but coming from above.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               It's a trick used by many to create a dramatic and a sort of
               "menacing" look. You know those horror movies/games, where there's
               a narrow corridor and there's a figure standing at the end of the
               corridor, with a spotlight directly above it?
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/topspotlight.png"
                 alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 The look I'm going for.
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I also decided that there should be other light sources coming
               from directly the rear, right, left and front sides of the car.
               And this is the point where I'll show how I set them up.
             </p>
 
             <Accordion title="Setting up the spotlights">
-              <div
-                className={`bg-[${LIGHTER_BG}] px-4 py-3 rounded-md my-2 mx-auto`}
-              >
+              <div className="p-2 my-2 rounded-sm mx-auto">
                 <SpotlightSnippet />
               </div>
-              <div className="leading-7 my-4 px-2 opacity-90 w-11/12 mx-auto code-snippet">
+              <div className="leading-7 my-2 px-2 w-11/12 mx-auto code-snippet">
                 <h2 className="text-xl sm:text-2xl font-bold my-3 ">
                   Quick Rundown
                 </h2>
@@ -805,33 +770,31 @@ export default function index() {
               Reeling it in
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               We're pretty close to the end now—just some more minor adjustments
               to the lighting settings.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Also, at this point, I was preoccupied with improving performance
               by playing around with the shadow resolution, different
               anti-aliasing configs, trying out different car models, etc.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               After I was finished with optimizing the scene's performance, I
-              set out to copy some aspects of the UI from Gran Turismo
-              Sport, and had this photo as a reference:
+              set out to copy some aspects of the UI from Gran Turismo Sport,
+              and had this photo as a reference:
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <Image
                 src="/article-files/gran-turismo-showroom/ui.png"
                 alt=""
                 width={IMAGE_DIMENSIONS}
                 height={IMAGE_DIMENSIONS}
                 quality={IMAGE_QUALITY}
-                className="rounded-md"
+                className="rounded-sm"
               />
               <figcaption className="mt-2 text-center">
                 Gran Turismo Sport showroom UI
@@ -844,14 +807,14 @@ export default function index() {
               CSS woes
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Most things went pretty smoothly, I was barrelling along up until
               I had to replicate the bottom part, along with the sliding text.
               So, I'm thinking:{" "}
               <strong>"How the hell do I do the bottom part?"</strong>
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I was experimenting with CSS flexbox and grid, and I spent about
               30-40 minutes trying to figure this damn thing out. Then suddenly,
               my brain decided to fire in all cylinders, and thought of
@@ -862,13 +825,13 @@ export default function index() {
               </strong>
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               <strong>"Yun nga! (That's it!)"</strong>, I told myself. And after
               what seemed to be hours, I managed to replicate the bottom section
               of the UI.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               As for the sliding text, it can be achieved by basically disabling
               the ability for the text to wrap, creating a single line of text.
               And I added a sliding animation for the text with CSS keyframes.
@@ -879,13 +842,13 @@ export default function index() {
             <h2 className="text-xl sm:text-2xl font-bold mt-20 mb-3">
               The finish line
             </h2>
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               One more thing, the music. So, I added in some from the Gran
               Turismo Sport soundtrack list, and the menu theme from Race
               Driver: GRID.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               So, I've reached the end, after up to 16 hours of work for about
               3-4 days. Do I regret it? Nope, not a single bit. I loved working
               on this project. Hopefully, I'd get the chance to do it again but
@@ -893,9 +856,7 @@ export default function index() {
               my poor 4 year-old laptop, I'm so sorry.
             </p>
 
-            <figure
-              className={`bg-[${LIGHTER_BG}] p-3 rounded-md my-8 mx-auto`}
-            >
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
               <div className="relative w-full pb-[56.25%] h-0">
                 <iframe
                   width="560"
@@ -904,7 +865,7 @@ export default function index() {
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full rounded-md"
+                  className="absolute top-0 left-0 w-full h-full rounded-sm"
                 ></iframe>
               </div>
               <figcaption className="mt-2 text-center">
@@ -912,7 +873,7 @@ export default function index() {
               </figcaption>
             </figure>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Hope you enjoyed my story, mixed with a tutorial. Thanks for
               reading!
             </p>
@@ -923,7 +884,7 @@ export default function index() {
               Links
             </h2>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               Here are the links for the project if you're interested.{" "}
               <strong>
                 But, I cannot stress this enough: You HAVE to open the project
@@ -938,7 +899,7 @@ export default function index() {
                 href="https://github.com/jdichh/car-showroom"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
-                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.01 }}
@@ -949,7 +910,7 @@ export default function index() {
                 href="https://gtshowroom.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
-                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.01 }}
@@ -960,7 +921,7 @@ export default function index() {
                 href="https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
                 target="_blank"
                 aria-label="Button for the development videos of the project"
-                className={`bg-[${OFF_WHITE}] hover:bg-[${SONIC_BLUE}] px-3 py-2 text-[${BTN_TEXT_COLOR}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0.01 }}
@@ -969,7 +930,7 @@ export default function index() {
               </motion.a>
             </div>
 
-            <p className="leading-7 my-8 opacity-90">
+            <p className="leading-7 my-8">
               Now you may have noticed that the video is different from the
               project itself. It's because I migrated the project from Three.js
               to React-Three-Fiber to learn how it worked, and then made some
@@ -977,7 +938,7 @@ export default function index() {
               topic in and of itself.
             </p>
 
-            <p className="leading-7 mb-8 opacity-90">
+            <p className="leading-7 mb-8">
               I now prefer working in React-Three-Fiber for Three.js projects. I
               don't have to do the initial setup and all that jazz in R3F.
             </p>

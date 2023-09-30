@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 html, body {
-    background-color: #19181E;
-    color: #DADADA
+    background-color: #F0E9D8;
+    color: #111111;
 }
 
 #__next {
@@ -15,11 +15,10 @@ html, body {
 }
 
 .code-snippet code {
-    background-color: #1F1E26;
     padding-inline: 0.3rem;
     padding-block: 0.1rem;
     border-radius: 0.15rem;
-    outline: 1px solid #DADADA;
+    outline: 1px solid #111111;
     margin-inline: 0.25rem;
     font-size: 0.9rem;
   }

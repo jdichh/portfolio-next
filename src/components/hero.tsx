@@ -22,11 +22,11 @@ export default function Hero() {
           transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <h1
-            className={`${inter.className} font-medium text-[#6E99C4] text-4xl sm:text-5xl`}
+            className={`${inter.className} font-semibold text-[#005959] text-5xl`}
           >
             Jason Dichoso
           </h1>
-          <h2 className="text-md sm:text-xl">Frontend Web Developer</h2>
+          <h2 className="text-xl">Frontend Web Developer</h2>
         </motion.div>
         <motion.div
           className="flex gap-2 mt-2"
@@ -47,7 +47,7 @@ export default function Hero() {
               alt="Button to my GitHub profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -63,7 +63,7 @@ export default function Hero() {
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -78,7 +78,7 @@ export default function Hero() {
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
         </motion.div>

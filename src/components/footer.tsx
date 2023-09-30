@@ -11,16 +11,16 @@ export default function Footer() {
 
   return (
     <motion.footer
-      className="mt-3 border-t-2 w-full xl:w-[81.25%] border-[#6E99C4]"
+      className="mt-3 border-t-2 w-full xl:w-[81.25%] border-[#111111]"
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="grid grid-cols-3 items-center my-6 mx-3 font-semibold">
-        <motion.span className="text-base text-center flex justify-center sm:text-lg md:justify-end">
+        <span className="text-base text-center flex justify-center sm:text-lg md:justify-end">
           Let's work together.
-        </motion.span>
-        <div className="border-t-2 border-[#DADADA] mx-3" />
+        </span>
+        <div className="border-t-2 border-[#111111] mx-3" />
         <div className="flex gap-2 justify-center sm:text-lg md:justify-start uppercase">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
@@ -35,7 +35,7 @@ export default function Footer() {
               alt="Button to my LinkedIn profile"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
           <motion.a
@@ -50,7 +50,7 @@ export default function Footer() {
               alt="Button to send me an email"
               width={ICON_DIMENSIONS}
               height={ICON_DIMENSIONS}
-              className="object-cover hover:bg-[#6E99C4] transition duration-150 ease-in-out rounded-md border-[1px] p-0.5"
+              className="object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5"
             />
           </motion.a>
         </div>
