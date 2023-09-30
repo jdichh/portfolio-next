@@ -32,7 +32,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Blog | A Gran Turismo-esque showroom with Three.js</title>
+        <title>Blog | Creating a Gran Turismo-esque showroom with Three.js</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -53,7 +53,7 @@ export default function index() {
           <div className="mt-44" />
           <div className="mb-8">
             <h1 className="article-title">
-              A Gran Turismo-esque showroom with Three.js
+              Creating a Gran Turismo-esque showroom with Three.js
             </h1>
             <p className="article-date">September 29, 2023</p>
           </div>
