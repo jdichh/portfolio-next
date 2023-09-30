@@ -6,13 +6,7 @@ import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-type BlogHeaderProps = {
-  title: string;
-};
-
-const BlogHeader: React.FC<BlogHeaderProps> = ({
-  title,
-}: BlogHeaderProps) => {
+export default function BlogHeader() {
   const ICON_DIMENSIONS = 35;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
@@ -24,7 +18,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="fixed border-b-2 border-[#111111] backdrop-blur bg-opacity-80 bg-[#F0E9D8] top-0 h-16 w-full" />
+      <div className="fixed border-b-2 border-[#111111] backdrop-blur bg-opacity-80 bg-[#EDE8DC] top-0 h-16 w-full" />
       <nav className="fixed flex justify-between items-center w-full max-w-[750px] mx-auto left-1/2 -translate-x-[50%] px-4 h-16">
         <ul>
           <li className="flex flex-row gap-2">
@@ -64,10 +58,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
             </Link>
           </li>
         </ul>
-        <h1 className="pl-3 font-semibold text-sm sm:text-lg text-right max-w-8/12 sm:max-w-full">{title}</h1>
       </nav>
     </motion.header>
   );
 };
-
-export default BlogHeader;

@@ -22,14 +22,14 @@ export default function Hero() {
           transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <h1
-            className={`${inter.className} font-semibold text-[#005959] text-5xl`}
+            className={`${inter.className} font-semibold text-[#005959] text-4xl sm:text-5xl`}
           >
             Jason Dichoso
           </h1>
-          <h2 className="text-xl">Frontend Web Developer</h2>
+          <h2 className="text-lg sm:text-xl">Frontend Web Developer</h2>
         </motion.div>
         <motion.div
-          className="flex gap-2 mt-2"
+          className="flex gap-1 mt-2"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: [0.22, 1, 0.36, 1] }}
@@ -40,7 +40,7 @@ export default function Hero() {
             aria-label="Button to my GitHub profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0.05 }}
+            transition={{ duration: 0.075 }}
           >
             <Image
               src="/icons/github.svg"
@@ -56,7 +56,7 @@ export default function Hero() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0.05 }}
+            transition={{ duration: 0.075 }}
           >
             <Image
               src="/icons/linkedin.svg"
@@ -71,7 +71,7 @@ export default function Hero() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0.05 }}
+            transition={{ duration: 0.075 }}
           >
             <Image
               src="/icons/mail.svg"

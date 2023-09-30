@@ -31,14 +31,12 @@ export default function index() {
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
   const BTN_TEXT_COLOR = OUTLINE;
-  const ON_HOVER_SCALE = 1.05;
-  const ON_TAP_SCALE = 0.95;
 
   return (
     <>
       <Head>
         <title>
-          Blog | Creating a Gran Turismo-esque showroom with Three.js
+          Blog | A Gran Turismo-esque showroom with Three.js
         </title>
         <meta
           name="viewport"
@@ -49,7 +47,7 @@ export default function index() {
           content="A story about how I ended up recreating Gran Turismo (not really) with Three.js."
         />
       </Head>
-      <BlogHeader title="Creating a Gran Turismo-esque showroom with Three.js" />
+      <BlogHeader />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[750px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -60,7 +58,7 @@ export default function index() {
           <div className="mt-44" />
           <div className="mb-8">
             <h1 className="text-3xl font-bold mb-2">
-              Creating a Gran Turismo-esque showroom with Three.js
+              A Gran Turismo-esque showroom with Three.js
             </h1>
             <p className="text-[#005959] font-semibold">September 29, 2023</p>
           </div>
@@ -921,7 +919,7 @@ export default function index() {
                 aria-label="Button for the development videos of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
               >
-                DEV'T VIDEOS
+                DEV VIDEOS
               </a>
             </div>
 

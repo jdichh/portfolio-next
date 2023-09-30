@@ -28,7 +28,7 @@ export default function Footer() {
             aria-label="Button to my LinkedIn profile"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0.05 }}
+            transition={{ duration: 0.075 }}
           >
             <Image
               src="/icons/linkedin.svg"
@@ -43,7 +43,7 @@ export default function Footer() {
             aria-label="Button to send me an email"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0.05 }}
+            transition={{ duration: 0.075 }}
           >
             <Image
               src="/icons/mail.svg"

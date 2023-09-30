@@ -32,7 +32,7 @@ export default function index() {
           content="A story of how I came by 3D so early on in my self-learning journey in frontend development."
         />
       </Head>
-      <BlogHeader title="My first shenanigans in 3D" />
+      <BlogHeader />
       <motion.main
         className={`flex flex-col items-start w-full max-w-[750px] mx-auto p-4 ${spaceGrotesk.className}`}
         initial={{ y: 100, opacity: 0 }}
@@ -706,7 +706,7 @@ export default function index() {
                 aria-label="Button for the development videos of the project"
                 className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
               >
-                DEV'T VIDEOS
+                DEV VIDEOS
               </a>
             </div>
           </section>

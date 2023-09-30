@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
     <link rel="manifest" href="/pwa/manifest.json" />
-    <meta name="theme-color" content="#005959"/>
+    <meta name="theme-color" content="#111111"/>
       <body
         className={`${spaceGrotesk.className} relative max-w-[1600px] my-0 mx-auto mt-32 lg:mt-40`}
       >

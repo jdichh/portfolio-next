@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FloorSnippet() {
   return (
-    <pre className="whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline outline-1 outline-[#111111] p-1">
+    <pre className="whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline outline-1 outline-[#111111] p-2">
       <code>
 {`const FLOOR_TEX = "./concrete1k/Concrete042A_1K_Color.png";
 const DISPLACEMENT_MAP = "./concrete1k/Concrete042A_1K_Displacement.png";
