@@ -1,5 +1,3 @@
-"use client";
-
 import { projects } from "@/lib/data";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";

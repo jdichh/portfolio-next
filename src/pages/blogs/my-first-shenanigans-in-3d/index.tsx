@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import BlogHeader from "@/components/blog-components/blogHeader";
 import RouteFooter from "@/components/blog-components/routeFooter";

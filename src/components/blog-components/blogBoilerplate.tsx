@@ -1,5 +1,3 @@
-"use client";
-
 import { blogs } from "@/lib/data";
 import { motion } from "framer-motion";
 
