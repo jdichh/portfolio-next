@@ -196,7 +196,7 @@ export const blogs = [
   {
     name: "My first shenanigans in 3D",
     description: "The story of how I came by 3D so early on in my self-learning journey.",
-    date: "September 27, 2023",
+    date: "September 27, 2023 | Updated 3 days later",
     link: "/blogs/my-first-shenanigans-in-3d"
   },
 ]

@@ -38,7 +38,9 @@ export default function index() {
           <div className="mt-44" />
           <div className="mb-8">
             <h1 className="article-title">My first shenanigans in 3D</h1>
-            <p className="article-date">September 27, 2023</p>
+            <p className="article-date">
+              September 27, 2023 | Updated 3 days later
+            </p>
           </div>
 
           <section id="section1">
@@ -662,6 +664,12 @@ export default function index() {
                 I recommend opening the project itself on a high resolution
                 monitor.
               </strong>
+            </p>
+
+            <p className="article-text">
+              <strong>Updated on {"September 30, 2023: "}</strong>Hey! Jason
+              from the future here, I recently changed the music to use Cramped
+              Skunkman's Almond Cruise. World Peace!
             </p>
 
             <div className="article-links-container">
