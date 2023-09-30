@@ -11,7 +11,7 @@ import { Space_Grotesk } from "next/font/google";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
-  const TEAL = "#005959";
+  const TEAL = "#285955";
   const OUTLINE = "#111111";
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
@@ -45,7 +45,7 @@ export default function index() {
             <h1 className="text-3xl font-bold mb-2">
               My first shenanigans in 3D
             </h1>
-            <p className="text-[#005959] font-semibold">September 27, 2023</p>
+            <p className="text-[#285955] font-semibold">September 27, 2023</p>
           </div>
 
           <section id="section1">
@@ -61,7 +61,7 @@ export default function index() {
               <a
                 href="https://threejs.org/"
                 target="_blank"
-                className="font-semibold text-[#005959] transition duration-150 ease-in-out"
+                className="font-semibold text-[#285955] transition duration-150 ease-in-out"
               >
                 Three.js
               </a>
@@ -82,7 +82,7 @@ export default function index() {
               ecosystem instead of 3D stuff.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/my_reaction.png"
                 alt=""
@@ -119,7 +119,7 @@ export default function index() {
               I'm confused, and I can understand it at the same time
             </h2>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/threejs.webp"
                 alt=""
@@ -163,7 +163,7 @@ export default function index() {
               my first output:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/first_output.png"
                 alt="My first output in Three.js"
@@ -211,7 +211,7 @@ export default function index() {
               or running on a treadmill, in simpler terms.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/vaporwave.webp"
                 alt="A screenshot of Maxime Heckel's vaporwave project."
@@ -260,7 +260,7 @@ export default function index() {
               —it's basically the sun.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/light-directional.png"
                 alt="Directional light"
@@ -308,7 +308,7 @@ export default function index() {
 
             <p className="leading-7 mb-8">And here it is:</p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/skybox-trial.png"
                 alt="My initial skybox trial"
@@ -355,7 +355,7 @@ export default function index() {
               switched to cooler colors, and I added some stars too.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/skybox.webp"
                 alt=""
@@ -388,7 +388,7 @@ export default function index() {
               TextureLoader for it to load the texture as the background.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act1.png"
                 alt="First part of my changes to the project"
@@ -408,7 +408,7 @@ export default function index() {
               The boys in the better land...?
             </h2>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/issues.png"
                 alt=""
@@ -436,7 +436,7 @@ export default function index() {
               because of something called a <strong>displacement map</strong>.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/displacementmap.png"
                 alt="The terrain's displacement map"
@@ -468,7 +468,7 @@ export default function index() {
               the bumpier it gets.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/displacementmap_issues.png"
                 alt="The issues to be addressed in the displacement map"
@@ -512,7 +512,7 @@ export default function index() {
               sun. So here it is:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/sun.webp"
                 alt="The sun's textures"
@@ -531,7 +531,7 @@ export default function index() {
               applied to it. So, we'll use TextureLoader, and voila:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act2.png"
                 alt="Second part of my changes to the project"
@@ -575,7 +575,7 @@ export default function index() {
               this can only look good.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/chromatic_aberration.jpg"
                 alt="Chromatic aberration example"
@@ -594,7 +594,7 @@ export default function index() {
               And here it is, with my other postprocessing effects of choice:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/synthwave_act3.png"
                 alt="The third and last part of my changes to the project"
@@ -621,7 +621,7 @@ export default function index() {
               legally use his music.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/my-first-shenanigans-in-3d/home.png"
                 alt="HOME, the artist"
@@ -647,7 +647,7 @@ export default function index() {
               But for me, I think it's perfect now.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <div className="relative w-full pb-[56.25%] h-0">
                 <iframe
                   width="560"
@@ -688,7 +688,7 @@ export default function index() {
                 href="https://github.com/jdichh/synthwave-scene"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
               >
                 GITHUB
               </a>
@@ -696,7 +696,7 @@ export default function index() {
                 href="https://jdsynthwave.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
               >
                 DEMO
               </a>
@@ -704,7 +704,7 @@ export default function index() {
                 href="https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
                 target="_blank"
                 aria-label="Button for the development videos of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
               >
                 DEV VIDEOS
               </a>

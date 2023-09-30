@@ -29,7 +29,7 @@ export default function Project({
 
   const PROJ_HOVER_SCALE = 1.03;
   const TOOL_ICON_QUALITY = 50;
-  const TOOL_ICON_DIMENSIONS = 20;
+  const TOOL_ICON_DIMENSIONS = 18;
   const IMAGE_QUALITY = 95;
 
   return (
@@ -42,7 +42,7 @@ export default function Project({
       }}
     >
       <motion.article
-        className="group overflow-hidden bg-[#EDE8DC] rounded-sm relative transition ease-in-out duration-150 outline outline-1 outline-[#111111]"
+        className="group overflow-hidden bg-light-theme-bg hover:bg-[#EDE6DA] rounded-sm relative transition ease-in-out duration-150 outline outline-1 outline-[#111111]"
         whileHover={{ scale: PROJ_HOVER_SCALE }}
         transition={{ duration: 0.01 }}
       >
@@ -60,7 +60,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-[#EDE8DC] font-medium transition ease-in-out duration-150 px-3 py-[0.35rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#111111]"
+                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] diamond font-medium transition ease-in-out duration-150 px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline outline-1 outline-[#111111]"
               >
                 <Image
                   src={toolIcons[index]}
@@ -68,7 +68,7 @@ export default function Project({
                   quality={TOOL_ICON_QUALITY}
                   width={TOOL_ICON_DIMENSIONS}
                   height={TOOL_ICON_DIMENSIONS}
-                  className="mr-2"
+                  className="mr-[0.3rem]"
                 />{" "}
                 {tool}
               </li>
@@ -83,7 +83,7 @@ export default function Project({
                 href={liveLink.toString()}
                 target="_blank"
                 aria-label="Live demo of the project."
-                className="bg-[#EDE8DC] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
                 DEMO
               </a>
@@ -93,7 +93,7 @@ export default function Project({
                 href={videoLink.toString()}
                 target="_blank"
                 aria-label="Video demonstration of the project."
-                className="bg-[#EDE8DC] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
                 VIDEO
               </a>
@@ -103,7 +103,7 @@ export default function Project({
                 href={blogLink.toString()}
                 target="_blank"
                 aria-label="Button for my blog post of the project."
-                className="bg-[#EDE8DC] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
                 BLOG
               </a>
@@ -113,7 +113,7 @@ export default function Project({
                 href={githubLink.toString()}
                 target="_blank"
                 aria-label="Button for the GitHub repo of the project."
-                className="bg-[#EDE8DC] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
+                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] outline outline-1 outline-[#111111] px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150"
               >
                 GITHUB
               </a>

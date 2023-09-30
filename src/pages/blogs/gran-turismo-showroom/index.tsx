@@ -26,7 +26,7 @@ import CanvasSnippetDescription from "@/components/blog-components/gtshowroom-ac
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
-  const TEAL = "#005959";
+  const TEAL = "#285955";
   const OUTLINE = "#111111";
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
@@ -60,12 +60,11 @@ export default function index() {
             <h1 className="text-3xl font-bold mb-2">
               A Gran Turismo-esque showroom with Three.js
             </h1>
-            <p className="text-[#005959] font-semibold">September 29, 2023</p>
+            <p className="text-[#285955] font-semibold">September 29, 2023</p>
           </div>
 
-          <aside>
-            <div className="outline outline-1 outline-[#111111] rounded-sm p-3">
-              <h2 className="text-4xl font-bold mb-2 text-[#005959]">
+          <aside className="outline outline-1 outline-[#111111] rounded-sm p-3 bg-light-theme-bg">
+              <h2 className="text-4xl font-bold mb-2 text-[#285955]">
                 HEY! YOU THERE!
               </h2>
               <p className="leading-7 mb-8">
@@ -75,12 +74,11 @@ export default function index() {
               <div className="flex justify-end">
                 <a
                   href="#good-stuff"
-                  className="font-semibold text-[#005959] transition duration-150 ease-in-out"
+                  className="font-semibold text-[#285955] transition duration-150 ease-in-out"
                 >
                   Skip to the good stuff.
                 </a>
               </div>
-            </div>
           </aside>
 
           <section id="section2">
@@ -114,7 +112,7 @@ export default function index() {
               of good times back from when I was just a young, fat(ter) kid.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/testdrive6.jpg"
                 alt=""
@@ -155,7 +153,7 @@ export default function index() {
               Life is a highway
             </h2>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/gtlogo.png"
                 alt=""
@@ -250,7 +248,7 @@ export default function index() {
               So I got not only one, but two Toyota Supras!
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/supras.jpg"
                 alt="Picture of the old and new Supras"
@@ -357,7 +355,7 @@ export default function index() {
               format.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/supra_models.png"
                 alt="Loaded in the two supras"
@@ -444,7 +442,7 @@ export default function index() {
               type of project yourself.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/floor.png"
                 alt="Loading the floor textures"
@@ -465,7 +463,7 @@ export default function index() {
               texture. And this was the outcome:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/toys.png"
                 alt="A mishap in the model and texture scales"
@@ -517,7 +515,7 @@ export default function index() {
               Lo and behold, the cars don't look like toys anymore:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/added_floor.png"
                 alt="Floor texture with the corrected scaling"
@@ -607,7 +605,7 @@ export default function index() {
               </div>
             </Accordion>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/shadows.png"
                 alt=""
@@ -684,7 +682,7 @@ export default function index() {
               to experiment.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/testing_lighting.png"
                 alt=""
@@ -732,7 +730,7 @@ export default function index() {
               corridor, with a spotlight directly above it?
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/topspotlight.png"
                 alt=""
@@ -789,7 +787,7 @@ export default function index() {
               and had this photo as a reference:
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <Image
                 src="/article-files/gran-turismo-showroom/ui.png"
                 alt=""
@@ -858,7 +856,7 @@ export default function index() {
               my poor 4 year-old laptop, I'm so sorry.
             </p>
 
-            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto">
+            <figure className="outline outline-1 outline-[#111111] p-2 rounded-sm my-8 mx-auto bg-light-theme-bg">
               <div className="relative w-full pb-[56.25%] h-0">
                 <iframe
                   width="560"
@@ -901,7 +899,7 @@ export default function index() {
                 href="https://github.com/jdichh/car-showroom"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
               >
                 GITHUB
               </a>
@@ -909,7 +907,7 @@ export default function index() {
                 href="https://gtshowroom.netlify.app/"
                 target="_blank"
                 aria-label="Button for the live link of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
               >
                 DEMO
               </a>
@@ -917,7 +915,7 @@ export default function index() {
                 href="https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
                 target="_blank"
                 aria-label="Button for the development videos of the project"
-                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150`}
+                className={`px-3 py-2 text-[${BTN_TEXT_COLOR}] outline outline-1 outline-[${OUTLINE}] rounded-sm transition ease-in-out duration-150 bg-light-theme-bg`}
               >
                 DEV VIDEOS
               </a>

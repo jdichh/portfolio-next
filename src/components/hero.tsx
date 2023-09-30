@@ -22,7 +22,7 @@ export default function Hero() {
           transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <h1
-            className={`${inter.className} font-semibold text-[#005959] text-4xl sm:text-5xl`}
+            className={`${inter.className} font-semibold text-[#285955] text-4xl sm:text-5xl`}
           >
             Jason Dichoso
           </h1>

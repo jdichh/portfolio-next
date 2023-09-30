@@ -2,18 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+.diamond {
+  background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.08) 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.08) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.08) 75%);
+  background-size: 20px 20px;
+}
+
 #__next {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .code-snippet code {
-    padding-inline: 0.3rem;
-    padding-block: 0.1rem;
-    border-radius: 0.15rem;
-    outline: 1px solid #111111;
-    margin-inline: 0.25rem;
-    font-size: 0.9rem;
-  }
+  padding-inline: 0.3rem;
+  padding-block: 0.1rem;
+  border-radius: 0.15rem;
+  outline: 1px solid #111111;
+  margin-inline: 0.25rem;
+  font-size: 0.9rem;
+}

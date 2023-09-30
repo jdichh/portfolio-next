@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="z-[99] relative w-full font-medium">
       <motion.div
-        className="fixed left-1/2 border-b-2 border-[#111111] backdrop-blur bg-opacity-80 top-0 h-16 w-full"
+        className="fixed left-1/2 border-b-2 border-[#111111] bg-light-theme-bg top-0 h-16 w-full"
         initial={{ y: -50, opacity: 0, x: "-50%" }}
         animate={{ y: 0, opacity: 1, x: "-50%" }}
         transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
@@ -22,10 +22,10 @@ export default function Header() {
           transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
         >
           {links.map((link) => (
-            <li key={link.hash} className="flex text-[#005959]">
+            <li key={link.hash} className="flex text-[#285955]">
               <Link
                 href={link.hash}
-                className="transition duration-150 ease-in-out p-4 text-lg text-[#111111] hover:text-[#005959] rounded-sm"
+                className="transition duration-150 ease-in-out p-4 text-lg text-[#111111] hover:text-[#285955] rounded-sm"
               >
                 {link.name}
               </Link>

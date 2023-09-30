@@ -10,7 +10,7 @@ function Accordion({ title, children }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full mx-auto mb-6 outline outline-1 outline-[#111111] rounded-sm p-1">
+    <div className="w-full mx-auto mb-6 outline outline-1 outline-[#111111] rounded-sm p-1 bg-light-theme-bg">
       <div className="rounded-sm">
         <button
           className="flex justify-between items-center p-2 w-full text-left"
