@@ -32,7 +32,9 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Blog | Creating a Gran Turismo-esque showroom with Three.js</title>
+        <title>
+          Blog | Creating a Gran Turismo-esque showroom with Three.js
+        </title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -523,26 +525,12 @@ export default function index() {
             </p>
 
             <p className="article-text">
-              When I was creating this project, I was listening to a Daily Mix
-              playlist in Spotify. A song called "A Million Miles Away" by
-              Ulrich Schnauss played after the previous one ended. I then
-              suddenly remembered what game I associated the song with—Gran
-              Turismo 4!
-            </p>
-
-            <p className="article-text">
-              <strong>
-                Well not really, I'm spreading misinformation. I just couldn't
-                think of a better transition.
-              </strong>
-            </p>
-
-            <p className="article-text">
-              Anyway, I decided to change the direction I was going towards. I
-              decided that I should create a showroom inspired by modern Gran
-              Turismo games. And maybe, this could be used as a reference for a
-              future project if I do ever get to work with a manufacturer. But
-              right now, one can only dream, huh?
+              I was listening to the soundtrack in Gran Turismo Sport since I
+              started this project, because most of it is relaxing stuff. Then,
+              I suddenly made the switch from a promotional website, to creating
+              a showroom inspired by modern Gran Turismo games. Also, maybe this
+              could be used as a reference for a future project if I do ever get
+              to work with a manufacturer. But right now, one can only dream.
             </p>
           </section>
 
