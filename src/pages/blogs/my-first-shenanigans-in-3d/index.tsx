@@ -69,11 +69,13 @@ export default function index() {
             </p>
 
             <p className="leading-7 mb-8">
-              So imagine how amused I was at the video YouTube recommended to
-              me. I was shocked, but in a positive manner. Because I thought, at
-              the time, that frontend was just about React, Vue, Angular, and
-              all that jazz. So I took it upon myself to get to know and learn
-              how Three.js worked.
+              So imagine what my reaction was at the video YouTube recommended
+              to me. Think about it, if you were new to frontend web
+              development, and you saw that? What would your reaction be? Oh
+              man. Well, I was shocked, but in a positive manner. Because I
+              thought, at the time, that frontend was just about React, Vue,
+              Angular, and all that jazz. So I took it upon myself to get to
+              know and learn how Three.js worked.
             </p>
 
             <p className="leading-7 mb-8 font-bold">
