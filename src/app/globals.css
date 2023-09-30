@@ -27,7 +27,7 @@
 }
 
 .text-my-standard {
-  @apply font-[450] md:text-[17px];
+  @apply font-[450] text-[17px];
 }
 
 .outline-my-standard {
