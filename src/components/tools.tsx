@@ -24,7 +24,7 @@ export default function Tools() {
         {tools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#111111] text-center outline outline-1 outline-[#111111] font-[450] bg-light-theme-bg items-center m-1 p-3 rounded-sm transition ease-in-out duration-150"
+            className="flex flex-col text-[#111111] text-center outline outline-1 outline-[#111111] font-[450] md:text-[17px] bg-light-theme-bg items-center m-1 p-3 rounded-sm transition ease-in-out duration-150"
           >
             <Image
               src={tool.imageUrl}
