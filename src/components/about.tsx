@@ -15,16 +15,16 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
         I aim to build{" "}
-        <span className="font-bold text-[#285955]">
+        <span className="font-semibold text-[#285955]">
           user-friendly and impressive-looking websites
         </span>{" "}
         here in the Philippines.
       </p>
       <p className="mb-6">
         I'm also a{" "}
-        <span className="font-bold text-[#285955]">recent IT graduate</span>{" "}
+        <span className="font-semibold text-[#285955]">recent IT graduate</span>{" "}
         of Colegio de San Juan De Letran-Calamba, and{" "}
-        <span className="font-bold text-[#285955]">
+        <span className="font-semibold text-[#285955]">
           {" "}
           looking to get my foot in the door in the tech industry
         </span>
