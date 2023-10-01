@@ -18,8 +18,8 @@ export default function Hero() {
       <div className="flex flex-col justify-end items-end my-20">
         <motion.div
           className="text-right"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <h1
@@ -31,8 +31,8 @@ export default function Hero() {
         </motion.div>
         <motion.div
           className="flex gap-1 my-2"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.a

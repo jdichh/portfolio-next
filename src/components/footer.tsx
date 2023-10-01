@@ -12,8 +12,8 @@ export default function Footer() {
   return (
     <motion.footer
       className="mt-3 border-t-2 w-full xl:w-[81.25%] footer-theme-switch mx-auto"
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="footer-layout">

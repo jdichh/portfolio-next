@@ -14,7 +14,7 @@ export default function BlogBoilerplate({ name, description, date, link }: BlogP
         transition={{ duration: 0.025 }}
       >
         <a href={link}>
-        <div className="flex flex-col p-4 my-transition">
+        <div className="flex flex-col p-4">
           <h2 className="text-xl text-left sm:text-2xl font-semibold">
             {name}
           </h2>

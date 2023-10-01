@@ -15,8 +15,8 @@ export default function Tools() {
     <motion.section
       className="px-4 w-full xl:w-10/12 mb-16 scroll-mt-20"
       id="tools"
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
     >
       <SectionHeading>Tools</SectionHeading>

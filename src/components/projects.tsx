@@ -11,8 +11,8 @@ export default function Projects() {
     <motion.section
       className="px-4 w-full xl:w-10/12 leading-8 scroll-mt-20"
       id="works"
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
       >
         <SectionHeading>Featured Works</SectionHeading>
