@@ -21,7 +21,7 @@ export default function Footer() {
           Let's work together.
         </span>
         <div className="border-t-2 mx-3 footer-theme-switch" />
-        <div className="flex gap-1 justify-center">
+        <div className="flex gap-2 justify-center">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"

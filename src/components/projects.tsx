@@ -23,8 +23,8 @@ export default function Projects() {
         </React.Fragment>
       ))}
 
-      <div className="flex justify-center">
-        <p className="text-my-standard">
+      <div className="flex justify-center opacity-90">
+        <p className="text-base">
           View more of my projects in my{" "}
           <a
             href="https://www.github.com/jdichh"

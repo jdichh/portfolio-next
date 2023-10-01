@@ -49,7 +49,7 @@ export default function ThemeSwitch() {
         onClick={toggleTheme}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.175 }}
+        transition={{ delay: 0 }}
       >
         {theme === "light" ? <PiSunFill size={25} /> : <PiMoonFill size={25} />}
       </motion.button>

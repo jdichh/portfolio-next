@@ -4,7 +4,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify } from "react-icons/si";
-import { HiVideoCamera } from "react-icons/hi"
+import { HiVideoCamera } from "react-icons/hi";
 import { FaBlog } from "react-icons/fa";
 
 type ProjectProps = (typeof projects)[number];
@@ -33,6 +33,8 @@ export default function Project({
   const TOOL_ICON_QUALITY = 50;
   const TOOL_ICON_DIMENSIONS = 18;
   const IMAGE_QUALITY = 95;
+  const ON_HOVER_SCALE = 1.075;
+  const ON_TAP_SCALE = 0.925;
 
   return (
     <motion.div
@@ -81,44 +83,56 @@ export default function Project({
           </p>
           <div className="flex flex-col text-center gap-2 mt-4 lg:flex-row lg:flex-wrap font-medium">
             {liveLink && (
-              <a
+              <motion.a
                 href={liveLink.toString()}
                 target="_blank"
                 aria-label="Live demo of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
                 <SiNetlify size={20} /> <span className="ml-1">Demo</span>
-              </a>
+              </motion.a>
             )}
             {videoLink && (
-              <a
+              <motion.a
                 href={videoLink.toString()}
                 target="_blank"
-                aria-label="Video demonstration of the project."
+                aria-label="Live demo of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
                 <HiVideoCamera size={20} /> <span className="ml-1">Video</span>
-              </a>
+              </motion.a>
             )}
             {blogLink && (
-              <a
+              <motion.a
                 href={blogLink.toString()}
                 target="_blank"
                 aria-label="Button for my blog post of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
                 <FaBlog /> <span className="ml-1">Blog</span>
-              </a>
+              </motion.a>
             )}
             {githubLink && (
-              <a
+              <motion.a
                 href={githubLink.toString()}
                 target="_blank"
                 aria-label="Button for the GitHub repo of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
-                <AiFillGithub  size={20} /> <span className="ml-1">GitHub</span>
-              </a>
+                <AiFillGithub size={20} /> <span className="ml-1">GitHub</span>
+              </motion.a>
             )}
           </div>
         </div>
