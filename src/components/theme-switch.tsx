@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { PiSunFill } from "react-icons/pi";
 import { PiMoonFill } from "react-icons/pi";
@@ -25,7 +25,7 @@ export default function ThemeSwitch() {
     }
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
     if (localTheme) {
