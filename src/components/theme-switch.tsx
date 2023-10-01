@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 type Theme = "light" | "dark";
@@ -20,7 +20,7 @@ export default function ThemeSwitch() {
     }
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
     if (localTheme) {
