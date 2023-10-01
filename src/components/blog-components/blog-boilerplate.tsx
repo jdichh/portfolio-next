@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 type BlogProps = (typeof blogs)[number];
 
 export default function BlogBoilerplate({ name, description, date, link }: BlogProps) {
-  const ON_HOVER_SCALE = 1.03;
-  const ON_TAP_SCALE = 0.97;
+  const ON_HOVER_SCALE = 1.02;
+  const ON_TAP_SCALE = 0.98;
 
   return (
     <div className="mb-3 last:mb-0">

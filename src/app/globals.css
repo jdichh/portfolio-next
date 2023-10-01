@@ -22,11 +22,11 @@
 }
 
 .theme-switch {
-  @apply bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text border-[#141416] dark:border-[#D8D2C5] outline-[#141416] dark:outline-[#D8D2C5];
+  @apply bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text border-[#151516] dark:border-[#D8D2C5] outline-[#151516] dark:outline-[#D8D2C5];
 }
 
 .footer-theme-switch {
-  @apply text-light-theme-text dark:text-dark-theme-text border-[#141416] dark:border-[#D8D2C5];
+  @apply text-light-theme-text dark:text-dark-theme-text border-[#151516] dark:border-[#D8D2C5];
 }
 
 .my-transition {

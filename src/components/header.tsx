@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
-import ThemeSwitch from "./theme-switch";
 
 export default function Header() {
   return (

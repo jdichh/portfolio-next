@@ -10,8 +10,8 @@ type Theme = "light" | "dark";
 export default function ThemeSwitch() {
   const [theme, setTheme] = useState<Theme>("light");
 
-  const ON_HOVER_SCALE = 1.1;
-  const ON_TAP_SCALE = 0.9;
+  const ON_HOVER_SCALE = 1.075;
+  const ON_TAP_SCALE = 0.925;
 
   const toggleTheme = () => {
     if (theme === "light") {
@@ -51,7 +51,7 @@ export default function ThemeSwitch() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0 }}
       >
-        {theme === "light" ? <PiSunFill size={25} /> : <PiMoonFill size={25} />}
+        {theme === "light" ? <PiSunFill size={22} /> : <PiMoonFill size={22} />}
       </motion.button>
     </motion.div>
   );

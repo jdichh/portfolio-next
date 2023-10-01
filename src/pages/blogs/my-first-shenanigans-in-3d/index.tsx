@@ -15,6 +15,8 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export default function index() {
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
+  const ON_HOVER_SCALE = 1.075;
+  const ON_TAP_SCALE = 0.925;
 
   return (
     <>
@@ -676,30 +678,39 @@ export default function index() {
             </p>
 
             <div className="article-links-container">
-              <a
+              <motion.a
                 href="https://github.com/jdichh/synthwave-scene"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
                 className="article-links"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
-                <AiFillGithub  size={25} /> <span className="ml-1">GitHub</span>
-              </a>
-              <a
+                <AiFillGithub  size={22} /> <span className="ml-1">GitHub</span>
+              </motion.a>
+              <motion.a
                 href="https://jdsynthwave.netlify.app/"
                 target="_blank"
                 aria-label="Button for a demo of the project"
                 className="article-links"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
-                <SiNetlify size={25} /> <span className="ml-1">Demo</span>
-              </a>
-              <a
+                <SiNetlify size={22} /> <span className="ml-1">Demo</span>
+              </motion.a>
+              <motion.a
                 href="https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
                 target="_blank"
                 aria-label="Button for my dev videos of the project"
                 className="article-links"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
-                <BsWrenchAdjustableCircleFill size={25} /> <span className="ml-1">Dev Videos</span>
-              </a>
+                <BsWrenchAdjustableCircleFill size={22} /> <span className="ml-1">Dev Videos</span>
+              </motion.a>
             </div>
           </section>
         </article>

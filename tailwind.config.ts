@@ -11,8 +11,8 @@ const config: Config = {
     extend: {
       colors: {
         'light-theme-bg': '#D8D2C5',
-        'light-theme-text': '#141416',
-        'dark-theme-bg': '#141416',
+        'light-theme-text': '#151516',
+        'dark-theme-bg': '#151516',
         'dark-theme-text': '#D8D2C5',
       },
       backgroundImage: {

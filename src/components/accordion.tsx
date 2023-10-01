@@ -1,5 +1,6 @@
 import React, { useState, ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 type AccordionProps = {
   title: string;
@@ -23,7 +24,7 @@ function Accordion({ title, children }: AccordionProps) {
               animate={{ rotate: 180 }}
               className="theme-switch"
             >
-              {isOpen ? "▲" : "▼"}
+              {isOpen ? <IoMdArrowRoundDown size={20} /> : <IoMdArrowRoundUp size={20} />}
             </motion.span>
         </button>
       </div>

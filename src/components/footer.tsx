@@ -6,8 +6,8 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
-  const ON_HOVER_SCALE = 1.1;
-  const ON_TAP_SCALE = 0.9;
+  const ON_HOVER_SCALE = 1.075;
+  const ON_TAP_SCALE = 0.925;
 
   return (
     <motion.footer
@@ -31,7 +31,7 @@ export default function Footer() {
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
           >
-            <BiLogoLinkedin size={25} />
+            <BiLogoLinkedin size={22} />
           </motion.a>
           <motion.a
             href="mailto:jpsdichoso21@gmail.com"
@@ -41,7 +41,7 @@ export default function Footer() {
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
           >
-            <SiGmail size={25} />
+            <SiGmail size={22} />
           </motion.a>
         </div>
       </div>

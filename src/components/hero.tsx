@@ -11,8 +11,8 @@ import ThemeSwitch from "./theme-switch";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
-  const ON_HOVER_SCALE = 1.1;
-  const ON_TAP_SCALE = 0.9;
+  const ON_HOVER_SCALE = 1.075;
+  const ON_TAP_SCALE = 0.925;
 
   return (
     <section id="home" className="scroll-mt-[100rem]">
@@ -35,7 +35,7 @@ export default function Hero() {
           className="flex gap-2 my-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ delay: 0.175 }}
         >
           <motion.a
             href="https://github.com/jdichh/"
@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ duration: 0 }}
             className="react-icons"
           >
-            <AiFillGithub size={25} />
+            <AiFillGithub size={22} />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
@@ -57,7 +57,7 @@ export default function Hero() {
             transition={{ duration: 0 }}
             className="react-icons"
           >
-            <BiLogoLinkedin size={25} />
+            <BiLogoLinkedin size={22} />
           </motion.a>
           <motion.a
             href="mailto:jpsdichoso21@gmail.com"
@@ -67,7 +67,7 @@ export default function Hero() {
             transition={{ duration: 0 }}
             className="react-icons"
           >
-            <SiGmail size={25} />
+            <SiGmail size={22} />
           </motion.a>
           <ThemeSwitch />
         </motion.div>

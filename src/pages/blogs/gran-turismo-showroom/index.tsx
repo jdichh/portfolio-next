@@ -24,13 +24,18 @@ import ThemeSwitch from "@/components/theme-switch";
 
 import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify } from "react-icons/si";
-import { BsWrenchAdjustableCircleFill } from "react-icons/bs";
+import {
+  BsFillSkipForwardFill,
+  BsWrenchAdjustableCircleFill,
+} from "react-icons/bs";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 95;
+  const ON_HOVER_SCALE = 1.075;
+  const ON_TAP_SCALE = 0.925;
 
   return (
     <>
@@ -71,9 +76,15 @@ export default function index() {
               the title.
             </p>
             <div className="flex justify-end">
-              <a href="#good-stuff" className="article-hrefs">
-                Skip to the good stuff.
-              </a>
+              <motion.a
+                href="#good-stuff"
+                className="article-links"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
+              >
+                <BsFillSkipForwardFill /> <span className="ml-2">SKIP</span>
+              </motion.a>
             </div>
           </aside>
 
@@ -399,13 +410,18 @@ export default function index() {
 
             <aside className="article-disclaimer">
               <p className="article-text">
-                Here's a skip button if you immediately want to know how I
-                loaded a model.
+                Here's a skip button to see how I load a model.
               </p>
               <div className="flex justify-end">
-                <a href="#loading-the-model" className="article-hrefs">
-                  Skip to loading the model.
-                </a>
+                <motion.a
+                  href="#loading-the-model"
+                  className="article-links"
+                  whileHover={{ scale: ON_HOVER_SCALE }}
+                  whileTap={{ scale: ON_TAP_SCALE }}
+                  transition={{ duration: 0 }}
+                >
+                  <BsFillSkipForwardFill /> <span className="ml-2">SKIP</span>
+                </motion.a>
               </div>
             </aside>
           </section>
@@ -862,30 +878,40 @@ export default function index() {
             </p>
 
             <div className="article-links-container">
-              <a
+              <motion.a
                 href="https://github.com/jdichh/car-showroom"
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
                 className="article-links"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
-                <AiFillGithub  size={25} /> <span className="ml-1">GitHub</span>
-              </a>
-              <a
+                <AiFillGithub size={22} /> <span className="ml-1">GitHub</span>
+              </motion.a>
+              <motion.a
                 href="https://gtshowroom.netlify.app/"
                 target="_blank"
                 aria-label="Button for a demo of the project"
                 className="article-links"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
-                <SiNetlify size={25} /> <span className="ml-1">Demo</span>
-              </a>
-              <a
+                <SiNetlify size={22} /> <span className="ml-1">Demo</span>
+              </motion.a>
+              <motion.a
                 href="https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
                 target="_blank"
                 aria-label="Button for my dev videos of the project"
                 className="article-links"
+                whileHover={{ scale: ON_HOVER_SCALE }}
+                whileTap={{ scale: ON_TAP_SCALE }}
+                transition={{ duration: 0 }}
               >
-                <BsWrenchAdjustableCircleFill size={25} /> <span className="ml-1">Dev Videos</span>
-              </a>
+                <BsWrenchAdjustableCircleFill size={22} />{" "}
+                <span className="ml-1">Dev Videos</span>
+              </motion.a>
             </div>
 
             <p className="article-text">
