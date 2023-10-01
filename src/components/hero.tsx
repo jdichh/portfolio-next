@@ -21,7 +21,7 @@ export default function Hero() {
           className="text-right"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1
             className={`${inter.className} text-emphasize text-4xl sm:text-5xl`}
@@ -35,7 +35,7 @@ export default function Hero() {
           className="flex gap-2 my-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.175 }}
+          transition={{ delay: 0.15 }}
         >
           <motion.a
             href="https://github.com/jdichh/"

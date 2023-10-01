@@ -17,14 +17,14 @@ export default function Tools() {
       id="tools"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <SectionHeading>Tools</SectionHeading>
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mb-16">
         {tools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-center outline-my-standard text-my-standard theme-switch items-center m-1 p-3 rounded-sm my-transition"
+            className="flex flex-col text-center outline-my-standard text-my-standard theme-switch items-center m-1 p-3 rounded-sm  "
           >
             <Image
               src={tool.imageUrl}

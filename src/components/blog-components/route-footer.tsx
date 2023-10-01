@@ -12,14 +12,14 @@ export default function RouteFooter() {
 
   return (
     <motion.footer
-      className={`mt-6 mx-auto border-t-2 w-full max-w-[750px] font-semibold footer-theme-switch  ${spaceGrotesk.className}`}
+      className={`mt-6 mx-auto border-t-2 w-full max-w-[750px] font-semibold border-theme-switch ${spaceGrotesk.className}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="footer-layout">
         <span className="footer-text">Let's work together.</span>
-        <div className="border-t-2 mx-3 footer-theme-switch" />
+        <div className="border-t-2 mx-3 border-theme-switch" />
         <div className="flex gap-2 justify-center">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"

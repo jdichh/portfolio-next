@@ -13,7 +13,7 @@ export default function Projects() {
       id="works"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <SectionHeading>Works</SectionHeading>
 

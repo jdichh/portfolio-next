@@ -32,12 +32,11 @@ export default function index() {
         />
       </Head>
       <BlogHeader />
-      <ThemeSwitch />
       <motion.main
         className={`article-body ${spaceGrotesk.className}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1]}}
       >
         <article>
           <div className="mt-44" />

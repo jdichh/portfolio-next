@@ -20,7 +20,7 @@ export default function index() {
         className={`article-body ${spaceGrotesk.className}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1]}}
       >
         <div className="mt-20" />
         <div className="mb-8">
@@ -32,7 +32,6 @@ export default function index() {
             be it about web development, music, books, or just life in general.
           </h1>
         </div>
-
         <BlogItem />
       </motion.main>
       <RouteFooter />

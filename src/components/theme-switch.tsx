@@ -44,15 +44,9 @@ export default function ThemeSwitch() {
       whileHover={{ scale: ON_HOVER_SCALE }}
       whileTap={{ scale: ON_TAP_SCALE }}
     >
-      <motion.button
-        className="rounded-sm font-semibold theme-switch outline-my-standard p-2 text-sm my-transition"
-        onClick={toggleTheme}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0 }}
-      >
+      <button className="react-icons" onClick={toggleTheme}>
         {theme === "light" ? <PiSunFill size={22} /> : <PiMoonFill size={22} />}
-      </motion.button>
+      </button>
     </motion.div>
   );
 }

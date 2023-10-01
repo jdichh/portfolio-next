@@ -11,16 +11,16 @@ export default function Footer() {
 
   return (
     <motion.footer
-      className="mt-3 border-t-2 w-full xl:w-[81.25%] footer-theme-switch mx-auto"
+      className="mt-3 border-t-2 w-full xl:w-[81.25%] theme-switch mx-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="footer-layout">
         <span className="footer-text">
           Let's work together.
         </span>
-        <div className="border-t-2 mx-3 footer-theme-switch" />
+        <div className="border-t-2 mx-3 theme-switch" />
         <div className="flex gap-2 justify-center">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
