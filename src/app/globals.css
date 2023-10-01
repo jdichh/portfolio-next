@@ -22,7 +22,7 @@
 }
 
 .my-transition  {
-  @apply transition duration-150 ease-in-out;
+  @apply transition duration-[125ms] ease-in-out;
 }
 
 .theme-switch {
