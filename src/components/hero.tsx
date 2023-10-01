@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
+import ThemeSwitch from "./theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ export default function Hero() {
           <h2 className="text-lg sm:text-xl">Frontend Web Developer</h2>
         </motion.div>
         <motion.div
-          className="flex gap-1 mt-2"
+          className="flex gap-1 my-2"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: [0.22, 1, 0.36, 1] }}
@@ -85,6 +86,7 @@ export default function Hero() {
             />
           </motion.a>
         </motion.div>
+        <ThemeSwitch />
       </div>
     </section>
   );

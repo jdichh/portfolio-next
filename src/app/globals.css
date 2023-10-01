@@ -5,12 +5,12 @@
 .diamond {
   background-image: linear-gradient(
       45deg,
-      rgba(255, 255, 255, 0.06) 25%,
+      rgba(255, 255, 255, 0.0075) 25%,
       transparent 25%
     ),
-    linear-gradient(-45deg, rgba(255, 255, 255, 0.06) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.06) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.06) 75%);
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.0075) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.0075) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.0075) 75%);
   background-size: 20px 20px;
 }
 
@@ -21,9 +21,21 @@
   justify-content: space-between;
 }
 
+.theme-switch {
+  @apply bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text border-[#141416] dark:border-[#D8D2C5] outline-[#141416] dark:outline-[#D8D2C5];
+}
+
+.footer-theme-switch {
+  @apply text-light-theme-text dark:text-dark-theme-text border-[#141416] dark:border-[#D8D2C5];
+}
+
+.my-transition {
+  @apply transition duration-150 ease-in-out;
+}
+
 /* Landing Page */
 .text-emphasize {
-  @apply font-semibold text-[#285955];
+  @apply font-semibold text-[#236660];
 }
 
 .text-my-standard {
@@ -31,11 +43,11 @@
 }
 
 .outline-my-standard {
-  @apply outline outline-1 outline-[#111111];
+  @apply outline outline-1 theme-switch;
 }
 
 .icons {
-  @apply object-cover transition duration-150 ease-in-out rounded-sm border-[1px] border-[#111111] p-0.5;
+  @apply object-cover my-transition rounded-sm border-[1px] border-[#236660] dark:border-[#236660] p-0.5;
 }
 
 .footer-layout {
@@ -46,8 +58,12 @@
   @apply text-base text-center flex justify-center sm:text-lg;
 }
 
+.footer-border-colors {
+  @apply theme-switch;
+}
+
 .project-item-buttons {
-  @apply bg-light-theme-bg group-hover:bg-[#EDE6DA] outline-my-standard px-3 py-1 md:px-3 md:py-0 text-[#1F1E26] rounded-sm transition ease-in-out duration-150;
+  @apply theme-switch outline-my-standard px-3 py-1 md:px-3 md:py-0 rounded-sm my-transition;
 }
 /* End */
 
@@ -59,17 +75,17 @@
 
 /* Inside Blog Components Folder */
 .blog-components-snippets-bigger-text {
-  @apply whitespace-pre-wrap break-words rounded-sm text-[0.6rem] sm:text-sm outline-my-standard p-2;
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.6rem] sm:text-sm outline-my-standard p-2 my-transition;
 }
 
 .blog-components-snippets-smaller-text {
-  @apply whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline-my-standard p-2;
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline-my-standard p-2 my-transition;
 }
 /* End */
 
 /* Pages Folder */
 .pages-folder-div-navbars {
-  @apply fixed border-b-2 border-[#111111] bg-light-theme-bg top-0 h-16 w-full;
+  @apply fixed border-b-2 theme-switch theme-switch top-0 h-16 w-full my-transition;
 }
 
 .pages-folder-navbars {
@@ -78,7 +94,7 @@
 /* End */
 
 /* Blogs Section */
-.article {
+.article-body {
   @apply flex flex-col items-start w-full max-w-[750px] mx-auto p-4;
 }
 
@@ -87,23 +103,23 @@
 }
 
 .article-date {
-  @apply text-[#285955] font-semibold;
+  @apply text-[#236660] font-semibold;
 }
 
 .article-disclaimer {
-  @apply outline-my-standard rounded-sm p-3 bg-light-theme-bg;
+  @apply outline-my-standard rounded-sm p-3 theme-switch my-transition;
 }
 
 .article-disclaimer-text {
-  @apply text-4xl font-bold mb-2 text-[#285955];
+  @apply text-4xl font-bold mb-2 text-[#236660] my-transition;
 }
 
 .article-text {
-  @apply leading-7 mb-8 text-my-standard;
+  @apply leading-7 mb-8 text-my-standard text-light-theme-text dark:text-dark-theme-text my-transition;
 }
 
 .article-figure {
-  @apply outline-my-standard p-2 rounded-sm my-8 mx-auto bg-light-theme-bg;
+  @apply outline-my-standard p-2 rounded-sm my-8 mx-auto my-transition;
 }
 
 .article-figure-caption {
@@ -115,11 +131,11 @@
 }
 
 .article-links-container {
-  @apply flex flex-row gap-2 justify-center mx-auto font-medium;
+  @apply flex flex-row gap-2 justify-center mx-auto font-medium my-6 my-transition;
 }
 
 .article-links {
-  @apply px-3 py-2 text-[#111111] outline-my-standard rounded-sm transition ease-in-out duration-150 bg-light-theme-bg;
+  @apply px-3 py-2 text-light-theme-text dark:text-dark-theme-text outline-my-standard rounded-sm theme-switch;
 }
 
 .article-iframe {
@@ -131,7 +147,7 @@
 }
 
 .article-hrefs {
-  @apply font-semibold text-[#285955] transition duration-150 ease-in-out;
+  @apply font-semibold text-[#236660] my-transition;
 }
 
 .code-snippet-container {
@@ -143,15 +159,15 @@
 }
 
 .code-snippet-pre-code {
-  @apply p-2 my-2 rounded-sm mx-auto;
+  @apply p-2 my-2 rounded-sm mx-auto my-transition;
 }
 
 .code-snippet code {
   padding-inline: 0.3rem;
   padding-block: 0.1rem;
   border-radius: 0.15rem;
-  outline: 1px solid #111111;
   margin-inline: 0.25rem;
   font-size: 0.9rem;
+  @apply outline-my-standard my-transition;
 }
 /* End */

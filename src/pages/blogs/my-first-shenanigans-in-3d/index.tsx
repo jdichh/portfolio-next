@@ -1,10 +1,11 @@
 import React from "react";
-import BlogHeader from "@/components/blog-components/blogHeader";
-import RouteFooter from "@/components/blog-components/routeFooter";
+import BlogHeader from "@/components/blog-components/blog-header";
+import RouteFooter from "@/components/blog-components/route-footer";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
+import ThemeSwitch from "@/components/theme-switch";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -26,11 +27,12 @@ export default function index() {
         />
       </Head>
       <BlogHeader />
+      <ThemeSwitch />
       <motion.main
-        className={`article ${spaceGrotesk.className}`}
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: [0.22, 1, 0.36, 1] }}
+        className={`article-body ${spaceGrotesk.className}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1]}}
       >
         <article>
           <div className="mt-44" />
@@ -682,7 +684,7 @@ export default function index() {
               <a
                 href="https://jdsynthwave.netlify.app/"
                 target="_blank"
-                aria-label="Button for the live link of the project"
+                aria-label="Button for a demo of the project"
                 className="article-links"
               >
                 DEMO
@@ -690,7 +692,7 @@ export default function index() {
               <a
                 href="https://drive.google.com/drive/folders/1T71kzlu3KbTG4J0MR5YbCOmdzzKyOBuX?usp=drive_link"
                 target="_blank"
-                aria-label="Button for the development videos of the project"
+                aria-label="Button for my dev videos of the project"
                 className="article-links"
               >
                 DEV VIDEOS

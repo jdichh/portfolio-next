@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react";
-import SectionHeading from "./sectionHeading";
+import SectionHeading from "./section-heading";
 import { projects } from "@/lib/data";
 import Project from "./project";
 import { motion } from "framer-motion";

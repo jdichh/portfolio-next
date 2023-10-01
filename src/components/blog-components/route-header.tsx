@@ -3,16 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
+import ThemeSwitch from "../theme-switch";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-type RouteHeaderProps = {
-  title: string;
-};
-
-const RouteHeader: React.FC<RouteHeaderProps> = ({
-  title,
-}: RouteHeaderProps) => {
+export default function RouteHeader() {
   const ICON_DIMENSIONS = 35;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
@@ -20,9 +15,9 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
   return (
     <motion.header
       className={`z-[98] relative w-full font-semibold ${spaceGrotesk.className}`}
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ease: [0.22, 1, 0.36, 1] }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="pages-folder-div-navbars" />
       <nav className="pages-folder-navbars">
@@ -30,10 +25,10 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
           <li>
             <Link href="/" aria-label="Back button">
               <motion.div
-                className="transition duration-150 ease-in-out text-lg rounded-sm"
+                className="text-lg rounded-sm"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.05 }}
+                transition={{ duration: 0.025 }}
               >
                 <Image
                   src="/icons/back.svg"
@@ -46,10 +41,8 @@ const RouteHeader: React.FC<RouteHeaderProps> = ({
             </Link>
           </li>
         </ul>
-        <span className="font-semibold text-lg">{title}</span>
+        <ThemeSwitch />
       </nav>
     </motion.header>
   );
-};
-
-export default RouteHeader;
+}

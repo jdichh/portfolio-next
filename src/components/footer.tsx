@@ -11,7 +11,7 @@ export default function Footer() {
 
   return (
     <motion.footer
-      className="mt-3 border-t-2 w-full xl:w-[81.25%] border-[#111111]"
+      className="mt-3 border-t-2 w-full xl:w-[81.25%] footer-theme-switch mx-auto"
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
@@ -20,7 +20,7 @@ export default function Footer() {
         <span className="footer-text">
           Let's work together.
         </span>
-        <div className="border-t-2 border-[#111111] mx-3" />
+        <div className="border-t-2 mx-3 footer-theme-switch" />
         <div className="flex gap-1 justify-center">
           <motion.a
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"

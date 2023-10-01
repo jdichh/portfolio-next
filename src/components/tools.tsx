@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./sectionHeading";
+import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import {
   tools,
@@ -24,7 +24,7 @@ export default function Tools() {
         {tools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-[#111111] text-center outline-my-standard text-my-standard bg-light-theme-bg items-center m-1 p-3 rounded-sm transition ease-in-out duration-150"
+            className="flex flex-col text-center outline-my-standard text-my-standard theme-switch items-center m-1 p-3 rounded-sm my-transition"
           >
             <Image
               src={tool.imageUrl}

@@ -1,25 +1,26 @@
 import React from "react";
-import BlogHeader from "@/components/blog-components/blogHeader";
-import RouteFooter from "@/components/blog-components/routeFooter";
+import BlogHeader from "@/components/blog-components/blog-header";
+import RouteFooter from "@/components/blog-components/route-footer";
 import Image from "next/image";
 import Head from "next/dist/shared/lib/head";
 import Accordion from "@/components/accordion";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
 
-import DirectionalLightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/directionalLightSnippet";
-import FloorSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/floorSnippet";
-import ModelShadowSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/modelShadowSnippet";
-import SpotlightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/spotlightSnippet";
-import RendererSettingsSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/rendererSettingsSnippet";
-import CanvasSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/canvasSnippet";
+import DirectionalLightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/directionalLight-snippet";
+import FloorSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/floor-snippet";
+import ModelShadowSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/model-shadow-snippet";
+import SpotlightSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/spotlight-snippet";
+import RendererSettingsSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/renderer-settings-snippet";
+import CanvasSnippet from "@/components/blog-components/gtshowroom-accordion-components/snippets/canvas-snippet";
 
-import ModelShadowSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/modelShadowSnippetDescription";
-import DirectionalLightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/directionalLightSnippetDescription";
-import FloorSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/floorSnippetDescription";
-import SpotlightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/spotlightSnippetDescription";
-import RendererSettingsSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/rendererSettingsSnippetDescription";
-import CanvasSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/canvasSnippetDescription";
+import ModelShadowSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/model-shadow-snippet-description";
+import DirectionalLightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/directionalLight-snippet-description";
+import FloorSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/floor-snippet-description";
+import SpotlightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/spotlight-snippet-description";
+import RendererSettingsSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/renderer-settings-snippet-description";
+import CanvasSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/canvas-snippet-description";
+import ThemeSwitch from "@/components/theme-switch";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -43,12 +44,14 @@ export default function index() {
         />
       </Head>
       <BlogHeader />
+      <ThemeSwitch />
       <motion.main
-        className={`article ${spaceGrotesk.className}`}
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: [0.22, 1, 0.36, 1] }}
+        className={`article-body ${spaceGrotesk.className}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1]}}
       >
+        
         <article>
           <div className="mt-44" />
           <div className="mb-8">
@@ -867,7 +870,7 @@ export default function index() {
               <a
                 href="https://gtshowroom.netlify.app/"
                 target="_blank"
-                aria-label="Button for the live link of the project"
+                aria-label="Button for a demo of the project"
                 className="article-links"
               >
                 DEMO
@@ -875,14 +878,14 @@ export default function index() {
               <a
                 href="https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
                 target="_blank"
-                aria-label="Button for the development videos of the project"
+                aria-label="Button for my dev videos of the project"
                 className="article-links"
               >
                 DEV VIDEOS
               </a>
             </div>
 
-            <p className="leading-7 my-8 text-my-standard">
+            <p className="article-text">
               If you viewed the demo, you may have noticed that the YouTube
               video is different from the demo. It's because I migrated the
               project from Three.js to React-Three-Fiber to learn how it worked,

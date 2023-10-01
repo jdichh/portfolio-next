@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
+import ThemeSwitch from "../theme-switch";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -14,9 +15,9 @@ export default function BlogHeader() {
   return (
     <motion.header
       className={`z-[98] relative w-full font-semibold ${spaceGrotesk.className}`}
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ease: [0.22, 1, 0.36, 1] }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1]}}
     >
       <div className="pages-folder-div-navbars" />
       <nav className="pages-folder-navbars">
@@ -27,7 +28,7 @@ export default function BlogHeader() {
                 className="rounded-sm"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.05 }}
+                transition={{ duration: 0.025 }}
               >
                 <Image
                   src="/icons/back.svg"
@@ -44,7 +45,7 @@ export default function BlogHeader() {
                 className="rounded-sm"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0.05 }}
+                transition={{ duration: 0.025 }}
               >
                 <Image
                   src="/icons/home.svg"
@@ -58,7 +59,8 @@ export default function BlogHeader() {
             </Link>
           </li>
         </ul>
+        <ThemeSwitch/>
       </nav>
     </motion.header>
   );
-};
+}

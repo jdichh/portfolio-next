@@ -9,16 +9,16 @@ export default function BlogBoilerplate({ name, description, date, link }: BlogP
   return (
     <div className="mb-6 last:mb-0">
       <motion.article
-        className="group overflow-hidden bg-light-theme-bg rounded-sm relative transition ease-in-out duration-150 outline-my-standard"
+        className="group overflow-hidden rounded-sm relative outline-my-standard theme-switch my-transition"
         whileHover={{ scale: ON_HOVER_SCALE }}
-        transition={{ duration: 0.05 }}
+        transition={{ duration: 0.025 }}
       >
         <a href={link}>
-        <div className="flex flex-col p-4">
+        <div className="flex flex-col p-4 my-transition">
           <h2 className="text-xl text-left sm:text-2xl font-semibold">
             {name}
           </h2>
-          <h3 className="mb-2 font-semibold text-sm text-[#285955]">{date}</h3>
+          <h3 className="mb-2 font-semibold text-sm text-[#236660]">{date}</h3>
           <p className="text-my-standard">{description}</p>
         </div>
         </a>

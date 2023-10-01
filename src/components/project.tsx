@@ -40,9 +40,9 @@ export default function Project({
       }}
     >
       <motion.article
-        className="group overflow-hidden bg-light-theme-bg hover:bg-[#EDE6DA] rounded-sm relative transition ease-in-out duration-150 outline-my-standard"
+        className="group overflow-hidden bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text rounded-sm relative my-transition outline-my-standard"
         whileHover={{ scale: PROJ_HOVER_SCALE }}
-        transition={{ duration: 0.05 }}
+        transition={{ duration: 0.025 }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
@@ -58,7 +58,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-light-theme-bg group-hover:bg-[#EDE6DA] diamond font-medium transition ease-in-out duration-150 px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
+                className="bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text diamond font-medium my-transition px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
               >
                 <Image
                   src={toolIcons[index]}
@@ -122,7 +122,7 @@ export default function Project({
           src={imageUrl}
           alt=""
           quality={IMAGE_QUALITY}
-          className="hidden md:block relative md:absolute transition ease-in-out duration-150 rounded-sm top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
+          className="hidden md:block relative md:absolute my-transition rounded-sm top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
         />
       </motion.article>
     </motion.div>
