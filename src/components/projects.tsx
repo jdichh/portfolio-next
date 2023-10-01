@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import SectionHeading from "./section-heading";
@@ -14,14 +14,28 @@ export default function Projects() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-      >
-        <SectionHeading>Featured Works</SectionHeading>
+    >
+      <SectionHeading>Featured Works</SectionHeading>
 
       {projects.map((project, index) => (
         <React.Fragment key={index}>
           <Project {...project} />
         </React.Fragment>
       ))}
+
+      <div className="flex justify-center">
+        <p className="text-my-standard">
+          View more of my projects in my{" "}
+          <a
+            href="https://www.github.com/jdichh"
+            target="_blank"
+            aria-label="Button for the GitHub repo of the project."
+            className="font-semibold text-[#236660]"
+          >
+            GitHub profile.
+          </a>
+        </p>
+      </div>
     </motion.section>
   );
 }
