@@ -15,7 +15,6 @@ import jsImg from "../../public/tools/js.svg";
 import reactImg from "../../public/tools/react.svg";
 import nextImg from "../../public/tools/next.svg";
 import vueImg from "../../public/tools/vue.svg";
-import firebase from "../../public/tools/firebase.svg"
 import threeImg from "../../public/tools/three.svg";
 import r3fImg from "../../public/tools/r3f.svg";
 import bootstrapImg from "../../public/tools/bootstrap.svg";

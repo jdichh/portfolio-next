@@ -22,6 +22,10 @@ import RendererSettingsSnippetDescription from "@/components/blog-components/gts
 import CanvasSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/canvas-snippet-description";
 import ThemeSwitch from "@/components/theme-switch";
 
+import { AiFillGithub } from "react-icons/ai";
+import { SiNetlify } from "react-icons/si";
+import { BsWrenchAdjustableCircleFill } from "react-icons/bs";
+
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
@@ -49,9 +53,8 @@ export default function index() {
         className={`article-body ${spaceGrotesk.className}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
       >
-        
         <article>
           <div className="mt-44" />
           <div className="mb-8">
@@ -865,7 +868,7 @@ export default function index() {
                 aria-label="Button to the GitHub repo of the project"
                 className="article-links"
               >
-                GITHUB
+                <AiFillGithub  size={25} /> <span className="ml-1">GitHub</span>
               </a>
               <a
                 href="https://gtshowroom.netlify.app/"
@@ -873,7 +876,7 @@ export default function index() {
                 aria-label="Button for a demo of the project"
                 className="article-links"
               >
-                DEMO
+                <SiNetlify size={25} /> <span className="ml-1">Demo</span>
               </a>
               <a
                 href="https://drive.google.com/drive/folders/1wxP8FM63t-DFlsGL2M6aUYAoZJhQAfOO?usp=sharing"
@@ -881,7 +884,7 @@ export default function index() {
                 aria-label="Button for my dev videos of the project"
                 className="article-links"
               >
-                DEV VIDEOS
+                <BsWrenchAdjustableCircleFill size={25} /> <span className="ml-1">Dev Videos</span>
               </a>
             </div>
 

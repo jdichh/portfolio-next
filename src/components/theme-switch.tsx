@@ -2,11 +2,16 @@
 
 import React, { useLayoutEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { PiSunFill } from "react-icons/pi";
+import { PiMoonFill } from "react-icons/pi";
 
 type Theme = "light" | "dark";
 
 export default function ThemeSwitch() {
   const [theme, setTheme] = useState<Theme>("light");
+
+  const ON_HOVER_SCALE = 1.1;
+  const ON_TAP_SCALE = 0.9;
 
   const toggleTheme = () => {
     if (theme === "light") {
@@ -35,14 +40,19 @@ export default function ThemeSwitch() {
   }, []);
 
   return (
-    <motion.button
-      className="rounded-sm font-semibold my-outline-standard theme-switch outline-my-standard px-3 py-2 text-sm my-transition"
-      onClick={toggleTheme}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.25 }}
+    <motion.div
+      whileHover={{ scale: ON_HOVER_SCALE }}
+      whileTap={{ scale: ON_TAP_SCALE }}
     >
-      {theme === "light" ? "DAY" : "NIGHT"}
-    </motion.button>
+      <motion.button
+        className="rounded-sm font-semibold theme-switch outline-my-standard p-2 text-sm my-transition"
+        onClick={toggleTheme}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.175 }}
+      >
+        {theme === "light" ? <PiSunFill size={25} /> : <PiMoonFill size={25} />}
+      </motion.button>
+    </motion.div>
   );
 }

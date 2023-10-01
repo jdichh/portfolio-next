@@ -30,7 +30,7 @@
 }
 
 .my-transition {
-  @apply transition duration-150 ease-in-out;
+  @apply transition duration-[175ms] ease-in-out;
 }
 
 /* Landing Page */
@@ -63,7 +63,7 @@
 }
 
 .project-item-buttons {
-  @apply theme-switch outline-my-standard px-3 py-1 md:px-3 md:py-0 rounded-sm my-transition;
+  @apply theme-switch outline-my-standard px-3 py-1 md:px-3 md:py-0 rounded-sm my-transition flex items-center justify-center;
 }
 /* End */
 
@@ -135,7 +135,7 @@
 }
 
 .article-links {
-  @apply px-3 py-2 text-light-theme-text dark:text-dark-theme-text outline-my-standard rounded-sm theme-switch;
+  @apply rounded-sm font-semibold theme-switch outline-my-standard p-2 text-sm my-transition flex items-center;
 }
 
 .article-iframe {
@@ -171,3 +171,8 @@
   @apply outline-my-standard my-transition;
 }
 /* End */
+
+
+.react-icons {
+  @apply rounded-sm font-semibold theme-switch outline-my-standard p-2 text-sm my-transition
+}

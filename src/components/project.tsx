@@ -2,6 +2,10 @@ import { projects } from "@/lib/data";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Image from "next/image";
+import { AiFillGithub } from "react-icons/ai";
+import { SiNetlify } from "react-icons/si";
+import { HiVideoCamera } from "react-icons/hi"
+import { FaBlog } from "react-icons/fa";
 
 type ProjectProps = (typeof projects)[number];
 
@@ -83,7 +87,7 @@ export default function Project({
                 aria-label="Live demo of the project."
                 className="project-item-buttons"
               >
-                DEMO
+                <SiNetlify size={20} /> <span className="ml-1">Demo</span>
               </a>
             )}
             {videoLink && (
@@ -93,7 +97,7 @@ export default function Project({
                 aria-label="Video demonstration of the project."
                 className="project-item-buttons"
               >
-                VIDEO
+                <HiVideoCamera size={20} /> <span className="ml-1">Video</span>
               </a>
             )}
             {blogLink && (
@@ -103,7 +107,7 @@ export default function Project({
                 aria-label="Button for my blog post of the project."
                 className="project-item-buttons"
               >
-                BLOG
+                <FaBlog /> <span className="ml-1">Blog</span>
               </a>
             )}
             {githubLink && (
@@ -113,7 +117,7 @@ export default function Project({
                 aria-label="Button for the GitHub repo of the project."
                 className="project-item-buttons"
               >
-                GITHUB
+                <AiFillGithub  size={20} /> <span className="ml-1">GitHub</span>
               </a>
             )}
           </div>

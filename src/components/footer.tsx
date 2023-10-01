@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
-  const ICON_DIMENSIONS = 40;
   const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.9;
 
@@ -14,7 +14,7 @@ export default function Footer() {
       className="mt-3 border-t-2 w-full xl:w-[81.25%] footer-theme-switch mx-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="footer-layout">
         <span className="footer-text">
@@ -26,32 +26,22 @@ export default function Footer() {
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
             aria-label="Button to my LinkedIn profile"
+            className="react-icons"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0.075 }}
+            transition={{ duration: 0 }}
           >
-            <Image
-              src="/icons/linkedin.svg"
-              alt="Button to my LinkedIn profile"
-              width={ICON_DIMENSIONS}
-              height={ICON_DIMENSIONS}
-              className="icons"
-            />
+            <BiLogoLinkedin size={25} />
           </motion.a>
           <motion.a
             href="mailto:jpsdichoso21@gmail.com"
             aria-label="Button to send me an email"
+            className="react-icons"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0.075 }}
+            transition={{ duration: 0 }}
           >
-            <Image
-              src="/icons/mail.svg"
-              alt="Button to send me an email"
-              width={ICON_DIMENSIONS}
-              height={ICON_DIMENSIONS}
-              className="icons"
-            />
+            <SiGmail size={25} />
           </motion.a>
         </div>
       </div>

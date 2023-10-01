@@ -20,7 +20,7 @@ export default function index() {
         className={`article-body ${spaceGrotesk.className}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.25, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ delay: 0.175, ease: [0.22, 1, 0.36, 1]}}
       >
         <div className="mt-20" />
         <div className="mb-8">

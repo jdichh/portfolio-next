@@ -5,13 +5,15 @@ type BlogProps = (typeof blogs)[number];
 
 export default function BlogBoilerplate({ name, description, date, link }: BlogProps) {
   const ON_HOVER_SCALE = 1.03;
+  const ON_TAP_SCALE = 0.97;
 
   return (
-    <div className="mb-6 last:mb-0">
+    <div className="mb-3 last:mb-0">
       <motion.article
         className="group overflow-hidden rounded-sm relative outline-my-standard theme-switch my-transition"
         whileHover={{ scale: ON_HOVER_SCALE }}
-        transition={{ duration: 0.025 }}
+        whileTap={{ scale: ON_TAP_SCALE }}
+        transition={{ duration: 0.025, ease: [0.22, 1, 0.36, 1] }}
       >
         <a href={link}>
         <div className="flex flex-col p-4">
