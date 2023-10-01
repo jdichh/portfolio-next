@@ -17,7 +17,7 @@ function Accordion({ title, children }: AccordionProps) {
           className="flex justify-between items-center p-2 w-full text-left"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span className="font-semibold my-transition">{title}</span>
+          <span className="font-semibold">{title}</span>
             <motion.span
               key={isOpen ? "up" : "down"}
               initial={{ rotate: 0 }}

@@ -15,8 +15,8 @@ export default function BlogHeader() {
   return (
     <motion.header
       className={`z-[98] relative w-full font-semibold ${spaceGrotesk.className}`}
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="pages-folder-div-navbars theme-switch" />
