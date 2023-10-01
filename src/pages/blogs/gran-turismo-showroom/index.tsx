@@ -268,7 +268,7 @@ export default function index() {
               </div>
 
               <div className="code-snippet-container code-snippet">
-                <h2 className="">Quick Rundown</h2>
+                <h2 className="code-snippet-sub-title">Quick Rundown</h2>
                 <ul className="list-disc">
                   <CanvasSnippetDescription />
                 </ul>
