@@ -1,5 +1,5 @@
 // projects
-import galaxy from "../../public/project/galaxy.png";
+import soulless from "../../public/project/soulless.gif";
 import vintora from "../../public/project/vintora.gif";
 import showroom from "../../public/project/showroom.png";
 import synthwave from "../../public/project/synthwave.gif";
@@ -122,34 +122,33 @@ export const projects = [
     name: "Khronomechanica Vintora",
     description:
       "A website for a fictional steampunk watch. I wanted to try out embedding a 3D model in a product website.",
-    tools: ["PC Recommended", "HTML", "SCSS", "Three.js", "GSAP"],
+    tools: ["PC Recommended", "Three.js", "GSAP", "SCSS"],
     imageUrl: vintora,
-    toolIcons: [pcImg, htmlImg, scssImg, threeImg, gsapImg],
+    toolIcons: [pcImg, threeImg, gsapImg, scssImg],
     liveLink: "https://steampunkwatch.netlify.app/",
     githubLink: "https://github.com/jdichh/steampunk-watch",
+  },
+  {
+    name: "Soulless Clothing Co.",
+    description:
+      "A landing page for a fictional clothing brand. May expand upon this in the future.",
+    tools: ["PC Recommended", "Three.js", "SCSS"],
+    imageUrl: soulless,
+    toolIcons: [pcImg, threeImg, scssImg],
+    liveLink: "https://jdsoulless.netlify.app/",
+    githubLink: "https://github.com/jdichh/soulless",
   },
   {
     name: "Synthwave Scene",
     description:
       "A synthwave scene in 3D. Made with React.js and Three.js because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
-    tools: ["PC Recommended", "React.js", "Three.js"],
+    tools: ["PC Recommended", "React.js", "Three.js", "SCSS"],
     imageUrl: synthwave,
-    toolIcons: [pcImg, reactImg, threeImg],
+    toolIcons: [pcImg, reactImg, threeImg, scssImg],
     liveLink: "https://jdsynthwave.netlify.app/",
     videoLink: "https://youtu.be/S7RprZc3dEs",
     blogLink: "/blogs/my-first-shenanigans-in-3d/",
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
-  },
-  {
-    name: "Galaxy Overview",
-    description:
-      "A 3D overview of a galaxy, inspired by the Heleus Cluster in Mass Effect Andromeda.",
-    tools: ["PC Recommended", "React-Three-Fiber"],
-    imageUrl: galaxy,
-    toolIcons: [pcImg, r3fImg],
-    liveLink: "https://jdgalaxy.netlify.app/",
-    videoLink: "https://youtu.be/ODhJYVid_oU",
-    githubLink: "https://github.com/jdichh/galaxy-map",
   },
   {
     name: "Asteroids",
@@ -166,9 +165,9 @@ export const projects = [
     name: "Random Password Generator Extension",
     description:
       "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
-    tools: ["HTML", "SCSS", "JavaScript"],
+    tools: ["SCSS", "JavaScript"],
     imageUrl: passwordGen,
-    toolIcons: [htmlImg, scssImg, jsImg],
+    toolIcons: [scssImg, jsImg],
     videoLink: "https://youtu.be/pq-EsJa1plw",
     githubLink: "https://github.com/jdichh/password-generator",
   },
