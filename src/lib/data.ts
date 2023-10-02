@@ -131,10 +131,10 @@ export const projects = [
   {
     name: "Soulless Clothing Co.",
     description:
-      "A landing page for a fictional clothing brand. Will expand upon this in the future to be a full website.",
-    tools: ["PC Recommended", "Three.js", "SCSS"],
+      "Currently a landing page for a fictional clothing brand. I will expand upon this in the future to be a full website.",
+    tools: ["PC Recommended", "React-Three-Fiber"],
     imageUrl: soulless,
-    toolIcons: [pcImg, threeImg, scssImg],
+    toolIcons: [pcImg, r3fImg],
     liveLink: "https://jdsoulless.netlify.app/",
   },
   {
