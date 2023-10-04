@@ -5,12 +5,12 @@
 .diamond {
   background-image: linear-gradient(
       45deg,
-      rgba(255, 255, 255, 0.005) 25%,
+      rgba(255, 255, 255, 0.003) 25%,
       transparent 25%
     ),
-    linear-gradient(-45deg, rgba(255, 255, 255, 0.005) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.005) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.005) 75%);
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.003) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.003) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.003) 75%);
   background-size: 20px 20px;
 }
 
@@ -30,16 +30,16 @@
 }
 
 .border-theme-switch {
-  @apply border-[#151516] dark:border-[#D8D2C5]
+  @apply border-dark-theme-bg dark:border-light-theme-bg
 }
 
 /* Landing Page */
 .text-emphasize {
-  @apply font-semibold text-[#236660];
+  @apply font-semibold text-light-theme-accent;
 }
 
 .text-my-standard {
-  @apply font-[450] text-[16px];
+  @apply font-[450] text-[16px] md:text-[17px];
 }
 
 .outline-my-standard {
@@ -47,7 +47,7 @@
 }
 
 .icons {
-  @apply object-cover rounded-sm border-[1px] border-[#236660] dark:border-[#236660] p-0.5;
+  @apply object-cover rounded-sm border-[1px] border-light-theme-accent dark:border-light-theme-accent p-0.5;
 }
 
 .footer-layout {
@@ -99,7 +99,7 @@
 }
 
 .article-date {
-  @apply text-[#236660] font-semibold;
+  @apply text-light-theme-accent font-semibold;
 }
 
 .article-disclaimer {
@@ -107,7 +107,7 @@
 }
 
 .article-disclaimer-text {
-  @apply text-4xl font-bold mb-2 text-[#236660];
+  @apply text-4xl font-bold mb-2 text-light-theme-accent;
 }
 
 .article-text {
@@ -143,7 +143,7 @@
 }
 
 .article-hrefs {
-  @apply font-semibold text-[#236660];
+  @apply font-semibold text-light-theme-accent;
 }
 
 .code-snippet-container {

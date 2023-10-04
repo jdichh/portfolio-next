@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="!scroll-smooth h-full">
         <Head />
-        <body className='h-full theme-switch diamond'>
+        <body className='h-full theme-switch'>
           <Main />
           <NextScript />
         </body>

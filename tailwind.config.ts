@@ -10,10 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'light-theme-bg': '#D8D2C5',
-        'light-theme-text': '#151516',
-        'dark-theme-bg': '#151516',
-        'dark-theme-text': '#D8D2C5',
+        'light-theme-bg': '#E0DACE',
+        'light-theme-text': '#161616',
+        'light-theme-accent': '#276D66',
+        'dark-theme-bg': '#161616',
+        'dark-theme-text': '#E0DACE',
+        'dark-theme-accent': '#FFD700',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

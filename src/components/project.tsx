@@ -64,7 +64,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text diamond my-transition px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
+                className="bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text my-transition px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
               >
                 <Image
                   src={toolIcons[index]}
