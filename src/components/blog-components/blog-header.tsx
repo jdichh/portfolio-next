@@ -31,6 +31,7 @@ export default function BlogHeader() {
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
+                aria-label="Back button"
               >
                 <IoMdArrowRoundBack size={22} />
               </motion.button>
@@ -43,6 +44,7 @@ export default function BlogHeader() {
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
+                aria-label="Home button"
               >
                 <AiFillHome size={22} />
               </motion.button>

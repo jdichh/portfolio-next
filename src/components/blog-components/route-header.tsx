@@ -26,7 +26,7 @@ export default function RouteHeader() {
             whileHover={{ scale: ON_HOVER_SCALE }}
           >
             <Link href="/" aria-label="Back button">
-              <button className="react-icons">
+              <button className="react-icons" aria-label="Back button">
                 <IoMdArrowRoundBack size={22} />
               </button>
             </Link>
