@@ -116,8 +116,8 @@ export const projects = [
     name: "Vespa 125 Promotional Website",
     description:
       "A promotional website for the Vespa 125 in 3D. NOT affiliated with Piaggio and/or Vespa.",
-    tools: ["PC Recommended", "React-Three-Fiber", "GSAP", "Tailwind"],
-    toolIcons: [pcImg, r3fImg, gsapImg, tailwindImg],
+    tools: ["PC Recommended", "React.js", "React-Three-Fiber", "GSAP", "Tailwind"],
+    toolIcons: [pcImg, reactImg, r3fImg, gsapImg, tailwindImg],
     imageUrl: vespa,
     liveLink: "https://jdvespa.netlify.app/",
     githubLink: "https://github.com/jdichh/vespa-r3f",
@@ -126,8 +126,8 @@ export const projects = [
     name: "Virtual Car Showroom",
     description:
       "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also replicated some parts of the UI from the actual game.",
-    tools: ["PC Required", "React-Three-Fiber", "SCSS"],
-    toolIcons: [pcRequiredImg, r3fImg, scssImg],
+    tools: ["PC Required", "React.js", "React-Three-Fiber", "SCSS"],
+    toolIcons: [pcRequiredImg, reactImg, r3fImg, scssImg],
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
@@ -148,9 +148,9 @@ export const projects = [
     name: "Soulless Clothing Co.",
     description:
       "Currently a landing page for a fictional clothing brand. I will expand upon this in the future to be a full website.",
-    tools: ["PC Recommended", "React-Three-Fiber", "Tailwind"],
+    tools: ["PC Recommended", "React.js", "React-Three-Fiber", "Tailwind"],
     imageUrl: soulless,
-    toolIcons: [pcImg, r3fImg, tailwindImg],
+    toolIcons: [pcImg, reactImg, r3fImg, tailwindImg],
     liveLink: "https://jdsoulless.netlify.app/",
   },
   {

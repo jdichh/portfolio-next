@@ -31,7 +31,7 @@ export default function Project({
 
   const PROJ_HOVER_SCALE = 1.02;
   const TOOL_ICON_QUALITY = 50;
-  const TOOL_ICON_DIMENSIONS = 18;
+  const TOOL_ICON_DIMENSIONS = 15;
   const IMAGE_QUALITY = 95;
   const ON_HOVER_SCALE = 1.075;
   const ON_TAP_SCALE = 0.925;
@@ -60,11 +60,11 @@ export default function Project({
           <h3 className="text-center md:text-left text-2xl font-medium">
             {name}
           </h3>
-          <ul className="flex flex-wrap my-2 gap-2 justify-center md:justify-start text-sm">
+          <ul className="flex flex-wrap my-2 gap-2 justify-center md:justify-start text-xs font-medium">
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text diamond font-medium my-transition px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
+                className="bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text diamond my-transition px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
               >
                 <Image
                   src={toolIcons[index]}
@@ -108,7 +108,7 @@ export default function Project({
                 <HiVideoCamera size={20} /> <span className="ml-1">Video</span>
               </motion.a>
             )}
-            {blogLink && (
+            {/* {blogLink && (
               <motion.a
                 href={blogLink.toString()}
                 target="_blank"
@@ -120,8 +120,8 @@ export default function Project({
               >
                 <FaBlog /> <span className="ml-1">Blog</span>
               </motion.a>
-            )}
-            {/* {githubLink && (
+            )} */}
+            {githubLink && (
               <motion.a
                 href={githubLink.toString()}
                 target="_blank"
@@ -133,7 +133,7 @@ export default function Project({
               >
                 <AiFillGithub size={20} /> <span className="ml-1">Source Code</span>
               </motion.a>
-            )} */}
+            )}
           </div>
         </div>
         <Image
