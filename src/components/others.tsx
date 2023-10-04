@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Others() {
   return (
-    <div className="flex justify-center opacity-90">
+    <div className="flex justify-center md:justify-end opacity-90">
       <p className="text-base text-center">
-        View more of my projects in my{" "}
+        You can view my other projects in my{" "}
         <a
           href="https://jdichh.netlify.app"
           target="_blank"
           aria-label="Button for my old portfolio website."
-          className="font-semibold text-[#236660]"
+          className="font-bold text-[#236660]"
         >
           old portfolio website
         </a>

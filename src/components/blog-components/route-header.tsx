@@ -13,7 +13,7 @@ export default function RouteHeader() {
 
   return (
     <motion.header
-      className={`z-[98] relative w-full font-semibold ${spaceGrotesk.className}`}
+      className={`z-[98] relative w-full font-bold ${spaceGrotesk.className}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}

@@ -10,6 +10,6 @@ export default function SectionDivider() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-    ></motion.div>
+    />
   );
 }

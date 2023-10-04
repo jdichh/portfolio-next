@@ -10,7 +10,7 @@ import Others from "./others";
 export default function Projects() {
   return (
     <motion.section
-      className="px-4 w-full xl:w-10/12 leading-8 scroll-mt-20"
+      className="px-4 w-full xl:w-10/12 leading-8 scroll-mt-20 mb-16"
       id="works"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

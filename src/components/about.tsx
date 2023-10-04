@@ -14,22 +14,14 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
-        Hi, I'm Jason, and I aim to build{" "}
-        <span className="text-emphasize">user-friendly</span> and{" "}
-        <span className="text-emphasize">impressive-looking websites</span>.
+        Hello, I'm Jason, a recent IT graduate, and I aim to build{" "}
+        <span className="font-bold">user-friendly</span> and{" "}
+        <span className="font-bold">impressive-looking websites</span>.
       </p>
       <p className="mb-6">
-        I'm also a <span className="text-emphasize">recent IT graduate</span>{" "}
-        and{" "}
-        <span className="text-emphasize">
-          looking to get my foot in the door in the tech industry
-        </span>
-        .
-      </p>
-      <p className="mb-6">
-        Formalities aside, I love running, playing my electric guitar, tinkering
-        with computers, and discovering web technologies. Especially frontend
-        tech.
+        I love to run, play my electric guitar, tinker with computers, and
+        discover web technologies.{" "}
+        <span className="font-bold">Especially frontend tech.</span>
       </p>
     </motion.section>
   );

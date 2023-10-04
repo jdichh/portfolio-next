@@ -31,9 +31,9 @@ export default function Project({
 
   const PROJ_HOVER_SCALE = 1.02;
   const TOOL_ICON_QUALITY = 50;
-  const TOOL_ICON_DIMENSIONS = 15;
+  const TOOL_ICON_DIMENSIONS = 17;
   const IMAGE_QUALITY = 95;
-  const ON_HOVER_SCALE = 1.075;
+  const ON_HOVER_SCALE = 1.04;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -64,7 +64,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text my-transition px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex outline-my-standard"
+                className="bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text my-transition px-2 py-[0.3rem] uppercase tracking-wider rounded-sm flex items-center outline-my-standard"
               >
                 <Image
                   src={toolIcons[index]}

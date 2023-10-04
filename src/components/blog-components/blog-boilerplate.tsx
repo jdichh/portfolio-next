@@ -17,10 +17,10 @@ export default function BlogBoilerplate({ name, description, date, link }: BlogP
       >
         <a href={link}>
         <div className="flex flex-col p-4">
-          <h2 className="text-xl text-left sm:text-2xl font-semibold">
+          <h2 className="text-xl text-left sm:text-2xl font-bold">
             {name}
           </h2>
-          <h3 className="mb-2 font-semibold text-sm text-[#236660]">{date}</h3>
+          <h3 className="mb-2 font-bold text-sm text-[#236660]">{date}</h3>
           <p className="text-my-standard">{description}</p>
         </div>
         </a>
