@@ -20,14 +20,14 @@ export default function index() {
         className={`article-body ${spaceGrotesk.className}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="mt-20" />
         <div className="mb-8">
           <h1 className="mb-3 text-xl sm:text-2xl">
             <span className="font-bold">
-              Kamusta! I'm Jason, a recent IT graduate from the Philippines, and
-              this is where you can read just about any of my ramblings—
+              Kamusta! I'm Jason, and this is where you can read just about any
+              of my ramblings—
             </span>
             be it about web development, music, books, or just life in general.
           </h1>
