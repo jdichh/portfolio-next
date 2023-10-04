@@ -131,7 +131,7 @@ export default function Project({
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
-                <AiFillGithub size={20} /> <span className="ml-1">GitHub</span>
+                <AiFillGithub size={20} /> <span className="ml-1">Source Code</span>
               </motion.a>
             )}
           </div>
