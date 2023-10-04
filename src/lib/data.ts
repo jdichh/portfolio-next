@@ -95,6 +95,11 @@ export const tools = [
     alt: "Framer motion logo",
   },
   {
+    name: "GSAP",
+    imageUrl: gsapImg,
+    alt: "GSAP logo",
+  },
+  {
     name: "Wave Tool",
     imageUrl: waveToolImg,
     alt: "Wave tool logo",
