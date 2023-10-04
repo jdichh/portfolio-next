@@ -99,7 +99,7 @@ export default function Project({
               <motion.a
                 href={videoLink.toString()}
                 target="_blank"
-                aria-label="Live demo of the project."
+                aria-label="Video demonstration of the project."
                 className="project-item-buttons"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
@@ -112,7 +112,7 @@ export default function Project({
               <motion.a
                 href={blogLink.toString()}
                 target="_blank"
-                aria-label="Button for my blog post of the project."
+                aria-label="Blog post of the project."
                 className="project-item-buttons"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
