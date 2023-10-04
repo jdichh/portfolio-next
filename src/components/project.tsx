@@ -125,7 +125,7 @@ export default function Project({
               <motion.a
                 href={githubLink.toString()}
                 target="_blank"
-                aria-label="Button for the GitHub repo of the project."
+                aria-label="Button for the source code of the project."
                 className="project-item-buttons"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}

@@ -44,7 +44,11 @@ export default function ThemeSwitch() {
       whileHover={{ scale: ON_HOVER_SCALE }}
       whileTap={{ scale: ON_TAP_SCALE }}
     >
-      <button className="react-icons" onClick={toggleTheme} aria-label="Theme switcher">
+      <button
+        className="react-icons"
+        onClick={toggleTheme}
+        aria-label="Theme switcher"
+      >
         {theme === "light" ? <PiSunFill size={22} /> : <PiMoonFill size={22} />}
       </button>
     </motion.div>
