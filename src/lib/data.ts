@@ -166,27 +166,6 @@ export const projects = [
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
   },
   {
-    name: "Asteroids",
-    description:
-      "The Asteroids game from Atari, but with my own modifications to it. I made this to further expand my JavaScript knowledge.",
-    tools: ["PC Required", "JavaScript"],
-    imageUrl: asteroids,
-    toolIcons: [pcRequiredImg, jsImg],
-    liveLink: "https://jdasteroids.netlify.app/",
-    videoLink: "https://youtu.be/6LwWaI4WKdg",
-    githubLink: "https://github.com/jdichh/asteroids",
-  },
-  {
-    name: "Random Password Generator Extension",
-    description:
-      "A random password generator extension with options for digits, special characters, mixed case letters, and a slider to adjust the length of the password.",
-    tools: ["SCSS", "JavaScript"],
-    imageUrl: passwordGen,
-    toolIcons: [scssImg, jsImg],
-    videoLink: "https://youtu.be/pq-EsJa1plw",
-    githubLink: "https://github.com/jdichh/password-generator",
-  },
-  {
     name: "Security Unit Web Portal",
     description:
       "This was part of our capstone project back when I was in college, which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",

@@ -21,9 +21,8 @@ export default function About() {
         here in the Philippines.
       </p>
       <p className="mb-6">
-        I'm also a{" "}
-        <span className="text-emphasize">recent IT graduate</span>{" "}
-        of Colegio de San Juan De Letran-Calamba, and{" "}
+        I'm also a <span className="text-emphasize">recent IT graduate</span> of
+        Colegio de San Juan De Letran-Calamba, and{" "}
         <span className="text-emphasize">
           {" "}
           looking to get my foot in the door in the tech industry
@@ -32,7 +31,7 @@ export default function About() {
       </p>
       <p className="mb-6">
         Formalities aside, I love running, playing my electric guitar, tinkering
-        with computers, and discovering web technologies, especially frontend
+        with computers, and discovering web technologies. Especially frontend
         tech.
       </p>
     </motion.section>

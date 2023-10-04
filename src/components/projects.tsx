@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { projects } from "@/lib/data";
 import Project from "./project";
 import { motion } from "framer-motion";
+import Others from "./others";
 
 export default function Projects() {
   return (
@@ -23,19 +24,7 @@ export default function Projects() {
         </React.Fragment>
       ))}
 
-      <div className="flex justify-center opacity-90">
-        <p className="text-base">
-          View more of my projects in my{" "}
-          <a
-            href="https://www.github.com/jdichh"
-            target="_blank"
-            aria-label="Button for the GitHub repo of the project."
-            className="font-semibold text-[#236660]"
-          >
-            GitHub profile.
-          </a>
-        </p>
-      </div>
+      <Others />
     </motion.section>
   );
 }
