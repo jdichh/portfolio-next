@@ -14,7 +14,7 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-6">
-        Hello, I'm Jason, a recent IT graduate, and I aim to build{" "}
+        Hello, I'm Jason, and I aim to build{" "}
         <span className="font-bold">user-friendly</span> and{" "}
         <span className="font-bold">impressive-looking websites</span>.
       </p>
