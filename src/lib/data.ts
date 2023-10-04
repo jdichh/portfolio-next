@@ -5,6 +5,7 @@ import showroom from "../../public/project/showroom.png";
 import synthwave from "../../public/project/synthwave.gif";
 import asteroids from "../../public/project/asteroids.gif";
 import passwordGen from "../../public/project/password.png";
+import vespa from "../../public/project/vespa.png";
 import ssu from "../../public/project/ssu.png";
 
 // icons
@@ -40,72 +41,82 @@ export const links = [
     name: "Blogs",
     hash: "/blogs",
   },
-]
+];
 
 export const tools = [
   {
     name: "HTML",
     imageUrl: htmlImg,
-    alt: "HTML5 logo"
+    alt: "HTML5 logo",
   },
   {
     name: "CSS",
     imageUrl: cssImg,
-    alt: "CSS3 logo"
+    alt: "CSS3 logo",
   },
   {
     name: "JavaScript",
     imageUrl: jsImg,
-    alt: "JavaScript logo"
+    alt: "JavaScript logo",
   },
   {
     name: "React.js",
     imageUrl: reactImg,
-    alt: "React.js logo"
+    alt: "React.js logo",
   },
   {
     name: "Next.js",
     imageUrl: nextImg,
-    alt: "Next.js logo"
+    alt: "Next.js logo",
   },
   {
     name: "Three.js",
     imageUrl: threeImg,
-    alt: "Three.js logo"
+    alt: "Three.js logo",
   },
   {
     name: "React-Three-Fiber",
     imageUrl: r3fImg,
-    alt: "React-Three-Fiber logo"
+    alt: "React-Three-Fiber logo",
   },
   {
     name: "SCSS",
     imageUrl: scssImg,
-    alt: "SCSS logo"
+    alt: "SCSS logo",
   },
   {
     name: "Tailwind",
     imageUrl: tailwindImg,
-    alt: "Tailwind CSS logo"
+    alt: "Tailwind CSS logo",
   },
   {
     name: "Framer Motion",
     imageUrl: framerMotionImg,
-    alt: "Framer motion logo"
+    alt: "Framer motion logo",
   },
   {
     name: "Wave Tool",
     imageUrl: waveToolImg,
-    alt: "Wave tool logo"
+    alt: "Wave tool logo",
   },
   {
     name: "Lighthouse",
     imageUrl: lighthouseImg,
-    alt: "Lighthouse testing tool logo"
+    alt: "Lighthouse testing tool logo",
   },
-]
+];
 
 export const projects = [
+  {
+    name: "Vespa 125 Promotional Website",
+    description:
+      "A promotional website for the Vespa 125 in 3D. NOT affiliated with Piaggio and/or Vespa.",
+    tools: ["PC Recommended", "React-Three-Fiber", "GSAP", "Tailwind"],
+    toolIcons: [pcImg, r3fImg, gsapImg, tailwindImg],
+    imageUrl: vespa,
+    liveLink: "https://jdvespa.netlify.app/",
+    githubLink: "https://github.com/jdichh/vespa-r3f",
+  },
   {
     name: "Virtual Car Showroom",
     description:
@@ -116,7 +127,7 @@ export const projects = [
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
     blogLink: "/blogs/gran-turismo-showroom",
-    githubLink: "https://github.com/jdichh/car-showroom-r3f/"
+    githubLink: "https://github.com/jdichh/car-showroom-r3f/",
   },
   {
     name: "Khronomechanica Vintora",
@@ -181,19 +192,21 @@ export const projects = [
     videoLink: "https://youtu.be/vkYClk75SS0",
     githubLink: "https://github.com/jdichh/websystem_ssu2",
   },
-]
+];
 
 export const blogs = [
   {
     name: "Creating a Gran Turismo-esque showroom with Three.js",
-    description: "I originally wanted to create a promotional website in 3D for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
+    description:
+      "I originally wanted to create a promotional website in 3D for a car manufacturer, but I ended up recreating Gran Turismo (not really) for browsers.",
     date: "September 29, 2023",
-    link: "/blogs/gran-turismo-showroom"
+    link: "/blogs/gran-turismo-showroom",
   },
   {
     name: "My first shenanigans in 3D",
-    description: "The story of how I came by 3D so early on in my self-learning journey.",
+    description:
+      "The story of how I came by 3D so early on in my self-learning journey.",
     date: "September 27, 2023 | Updated 3 days later",
-    link: "/blogs/my-first-shenanigans-in-3d"
+    link: "/blogs/my-first-shenanigans-in-3d",
   },
-]
+];
