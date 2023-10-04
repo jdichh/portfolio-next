@@ -121,7 +121,7 @@ export default function Project({
                 <FaBlog /> <span className="ml-1">Blog</span>
               </motion.a>
             )}
-            {githubLink && (
+            {/* {githubLink && (
               <motion.a
                 href={githubLink.toString()}
                 target="_blank"
@@ -133,7 +133,7 @@ export default function Project({
               >
                 <AiFillGithub size={20} /> <span className="ml-1">Source Code</span>
               </motion.a>
-            )}
+            )} */}
           </div>
         </div>
         <Image
