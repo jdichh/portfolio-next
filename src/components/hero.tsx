@@ -16,7 +16,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="scroll-mt-[100rem]">
-      <div className="flex flex-col justify-end items-end my-20">
+      <div className="flex flex-col justify-end items-end my-16">
         <motion.div
           className="text-right"
           initial={{ opacity: 0 }}

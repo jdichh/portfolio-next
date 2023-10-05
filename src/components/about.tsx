@@ -13,12 +13,12 @@ export default function About() {
       transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="mb-6">
-        Hello, I'm Jason, and I aim to build{" "}
+      <p>
+        Hello, I'm Jason, and my aim is to build{" "}
         <span className="font-bold">user-friendly</span> and{" "}
-        <span className="font-bold">impressive-looking websites</span>.
+        <span className="font-bold">engaging websites</span>.
       </p>
-      <p className="mb-6">
+      <p>
         I love to run, play my electric guitar, tinker with computers, and
         discover web technologies.
       </p>
