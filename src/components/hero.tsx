@@ -28,7 +28,7 @@ export default function Hero() {
           >
             Jason Dichoso
           </h1>
-          <h2 className="text-lg sm:text-xl">Frontend Web Developer</h2>
+          <h2 className="text-lg sm:text-xl">Web Developer</h2>
         </motion.div>
 
         <motion.div

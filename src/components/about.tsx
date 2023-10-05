@@ -20,8 +20,7 @@ export default function About() {
       </p>
       <p className="mb-6">
         I love to run, play my electric guitar, tinker with computers, and
-        discover web technologies.{" "}
-        <span className="font-bold">Especially frontend tech.</span>
+        discover web technologies.
       </p>
     </motion.section>
   );
