@@ -33,7 +33,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function index() {
   const IMAGE_DIMENSIONS = 750;
-  const IMAGE_QUALITY = 95;
+  const IMAGE_QUALITY = 10;
   const ON_HOVER_SCALE = 1.075;
   const ON_TAP_SCALE = 0.925;
 
