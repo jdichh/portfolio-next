@@ -32,7 +32,7 @@ export default function Project({
   const PROJ_HOVER_SCALE = 1.02;
   const TOOL_ICON_QUALITY = 50;
   const TOOL_ICON_DIMENSIONS = 17;
-  const IMAGE_QUALITY = 95;
+  const IMAGE_QUALITY = 10;
   const ON_HOVER_SCALE = 1.04;
   const ON_TAP_SCALE = 0.925;
 
