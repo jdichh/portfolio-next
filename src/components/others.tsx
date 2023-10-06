@@ -6,7 +6,7 @@ export default function Others() {
       <p className="text-base text-center">
         You can view my other projects in my{" "}
         <a
-          href="https://jdichh.netlify.app"
+          href="https://jdichh.netlify.app/#projects"
           target="_blank"
           aria-label="Button for my old portfolio website."
           className="font-bold text-[#236660]"
