@@ -114,7 +114,13 @@ export const projects = [
     name: "Vespa 125 Promotional Website",
     description:
       "A promotional website for the Vespa 125 in 3D. NOT affiliated with Piaggio and/or Vespa.",
-    tools: ["PC Recommended", "React.js", "React-Three-Fiber", "GSAP", "Tailwind"],
+    tools: [
+      "PC Recommended",
+      "React.js",
+      "React-Three-Fiber",
+      "GSAP",
+      "Tailwind",
+    ],
     toolIcons: [pcImg, reactImg, r3fImg, gsapImg, tailwindImg],
     imageUrl: vespa,
     liveLink: "https://jdvespa.netlify.app/",
@@ -136,9 +142,9 @@ export const projects = [
     name: "Khronomechanica Vintora",
     description:
       "A website for a fictional steampunk watch. I wanted to try out embedding a 3D model in a product website.",
-    tools: ["PC Recommended", "Three.js", "GSAP", "SCSS"],
+    tools: ["PC Recommended", "Three.js", "GSAP", "HTML", "SCSS"],
     imageUrl: vintora,
-    toolIcons: [pcImg, threeImg, gsapImg, scssImg],
+    toolIcons: [pcImg, threeImg, gsapImg, htmlImg, scssImg],
     liveLink: "https://steampunkwatch.netlify.app/",
     githubLink: "https://github.com/jdichh/steampunk-watch",
   },
