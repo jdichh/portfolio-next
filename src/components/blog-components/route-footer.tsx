@@ -7,7 +7,6 @@ import { SiGmail } from "react-icons/si";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function RouteFooter() {
-  const ON_HOVER_SCALE = 1.075;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -28,7 +27,6 @@ export default function RouteFooter() {
             target="_blank"
             aria-label="Button to my LinkedIn profile"
             className="react-icons"
-            whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
           >
@@ -38,7 +36,6 @@ export default function RouteFooter() {
             href="mailto:jpsdichoso21@gmail.com"
             aria-label="Button to send me an email"
             className="react-icons"
-            whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
           >

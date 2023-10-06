@@ -29,11 +29,9 @@ export default function Project({
   const SCALE = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   const OPACITY = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
-  const PROJ_HOVER_SCALE = 1.02;
   const TOOL_ICON_QUALITY = 50;
   const TOOL_ICON_DIMENSIONS = 17;
   const IMAGE_QUALITY = 10;
-  const ON_HOVER_SCALE = 1.04;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -45,10 +43,8 @@ export default function Project({
         opacity: OPACITY,
       }}
     >
-      <motion.article
+      <article
         className="group overflow-hidden bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text rounded-sm relative my-transition outline-my-standard"
-        whileHover={{ scale: PROJ_HOVER_SCALE }}
-        transition={{ duration: 0.025 }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
@@ -88,7 +84,6 @@ export default function Project({
                 target="_blank"
                 aria-label="Live demo of the project."
                 className="project-item-buttons"
-                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -101,7 +96,6 @@ export default function Project({
                 target="_blank"
                 aria-label="Video demonstration of the project."
                 className="project-item-buttons"
-                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -114,7 +108,6 @@ export default function Project({
                 target="_blank"
                 aria-label="Blog post of the project."
                 className="project-item-buttons"
-                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -127,7 +120,6 @@ export default function Project({
                 target="_blank"
                 aria-label="Button for the source code of the project."
                 className="project-item-buttons"
-                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -140,9 +132,9 @@ export default function Project({
           src={imageUrl}
           alt=""
           quality={IMAGE_QUALITY}
-          className="hidden md:block relative md:absolute my-transition rounded-sm top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] md:group-hover:scale-[1.03] md:group-hover:-translate-y-6"
+          className="hidden md:block relative md:absolute my-transition rounded-sm top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] -translate-y-7"
         />
-      </motion.article>
+      </article>
     </motion.div>
   );
 }

@@ -8,7 +8,6 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function RouteHeader() {
-  const ON_HOVER_SCALE = 1.075;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -23,7 +22,6 @@ export default function RouteHeader() {
         <ul>
           <motion.li
             whileTap={{ scale: ON_TAP_SCALE }}
-            whileHover={{ scale: ON_HOVER_SCALE }}
           >
             <Link href="/" aria-label="Back button">
               <button className="react-icons" aria-label="Back button">

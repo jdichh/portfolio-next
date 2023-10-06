@@ -15,7 +15,6 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export default function index() {
   const IMAGE_DIMENSIONS = 750;
   const IMAGE_QUALITY = 10;
-  const ON_HOVER_SCALE = 1.075;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -682,7 +681,6 @@ export default function index() {
                 target="_blank"
                 aria-label="Button to the GitHub repo of the project"
                 className="article-links"
-                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -693,7 +691,6 @@ export default function index() {
                 target="_blank"
                 aria-label="Button for a demo of the project"
                 className="article-links"
-                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -704,7 +701,6 @@ export default function index() {
                 target="_blank"
                 aria-label="Button for my dev videos of the project"
                 className="article-links"
-                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >

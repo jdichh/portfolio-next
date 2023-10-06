@@ -4,14 +4,12 @@ import { motion } from "framer-motion";
 type BlogProps = (typeof blogs)[number];
 
 export default function BlogBoilerplate({ name, description, date, link }: BlogProps) {
-  const ON_HOVER_SCALE = 1.03;
-  const ON_TAP_SCALE = 0.99;
+  const ON_TAP_SCALE = 0.98;
 
   return (
     <div className="mb-3 last:mb-0">
       <motion.article
         className="group overflow-hidden rounded-sm relative outline-my-standard theme-switch"
-        whileHover={{ scale: ON_HOVER_SCALE }}
         whileTap={{ scale: ON_TAP_SCALE }}
         transition={{ duration: 0.025, ease: [0.22, 1, 0.36, 1] }}
       >

@@ -157,18 +157,18 @@ export const projects = [
     toolIcons: [pcImg, reactImg, r3fImg, tailwindImg],
     liveLink: "https://jdsoulless.netlify.app/",
   },
-  {
-    name: "Synthwave Scene",
-    description:
-      "A synthwave scene in 3D. Made with React.js and Three.js because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
-    tools: ["PC Recommended", "React.js", "Three.js", "SCSS"],
-    imageUrl: synthwave,
-    toolIcons: [pcImg, reactImg, threeImg, scssImg],
-    liveLink: "https://jdsynthwave.netlify.app/",
-    videoLink: "https://youtu.be/S7RprZc3dEs",
-    blogLink: "/blogs/my-first-shenanigans-in-3d/",
-    githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
-  },
+  // {
+  //   name: "Synthwave Scene",
+  //   description:
+  //     "A synthwave scene in 3D. Made with React.js and Three.js because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
+  //   tools: ["PC Recommended", "React.js", "Three.js", "SCSS"],
+  //   imageUrl: synthwave,
+  //   toolIcons: [pcImg, reactImg, threeImg, scssImg],
+  //   liveLink: "https://jdsynthwave.netlify.app/",
+  //   videoLink: "https://youtu.be/S7RprZc3dEs",
+  //   blogLink: "/blogs/my-first-shenanigans-in-3d/",
+  //   githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
+  // },
   {
     name: "Security Unit Web Portal",
     description:
