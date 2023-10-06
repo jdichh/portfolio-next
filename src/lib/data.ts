@@ -1,10 +1,8 @@
 // projects
-import soulless from "../../public/project/soulless.gif";
-import vintora from "../../public/project/vintora.gif";
+import soulless from "../../public/project/soulless.png";
+import vintora from "../../public/project/vintora.png";
 import showroom from "../../public/project/showroom.png";
-import synthwave from "../../public/project/synthwave.gif";
-import asteroids from "../../public/project/asteroids.gif";
-import passwordGen from "../../public/project/password.png";
+import synthwave from "../../public/project/synthwave.png";
 import vespa from "../../public/project/vespa.png";
 import ssu from "../../public/project/ssu.png";
 

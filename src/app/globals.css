@@ -26,7 +26,7 @@
 }
 
 .theme-switch {
-  @apply my-transition bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text border-[#151516] dark:border-[#D8D2C5] outline-[#151516] dark:outline-[#D8D2C5];
+  @apply my-transition bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text border-dark-theme-bg dark:border-light-theme-bg outline-dark-theme-bg dark:outline-light-theme-bg;
 }
 
 .border-theme-switch {
