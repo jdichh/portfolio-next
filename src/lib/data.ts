@@ -174,9 +174,9 @@ export const projects = [
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
   },
   {
-    name: "Random Password Generator",
+    name: "Random Password Generator Extension",
     description:
-      "A random password generator with options for digits, special characters, lower/uppercase letters and a slider for the length of the password.",
+      "A random password generator extension with options for digits, special characters, lower/uppercase letters and a slider for the length of the password.",
     tools: ["HTML", "SCSS", "JavaScript"],
     imageUrl: pwgen,
     toolIcons: [htmlImg, scssImg, jsImg],
