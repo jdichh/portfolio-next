@@ -151,6 +151,17 @@ export const projects = [
     githubLink: "https://github.com/jdichh/steampunk-watch",
   },
   {
+    name: "Security Unit Web Portal",
+    description:
+      "This was part of our capstone project back when I was in college, which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
+    tools: ["PC Required", "Vue.js", "Bootstrap", "Firebase"],
+    imageUrl: ssu,
+    toolIcons: [pcRequiredImg, vueImg, bootstrapImg, firebaseImg],
+    liveLink: "https://ssuwebsystem.netlify.app",
+    videoLink: "https://youtu.be/vkYClk75SS0",
+    githubLink: "https://github.com/jdichh/websystem_ssu2",
+  },
+  {
     name: "Synthwave Scene",
     description:
       "A synthwave scene in 3D. Made with React.js and Three.js because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
@@ -182,17 +193,6 @@ export const projects = [
     liveLink: "https://jdasteroids.netlify.app/",
     videoLink: "https://www.youtube.com/watch?v=6LwWaI4WKdg",
     githubLink: "https://github.com/jdichh/asteroids"
-  },
-  {
-    name: "Security Unit Web Portal",
-    description:
-      "This was part of our capstone project back when I was in college, which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
-    tools: ["PC Required", "Vue.js", "Bootstrap", "Firebase"],
-    imageUrl: ssu,
-    toolIcons: [pcRequiredImg, vueImg, bootstrapImg, firebaseImg],
-    liveLink: "https://ssuwebsystem.netlify.app",
-    videoLink: "https://youtu.be/vkYClk75SS0",
-    githubLink: "https://github.com/jdichh/websystem_ssu2",
   },
 ];
 
