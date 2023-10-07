@@ -1,5 +1,6 @@
 // projects
-import soulless from "../../public/project/soulless.png";
+// import soulless from "../../public/project/soulless.png";
+import asteroids from "../../public/project/asteroids.png"
 import vintora from "../../public/project/vintora.png";
 import showroom from "../../public/project/showroom.png";
 import synthwave from "../../public/project/synthwave.png";
@@ -149,15 +150,6 @@ export const projects = [
     githubLink: "https://github.com/jdichh/steampunk-watch",
   },
   {
-    name: "Soulless Clothing Co.",
-    description:
-      "Currently a landing page for a fictional clothing brand. I will expand upon this in the future to be a full website.",
-    tools: ["PC Recommended", "React.js", "React-Three-Fiber", "Tailwind"],
-    imageUrl: soulless,
-    toolIcons: [pcImg, reactImg, r3fImg, tailwindImg],
-    liveLink: "https://jdsoulless.netlify.app/",
-  },
-  {
     name: "Synthwave Scene",
     description:
       "A synthwave scene in 3D. Made with React.js and Three.js because I wanted to know how different the syntax & conventions are compared to React-Three-Fiber.",
@@ -168,6 +160,16 @@ export const projects = [
     videoLink: "https://youtu.be/S7RprZc3dEs",
     blogLink: "/blogs/my-first-shenanigans-in-3d/",
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
+  },
+  {
+    name: "Asteroids",
+    description:
+      "The Asteroids game from Atari, but with my modifications. I made this to expand upon my JavaScript knowledge, and to have a bit of fun as well.",
+    tools: ["PC Required", "JavaScript"],
+    imageUrl: asteroids,
+    toolIcons: [pcRequiredImg, jsImg],
+    liveLink: "https://jdasteroids.netlify.app/",
+    githubLink: "https://github.com/jdichh/asteroids"
   },
   {
     name: "Security Unit Web Portal",
