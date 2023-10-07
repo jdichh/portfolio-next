@@ -169,6 +169,7 @@ export const projects = [
     imageUrl: asteroids,
     toolIcons: [pcRequiredImg, jsImg],
     liveLink: "https://jdasteroids.netlify.app/",
+    videoLink: "https://www.youtube.com/watch?v=6LwWaI4WKdg",
     githubLink: "https://github.com/jdichh/asteroids"
   },
   {
