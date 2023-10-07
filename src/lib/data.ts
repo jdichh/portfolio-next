@@ -183,17 +183,17 @@ export const projects = [
     videoLink: "https://youtu.be/pq-EsJa1plw",
     githubLink: "https://github.com/jdichh/password-generator"
   },
-  {
-    name: "Asteroids",
-    description:
-      "The Asteroids game from Atari, but with my modifications. I made this to expand upon my JavaScript knowledge, and to have a bit of fun as well.",
-    tools: ["PC Required", "JavaScript"],
-    imageUrl: asteroids,
-    toolIcons: [pcRequiredImg, jsImg],
-    liveLink: "https://jdasteroids.netlify.app/",
-    videoLink: "https://www.youtube.com/watch?v=6LwWaI4WKdg",
-    githubLink: "https://github.com/jdichh/asteroids"
-  },
+  // {
+  //   name: "Asteroids",
+  //   description:
+  //     "The Asteroids game from Atari, but with my modifications. I made this to expand upon my JavaScript knowledge, and to have a bit of fun as well.",
+  //   tools: ["PC Required", "JavaScript"],
+  //   imageUrl: asteroids,
+  //   toolIcons: [pcRequiredImg, jsImg],
+  //   liveLink: "https://jdasteroids.netlify.app/",
+  //   videoLink: "https://www.youtube.com/watch?v=6LwWaI4WKdg",
+  //   githubLink: "https://github.com/jdichh/asteroids"
+  // },
 ];
 
 export const blogs = [
