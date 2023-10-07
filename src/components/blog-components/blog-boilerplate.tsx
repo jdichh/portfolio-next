@@ -9,7 +9,7 @@ export default function BlogBoilerplate({ name, description, date, link }: BlogP
   return (
     <div className="mb-3 last:mb-0">
       <motion.article
-        className="group overflow-hidden rounded-sm relative outline-my-standard theme-switch"
+        className="group overflow-hidden rounded-sm relative outline-my-standard theme-switch hover:scale-[1.02]"
         whileTap={{ scale: ON_TAP_SCALE }}
         transition={{ duration: 0.025, ease: [0.22, 1, 0.36, 1] }}
       >
