@@ -45,11 +45,7 @@ export default function Project({
         opacity: OPACITY,
       }}
     >
-      <motion.article
-        className="group overflow-hidden bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text rounded-sm relative my-transition outline-my-standard"
-        whileHover={{ scale: ON_PROJ_ITEM_SCALE }}
-        transition={{ duration: 0 }}
-      >
+      <article className="group overflow-hidden bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text rounded-sm relative my-transition outline-my-standard">
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
             src={imageUrl}
@@ -131,7 +127,8 @@ export default function Project({
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
-                <AiFillGithub size={20} /> <span className="ml-1">Source Code</span>
+                <AiFillGithub size={20} />{" "}
+                <span className="ml-1">Source Code</span>
               </motion.a>
             )}
           </div>
@@ -142,7 +139,7 @@ export default function Project({
           quality={IMAGE_QUALITY}
           className="hidden md:block relative md:absolute my-transition rounded-sm top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] -translate-y-7"
         />
-      </motion.article>
+      </article>
     </motion.div>
   );
 }
