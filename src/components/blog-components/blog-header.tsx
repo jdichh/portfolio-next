@@ -9,6 +9,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function BlogHeader() {
+  const ON_HOVER_SCALE = 1.05;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -27,6 +28,7 @@ export default function BlogHeader() {
                 className="react-icons"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
                 aria-label="Back button"
@@ -39,6 +41,7 @@ export default function BlogHeader() {
                 className="react-icons"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
                 aria-label="Home button"

@@ -6,6 +6,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
+  const ON_HOVER_SCALE = 1.05;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -26,6 +27,7 @@ export default function Footer() {
             target="_blank"
             aria-label="Button to my LinkedIn profile"
             className="react-icons"
+            whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
           >
@@ -35,6 +37,7 @@ export default function Footer() {
             href="mailto:jpsdichoso21@gmail.com"
             aria-label="Button to send me an email"
             className="react-icons"
+            whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
           >

@@ -10,6 +10,7 @@ type Theme = "light" | "dark";
 export default function ThemeSwitch() {
   const [theme, setTheme] = useState<Theme>("light");
 
+  const ON_HOVER_SCALE = 1.05;
   const ON_TAP_SCALE = 0.925;
 
   const toggleTheme = () => {
@@ -40,6 +41,7 @@ export default function ThemeSwitch() {
 
   return (
     <motion.div
+      whileHover={{ scale: ON_HOVER_SCALE }}
       whileTap={{ scale: ON_TAP_SCALE }}
     >
       <button

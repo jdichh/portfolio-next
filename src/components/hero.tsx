@@ -11,6 +11,7 @@ import ThemeSwitch from "./theme-switch";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
+  const ON_HOVER_SCALE = 1.05;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -40,6 +41,7 @@ export default function Hero() {
             href="https://github.com/jdichh/"
             target="_blank"
             aria-label="Button to my GitHub profile"
+            whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
             className="react-icons"
@@ -50,6 +52,7 @@ export default function Hero() {
             href="https://www.linkedin.com/in/jason-dichoso-a97a0026a/"
             target="_blank"
             aria-label="Button to my LinkedIn profile"
+            whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
             className="react-icons"
@@ -59,6 +62,7 @@ export default function Hero() {
           <motion.a
             href="mailto:jpsdichoso21@gmail.com"
             aria-label="Button to send me an email"
+            whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
             transition={{ duration: 0 }}
             className="react-icons"

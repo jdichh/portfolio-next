@@ -32,6 +32,7 @@ export default function Project({
   const TOOL_ICON_QUALITY = 50;
   const TOOL_ICON_DIMENSIONS = 17;
   const IMAGE_QUALITY = 10;
+  const ON_HOVER_SCALE = 1.05;
   const ON_TAP_SCALE = 0.925;
 
   return (
@@ -84,6 +85,7 @@ export default function Project({
                 target="_blank"
                 aria-label="Live demo of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -96,6 +98,7 @@ export default function Project({
                 target="_blank"
                 aria-label="Video demonstration of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -108,6 +111,7 @@ export default function Project({
                 target="_blank"
                 aria-label="Blog post of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
@@ -120,6 +124,7 @@ export default function Project({
                 target="_blank"
                 aria-label="Button for the source code of the project."
                 className="project-item-buttons"
+                whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
