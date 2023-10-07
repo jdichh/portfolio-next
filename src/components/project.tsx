@@ -31,7 +31,8 @@ export default function Project({
 
   const TOOL_ICON_QUALITY = 50;
   const TOOL_ICON_DIMENSIONS = 17;
-  const IMAGE_QUALITY = 10;
+  const IMAGE_QUALITY = 30;
+  const ON_PROJ_ITEM_SCALE = 1.02;
   const ON_HOVER_SCALE = 1.05;
   const ON_TAP_SCALE = 0.925;
 
@@ -44,8 +45,10 @@ export default function Project({
         opacity: OPACITY,
       }}
     >
-      <article
+      <motion.article
         className="group overflow-hidden bg-light-theme-bg text-light-theme-text dark:bg-dark-theme-bg dark:text-dark-theme-text rounded-sm relative my-transition outline-my-standard"
+        whileHover={{ scale: ON_PROJ_ITEM_SCALE }}
+        transition={{ duration: 0 }}
       >
         <div className="flex flex-col py-4 px-4 md:px-6 md:max-w-[50%] xl:max-w-[55%] md:min-h-[23rem] lg:min-h-[18rem]">
           <Image
@@ -139,7 +142,7 @@ export default function Project({
           quality={IMAGE_QUALITY}
           className="hidden md:block relative md:absolute my-transition rounded-sm top-7 md:-right-52 lg:-right-16 2xl:-right-1 w-[34rem] -translate-y-7"
         />
-      </article>
+      </motion.article>
     </motion.div>
   );
 }

@@ -6,6 +6,7 @@ import showroom from "../../public/project/showroom.png";
 import synthwave from "../../public/project/synthwave.png";
 import vespa from "../../public/project/vespa.png";
 import ssu from "../../public/project/ssu.png";
+import pwgen from "../../public/project/pwgen.png"
 
 // icons
 import htmlImg from "../../public/tools/html.svg";
@@ -160,6 +161,16 @@ export const projects = [
     videoLink: "https://youtu.be/S7RprZc3dEs",
     blogLink: "/blogs/my-first-shenanigans-in-3d/",
     githubLink: "https://github.com/jdichh/synthwave-scene-REACT",
+  },
+  {
+    name: "Random Password Generator",
+    description:
+      "A random password generator with options for digits, special characters, lower/uppercase letters and a slider for the length of the password.",
+    tools: ["HTML", "SCSS", "JavaScript"],
+    imageUrl: pwgen,
+    toolIcons: [htmlImg, scssImg, jsImg],
+    videoLink: "https://youtu.be/pq-EsJa1plw",
+    githubLink: "https://github.com/jdichh/password-generator"
   },
   {
     name: "Asteroids",
