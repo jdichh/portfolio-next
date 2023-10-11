@@ -7,6 +7,7 @@ import { SiGmail } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import ThemeSwitch from "./theme-switch";
+import SectionDivider from "./section-divider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,28 +16,24 @@ export default function Hero() {
   const ON_TAP_SCALE = 0.925;
 
   return (
-    <section id="home" className="scroll-mt-[100rem]">
+    <motion.section
+      id="home"
+      className="scroll-mt-[100rem] flex flex-col items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="flex flex-col justify-end items-end my-16">
-        <motion.div
-          className="text-right"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-        >
+        <div className="text-right">
           <h1
             className={`${inter.className} text-emphasize text-4xl sm:text-5xl`}
           >
             Jason Dichoso
           </h1>
           <h2 className="text-lg sm:text-xl">Web Developer</h2>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex gap-2 my-2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.15 }}
-        >
+        <div className="flex gap-2 my-2">
           <motion.a
             href="https://github.com/jdichh/"
             target="_blank"
@@ -70,8 +67,9 @@ export default function Hero() {
             <SiGmail size={22} />
           </motion.a>
           <ThemeSwitch />
-        </motion.div>
+        </div>
       </div>
-    </section>
+      <SectionDivider />
+    </motion.section>
   );
 }
