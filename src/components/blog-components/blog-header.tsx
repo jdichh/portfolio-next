@@ -23,8 +23,6 @@ export default function BlogHeader() {
             <Link href="/blogs" aria-label="Back button">
               <motion.button
                 className="react-icons"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 aria-label="Back button"
@@ -35,8 +33,6 @@ export default function BlogHeader() {
             <Link href="/" aria-label="Home button">
               <motion.button
                 className="react-icons"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 aria-label="Home button"
