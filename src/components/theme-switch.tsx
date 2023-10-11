@@ -46,7 +46,6 @@ export default function ThemeSwitch() {
       aria-label="Theme switcher"
       whileHover={{ scale: ON_HOVER_SCALE }}
       whileTap={{ scale: ON_TAP_SCALE }}
-      transition={{ duration: 0, delay: 0 }}
     >
       {theme === "light" ? <PiSunFill size={22} /> : <PiMoonFill size={22} />}
     </motion.button>

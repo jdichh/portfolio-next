@@ -23,7 +23,6 @@ export default function RouteHeader() {
             aria-label="Back button"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0, delay: 0 }}
           >
             <IoMdArrowRoundBack size={22} />
           </motion.button>

@@ -17,7 +17,6 @@ export default function FooterButtons() {
         className="react-icons"
         whileHover={{ scale: ON_HOVER_SCALE }}
         whileTap={{ scale: ON_TAP_SCALE }}
-        transition={{ duration: 0 }}
       >
         <BiLogoLinkedin size={22} />
       </motion.a>
@@ -27,7 +26,6 @@ export default function FooterButtons() {
         className="react-icons"
         whileHover={{ scale: ON_HOVER_SCALE }}
         whileTap={{ scale: ON_TAP_SCALE }}
-        transition={{ duration: 0 }}
       >
         <SiGmail size={22} />
       </motion.a>

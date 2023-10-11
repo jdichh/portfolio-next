@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 
-.my-transition  {
+.my-transition {
   @apply transition duration-150 ease-in-out;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .border-theme-switch {
-  @apply border-dark-theme-bg dark:border-light-theme-bg
+  @apply border-dark-theme-bg dark:border-light-theme-bg;
 }
 
 .tools-projects-theme-switch {
@@ -71,11 +71,11 @@
 
 /* Inside Blog Components Folder */
 .blog-components-snippets-bigger-text {
-  @apply   whitespace-pre-wrap break-words rounded-sm text-[0.6rem] sm:text-sm outline-my-standard p-2;
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.6rem] sm:text-sm outline-my-standard p-2;
 }
 
 .blog-components-snippets-smaller-text {
-  @apply   whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline-my-standard p-2;
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outline-my-standard p-2;
 }
 /* End */
 
@@ -103,7 +103,7 @@
 }
 
 .article-disclaimer {
-  @apply outline-my-standard rounded-sm p-3 theme-switch  ;
+  @apply outline-my-standard rounded-sm p-3;
 }
 
 .article-disclaimer-text {
@@ -111,11 +111,11 @@
 }
 
 .article-text {
-  @apply leading-7 mb-8 text-my-standard text-light-theme-text dark:text-dark-theme-text my-transition;
+  @apply leading-7 mb-8;
 }
 
 .article-figure {
-  @apply outline-my-standard p-2 rounded-sm my-8 mx-auto  ;
+  @apply outline-my-standard p-2 rounded-sm my-8 mx-auto;
 }
 
 .article-figure-caption {
@@ -131,7 +131,7 @@
 }
 
 .article-links {
-  @apply rounded-sm font-medium theme-switch outline-my-standard p-2 text-sm flex items-center  ;
+  @apply rounded-sm font-medium theme-switch outline-my-standard p-2 text-sm flex items-center;
 }
 
 .article-iframe {
@@ -155,7 +155,7 @@
 }
 
 .code-snippet-pre-code {
-  @apply p-2 my-2 rounded-sm mx-auto  ; 
+  @apply p-2 my-2 rounded-sm mx-auto;
 }
 
 .code-snippet code {
@@ -164,10 +164,10 @@
   border-radius: 0.15rem;
   margin-inline: 0.25rem;
   font-size: 0.9rem;
-  @apply outline-my-standard  ;
+  @apply outline-my-standard;
 }
 /* End */
 
 .react-icons {
-  @apply rounded-sm font-medium theme-switch outline-my-standard p-2 text-sm;
+  @apply rounded-sm font-medium outline-my-standard p-2 text-sm;
 }

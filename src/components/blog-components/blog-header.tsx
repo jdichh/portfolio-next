@@ -27,7 +27,6 @@ export default function BlogHeader() {
                 animate={{ opacity: 1 }}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0, delay: 0 }}
                 aria-label="Back button"
               >
                 <IoMdArrowRoundBack size={22} />
@@ -40,7 +39,6 @@ export default function BlogHeader() {
                 animate={{ opacity: 1 }}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0, delay: 0 }}
                 aria-label="Home button"
               >
                 <AiFillHome size={22} />
