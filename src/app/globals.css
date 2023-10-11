@@ -38,12 +38,8 @@
 }
 
 /* Landing Page */
-.text-emphasize {
-  @apply font-bold text-light-theme-accent;
-}
-
 .text-my-standard {
-  @apply font-[450] text-[16px] md:text-[17px];
+  @apply font-[450] text-base;
 }
 
 .outline-my-standard {
@@ -55,7 +51,7 @@
 }
 
 .footer-layout {
-  @apply grid grid-cols-3 items-center my-6 mx-3 font-bold;
+  @apply grid grid-cols-3 items-center my-6 mx-3 font-medium;
 }
 
 .footer-text {
@@ -99,11 +95,11 @@
 }
 
 .article-title {
-  @apply text-3xl font-bold mb-2;
+  @apply text-3xl font-medium mb-2;
 }
 
 .article-date {
-  @apply text-light-theme-accent font-bold;
+  @apply text-light-theme-accent font-medium;
 }
 
 .article-disclaimer {
@@ -111,7 +107,7 @@
 }
 
 .article-disclaimer-text {
-  @apply text-4xl font-bold mb-2 text-light-theme-accent;
+  @apply text-4xl font-medium mb-2 text-light-theme-accent;
 }
 
 .article-text {
@@ -127,7 +123,7 @@
 }
 
 .article-section-title {
-  @apply text-xl sm:text-2xl font-bold mt-20 mb-3;
+  @apply text-xl sm:text-2xl font-medium mt-20 mb-3;
 }
 
 .article-links-container {
@@ -135,7 +131,7 @@
 }
 
 .article-links {
-  @apply rounded-sm font-bold theme-switch outline-my-standard p-2 text-sm flex items-center  ;
+  @apply rounded-sm font-medium theme-switch outline-my-standard p-2 text-sm flex items-center  ;
 }
 
 .article-iframe {
@@ -147,7 +143,7 @@
 }
 
 .article-hrefs {
-  @apply font-bold text-light-theme-accent;
+  @apply font-medium text-light-theme-accent;
 }
 
 .code-snippet-container {
@@ -155,7 +151,7 @@
 }
 
 .code-snippet-sub-title {
-  @apply text-xl sm:text-2xl font-bold my-3;
+  @apply text-xl sm:text-2xl font-medium my-3;
 }
 
 .code-snippet-pre-code {
@@ -173,5 +169,5 @@
 /* End */
 
 .react-icons {
-  @apply rounded-sm font-bold theme-switch outline-my-standard p-2 text-sm;
+  @apply rounded-sm font-medium theme-switch outline-my-standard p-2 text-sm;
 }

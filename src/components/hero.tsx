@@ -1,10 +1,10 @@
 import React from "react";
-import { Inter } from "next/font/google";
 import ThemeSwitch from "./theme-switch";
 import SectionDivider from "./section-divider";
 import HeroButtons from "./hero-buttons";
+import { Archivo } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const archivo = Archivo({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="flex flex-col justify-end items-end my-16">
         <div className="text-right">
           <h1
-            className={`${inter.className} text-emphasize text-4xl sm:text-5xl`}
+            className={`${archivo.className} font-medium text-4xl sm:text-5xl`}
           >
             Jason Dichoso
           </h1>
