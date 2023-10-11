@@ -9,15 +9,12 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function BlogHeader() {
-  const ON_HOVER_SCALE = 1.05;
+  const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.925;
 
   return (
-    <motion.header
+    <header
       className={`z-[98] relative w-full font-bold ${spaceGrotesk.className}`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="pages-folder-div-navbars theme-switch" />
       <nav className="pages-folder-navbars">
@@ -30,7 +27,7 @@ export default function BlogHeader() {
                 animate={{ opacity: 1 }}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0 }}
+                transition={{ duration: 0, delay: 0 }}
                 aria-label="Back button"
               >
                 <IoMdArrowRoundBack size={22} />
@@ -43,7 +40,7 @@ export default function BlogHeader() {
                 animate={{ opacity: 1 }}
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
-                transition={{ duration: 0 }}
+                transition={{ duration: 0, delay: 0 }}
                 aria-label="Home button"
               >
                 <AiFillHome size={22} />
@@ -53,6 +50,6 @@ export default function BlogHeader() {
         </ul>
         <ThemeSwitch />
       </nav>
-    </motion.header>
+    </header>
   );
 }

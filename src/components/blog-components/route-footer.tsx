@@ -7,20 +7,15 @@ import { SiGmail } from "react-icons/si";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function RouteFooter() {
-  const ON_HOVER_SCALE = 1.05;
+  const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.925;
 
   return (
-    <motion.footer
+    <footer
       className={`mt-6 mx-auto border-t-2 w-full max-w-[750px] font-bold border-theme-switch ${spaceGrotesk.className}`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="footer-layout">
-        <span className="footer-text">
-          Let's work together.
-        </span>
+        <span className="footer-text">Let's work together.</span>
         <div className="border-t-2 mx-3 theme-switch" />
         <div className="flex gap-2 justify-center">
           <motion.a
@@ -30,7 +25,7 @@ export default function RouteFooter() {
             className="react-icons"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0 }}
+            transition={{ duration: 0, delay: 0 }}
           >
             <BiLogoLinkedin size={22} />
           </motion.a>
@@ -40,12 +35,12 @@ export default function RouteFooter() {
             className="react-icons"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
-            transition={{ duration: 0 }}
+            transition={{ duration: 0, delay: 0 }}
           >
             <SiGmail size={22} />
           </motion.a>
         </div>
       </div>
-    </motion.footer>
+    </footer>
   );
 }

@@ -10,7 +10,7 @@ type Theme = "light" | "dark";
 export default function ThemeSwitch() {
   const [theme, setTheme] = useState<Theme>("light");
 
-  const ON_HOVER_SCALE = 1.05;
+  const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.925;
 
   const toggleTheme = () => {
@@ -40,17 +40,15 @@ export default function ThemeSwitch() {
   }, []);
 
   return (
-    <motion.div
+    <motion.button
+      className="react-icons"
+      onClick={toggleTheme}
+      aria-label="Theme switcher"
       whileHover={{ scale: ON_HOVER_SCALE }}
       whileTap={{ scale: ON_TAP_SCALE }}
+      transition={{ duration: 0, delay: 0 }}
     >
-      <button
-        className="react-icons"
-        onClick={toggleTheme}
-        aria-label="Theme switcher"
-      >
-        {theme === "light" ? <PiSunFill size={22} /> : <PiMoonFill size={22} />}
-      </button>
-    </motion.div>
+      {theme === "light" ? <PiSunFill size={22} /> : <PiMoonFill size={22} />}
+    </motion.button>
   );
 }

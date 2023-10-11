@@ -9,7 +9,7 @@ export default function Others() {
           href="https://jdichh.netlify.app/#projects"
           target="_blank"
           aria-label="Button to my old portfolio website."
-          className="font-bold text-[#236660]"
+          className="font-bold text-[#397EBF]"
         >
           old portfolio
         </a>{" "}
@@ -18,7 +18,7 @@ export default function Others() {
           href="https://github.com/jdichh"
           target="_blank"
           aria-label="Button to my GitHub profile."
-          className="font-bold text-[#236660]"
+          className="font-bold text-[#397EBF]"
         >
           GitHub profile
         </a>

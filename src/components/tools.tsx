@@ -1,30 +1,19 @@
-"use client";
-
 import React from "react";
 import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import {
-  tools,
-} from "@/lib/data";
+import { tools } from "@/lib/data";
 import Image from "next/image";
 
 export default function Tools() {
-  const ICON_DIMENSIONS = 40
+  const ICON_DIMENSIONS = 40;
 
   return (
-    <motion.section
-        className="px-4 w-full xl:w-10/12 mb-16 scroll-mt-20"
-      id="tools"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-    >
+    <section className="px-4 w-full xl:w-10/12 mb-16 scroll-mt-20" id="tools">
       <SectionHeading>Tools</SectionHeading>
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {tools.map((tool, index) => (
           <li
             key={index}
-            className="flex flex-col text-center outline-my-standard text-my-standard theme-switch items-center m-1 p-3 rounded-sm  "
+            className="flex flex-col text-center text-my-standard tools-projects-theme-switch items-center m-1 p-3 rounded-sm"
           >
             <Image
               src={tool.imageUrl}
@@ -37,6 +26,6 @@ export default function Tools() {
           </li>
         ))}
       </ul>
-    </motion.section>
+    </section>
   );
 }

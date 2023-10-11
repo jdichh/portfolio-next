@@ -33,6 +33,10 @@
   @apply border-dark-theme-bg dark:border-light-theme-bg
 }
 
+.tools-projects-theme-switch {
+  @apply bg-light-theme-bg-lighter text-light-theme-text dark:bg-dark-theme-bg-lighter dark:text-dark-theme-text my-transition;
+}
+
 /* Landing Page */
 .text-emphasize {
   @apply font-bold text-light-theme-accent;
@@ -43,7 +47,7 @@
 }
 
 .outline-my-standard {
-  @apply outline outline-1 theme-switch;
+  @apply outline outline-1;
 }
 
 .icons {
@@ -59,7 +63,7 @@
 }
 
 .project-item-buttons {
-  @apply theme-switch outline-my-standard px-3 py-1 md:px-3 md:py-0 rounded-sm flex items-center justify-center;
+  @apply outline-my-standard px-3 py-1 md:px-3 md:py-0 rounded-sm flex items-center justify-center;
 }
 /* End */
 
@@ -111,7 +115,7 @@
 }
 
 .article-text {
-  @apply leading-7 mb-8 text-my-standard text-light-theme-text dark:text-dark-theme-text;
+  @apply leading-7 mb-8 text-my-standard text-light-theme-text dark:text-dark-theme-text my-transition;
 }
 
 .article-figure {

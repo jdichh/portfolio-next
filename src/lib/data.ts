@@ -99,16 +99,6 @@ export const tools = [
     imageUrl: gsapImg,
     alt: "GSAP logo",
   },
-  {
-    name: "Wave Tool",
-    imageUrl: waveToolImg,
-    alt: "Wave tool logo",
-  },
-  {
-    name: "Lighthouse",
-    imageUrl: lighthouseImg,
-    alt: "Lighthouse testing tool logo",
-  },
 ];
 
 export const projects = [
@@ -133,7 +123,7 @@ export const projects = [
     description:
       "A 3D virtual car showroom mainly inspired by Gran Turismo Sport. I also replicated some parts of the UI from the actual game.",
     tools: ["PC Required", "React.js", "React-Three-Fiber", "SCSS"],
-    toolIcons: [pcRequiredImg, reactImg, r3fImg, scssImg],
+    toolIcons: [pcImg, reactImg, r3fImg, scssImg],
     imageUrl: showroom,
     liveLink: "https://gtshowroom.netlify.app/",
     videoLink: "https://youtu.be/PhjlgLxL-Zg",
@@ -156,7 +146,7 @@ export const projects = [
       "This was part of our capstone project back when I was in college, which involved a mobile application, and this web application. The whole system serves as a patrol system for the security unit at our school.",
     tools: ["PC Required", "Vue.js", "Bootstrap", "Firebase"],
     imageUrl: ssu,
-    toolIcons: [pcRequiredImg, vueImg, bootstrapImg, firebaseImg],
+    toolIcons: [pcImg, vueImg, bootstrapImg, firebaseImg],
     liveLink: "https://ssuwebsystem.netlify.app",
     videoLink: "https://youtu.be/vkYClk75SS0",
     githubLink: "https://github.com/jdichh/websystem_ssu2",
@@ -189,7 +179,7 @@ export const projects = [
       "The Asteroids game from Atari, but with my modifications. I made this to expand upon my JavaScript knowledge, and to have a bit of fun as well.",
     tools: ["PC Required", "JavaScript"],
     imageUrl: asteroids,
-    toolIcons: [pcRequiredImg, jsImg],
+    toolIcons: [pcImg, jsImg],
     liveLink: "https://jdasteroids.netlify.app/",
     videoLink: "https://www.youtube.com/watch?v=6LwWaI4WKdg",
     githubLink: "https://github.com/jdichh/asteroids"

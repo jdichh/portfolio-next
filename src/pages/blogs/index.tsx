@@ -4,8 +4,6 @@ import RouteFooter from "@/components/blog-components/route-footer";
 import Head from "next/dist/shared/lib/head";
 import BlogItem from "@/components/blog-components/blog-item";
 import { Space_Grotesk } from "next/font/google";
-import ThemeSwitch from "@/components/theme-switch";
-import { motion } from "framer-motion";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -16,12 +14,7 @@ export default function index() {
         <title>Jason Dichoso | Blogs</title>
       </Head>
       <RouteHeader />
-      <motion.main
-        className={`article-body ${spaceGrotesk.className}`}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-      >
+      <main className={`article-body ${spaceGrotesk.className}`}>
         <div className="mt-20" />
         <div className="mb-8">
           <h1 className="mb-3 text-xl sm:text-2xl">
@@ -33,7 +26,7 @@ export default function index() {
           </h1>
         </div>
         <BlogItem />
-      </motion.main>
+      </main>
       <RouteFooter />
     </>
   );

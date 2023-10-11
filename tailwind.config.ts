@@ -10,11 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'light-theme-bg': '#E0DACE',
-        'light-theme-text': '#161616',
-        'light-theme-accent': '#276D66',
-        'dark-theme-bg': '#161616',
-        'dark-theme-text': '#E0DACE',
+        'light-theme-bg': '#E3E3E5',
+        'light-theme-bg-lighter': '#EAEAEA',
+        'light-theme-text': '#16181D',
+        'light-theme-accent': '#397EBF',
+        'dark-theme-bg': '#16181D',
+        'dark-theme-bg-lighter': '#1F2128',
+        'dark-theme-text': '#E3E3E5',
         'dark-theme-accent': '#FFD700',
       },
       backgroundImage: {

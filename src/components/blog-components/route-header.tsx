@@ -8,32 +8,29 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function RouteHeader() {
-  const ON_HOVER_SCALE = 1.05;
+  const ON_HOVER_SCALE = 1.1;
   const ON_TAP_SCALE = 0.925;
 
   return (
-    <motion.header
+    <header
       className={`z-[98] relative w-full font-bold ${spaceGrotesk.className}`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="pages-folder-div-navbars theme-switch" />
       <nav className="pages-folder-navbars">
-        <ul>
-          <motion.li
+        <Link href="/" aria-label="Back button">
+          <motion.button
+            className="react-icons"
+            aria-label="Back button"
             whileHover={{ scale: ON_HOVER_SCALE }}
             whileTap={{ scale: ON_TAP_SCALE }}
+            transition={{ duration: 0, delay: 0 }}
           >
-            <Link href="/" aria-label="Back button">
-              <button className="react-icons" aria-label="Back button">
-                <IoMdArrowRoundBack size={22} />
-              </button>
-            </Link>
-          </motion.li>
-        </ul>
+            <IoMdArrowRoundBack size={22} />
+          </motion.button>
+        </Link>
+
         <ThemeSwitch />
       </nav>
-    </motion.header>
+    </header>
   );
 }

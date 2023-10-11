@@ -20,7 +20,6 @@ import FloorSnippetDescription from "@/components/blog-components/gtshowroom-acc
 import SpotlightSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/spotlight-snippet-description";
 import RendererSettingsSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/renderer-settings-snippet-description";
 import CanvasSnippetDescription from "@/components/blog-components/gtshowroom-accordion-components/snippets/snippet-descriptions/canvas-snippet-description";
-import ThemeSwitch from "@/components/theme-switch";
 
 import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify } from "react-icons/si";
@@ -53,12 +52,7 @@ export default function index() {
         />
       </Head>
       <BlogHeader />
-      <motion.main
-        className={`article-body ${spaceGrotesk.className}`}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-      >
+      <main className={`article-body ${spaceGrotesk.className}`}>
         <article>
           <div className="mt-44" />
           <div className="mb-8">
@@ -880,13 +874,13 @@ export default function index() {
               <motion.a
                 href="https://github.com/jdichh/car-showroom"
                 target="_blank"
-                aria-label="Button to the GitHub repo of the project"
+                aria-label="Button to the source code of the project"
                 className="article-links"
                 whileHover={{ scale: ON_HOVER_SCALE }}
                 whileTap={{ scale: ON_TAP_SCALE }}
                 transition={{ duration: 0 }}
               >
-                <AiFillGithub size={22} /> <span className="ml-1">GitHub</span>
+                <AiFillGithub size={22} /> <span className="ml-1">Source Code</span>
               </motion.a>
               <motion.a
                 href="https://gtshowroom.netlify.app/"
@@ -927,7 +921,7 @@ export default function index() {
             </p>
           </section>
         </article>
-      </motion.main>
+      </main>
       <RouteFooter />
     </>
   );
